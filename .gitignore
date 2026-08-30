@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Ephemeral Phase 1 -> Phase 2 -> Phase 3 handoff files (regenerated on every run)
+.trending-data.json
+.needs_evaluation.json
+verdicts.json

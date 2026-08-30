@@ -1,0 +1,154 @@
+{
+  "ComposioHQ/awesome-claude-skills": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 74035,
+    "verdict": "fit"
+  },
+  "JetBrains/go-modern-guidelines": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 2948,
+    "verdict": "maybe"
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 38300,
+    "verdict": "maybe"
+  },
+  "Osmantic/ODS": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 5129,
+    "verdict": "maybe"
+  },
+  "THU-MAIC/OpenMAIC": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 22766,
+    "verdict": "maybe"
+  },
+  "abi/screenshot-to-code": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 76211,
+    "verdict": "not-fit"
+  },
+  "actions/checkout": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 8825,
+    "verdict": "not-fit"
+  },
+  "addyosmani/agent-skills": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 90852,
+    "verdict": "fit"
+  },
+  "anthropics/claude-plugins-official": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 35559,
+    "verdict": "fit"
+  },
+  "bigskysoftware/htmx": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 49209,
+    "verdict": "not-fit"
+  },
+  "bilawalsidhu/gods-eye-view": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 13195,
+    "verdict": "not-fit"
+  },
+  "calesthio/OpenMontage": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 54358,
+    "verdict": "maybe"
+  },
+  "every-app/open-seo": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 14836,
+    "verdict": "not-fit"
+  },
+  "google/googletest": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 39363,
+    "verdict": "not-fit"
+  },
+  "kaifcodec/user-scanner": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 3835,
+    "verdict": "not-fit"
+  },
+  "p-e-w/heretic": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 28873,
+    "verdict": "maybe"
+  },
+  "tailscale/tailcat": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 3907,
+    "verdict": "not-fit"
+  },
+  "tt-a1i/archify": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 32647,
+    "verdict": "maybe"
+  },
+  "workweave/router": {
+    "first_seen": "2026-08-30",
+    "last_checked": "2026-08-30",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-30",
+    "stars_at_check": 2963,
+    "verdict": "fit"
+  }
+}

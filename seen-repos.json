@@ -63,6 +63,14 @@
     "stars_at_check": 90852,
     "verdict": "fit"
   },
+  "affaan-m/ECC": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 244977,
+    "verdict": "fit"
+  },
   "anthropics/claude-plugins-official": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -95,6 +103,14 @@
     "stars_at_check": 54358,
     "verdict": "maybe"
   },
+  "checkstyle/checkstyle": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 9316,
+    "verdict": "not-fit"
+  },
   "every-app/open-seo": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -103,12 +119,44 @@
     "stars_at_check": 14836,
     "verdict": "not-fit"
   },
+  "firecrawl/pdf-inspector": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 17175,
+    "verdict": "maybe"
+  },
   "google/googletest": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 39363,
+    "verdict": "not-fit"
+  },
+  "handsomestWei/patent-disclosure-skill": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 6110,
+    "verdict": "not-fit"
+  },
+  "jingyaogong/minimind": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 55796,
+    "verdict": "maybe"
+  },
+  "k1tbyte/Wand-Enhancer": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 23157,
     "verdict": "not-fit"
   },
   "kaifcodec/user-scanner": {
@@ -119,6 +167,14 @@
     "stars_at_check": 3835,
     "verdict": "not-fit"
   },
+  "majd/ipatool": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 10424,
+    "verdict": "not-fit"
+  },
   "p-e-w/heretic": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -126,6 +182,14 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 28873,
     "verdict": "maybe"
+  },
+  "pollen-robotics/microduck_rl": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 1046,
+    "verdict": "not-fit"
   },
   "tailscale/tailcat": {
     "first_seen": "2026-08-30",
@@ -150,5 +214,13 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 2963,
     "verdict": "fit"
+  },
+  "zhaoxuya520/reverse-skill": {
+    "first_seen": "2026-08-31",
+    "last_checked": "2026-08-31",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-31",
+    "stars_at_check": 32749,
+    "verdict": "not-fit"
   }
 }

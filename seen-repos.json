@@ -1,10 +1,34 @@
 {
+  "3b1b/manim": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 92407,
+    "verdict": "not-fit"
+  },
   "ComposioHQ/awesome-claude-skills": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 74035,
+    "verdict": "fit"
+  },
+  "Gitlawb/openclaude": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 31035,
+    "verdict": "maybe"
+  },
+  "Imbad0202/academic-research-skills": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 44628,
     "verdict": "fit"
   },
   "JetBrains/go-modern-guidelines": {
@@ -38,6 +62,14 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 22766,
     "verdict": "maybe"
+  },
+  "VoltAgent/awesome-design-md": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 112321,
+    "verdict": "fit"
   },
   "abi/screenshot-to-code": {
     "first_seen": "2026-08-30",
@@ -79,6 +111,14 @@
     "stars_at_check": 35559,
     "verdict": "fit"
   },
+  "averygan/reclip": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 7406,
+    "verdict": "not-fit"
+  },
   "bigskysoftware/htmx": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -95,6 +135,14 @@
     "stars_at_check": 13195,
     "verdict": "not-fit"
   },
+  "browser-use/video-use": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 22623,
+    "verdict": "maybe"
+  },
   "calesthio/OpenMontage": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -110,6 +158,14 @@
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 9316,
     "verdict": "not-fit"
+  },
+  "debpalash/VoiceStudio": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 13162,
+    "verdict": "maybe"
   },
   "every-app/open-seo": {
     "first_seen": "2026-08-30",
@@ -141,6 +197,14 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 6110,
+    "verdict": "not-fit"
+  },
+  "iv-org/invidious": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 23651,
     "verdict": "not-fit"
   },
   "jingyaogong/minimind": {
@@ -206,6 +270,14 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 32647,
     "verdict": "maybe"
+  },
+  "unclecode/crawl4ai": {
+    "first_seen": "2026-09-01",
+    "last_checked": "2026-09-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-01",
+    "stars_at_check": 80694,
+    "verdict": "fit"
   },
   "workweave/router": {
     "first_seen": "2026-08-30",

@@ -7,12 +7,28 @@
     "stars_at_check": 92407,
     "verdict": "not-fit"
   },
+  "ChromeDevTools/chrome-devtools-mcp": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 50514,
+    "verdict": "fit"
+  },
   "ComposioHQ/awesome-claude-skills": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 74035,
+    "verdict": "fit"
+  },
+  "DietrichGebert/ponytail": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 120746,
     "verdict": "fit"
   },
   "Gitlawb/openclaude": {
@@ -39,6 +55,14 @@
     "stars_at_check": 2948,
     "verdict": "maybe"
   },
+  "JuliusBrussee/caveman": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 102399,
+    "verdict": "fit"
+  },
   "K-Dense-AI/scientific-agent-skills": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -46,6 +70,14 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 38300,
     "verdict": "maybe"
+  },
+  "NousResearch/hermes-agent": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 239821,
+    "verdict": "fit"
   },
   "Osmantic/ODS": {
     "first_seen": "2026-08-30",
@@ -135,6 +167,14 @@
     "stars_at_check": 13195,
     "verdict": "not-fit"
   },
+  "blader/humanizer": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 39903,
+    "verdict": "fit"
+  },
   "browser-use/video-use": {
     "first_seen": "2026-09-01",
     "last_checked": "2026-09-01",
@@ -181,6 +221,22 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 17175,
+    "verdict": "maybe"
+  },
+  "fmtlib/fmt": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 23849,
+    "verdict": "not-fit"
+  },
+  "google-research/timesfm": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 29052,
     "verdict": "maybe"
   },
   "google/googletest": {
@@ -239,6 +295,14 @@
     "stars_at_check": 10424,
     "verdict": "not-fit"
   },
+  "mattpocock/skills": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 244677,
+    "verdict": "fit"
+  },
   "p-e-w/heretic": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -247,6 +311,14 @@
     "stars_at_check": 28873,
     "verdict": "maybe"
   },
+  "pacifio/atlas": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 2664,
+    "verdict": "fit"
+  },
   "pollen-robotics/microduck_rl": {
     "first_seen": "2026-08-31",
     "last_checked": "2026-08-31",
@@ -254,6 +326,30 @@
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 1046,
     "verdict": "not-fit"
+  },
+  "protocolbuffers/protobuf": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 71883,
+    "verdict": "not-fit"
+  },
+  "sngyai/Sequoia-X": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 5929,
+    "verdict": "fit"
+  },
+  "superlinked/sie": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 2973,
+    "verdict": "fit"
   },
   "tailscale/tailcat": {
     "first_seen": "2026-08-30",
@@ -279,6 +375,14 @@
     "stars_at_check": 80694,
     "verdict": "fit"
   },
+  "vercel-labs/portless": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 11527,
+    "verdict": "maybe"
+  },
   "workweave/router": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -293,6 +397,14 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 32749,
+    "verdict": "not-fit"
+  },
+  "zyronon/TypeWords": {
+    "first_seen": "2026-09-02",
+    "last_checked": "2026-09-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-02",
+    "stars_at_check": 9212,
     "verdict": "not-fit"
   }
 }

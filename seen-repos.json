@@ -7,6 +7,14 @@
     "stars_at_check": 92407,
     "verdict": "not-fit"
   },
+  "ByteByteGoHq/system-design-101": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-03",
+    "stars_at_check": 158,
+    "verdict": "maybe"
+  },
   "ChromeDevTools/chrome-devtools-mcp": {
     "first_seen": "2026-09-02",
     "last_checked": "2026-09-02",
@@ -143,12 +151,28 @@
     "stars_at_check": 35559,
     "verdict": "fit"
   },
+  "anthropics/skills": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-03",
+    "stars_at_check": 277,
+    "verdict": "fit"
+  },
   "averygan/reclip": {
     "first_seen": "2026-09-01",
     "last_checked": "2026-09-01",
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-01",
     "stars_at_check": 7406,
+    "verdict": "not-fit"
+  },
+  "bannedbook/fanqiang": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-03",
+    "stars_at_check": 539,
     "verdict": "not-fit"
   },
   "bigskysoftware/htmx": {
@@ -214,6 +238,14 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 14836,
     "verdict": "not-fit"
+  },
+  "f/prompts.chat": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-03",
+    "stars_at_check": 198,
+    "verdict": "maybe"
   },
   "firecrawl/pdf-inspector": {
     "first_seen": "2026-08-31",
@@ -287,6 +319,14 @@
     "stars_at_check": 3835,
     "verdict": "not-fit"
   },
+  "magnitudedev/magnitude": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-03",
+    "stars_at_check": 130,
+    "verdict": "fit"
+  },
   "majd/ipatool": {
     "first_seen": "2026-08-31",
     "last_checked": "2026-08-31",
@@ -301,6 +341,14 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 244677,
+    "verdict": "fit"
+  },
+  "obra/superpowers": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-03",
+    "stars_at_check": 460,
     "verdict": "fit"
   },
   "p-e-w/heretic": {

@@ -143,6 +143,14 @@
     "stars_at_check": 244977,
     "verdict": "fit"
   },
+  "anomalyco/opencode": {
+    "first_seen": "2026-09-04",
+    "last_checked": "2026-09-04",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-04",
+    "stars_at_check": 314,
+    "verdict": "fit"
+  },
   "anthropics/claude-plugins-official": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -183,6 +191,14 @@
     "stars_at_check": 49209,
     "verdict": "not-fit"
   },
+  "bikini/exploitarium": {
+    "first_seen": "2026-09-04",
+    "last_checked": "2026-09-04",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-04",
+    "stars_at_check": 68,
+    "verdict": "not-fit"
+  },
   "bilawalsidhu/gods-eye-view": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -215,12 +231,28 @@
     "stars_at_check": 54358,
     "verdict": "maybe"
   },
+  "cathrynlavery/diagram-design": {
+    "first_seen": "2026-09-04",
+    "last_checked": "2026-09-04",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-04",
+    "stars_at_check": 426,
+    "verdict": "maybe"
+  },
   "checkstyle/checkstyle": {
     "first_seen": "2026-08-31",
     "last_checked": "2026-08-31",
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 9316,
+    "verdict": "not-fit"
+  },
+  "clshortfuse/renodx": {
+    "first_seen": "2026-09-04",
+    "last_checked": "2026-09-04",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-04",
+    "stars_at_check": 759,
     "verdict": "not-fit"
   },
   "debpalash/VoiceStudio": {
@@ -321,10 +353,10 @@
   },
   "magnitudedev/magnitude": {
     "first_seen": "2026-09-03",
-    "last_checked": "2026-09-03",
+    "last_checked": "2026-09-04",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-03",
-    "stars_at_check": 130,
+    "profile_checked_against": "2026-09-04",
+    "stars_at_check": 395,
     "verdict": "fit"
   },
   "majd/ipatool": {
@@ -382,6 +414,14 @@
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 71883,
     "verdict": "not-fit"
+  },
+  "radixark/miles": {
+    "first_seen": "2026-09-04",
+    "last_checked": "2026-09-04",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-04",
+    "stars_at_check": 55,
+    "verdict": "maybe"
   },
   "sngyai/Sequoia-X": {
     "first_seen": "2026-09-02",

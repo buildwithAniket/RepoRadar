@@ -7,6 +7,14 @@
     "stars_at_check": 92407,
     "verdict": "not-fit"
   },
+  "BraveOPotato/FckSignups": {
+    "first_seen": "2026-09-05",
+    "last_checked": "2026-09-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 2676,
+    "verdict": "not-fit"
+  },
   "ByteByteGoHq/system-design-101": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -111,6 +119,14 @@
     "stars_at_check": 112321,
     "verdict": "fit"
   },
+  "WorldFlowAI/everything-claude-code": {
+    "first_seen": "2026-09-05",
+    "last_checked": "2026-09-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 2179,
+    "verdict": "fit"
+  },
   "abi/screenshot-to-code": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -145,10 +161,10 @@
   },
   "anomalyco/opencode": {
     "first_seen": "2026-09-04",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-09-05",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-04",
-    "stars_at_check": 314,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 204440,
     "verdict": "fit"
   },
   "anthropics/claude-plugins-official": {
@@ -161,10 +177,10 @@
   },
   "anthropics/skills": {
     "first_seen": "2026-09-03",
-    "last_checked": "2026-09-03",
+    "last_checked": "2026-09-05",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-03",
-    "stars_at_check": 277,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 174373,
     "verdict": "fit"
   },
   "averygan/reclip": {
@@ -193,10 +209,10 @@
   },
   "bikini/exploitarium": {
     "first_seen": "2026-09-04",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-09-05",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-04",
-    "stars_at_check": 68,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 4613,
     "verdict": "not-fit"
   },
   "bilawalsidhu/gods-eye-view": {
@@ -233,10 +249,10 @@
   },
   "cathrynlavery/diagram-design": {
     "first_seen": "2026-09-04",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-09-05",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-04",
-    "stars_at_check": 426,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 31385,
     "verdict": "maybe"
   },
   "checkstyle/checkstyle": {
@@ -319,6 +335,14 @@
     "stars_at_check": 6110,
     "verdict": "not-fit"
   },
+  "humanlayer/skills": {
+    "first_seen": "2026-09-05",
+    "last_checked": "2026-09-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 2491,
+    "verdict": "maybe"
+  },
   "iv-org/invidious": {
     "first_seen": "2026-09-01",
     "last_checked": "2026-09-01",
@@ -353,10 +377,10 @@
   },
   "magnitudedev/magnitude": {
     "first_seen": "2026-09-03",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-09-05",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-04",
-    "stars_at_check": 395,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 2867,
     "verdict": "fit"
   },
   "majd/ipatool": {
@@ -374,6 +398,14 @@
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 244677,
     "verdict": "fit"
+  },
+  "nvm-sh/nvm": {
+    "first_seen": "2026-09-05",
+    "last_checked": "2026-09-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 94849,
+    "verdict": "not-fit"
   },
   "obra/superpowers": {
     "first_seen": "2026-09-03",
@@ -422,6 +454,14 @@
     "profile_checked_against": "2026-09-04",
     "stars_at_check": 55,
     "verdict": "maybe"
+  },
+  "ruvnet/ruflo": {
+    "first_seen": "2026-09-05",
+    "last_checked": "2026-09-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-05",
+    "stars_at_check": 70562,
+    "verdict": "fit"
   },
   "sngyai/Sequoia-X": {
     "first_seen": "2026-09-02",

@@ -87,6 +87,14 @@
     "stars_at_check": 38300,
     "verdict": "maybe"
   },
+  "MoonTechLab/LunaTV": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 9593,
+    "verdict": "not-fit"
+  },
   "NousResearch/hermes-agent": {
     "first_seen": "2026-09-02",
     "last_checked": "2026-09-02",
@@ -110,6 +118,14 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 22766,
     "verdict": "maybe"
+  },
+  "The-Swarm-Corporation/AutoHedge": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 5028,
+    "verdict": "fit"
   },
   "VoltAgent/awesome-design-md": {
     "first_seen": "2026-09-01",
@@ -239,6 +255,14 @@
     "stars_at_check": 22623,
     "verdict": "maybe"
   },
+  "bytedance/deer-flow": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 81694,
+    "verdict": "fit"
+  },
   "calesthio/OpenMontage": {
     "first_seen": "2026-08-30",
     "last_checked": "2026-08-30",
@@ -270,6 +294,14 @@
     "profile_checked_against": "2026-09-04",
     "stars_at_check": 759,
     "verdict": "not-fit"
+  },
+  "coreyhaines31/marketingskills": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 47867,
+    "verdict": "fit"
   },
   "debpalash/VoiceStudio": {
     "first_seen": "2026-09-01",
@@ -335,6 +367,14 @@
     "stars_at_check": 6110,
     "verdict": "not-fit"
   },
+  "heygen-com/hyperframes": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 44874,
+    "verdict": "maybe"
+  },
   "humanlayer/skills": {
     "first_seen": "2026-09-05",
     "last_checked": "2026-09-05",
@@ -359,6 +399,14 @@
     "stars_at_check": 55796,
     "verdict": "maybe"
   },
+  "jo-inc/camofox-browser": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 9347,
+    "verdict": "maybe"
+  },
   "k1tbyte/Wand-Enhancer": {
     "first_seen": "2026-08-31",
     "last_checked": "2026-08-31",
@@ -374,6 +422,14 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 3835,
     "verdict": "not-fit"
+  },
+  "lightpanda-io/browser": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 34650,
+    "verdict": "maybe"
   },
   "magnitudedev/magnitude": {
     "first_seen": "2026-09-03",
@@ -399,6 +455,22 @@
     "stars_at_check": 244677,
     "verdict": "fit"
   },
+  "microsoft/markitdown": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 179394,
+    "verdict": "maybe"
+  },
+  "mksglu/context-mode": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 20577,
+    "verdict": "fit"
+  },
   "nvm-sh/nvm": {
     "first_seen": "2026-09-05",
     "last_checked": "2026-09-05",
@@ -413,6 +485,14 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-03",
     "stars_at_check": 460,
+    "verdict": "fit"
+  },
+  "openai/skills": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 25833,
     "verdict": "fit"
   },
   "p-e-w/heretic": {
@@ -430,6 +510,14 @@
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 2664,
     "verdict": "fit"
+  },
+  "pascalorg/editor": {
+    "first_seen": "2026-09-07",
+    "last_checked": "2026-09-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-07",
+    "stars_at_check": 22075,
+    "verdict": "not-fit"
   },
   "pollen-robotics/microduck_rl": {
     "first_seen": "2026-08-31",

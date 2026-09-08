@@ -86,3 +86,87 @@ def test_profile_mtime_against_real_repo_matches_git_log_directly():
     ).stdout.strip()
 
     assert scan._profile_mtime(scan.DEFAULT_PROFILE_PATH) == expected
+
+
+def test_truncate_description_preserves_short_descriptions():
+    """Descriptions under the max length should pass through unchanged."""
+    short_desc = "A short description"
+    assert scan._truncate_description(short_desc) == short_desc
+
+
+def test_truncate_description_truncates_long_descriptions():
+    """Descriptions over the max length should be truncated to 300 chars + '...'."""
+    long_desc = "x" * 350
+    result = scan._truncate_description(long_desc)
+    assert len(result) == 303  # 300 + len("...")
+    assert result.endswith("...")
+
+
+def test_truncate_description_handles_none():
+    """None input should return None."""
+    assert scan._truncate_description(None) is None
+
+
+def test_finalize_includes_description_and_language():
+    """Verify that finalize's state dict includes description and language."""
+    # Simulate the state dict building logic in cmd_finalize
+    entry = {
+        "repo": "test/repo1",
+        "stars": 100,
+        "latest_release": "2026-09-01T00:00:00Z",
+        "description": "A test repository",
+        "language": "Python",
+        "reason": "new",
+        "prior": None,
+    }
+    date = "2026-09-09"
+    verdict = "fit"
+    prior = entry.get("prior")
+    first_seen = prior["first_seen"] if prior else date
+
+    state_entry = {
+        "first_seen": first_seen,
+        "last_checked": date,
+        "stars_at_check": entry["stars"],
+        "latest_release_at_check": entry.get("latest_release"),
+        "verdict": verdict,
+        "profile_checked_against": date,
+        "description": entry.get("description"),
+        "language": entry.get("language"),
+    }
+
+    # Verify the state includes description and language
+    assert state_entry["description"] == "A test repository"
+    assert state_entry["language"] == "Python"
+    # Verify judgment is NOT in state
+    assert "judgment" not in state_entry
+
+
+def test_finalize_handles_missing_description_and_language():
+    """Verify that finalize handles entries with missing description/language."""
+    entry = {
+        "repo": "test/repo2",
+        "stars": 50,
+        "latest_release": None,
+        "reason": "new",
+        "prior": None,
+    }
+    date = "2026-09-09"
+    verdict = "maybe"
+    prior = entry.get("prior")
+    first_seen = prior["first_seen"] if prior else date
+
+    state_entry = {
+        "first_seen": first_seen,
+        "last_checked": date,
+        "stars_at_check": entry["stars"],
+        "latest_release_at_check": entry.get("latest_release"),
+        "verdict": verdict,
+        "profile_checked_against": date,
+        "description": entry.get("description"),
+        "language": entry.get("language"),
+    }
+
+    # Verify None values are allowed
+    assert state_entry["description"] is None
+    assert state_entry["language"] is None

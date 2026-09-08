@@ -71,6 +71,26 @@ python src/scan.py finalize --verdicts verdicts.json
 
 This writes `reports/YYYY-MM-DD.md`, updates `seen-repos.json`, and prints the digest to stdout.
 
+## Dashboard (`ui/`)
+
+```bash
+cd ui && npm install && npm run dev   # http://localhost:5173
+npm run build                          # static bundle in ui/dist/
+```
+
+A small Vite + React app, read like a morning paper: one day at a time. It reads `seen-repos.json`
+and `reports/*.md` straight from the repo root (no export step; in dev a finished `finalize`
+refreshes the page). The selected day gets a plain-English summary and its repos grouped as
+*Worth a look*, *Maybe*, and *Passed*, each with GitHub's public description, language and star
+count; below that, a searchable, sortable ledger of everything on file. `←`/`→` change day, `/`
+focuses search. No canvas, no animation loops, no dependencies beyond React, so it costs nothing
+when idle. It is a view over public state only: verdicts, stars, dates and descriptions, never the
+private judgment text. Design notes and acceptance criteria live in `docs/ui.md`.
+
+`finalize` also stores each repo's public `description` and `language` in `seen-repos.json` so the
+dashboard has something human to show; `scripts/backfill_metadata.py` fills them in for entries
+written before that change.
+
 ---
 
 In production this whole cycle (including the judgment step) runs unattended once a day via a

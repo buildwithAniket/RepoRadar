@@ -14,6 +14,8 @@ _PUBLIC_KEYS = {
     "latest_release_at_check",
     "verdict",
     "profile_checked_against",
+    "description",
+    "language",
 }
 
 

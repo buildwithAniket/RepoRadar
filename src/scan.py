@@ -80,6 +80,7 @@ def cmd_prepare(args: argparse.Namespace) -> None:
                     "stars": metadata["stars"],
                     "latest_release": latest_release,
                     "description": metadata["description"],
+                    "language": metadata["language"],
                 })
 
         for repo in trending:
@@ -138,6 +139,8 @@ def cmd_finalize(args: argparse.Namespace) -> None:
                 "latest_release_at_check": entry.get("latest_release"),
                 "verdict": verdict,
                 "profile_checked_against": date,
+                "description": entry.get("description"),
+                "language": entry.get("language"),
             }
 
             evaluated.append({

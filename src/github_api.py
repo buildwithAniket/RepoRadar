@@ -12,7 +12,7 @@ _HEADERS = {"Accept": "application/vnd.github+json", "User-Agent": "RepoRadar/1.
 
 
 def get_repo_metadata(full_name: str, session: requests.Session | None = None) -> dict:
-    """Return {"stars": int, "pushed_at": str|None, "description": str|None}."""
+    """Return {"stars": int, "pushed_at": str|None, "description": str|None, "language": str|None}."""
     session = session or requests.Session()
     resp = session.get(f"{API_ROOT}/repos/{full_name}", headers=_HEADERS, timeout=15)
     resp.raise_for_status()
@@ -21,6 +21,7 @@ def get_repo_metadata(full_name: str, session: requests.Session | None = None) -
         "stars": data.get("stargazers_count", 0),
         "pushed_at": data.get("pushed_at"),
         "description": data.get("description"),
+        "language": data.get("language"),
     }
 
 

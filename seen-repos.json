@@ -207,6 +207,14 @@
     "stars_at_check": 7406,
     "verdict": "not-fit"
   },
+  "ayghri/i-have-adhd": {
+    "first_seen": "2026-09-08",
+    "last_checked": "2026-09-08",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-08",
+    "stars_at_check": 28363,
+    "verdict": "maybe"
+  },
   "bannedbook/fanqiang": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -245,6 +253,14 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 39903,
+    "verdict": "fit"
+  },
+  "browser-use/browser-use": {
+    "first_seen": "2026-09-08",
+    "last_checked": "2026-09-08",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-08",
+    "stars_at_check": 113116,
     "verdict": "fit"
   },
   "browser-use/video-use": {
@@ -471,6 +487,14 @@
     "stars_at_check": 20577,
     "verdict": "fit"
   },
+  "multica-ai/andrej-karpathy-skills": {
+    "first_seen": "2026-09-08",
+    "last_checked": "2026-09-08",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-08",
+    "stars_at_check": 211132,
+    "verdict": "maybe"
+  },
   "nvm-sh/nvm": {
     "first_seen": "2026-09-05",
     "last_checked": "2026-09-05",
@@ -481,11 +505,19 @@
   },
   "obra/superpowers": {
     "first_seen": "2026-09-03",
-    "last_checked": "2026-09-03",
+    "last_checked": "2026-09-08",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-03",
-    "stars_at_check": 460,
+    "profile_checked_against": "2026-09-08",
+    "stars_at_check": 283105,
     "verdict": "fit"
+  },
+  "openai/plugins": {
+    "first_seen": "2026-09-08",
+    "last_checked": "2026-09-08",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-08",
+    "stars_at_check": 5585,
+    "verdict": "maybe"
   },
   "openai/skills": {
     "first_seen": "2026-09-07",
@@ -598,6 +630,14 @@
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 11527,
     "verdict": "maybe"
+  },
+  "viarotel-org/escrcpy": {
+    "first_seen": "2026-09-08",
+    "last_checked": "2026-09-08",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-08",
+    "stars_at_check": 11211,
+    "verdict": "not-fit"
   },
   "workweave/router": {
     "first_seen": "2026-08-30",

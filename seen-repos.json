@@ -149,6 +149,26 @@
     "stars_at_check": 22766,
     "verdict": "maybe"
   },
+  "TauricResearch/TradingAgents": {
+    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "first_seen": "2026-09-09",
+    "language": "Python",
+    "last_checked": "2026-09-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-09",
+    "stars_at_check": 506,
+    "verdict": "fit"
+  },
+  "Tencent/teamai-cli": {
+    "description": "Make Every Team AI Native",
+    "first_seen": "2026-09-09",
+    "language": "TypeScript",
+    "last_checked": "2026-09-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-09",
+    "stars_at_check": 1083,
+    "verdict": "maybe"
+  },
   "The-Swarm-Corporation/AutoHedge": {
     "description": "Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.",
     "first_seen": "2026-09-07",
@@ -409,6 +429,16 @@
     "stars_at_check": 13162,
     "verdict": "maybe"
   },
+  "earthtojake/text-to-cad": {
+    "description": "A library of agent skills for CAD, CAE and CAM",
+    "first_seen": "2026-09-09",
+    "language": "Python",
+    "last_checked": "2026-09-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-09",
+    "stars_at_check": 97,
+    "verdict": "not-fit"
+  },
   "every-app/open-seo": {
     "description": "Open source alternative to Semrush and Ahrefs",
     "first_seen": "2026-08-30",
@@ -447,6 +477,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 23849,
+    "verdict": "not-fit"
+  },
+  "freestylefly/awesome-gpt-image-2": {
+    "description": "Prompt as Code | GPT-Image2 \u5de5\u4e1a\u7ea7\u63d0\u793a\u8bcd\u5f15\u64ce\u4e0e\u6a21\u677f\u5e93\uff0c530+ \u4e2a\u6848\u4f8b\u9006\u5411\u5de5\u7a0b\uff0c20+ \u5957\u5de5\u4e1a\u7ea7\u6a21\u677f\uff0c\u5e76\u63d0\u70bc\u51faSkills\uff0c\u6301\u7eed\u66f4\u65b0\u4e2d",
+    "first_seen": "2026-09-09",
+    "language": "JavaScript",
+    "last_checked": "2026-09-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-09",
+    "stars_at_check": 612,
     "verdict": "not-fit"
   },
   "google-research/timesfm": {
@@ -557,6 +597,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-07",
     "stars_at_check": 34650,
+    "verdict": "maybe"
+  },
+  "liquidslr/system-design-notes": {
+    "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+    "first_seen": "2026-09-09",
+    "language": null,
+    "last_checked": "2026-09-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-09",
+    "stars_at_check": 910,
     "verdict": "maybe"
   },
   "magnitudedev/magnitude": {
@@ -719,6 +769,16 @@
     "stars_at_check": 55,
     "verdict": "maybe"
   },
+  "rohitg00/ai-engineering-from-scratch": {
+    "description": "Learn it. Build it. Ship it for others.",
+    "first_seen": "2026-09-09",
+    "language": "Python",
+    "last_checked": "2026-09-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-09",
+    "stars_at_check": 356,
+    "verdict": "maybe"
+  },
   "ruvnet/ruflo": {
     "description": "\ud83c\udf0a The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
     "first_seen": "2026-09-05",
@@ -777,6 +837,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-01",
     "stars_at_check": 80694,
+    "verdict": "fit"
+  },
+  "vastsa/PI-Desktop": {
+    "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
+    "first_seen": "2026-09-09",
+    "language": "TypeScript",
+    "last_checked": "2026-09-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-09",
+    "stars_at_check": 393,
     "verdict": "fit"
   },
   "vercel-labs/portless": {

@@ -609,6 +609,10 @@ table.ledger-table {
     flex-direction: column;
     align-items: stretch;
   }
+
+  .ledger-search {
+    flex-basis: auto;
+  }
 }
 
 @media (max-width: 420px) {

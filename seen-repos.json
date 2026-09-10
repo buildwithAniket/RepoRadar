@@ -9,6 +9,16 @@
     "stars_at_check": 92407,
     "verdict": "not-fit"
   },
+  "AlexsJones/llmfit": {
+    "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
+    "first_seen": "2026-09-10",
+    "language": "Rust",
+    "last_checked": "2026-09-10",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 35533,
+    "verdict": "fit"
+  },
   "BraveOPotato/FckSignups": {
     "description": "A list of tools that are open-source, in-browser, and require no-signups!",
     "first_seen": "2026-09-05",
@@ -99,6 +109,16 @@
     "stars_at_check": 102399,
     "verdict": "fit"
   },
+  "JustVugg/colibri": {
+    "description": "Run frontier MoE models on hardware you already own \u2014 pure C, zero deps.",
+    "first_seen": "2026-09-10",
+    "language": "C",
+    "last_checked": "2026-09-10",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 27304,
+    "verdict": "fit"
+  },
   "K-Dense-AI/scientific-agent-skills": {
     "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigrav...",
     "first_seen": "2026-08-30",
@@ -163,10 +183,10 @@
     "description": "Make Every Team AI Native",
     "first_seen": "2026-09-09",
     "language": "TypeScript",
-    "last_checked": "2026-09-09",
+    "last_checked": "2026-09-10",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-09",
-    "stars_at_check": 1083,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 3531,
     "verdict": "maybe"
   },
   "The-Swarm-Corporation/AutoHedge": {
@@ -239,6 +259,16 @@
     "stars_at_check": 244977,
     "verdict": "fit"
   },
+  "alsk1992/CloddsBot": {
+    "description": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains.",
+    "first_seen": "2026-09-10",
+    "language": "TypeScript",
+    "last_checked": "2026-09-10",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 1354,
+    "verdict": "fit"
+  },
   "anomalyco/opencode": {
     "description": "The open source coding agent.",
     "first_seen": "2026-09-04",
@@ -268,6 +298,16 @@
     "profile_checked_against": "2026-09-05",
     "stars_at_check": 174373,
     "verdict": "fit"
+  },
+  "armory3d/armorpaint": {
+    "description": "Graphics Creation Tools",
+    "first_seen": "2026-09-10",
+    "language": "C",
+    "last_checked": "2026-09-10",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 4260,
+    "verdict": "not-fit"
   },
   "averygan/reclip": {
     "description": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI.",
@@ -429,6 +469,16 @@
     "stars_at_check": 13162,
     "verdict": "maybe"
   },
+  "diegosouzapw/OmniRoute": {
+    "description": "Never stop coding. Free MIT AI gateway: one endpoint, 352 providers, 1200+ models",
+    "first_seen": "2026-09-10",
+    "language": "TypeScript",
+    "last_checked": "2026-09-10",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 63855,
+    "verdict": "fit"
+  },
   "earthtojake/text-to-cad": {
     "description": "A library of agent skills for CAD, CAE and CAM",
     "first_seen": "2026-09-09",
@@ -480,13 +530,13 @@
     "verdict": "not-fit"
   },
   "freestylefly/awesome-gpt-image-2": {
-    "description": "Prompt as Code | GPT-Image2 \u5de5\u4e1a\u7ea7\u63d0\u793a\u8bcd\u5f15\u64ce\u4e0e\u6a21\u677f\u5e93\uff0c530+ \u4e2a\u6848\u4f8b\u9006\u5411\u5de5\u7a0b\uff0c20+ \u5957\u5de5\u4e1a\u7ea7\u6a21\u677f\uff0c\u5e76\u63d0\u70bc\u51faSkills\uff0c\u6301\u7eed\u66f4\u65b0\u4e2d",
+    "description": "Prompt as Code | GPT Image 2 / 2.5 \u63d0\u793a\u8bcd\u4e0e\u6848\u4f8b\u5e93, 530+ cases, 20+ templates",
     "first_seen": "2026-09-09",
     "language": "JavaScript",
-    "last_checked": "2026-09-09",
+    "last_checked": "2026-09-10",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-09",
-    "stars_at_check": 612,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 30633,
     "verdict": "not-fit"
   },
   "google-research/timesfm": {
@@ -603,10 +653,10 @@
     "description": "Notes of the book System Desgin Interview - An Insider's Guide",
     "first_seen": "2026-09-09",
     "language": null,
-    "last_checked": "2026-09-09",
+    "last_checked": "2026-09-10",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-09",
-    "stars_at_check": 910,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 18467,
     "verdict": "maybe"
   },
   "magnitudedev/magnitude": {
@@ -668,6 +718,16 @@
     "profile_checked_against": "2026-09-08",
     "stars_at_check": 211132,
     "verdict": "maybe"
+  },
+  "nashsu/llm_wiki": {
+    "description": "Desktop application that turns documents into organized, interlinked knowledge base.",
+    "first_seen": "2026-09-10",
+    "language": "TypeScript",
+    "last_checked": "2026-09-10",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 17851,
+    "verdict": "fit"
   },
   "nvm-sh/nvm": {
     "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. $nvm: 3ArcxqLtXMmBnWbbtfwQgVL3MNnDsggzgGDtXMnjpump",
@@ -840,13 +900,13 @@
     "verdict": "fit"
   },
   "vastsa/PI-Desktop": {
-    "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
+    "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness",
     "first_seen": "2026-09-09",
     "language": "TypeScript",
-    "last_checked": "2026-09-09",
+    "last_checked": "2026-09-10",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-09",
-    "stars_at_check": 393,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 2097,
     "verdict": "fit"
   },
   "vercel-labs/portless": {
@@ -858,6 +918,16 @@
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 11527,
     "verdict": "maybe"
+  },
+  "vercel-labs/skills": {
+    "description": "The open agent skills tool - npx skills",
+    "first_seen": "2026-09-10",
+    "language": "TypeScript",
+    "last_checked": "2026-09-10",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-10",
+    "stars_at_check": 30913,
+    "verdict": "fit"
   },
   "viarotel-org/escrcpy": {
     "description": "\ud83d\udcf1 Display and control your Android device graphically with scrcpy.",

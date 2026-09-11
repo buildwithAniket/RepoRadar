@@ -159,6 +159,16 @@
     "stars_at_check": 5129,
     "verdict": "maybe"
   },
+  "Sonarr/Sonarr": {
+    "description": "Smart PVR for newsgroup and bittorrent users.",
+    "first_seen": "2026-09-11",
+    "language": "C#",
+    "last_checked": "2026-09-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-11",
+    "stars_at_check": 15622,
+    "verdict": "not-fit"
+  },
   "THU-MAIC/OpenMAIC": {
     "description": "Open Multi-Agent Interactive Classroom \u2014 Get an immersive, multi-agent learning experience in just one click",
     "first_seen": "2026-08-30",
@@ -257,6 +267,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 244977,
+    "verdict": "fit"
+  },
+  "alphaXiv/OpenResearch": {
+    "description": "Run parallel research agents with any model",
+    "first_seen": "2026-09-11",
+    "language": "Rust",
+    "last_checked": "2026-09-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-11",
+    "stars_at_check": 1077,
     "verdict": "fit"
   },
   "alsk1992/CloddsBot": {
@@ -539,6 +559,16 @@
     "stars_at_check": 30633,
     "verdict": "not-fit"
   },
+  "github/spec-kit": {
+    "description": "Toolkit to help you get started with Spec-Driven Development",
+    "first_seen": "2026-09-11",
+    "language": "Python",
+    "last_checked": "2026-09-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-11",
+    "stars_at_check": 135536,
+    "verdict": "fit"
+  },
   "google-research/timesfm": {
     "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
     "first_seen": "2026-09-02",
@@ -599,6 +629,16 @@
     "stars_at_check": 23651,
     "verdict": "not-fit"
   },
+  "jihe520/MathModelAgent": {
+    "description": "Agent & skills designed for mathematical modeling",
+    "first_seen": "2026-09-11",
+    "language": "Python",
+    "last_checked": "2026-09-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-11",
+    "stars_at_check": 4758,
+    "verdict": "fit"
+  },
   "jingyaogong/minimind": {
     "description": "\ud83e\udde0 Train a 64M-parameter LLM from scratch in just 2h!",
     "first_seen": "2026-08-31",
@@ -618,6 +658,16 @@
     "profile_checked_against": "2026-09-07",
     "stars_at_check": 9347,
     "verdict": "maybe"
+  },
+  "jordan-gibbs/hyperresearch": {
+    "description": "Agent-driven research knowledge base. Agents collect, search, and synthesize web research into a persistent, searchable wiki.",
+    "first_seen": "2026-09-11",
+    "language": "Python",
+    "last_checked": "2026-09-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-11",
+    "stars_at_check": 2269,
+    "verdict": "fit"
   },
   "k1tbyte/Wand-Enhancer": {
     "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
@@ -689,6 +739,16 @@
     "stars_at_check": 244677,
     "verdict": "fit"
   },
+  "melgarafael/DeskcommCRM": {
+    "description": "Open-source AI sales OS \u2014 self-hosted CRM with native AI agents + WhatsApp (WAHA).",
+    "first_seen": "2026-09-11",
+    "language": "TypeScript",
+    "last_checked": "2026-09-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-11",
+    "stars_at_check": 1106,
+    "verdict": "maybe"
+  },
   "microsoft/markitdown": {
     "description": "Python tool for converting files and office documents to Markdown.",
     "first_seen": "2026-09-07",
@@ -718,6 +778,16 @@
     "profile_checked_against": "2026-09-08",
     "stars_at_check": 211132,
     "verdict": "maybe"
+  },
+  "nab138/iloader": {
+    "description": "User friendly sideloader",
+    "first_seen": "2026-09-11",
+    "language": "TypeScript",
+    "last_checked": "2026-09-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-11",
+    "stars_at_check": 2802,
+    "verdict": "not-fit"
   },
   "nashsu/llm_wiki": {
     "description": "Desktop application that turns documents into organized, interlinked knowledge base.",
@@ -778,6 +848,16 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 28873,
     "verdict": "maybe"
+  },
+  "p1neappleXpress/OpenFlux": {
+    "description": "Network stack research tool. TCP tunnel with pluggable transports.",
+    "first_seen": "2026-09-11",
+    "language": "Go",
+    "last_checked": "2026-09-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-11",
+    "stars_at_check": 958,
+    "verdict": "not-fit"
   },
   "pacifio/atlas": {
     "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",

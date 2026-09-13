@@ -199,6 +199,16 @@
     "stars_at_check": 15622,
     "verdict": "not-fit"
   },
+  "Swordfish90/cool-retro-term": {
+    "description": "A good looking terminal emulator which mimics the old cathode display.",
+    "first_seen": "2026-09-13",
+    "language": "QML",
+    "last_checked": "2026-09-13",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-13",
+    "stars_at_check": 26139,
+    "verdict": "not-fit"
+  },
   "THU-MAIC/OpenMAIC": {
     "description": "Open Multi-Agent Interactive Classroom \u2014 Get an immersive, multi-agent learning experience in just one click",
     "first_seen": "2026-08-30",
@@ -297,6 +307,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 244977,
+    "verdict": "fit"
+  },
+  "alibaba/open-code-review": {
+    "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset.",
+    "first_seen": "2026-09-13",
+    "language": "Go",
+    "last_checked": "2026-09-13",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-13",
+    "stars_at_check": 22909,
     "verdict": "fit"
   },
   "alphaXiv/OpenResearch": {
@@ -549,6 +569,16 @@
     "stars_at_check": 97,
     "verdict": "not-fit"
   },
+  "ever-co/ever-gauzy": {
+    "description": "Ever Gauzy - Open Business Management Platform (ERP/CRM/HRM/ATS/PM)",
+    "first_seen": "2026-09-13",
+    "language": "TypeScript",
+    "last_checked": "2026-09-13",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-13",
+    "stars_at_check": 4600,
+    "verdict": "not-fit"
+  },
   "every-app/open-seo": {
     "description": "Open source alternative to Semrush and Ahrefs",
     "first_seen": "2026-08-30",
@@ -649,6 +679,16 @@
     "stars_at_check": 44874,
     "verdict": "maybe"
   },
+  "huggingface/transformers": {
+    "description": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models.",
+    "first_seen": "2026-09-13",
+    "language": "Python",
+    "last_checked": "2026-09-13",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-13",
+    "stars_at_check": 165287,
+    "verdict": "maybe"
+  },
   "humanlayer/skills": {
     "description": null,
     "first_seen": "2026-09-05",
@@ -678,6 +718,16 @@
     "profile_checked_against": "2026-09-11",
     "stars_at_check": 4758,
     "verdict": "fit"
+  },
+  "jiji262/douyin-downloader": {
+    "description": "A practical Douyin downloader for single-item and profile batch downloads, with progress display, retries, SQLite deduplication, and browser fallback support.",
+    "first_seen": "2026-09-13",
+    "language": "Python",
+    "last_checked": "2026-09-13",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-13",
+    "stars_at_check": 11227,
+    "verdict": "not-fit"
   },
   "jingyaogong/minimind": {
     "description": "\ud83e\udde0 Train a 64M-parameter LLM from scratch in just 2h!",
@@ -1017,6 +1067,26 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 3907,
+    "verdict": "not-fit"
+  },
+  "tech-leads-club/agent-skills": {
+    "description": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence.",
+    "first_seen": "2026-09-13",
+    "language": "TypeScript",
+    "last_checked": "2026-09-13",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-13",
+    "stars_at_check": 5409,
+    "verdict": "fit"
+  },
+  "tonhowtf/omniget": {
+    "description": "Download Udemy and Hotmart courses, YouTube videos, music and books \u2014 1,800+ sites, no terminal. Free open-source desktop app.",
+    "first_seen": "2026-09-13",
+    "language": "Rust",
+    "last_checked": "2026-09-13",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-13",
+    "stars_at_check": 11158,
     "verdict": "not-fit"
   },
   "tt-a1i/archify": {

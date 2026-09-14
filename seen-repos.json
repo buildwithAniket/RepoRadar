@@ -9,6 +9,16 @@
     "stars_at_check": 92407,
     "verdict": "not-fit"
   },
+  "666ghj/MiroFish": {
+    "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything.",
+    "first_seen": "2026-09-14",
+    "language": "Python",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 524,
+    "verdict": "maybe"
+  },
   "AlexsJones/llmfit": {
     "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
     "first_seen": "2026-09-10",
@@ -58,6 +68,16 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 74035,
     "verdict": "fit"
+  },
+  "Crosstalk-Solutions/project-nomad": {
+    "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+    "first_seen": "2026-09-14",
+    "language": "TypeScript",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 26,
+    "verdict": "maybe"
   },
   "DietrichGebert/ponytail": {
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
@@ -159,6 +179,16 @@
     "stars_at_check": 239821,
     "verdict": "fit"
   },
+  "OpenBMB/VoxCPM": {
+    "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning.",
+    "first_seen": "2026-09-14",
+    "language": "Python",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 204,
+    "verdict": "not-fit"
+  },
   "Osmantic/ODS": {
     "description": "Turn your PC, Mac, or Linux box into an AI server.  LLM inference, chat UI, voice, agents, workflows, RAG, and image generation.",
     "first_seen": "2026-08-30",
@@ -168,6 +198,16 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 5129,
     "verdict": "maybe"
+  },
+  "Panniantong/Agent-Reach": {
+    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu \u2014 one CLI, zero API fees.",
+    "first_seen": "2026-09-14",
+    "language": "Python",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 640,
+    "verdict": "fit"
   },
   "Shubhamsaboo/awesome-llm-apps": {
     "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
@@ -539,6 +579,16 @@
     "stars_at_check": 47867,
     "verdict": "fit"
   },
+  "dani-garcia/vaultwarden": {
+    "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs.",
+    "first_seen": "2026-09-14",
+    "language": "Rust",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 110,
+    "verdict": "not-fit"
+  },
   "debpalash/VoiceStudio": {
     "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative \u2014 voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "first_seen": "2026-09-01",
@@ -799,6 +849,16 @@
     "stars_at_check": 18467,
     "verdict": "maybe"
   },
+  "localsend/localsend": {
+    "description": "An open-source cross-platform alternative to AirDrop.",
+    "first_seen": "2026-09-14",
+    "language": "Dart",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 213,
+    "verdict": "not-fit"
+  },
   "magnitudedev/magnitude": {
     "description": "Open source inference server for Apple silicon. Profiles your Mac, recommends the best models for it, then downloads, tunes, and runs them. Plugs into Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline.",
     "first_seen": "2026-09-03",
@@ -989,6 +1049,16 @@
     "stars_at_check": 22075,
     "verdict": "not-fit"
   },
+  "peetzweg/opendisplay": {
+    "description": "Free, open-source Sidecar/Duet alternative \u2014 use your iPhone or iPad as a true second monitor for your Mac over USB or WiFi. Low latency H.264, Retina HiDPI, touch input.",
+    "first_seen": "2026-09-14",
+    "language": "Swift",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 314,
+    "verdict": "maybe"
+  },
   "pollen-robotics/microduck_rl": {
     "description": "RL training environments for Microduck (mjlab)",
     "first_seen": "2026-08-31",
@@ -1019,6 +1089,26 @@
     "stars_at_check": 55,
     "verdict": "maybe"
   },
+  "reconurge/flowsint": {
+    "description": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.",
+    "first_seen": "2026-09-14",
+    "language": "TypeScript",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 279,
+    "verdict": "not-fit"
+  },
+  "rlaope/oh-my-hermes": {
+    "description": "All in one plugin for Hermes Agent \u2014 the coding intelligence, a long-term memory system and model optimized workflow packages.",
+    "first_seen": "2026-09-14",
+    "language": "Python",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 52,
+    "verdict": "fit"
+  },
   "rohitg00/ai-engineering-from-scratch": {
     "description": "Learn it. Build it. Ship it for others.",
     "first_seen": "2026-09-09",
@@ -1028,6 +1118,16 @@
     "profile_checked_against": "2026-09-09",
     "stars_at_check": 356,
     "verdict": "maybe"
+  },
+  "ruvnet/RuView": {
+    "description": "RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection \u2014 all without a single pixel of video.",
+    "first_seen": "2026-09-14",
+    "language": "Rust",
+    "last_checked": "2026-09-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-14",
+    "stars_at_check": 370,
+    "verdict": "not-fit"
   },
   "ruvnet/ruflo": {
     "description": "\ud83c\udf0a The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",

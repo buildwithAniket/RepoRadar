@@ -109,6 +109,16 @@
     "stars_at_check": 31035,
     "verdict": "maybe"
   },
+  "Homebrew/BrewUI": {
+    "description": "Homebrew's official macOS GUI",
+    "first_seen": "2026-09-15",
+    "language": "Swift",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-15",
+    "stars_at_check": 1079,
+    "verdict": "not-fit"
+  },
   "Imbad0202/academic-research-skills": {
     "description": "Academic Research Skills for Claude Code: research \u2192 write \u2192 review \u2192 revise \u2192 finalize",
     "first_seen": "2026-09-01",
@@ -159,6 +169,16 @@
     "stars_at_check": 38300,
     "verdict": "maybe"
   },
+  "MG1937/ASC": {
+    "description": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.",
+    "first_seen": "2026-09-15",
+    "language": "Python",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-15",
+    "stars_at_check": 1029,
+    "verdict": "not-fit"
+  },
   "MoonTechLab/LunaTV": {
     "description": "\u672c\u9879\u76ee\u91c7\u7528 CC BY-NC-SA \u534f\u8bae\uff0c\u7981\u6b62\u4efb\u4f55\u5546\u4e1a\u5316\u884c\u4e3a\uff0c\u4efb\u4f55\u884d\u751f\u9879\u76ee\u5fc5\u987b\u4fdd\u7559\u672c\u9879\u76ee\u5730\u5740\u5e76\u4ee5\u76f8\u540c\u534f\u8bae\u5f00\u6e90",
     "first_seen": "2026-09-07",
@@ -167,6 +187,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-07",
     "stars_at_check": 9593,
+    "verdict": "not-fit"
+  },
+  "NationalSecurityAgency/ghidra": {
+    "description": "Ghidra is a software reverse engineering (SRE) framework",
+    "first_seen": "2026-09-15",
+    "language": "Java",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-15",
+    "stars_at_check": 76324,
     "verdict": "not-fit"
   },
   "NousResearch/hermes-agent": {
@@ -360,13 +390,13 @@
     "verdict": "fit"
   },
   "alphaXiv/OpenResearch": {
-    "description": "Run parallel research agents with any model",
+    "description": "Turn your coding agents into research agents",
     "first_seen": "2026-09-11",
     "language": "Rust",
-    "last_checked": "2026-09-11",
+    "last_checked": "2026-09-15",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-11",
-    "stars_at_check": 1077,
+    "profile_checked_against": "2026-09-15",
+    "stars_at_check": 2943,
     "verdict": "fit"
   },
   "alsk1992/CloddsBot": {
@@ -589,14 +619,24 @@
     "stars_at_check": 110,
     "verdict": "not-fit"
   },
+  "danny-avila/LibreChat": {
+    "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User A...",
+    "first_seen": "2026-09-15",
+    "language": "TypeScript",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-15",
+    "stars_at_check": 43651,
+    "verdict": "fit"
+  },
   "debpalash/VoiceStudio": {
     "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative \u2014 voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "first_seen": "2026-09-01",
     "language": "Python",
-    "last_checked": "2026-09-01",
+    "last_checked": "2026-09-15",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-01",
-    "stars_at_check": 13162,
+    "profile_checked_against": "2026-09-15",
+    "stars_at_check": 30295,
     "verdict": "maybe"
   },
   "diegosouzapw/OmniRoute": {
@@ -607,6 +647,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-10",
     "stars_at_check": 63855,
+    "verdict": "fit"
+  },
+  "earendil-works/pi": {
+    "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+    "first_seen": "2026-09-15",
+    "language": "TypeScript",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-15",
+    "stars_at_check": 105463,
     "verdict": "fit"
   },
   "earthtojake/text-to-cad": {
@@ -900,13 +950,13 @@
     "verdict": "fit"
   },
   "melgarafael/DeskcommCRM": {
-    "description": "Open-source AI sales OS \u2014 self-hosted CRM with native AI agents + WhatsApp (WAHA).",
+    "description": "Open-source AI sales OS \u2014 self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat.",
     "first_seen": "2026-09-11",
     "language": "TypeScript",
-    "last_checked": "2026-09-11",
+    "last_checked": "2026-09-15",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-11",
-    "stars_at_check": 1106,
+    "profile_checked_against": "2026-09-15",
+    "stars_at_check": 2620,
     "verdict": "maybe"
   },
   "microsoft/markitdown": {

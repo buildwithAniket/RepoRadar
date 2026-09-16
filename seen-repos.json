@@ -169,6 +169,16 @@
     "stars_at_check": 38300,
     "verdict": "maybe"
   },
+  "Lakr233/vphone-cli": {
+    "description": null,
+    "first_seen": "2026-09-16",
+    "language": "Swift",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 907,
+    "verdict": "not-fit"
+  },
   "MG1937/ASC": {
     "description": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.",
     "first_seen": "2026-09-15",
@@ -299,6 +309,16 @@
     "stars_at_check": 506,
     "verdict": "fit"
   },
+  "Tencent/WeKnora": {
+    "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+    "first_seen": "2026-09-16",
+    "language": "Go",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 696,
+    "verdict": "fit"
+  },
   "Tencent/teamai-cli": {
     "description": "Make Every Team AI Native",
     "first_seen": "2026-09-09",
@@ -348,6 +368,16 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 76211,
     "verdict": "not-fit"
+  },
+  "abue-ammar/tinycast": {
+    "description": "Tinycast \u2014 a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
+    "first_seen": "2026-09-16",
+    "language": "Swift",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 1076,
+    "verdict": "maybe"
   },
   "actions/checkout": {
     "description": "Action for checking out a repo",
@@ -409,6 +439,16 @@
     "stars_at_check": 1354,
     "verdict": "fit"
   },
+  "ankitects/anki": {
+    "description": "Anki is a smart spaced repetition flashcard program",
+    "first_seen": "2026-09-16",
+    "language": "Rust",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 50,
+    "verdict": "maybe"
+  },
   "anomalyco/opencode": {
     "description": "The open source coding agent.",
     "first_seen": "2026-09-04",
@@ -419,6 +459,16 @@
     "stars_at_check": 204440,
     "verdict": "fit"
   },
+  "anthropics/claude-code": {
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+    "first_seen": "2026-09-16",
+    "language": "TypeScript",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 155,
+    "verdict": "fit"
+  },
   "anthropics/claude-plugins-official": {
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "first_seen": "2026-08-30",
@@ -427,6 +477,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 35559,
+    "verdict": "fit"
+  },
+  "anthropics/knowledge-work-plugins": {
+    "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+    "first_seen": "2026-09-16",
+    "language": "Python",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 96,
     "verdict": "fit"
   },
   "anthropics/skills": {
@@ -588,6 +648,26 @@
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 9316,
     "verdict": "not-fit"
+  },
+  "cline/cline": {
+    "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
+    "first_seen": "2026-09-16",
+    "language": "TypeScript",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 102,
+    "verdict": "fit"
+  },
+  "cloudflare/security-audit-skill": {
+    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "first_seen": "2026-09-16",
+    "language": "JavaScript",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 1434,
+    "verdict": "fit"
   },
   "clshortfuse/renodx": {
     "description": "Renovation Engine for DirectX Games",
@@ -808,6 +888,16 @@
     "profile_checked_against": "2026-09-01",
     "stars_at_check": 23651,
     "verdict": "not-fit"
+  },
+  "jamiepine/voicebox": {
+    "description": "The open-source AI voice studio. Clone, dictate, create.",
+    "first_seen": "2026-09-16",
+    "language": "TypeScript",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 409,
+    "verdict": "maybe"
   },
   "jihe520/MathModelAgent": {
     "description": "Agent & skills designed for mathematical modeling",
@@ -1159,6 +1249,16 @@
     "stars_at_check": 52,
     "verdict": "fit"
   },
+  "roboflow/supervision": {
+    "description": "We write your reusable computer vision tools.",
+    "first_seen": "2026-09-16",
+    "language": "Python",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 217,
+    "verdict": "not-fit"
+  },
   "rohitg00/ai-engineering-from-scratch": {
     "description": "Learn it. Build it. Ship it for others.",
     "first_seen": "2026-09-09",
@@ -1198,6 +1298,16 @@
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 5929,
     "verdict": "fit"
+  },
+  "supabase/supabase": {
+    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+    "first_seen": "2026-09-16",
+    "language": "TypeScript",
+    "last_checked": "2026-09-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-16",
+    "stars_at_check": 118,
+    "verdict": "not-fit"
   },
   "superlinked/sie": {
     "description": "Open-source inference server and production cluster for all the models your agent needs.",

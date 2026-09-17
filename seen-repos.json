@@ -309,14 +309,24 @@
     "stars_at_check": 506,
     "verdict": "fit"
   },
+  "Tencent/BrowserSkill": {
+    "description": "Let AI agents use your real, logged-in browser without interrupting your work",
+    "first_seen": "2026-09-17",
+    "language": "TypeScript",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 3672,
+    "verdict": "fit"
+  },
   "Tencent/WeKnora": {
-    "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+    "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG",
     "first_seen": "2026-09-16",
     "language": "Go",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-17",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 696,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 25997,
     "verdict": "fit"
   },
   "Tencent/teamai-cli": {
@@ -328,6 +338,16 @@
     "profile_checked_against": "2026-09-10",
     "stars_at_check": 3531,
     "verdict": "maybe"
+  },
+  "TencentCloud/Octop": {
+    "description": "A smarter, self-hosted AI assistant \u2014 multi-user, multi-agent.",
+    "first_seen": "2026-09-17",
+    "language": "Python",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 3237,
+    "verdict": "fit"
   },
   "The-Swarm-Corporation/AutoHedge": {
     "description": "Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.",
@@ -370,13 +390,13 @@
     "verdict": "not-fit"
   },
   "abue-ammar/tinycast": {
-    "description": "Tinycast \u2014 a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
+    "description": "Tinycast \u2014 a tiny, fully native macOS launcher, hotkeys, and clipboard history",
     "first_seen": "2026-09-16",
     "language": "Swift",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-17",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 1076,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 5948,
     "verdict": "maybe"
   },
   "actions/checkout": {
@@ -460,13 +480,13 @@
     "verdict": "fit"
   },
   "anthropics/claude-code": {
-    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+    "description": "Claude Code is an agentic coding tool that lives in your terminal",
     "first_seen": "2026-09-16",
     "language": "TypeScript",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-17",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 155,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 145787,
     "verdict": "fit"
   },
   "anthropics/claude-plugins-official": {
@@ -480,13 +500,13 @@
     "verdict": "fit"
   },
   "anthropics/knowledge-work-plugins": {
-    "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+    "description": "Open source repository of plugins primarily intended for knowledge workers",
     "first_seen": "2026-09-16",
     "language": "Python",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-17",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 96,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 24439,
     "verdict": "fit"
   },
   "anthropics/skills": {
@@ -649,24 +669,34 @@
     "stars_at_check": 9316,
     "verdict": "not-fit"
   },
+  "cilium/cilium": {
+    "description": "eBPF-based Networking, Security, and Observability",
+    "first_seen": "2026-09-17",
+    "language": "Go",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 25275,
+    "verdict": "not-fit"
+  },
   "cline/cline": {
     "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
     "first_seen": "2026-09-16",
     "language": "TypeScript",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-17",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 102,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 68559,
     "verdict": "fit"
   },
   "cloudflare/security-audit-skill": {
-    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "description": "A coding-agent skill for multi-phase security audits with independently verified",
     "first_seen": "2026-09-16",
     "language": "JavaScript",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-17",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 1434,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 9313,
     "verdict": "fit"
   },
   "clshortfuse/renodx": {
@@ -678,6 +708,16 @@
     "profile_checked_against": "2026-09-04",
     "stars_at_check": 759,
     "verdict": "not-fit"
+  },
+  "coder/coder": {
+    "description": "Secure environments for developers and their agents",
+    "first_seen": "2026-09-17",
+    "language": "Go",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 14717,
+    "verdict": "fit"
   },
   "coreyhaines31/marketingskills": {
     "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
@@ -893,10 +933,10 @@
     "description": "The open-source AI voice studio. Clone, dictate, create.",
     "first_seen": "2026-09-16",
     "language": "TypeScript",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-17",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 409,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 54747,
     "verdict": "maybe"
   },
   "jihe520/MathModelAgent": {
@@ -1089,6 +1129,16 @@
     "stars_at_check": 7049,
     "verdict": "not-fit"
   },
+  "n8n-io/n8n": {
+    "description": "Fair-code workflow automation platform with native AI capabilities",
+    "first_seen": "2026-09-17",
+    "language": "TypeScript",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 204811,
+    "verdict": "fit"
+  },
   "nab138/iloader": {
     "description": "User friendly sideloader",
     "first_seen": "2026-09-11",
@@ -1253,10 +1303,10 @@
     "description": "We write your reusable computer vision tools.",
     "first_seen": "2026-09-16",
     "language": "Python",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-17",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 217,
+    "profile_checked_against": "2026-09-17",
+    "stars_at_check": 50748,
     "verdict": "not-fit"
   },
   "rohitg00/ai-engineering-from-scratch": {

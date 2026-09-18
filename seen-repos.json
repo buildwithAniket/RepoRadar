@@ -89,6 +89,16 @@
     "stars_at_check": 120746,
     "verdict": "fit"
   },
+  "Fission-AI/OpenSpec": {
+    "description": "Spec-driven development (SDD) for AI coding assistants.",
+    "first_seen": "2026-09-18",
+    "language": "TypeScript",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-18",
+    "stars_at_check": 69105,
+    "verdict": "fit"
+  },
   "Flowseal/zapret-discord-youtube": {
     "description": null,
     "first_seen": "2026-09-12",
@@ -429,6 +439,16 @@
     "stars_at_check": 244977,
     "verdict": "fit"
   },
+  "ahmedkhaleel2004/gitdiagram": {
+    "description": "Free, simple, fast interactive diagrams for any GitHub repository",
+    "first_seen": "2026-09-18",
+    "language": "TypeScript",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-18",
+    "stars_at_check": 16262,
+    "verdict": "maybe"
+  },
   "alibaba/open-code-review": {
     "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset.",
     "first_seen": "2026-09-13",
@@ -463,11 +483,11 @@
     "description": "Anki is a smart spaced repetition flashcard program",
     "first_seen": "2026-09-16",
     "language": "Rust",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-18",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 50,
-    "verdict": "maybe"
+    "profile_checked_against": "2026-09-18",
+    "stars_at_check": 31079,
+    "verdict": "not-fit"
   },
   "anomalyco/opencode": {
     "description": "The open source coding agent.",
@@ -527,6 +547,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-10",
     "stars_at_check": 4260,
+    "verdict": "not-fit"
+  },
+  "asciimoo/hister": {
+    "description": "Your own search engine",
+    "first_seen": "2026-09-18",
+    "language": "Go",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-18",
+    "stars_at_check": 4714,
     "verdict": "not-fit"
   },
   "asgeirtj/system_prompts_leaks": {
@@ -1319,6 +1349,16 @@
     "stars_at_check": 356,
     "verdict": "maybe"
   },
+  "rustfs/rustfs": {
+    "description": "RustFS is an open-source, S3-compatible high-performance object storage system",
+    "first_seen": "2026-09-18",
+    "language": "Rust",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-18",
+    "stars_at_check": 32963,
+    "verdict": "not-fit"
+  },
   "ruvnet/RuView": {
     "description": "RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection \u2014 all without a single pixel of video.",
     "first_seen": "2026-09-14",
@@ -1350,13 +1390,13 @@
     "verdict": "fit"
   },
   "supabase/supabase": {
-    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+    "description": "The Postgres development platform providing dedicated database for web, mobile, AI apps",
     "first_seen": "2026-09-16",
     "language": "TypeScript",
-    "last_checked": "2026-09-16",
+    "last_checked": "2026-09-18",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-16",
-    "stars_at_check": 118,
+    "profile_checked_against": "2026-09-18",
+    "stars_at_check": 109977,
     "verdict": "not-fit"
   },
   "superlinked/sie": {
@@ -1367,6 +1407,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 2973,
+    "verdict": "fit"
+  },
+  "supermemoryai/supermemory": {
+    "description": "Memory and context engine plus app that's extremely fast, scalable, fully local",
+    "first_seen": "2026-09-18",
+    "language": "TypeScript",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-18",
+    "stars_at_check": 30050,
     "verdict": "fit"
   },
   "tailscale/tailcat": {
@@ -1398,6 +1448,16 @@
     "profile_checked_against": "2026-09-13",
     "stars_at_check": 11158,
     "verdict": "not-fit"
+  },
+  "tradesdontlie/tradingview-mcp": {
+    "description": "AI-assisted TradingView chart analysis connecting Claude Code to TradingView Desktop",
+    "first_seen": "2026-09-18",
+    "language": "JavaScript",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-18",
+    "stars_at_check": 6353,
+    "verdict": "fit"
   },
   "tt-a1i/archify": {
     "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams\u2014self-contained HTML with motion and crisp export.",

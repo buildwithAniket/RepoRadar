@@ -229,6 +229,16 @@
     "stars_at_check": 239821,
     "verdict": "fit"
   },
+  "Open-Dev-Society/OpenStock": {
+    "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights \u2014 built openly, for everyone, forever free.",
+    "first_seen": "2026-09-19",
+    "language": "TypeScript",
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 15734,
+    "verdict": "fit"
+  },
   "OpenBMB/VoxCPM": {
     "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning.",
     "first_seen": "2026-09-14",
@@ -388,6 +398,16 @@
     "profile_checked_against": "2026-09-05",
     "stars_at_check": 2179,
     "verdict": "fit"
+  },
+  "ZuodaoTech/everyone-can-use-english": {
+    "description": "\u4eba\u4eba\u90fd\u80fd\u7528\u82f1\u8bed",
+    "first_seen": "2026-09-19",
+    "language": "TypeScript",
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 37679,
+    "verdict": "maybe"
   },
   "abi/screenshot-to-code": {
     "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
@@ -669,6 +689,16 @@
     "stars_at_check": 81694,
     "verdict": "fit"
   },
+  "cactus-compute/needle": {
+    "description": "Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers.",
+    "first_seen": "2026-09-19",
+    "language": "Python",
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 11430,
+    "verdict": "maybe"
+  },
   "calesthio/OpenMontage": {
     "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
     "first_seen": "2026-08-30",
@@ -718,6 +748,16 @@
     "profile_checked_against": "2026-09-17",
     "stars_at_check": 68559,
     "verdict": "fit"
+  },
+  "cloudflare/quiche": {
+    "description": "Savoury implementation of the QUIC transport protocol and HTTP/3",
+    "first_seen": "2026-09-19",
+    "language": "Rust",
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 11876,
+    "verdict": "not-fit"
   },
   "cloudflare/security-audit-skill": {
     "description": "A coding-agent skill for multi-phase security audits with independently verified",
@@ -798,6 +838,16 @@
     "profile_checked_against": "2026-09-10",
     "stars_at_check": 63855,
     "verdict": "fit"
+  },
+  "docling-project/docling": {
+    "description": "Get your documents ready for gen AI",
+    "first_seen": "2026-09-19",
+    "language": "Python",
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 66762,
+    "verdict": "maybe"
   },
   "earendil-works/pi": {
     "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
@@ -928,6 +978,16 @@
     "profile_checked_against": "2026-09-07",
     "stars_at_check": 44874,
     "verdict": "maybe"
+  },
+  "higgsfield-ai/higgsfield": {
+    "description": "Fault-tolerant, highly scalable GPU orchestration, and a machine learning framework designed for training models with billions to trillions of parameters",
+    "first_seen": "2026-09-19",
+    "language": "Jupyter Notebook",
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 4706,
+    "verdict": "not-fit"
   },
   "huggingface/transformers": {
     "description": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models.",
@@ -1349,6 +1409,16 @@
     "stars_at_check": 356,
     "verdict": "maybe"
   },
+  "ruanyf/weekly": {
+    "description": "\u79d1\u6280\u7231\u597d\u8005\u5468\u520a\uff0c\u6bcf\u5468\u4e94\u53d1\u5e03",
+    "first_seen": "2026-09-19",
+    "language": null,
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 102982,
+    "verdict": "not-fit"
+  },
   "rustfs/rustfs": {
     "description": "RustFS is an open-source, S3-compatible high-performance object storage system",
     "first_seen": "2026-09-18",
@@ -1459,6 +1529,16 @@
     "stars_at_check": 6353,
     "verdict": "fit"
   },
+  "trycua/cua": {
+    "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+    "first_seen": "2026-09-19",
+    "language": "HTML",
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 23914,
+    "verdict": "fit"
+  },
   "tt-a1i/archify": {
     "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams\u2014self-contained HTML with motion and crisp export.",
     "first_seen": "2026-08-30",
@@ -1548,6 +1628,16 @@
     "profile_checked_against": "2026-09-12",
     "stars_at_check": 33086,
     "verdict": "not-fit"
+  },
+  "yynxxxxx/Codex-X": {
+    "description": "OpenAI Codex \u684c\u9762\u7aef/CLI \u7684\u53ef\u89c6\u5316\u7ba1\u7406\u5de5\u5177\uff0c\u5177\u6709Provider/API \u5207\u6362\u3001\u4f1a\u8bdd\u540c\u6b65\u3001\u63d0\u793a\u8bcd\u6ce8\u5165\u3001Skills/MCP \u7ba1\u7406\u3001TOML \u914d\u7f6e\u53ef\u89c6\u5316\u7684\u8de8\u5e73\u53f0\u5de5\u5177\u3002",
+    "first_seen": "2026-09-19",
+    "language": "Rust",
+    "last_checked": "2026-09-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-19",
+    "stars_at_check": 3322,
+    "verdict": "fit"
   },
   "zhaoxuya520/reverse-skill": {
     "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients \u9006\u5411/\u6e17\u900f/\u5b89\u5168\u6280\u80fd\u8def\u7531\u5305 - AI \u81ea\u52a8\u8def\u7531 + \u6309\u9700\u81ea\u4e3e\u5de5\u5177\u94fe + \u81ea\u52a8\u8fdb\u5316\u7ecf\u9a8c\u5e93 | \u652f\u6301 Cl...",

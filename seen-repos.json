@@ -39,6 +39,16 @@
     "stars_at_check": 2676,
     "verdict": "not-fit"
   },
+  "BuilderIO/agent-native": {
+    "description": "A framework for building agentic apps",
+    "first_seen": "2026-09-20",
+    "language": "TypeScript",
+    "last_checked": "2026-09-20",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-20",
+    "stars_at_check": 4997,
+    "verdict": "fit"
+  },
   "ByteByteGoHq/system-design-101": {
     "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.",
     "first_seen": "2026-09-03",
@@ -537,6 +547,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 35559,
+    "verdict": "fit"
+  },
+  "anthropics/financial-services": {
+    "description": null,
+    "first_seen": "2026-09-20",
+    "language": "Python",
+    "last_checked": "2026-09-20",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-20",
+    "stars_at_check": 35214,
     "verdict": "fit"
   },
   "anthropics/knowledge-work-plugins": {
@@ -1189,6 +1209,16 @@
     "stars_at_check": 179394,
     "verdict": "maybe"
   },
+  "mihail911/modern-software-dev-assignments": {
+    "description": "Assignments for CS146S: The Modern Software Dev (Stanford University Fall 2026/2025)",
+    "first_seen": "2026-09-20",
+    "language": "Python",
+    "last_checked": "2026-09-20",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-20",
+    "stars_at_check": 4431,
+    "verdict": "not-fit"
+  },
   "mksglu/context-mode": {
     "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
     "first_seen": "2026-09-07",
@@ -1318,6 +1348,16 @@
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 2664,
     "verdict": "fit"
+  },
+  "paperless-ngx/paperless-ngx": {
+    "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
+    "first_seen": "2026-09-20",
+    "language": "Python",
+    "last_checked": "2026-09-20",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-20",
+    "stars_at_check": 45373,
+    "verdict": "maybe"
   },
   "pascalorg/editor": {
     "description": "Create and share 3D architectural projects.",
@@ -1568,6 +1608,16 @@
     "profile_checked_against": "2026-09-10",
     "stars_at_check": 2097,
     "verdict": "fit"
+  },
+  "vercel-labs/json-render": {
+    "description": "The Generative UI framework",
+    "first_seen": "2026-09-20",
+    "language": "TypeScript",
+    "last_checked": "2026-09-20",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-20",
+    "stars_at_check": 17014,
+    "verdict": "maybe"
   },
   "vercel-labs/portless": {
     "description": "Replace port numbers with stable, named local URLs. For humans and agents.",

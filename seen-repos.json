@@ -80,13 +80,13 @@
     "verdict": "fit"
   },
   "Crosstalk-Solutions/project-nomad": {
-    "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+    "description": "Offline-first knowledge server with Wikipedia, books, courses, and optional local AI",
     "first_seen": "2026-09-14",
     "language": "TypeScript",
-    "last_checked": "2026-09-14",
+    "last_checked": "2026-09-21",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-14",
-    "stars_at_check": 26,
+    "profile_checked_against": "2026-09-21",
+    "stars_at_check": 37612,
     "verdict": "maybe"
   },
   "DietrichGebert/ponytail": {
@@ -478,6 +478,16 @@
     "profile_checked_against": "2026-09-18",
     "stars_at_check": 16262,
     "verdict": "maybe"
+  },
+  "akitaonrails/ai-memory": {
+    "description": "Solution for long term memory for agent coding CLIs and vendor handoff",
+    "first_seen": "2026-09-21",
+    "language": "Rust",
+    "last_checked": "2026-09-21",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-21",
+    "stars_at_check": 7446,
+    "verdict": "fit"
   },
   "alibaba/open-code-review": {
     "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset.",
@@ -1249,6 +1259,16 @@
     "stars_at_check": 7049,
     "verdict": "not-fit"
   },
+  "mvt-project/mvt": {
+    "description": "Mobile Verification Toolkit for forensics to find compromise signs",
+    "first_seen": "2026-09-21",
+    "language": "Python",
+    "last_checked": "2026-09-21",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-21",
+    "stars_at_check": 13386,
+    "verdict": "not-fit"
+  },
   "n8n-io/n8n": {
     "description": "Fair-code workflow automation platform with native AI capabilities",
     "first_seen": "2026-09-17",
@@ -1697,6 +1717,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 32749,
+    "verdict": "not-fit"
+  },
+  "zhouxiaoka/autoclip": {
+    "description": "AI-powered video clipping and highlight generation tool",
+    "first_seen": "2026-09-21",
+    "language": "Python",
+    "last_checked": "2026-09-21",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-21",
+    "stars_at_check": 8024,
     "verdict": "not-fit"
   },
   "zyronon/TypeWords": {

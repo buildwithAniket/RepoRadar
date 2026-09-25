@@ -579,6 +579,16 @@
     "stars_at_check": 1354,
     "verdict": "fit"
   },
+  "androoAGI/starnet": {
+    "description": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness",
+    "first_seen": "2026-09-25",
+    "language": "JavaScript",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 419,
+    "verdict": "maybe"
+  },
   "ankitects/anki": {
     "description": "Anki is a smart spaced repetition flashcard program",
     "first_seen": "2026-09-16",
@@ -929,6 +939,16 @@
     "stars_at_check": 30295,
     "verdict": "maybe"
   },
+  "derv82/wifit3": {
+    "description": "Wifite but USB-only & cross-platform",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 853,
+    "verdict": "not-fit"
+  },
   "diegosouzapw/OmniRoute": {
     "description": "Never stop coding. Free MIT AI gateway: one endpoint, 352 providers, 1200+ models",
     "first_seen": "2026-09-10",
@@ -1239,6 +1259,16 @@
     "stars_at_check": 3835,
     "verdict": "not-fit"
   },
+  "kelseyhightower/kubernetes-the-hard-way": {
+    "description": "Bootstrap Kubernetes the hard way. No scripts",
+    "first_seen": "2026-09-25",
+    "language": null,
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 50096,
+    "verdict": "not-fit"
+  },
   "leejet/stable-diffusion.cpp": {
     "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++",
     "first_seen": "2026-09-25",
@@ -1459,6 +1489,16 @@
     "stars_at_check": 25833,
     "verdict": "fit"
   },
+  "openbao/openbao": {
+    "description": "OpenBao is a software solution to manage, store, and distribute sensitive data",
+    "first_seen": "2026-09-25",
+    "language": "Go",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 7663,
+    "verdict": "not-fit"
+  },
   "p-e-w/heretic": {
     "description": "Fully automatic censorship removal for language models",
     "first_seen": "2026-08-30",
@@ -1487,6 +1527,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 2664,
+    "verdict": "fit"
+  },
+  "paperclipai/paperclip": {
+    "description": "The open-source app everyone uses to manage agents at work",
+    "first_seen": "2026-09-25",
+    "language": "TypeScript",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 84540,
     "verdict": "fit"
   },
   "paperless-ngx/paperless-ngx": {
@@ -1638,6 +1688,16 @@
     "profile_checked_against": "2026-09-05",
     "stars_at_check": 70562,
     "verdict": "fit"
+  },
+  "shy3130/tick-stock-panel": {
+    "description": "Chinese-language stock analysis platform for quantitative trading",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 5112,
+    "verdict": "maybe"
   },
   "sngyai/Sequoia-X": {
     "description": "A\u80a1\u81ea\u52a8\u9009\u80a1\u7cfb\u7edf \u2014 \u591a\u79cd\u6280\u672f\u5f62\u6001\u81ea\u52a8\u626b\u63cf\uff0c\u6536\u76d8\u540e\u81ea\u52a8\u8fd0\u884c\u5e76\u63a8\u9001\u98de\u4e66",

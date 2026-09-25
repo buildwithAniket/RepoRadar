@@ -9,7 +9,8 @@ name: Daily Radar
 
 on:
   schedule:
-    - cron: "0 13 * * *"
+    # 04:00 AM CEST (02:00 UTC)
+    - cron: "0 2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -48,7 +49,7 @@ jobs:
       - name: Finalize (report, state, UI bundle, commit)
         run: python src/scan.py finalize
       - name: Push
-        run: git push origin HEAD:main
+        run: git push origin HEAD:main || echo "No changes to push"
 
   deploy:
     needs: scan

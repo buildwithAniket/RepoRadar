@@ -109,7 +109,7 @@ python src/scan.py finalize --dry-run    # report + state + UI bundle, no email/
 | :--- | :--- | :--- |
 | [`ci.yml`](.github/workflows/ci.yml) | push / PR to `main` | Ruff + Black, pytest with coverage on Python 3.9–3.12, bundle build |
 | [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | changes to `ui/`, `reports/`, state | Regenerates the bundle and deploys the archive to GitHub Pages |
-| [`daily-radar.yml`](.github/workflows/daily-radar.yml) | cron `0 13 * * *` (opt-in) | `prepare → judge → finalize`, commits the new edition, redeploys Pages |
+| [`daily-radar.yml`](.github/workflows/daily-radar.yml) | cron `0 2 * * *` (04:00 CEST) | `prepare → judge → finalize`, commits the new edition, redeploys Pages |
 
 The daily workflow is inert until you set the repository variable `RADAR_ENABLED=true` and add the `GEMINI_API_KEY` / `OPENAI_API_KEY` secrets (plus `GMAIL_USER` / `GMAIL_APP_PASSWORD` for email).
 

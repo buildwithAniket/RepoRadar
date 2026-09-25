@@ -89,6 +89,16 @@
     "stars_at_check": 37612,
     "verdict": "maybe"
   },
+  "DeusData/codebase-memory-mcp": {
+    "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+    "first_seen": "2026-09-24",
+    "language": "C",
+    "last_checked": "2026-09-24",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-24",
+    "stars_at_check": 44590,
+    "verdict": "fit"
+  },
   "DietrichGebert/ponytail": {
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
     "first_seen": "2026-09-02",
@@ -119,6 +129,16 @@
     "stars_at_check": 33166,
     "verdict": "not-fit"
   },
+  "FxEmbed/FxEmbed": {
+    "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
+    "first_seen": "2026-09-25",
+    "language": "TypeScript",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 5372,
+    "verdict": "not-fit"
+  },
   "Gitlawb/openclaude": {
     "description": "runs anywhere. uses anything",
     "first_seen": "2026-09-01",
@@ -128,6 +148,16 @@
     "profile_checked_against": "2026-09-01",
     "stars_at_check": 31035,
     "verdict": "maybe"
+  },
+  "HKUDS/CLI-Anything": {
+    "description": "CLI-Anything: Making ALL Software Agent-Native",
+    "first_seen": "2026-09-24",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 50342,
+    "verdict": "fit"
   },
   "Homebrew/BrewUI": {
     "description": "Homebrew's official macOS GUI",
@@ -217,6 +247,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-07",
     "stars_at_check": 9593,
+    "verdict": "not-fit"
+  },
+  "NVIDIA/Model-Optimizer": {
+    "description": "A unified library of model optimization techniques for deep learning model compression",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 4093,
     "verdict": "not-fit"
   },
   "NationalSecurityAgency/ghidra": {
@@ -328,6 +368,16 @@
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 22766,
     "verdict": "maybe"
+  },
+  "TNT-Likely/PanWatch": {
+    "description": "Self-hosted AI trading assistant with multi-agent investment decisions for A-shares, HK, and US stocks.",
+    "first_seen": "2026-09-24",
+    "language": "Python",
+    "last_checked": "2026-09-24",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-24",
+    "stars_at_check": 1543,
+    "verdict": "fit"
   },
   "TauricResearch/TradingAgents": {
     "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
@@ -467,6 +517,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 244977,
+    "verdict": "fit"
+  },
+  "agent-substrate/substrate": {
+    "description": "Agent Substrate: the core system",
+    "first_seen": "2026-09-24",
+    "language": "Go",
+    "last_checked": "2026-09-24",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-24",
+    "stars_at_check": 3522,
     "verdict": "fit"
   },
   "ahmedkhaleel2004/gitdiagram": {
@@ -849,6 +909,16 @@
     "stars_at_check": 43651,
     "verdict": "fit"
   },
+  "davila7/claude-code-templates": {
+    "description": "CLI tool for configuring and monitoring Claude Code",
+    "first_seen": "2026-09-24",
+    "language": "Python",
+    "last_checked": "2026-09-24",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-24",
+    "stars_at_check": 31519,
+    "verdict": "fit"
+  },
   "debpalash/VoiceStudio": {
     "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative \u2014 voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "first_seen": "2026-09-01",
@@ -878,6 +948,16 @@
     "profile_checked_against": "2026-09-19",
     "stars_at_check": 66762,
     "verdict": "maybe"
+  },
+  "dream-num/univer": {
+    "description": "The Office Harness for AI Agents \u2014 Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+    "first_seen": "2026-09-24",
+    "language": "TypeScript",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 17789,
+    "verdict": "fit"
   },
   "earendil-works/pi": {
     "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
@@ -979,6 +1059,16 @@
     "stars_at_check": 29052,
     "verdict": "maybe"
   },
+  "google/ax": {
+    "description": "Google's open agentic orchestration runtime",
+    "first_seen": "2026-09-24",
+    "language": "Go",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 10505,
+    "verdict": "fit"
+  },
   "google/googletest": {
     "description": "GoogleTest - Google Testing and Mocking Framework",
     "first_seen": "2026-08-30",
@@ -997,6 +1087,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-31",
     "stars_at_check": 6110,
+    "verdict": "not-fit"
+  },
+  "harry7557558/spirula-studio": {
+    "description": "Cross-vendor 3D Gaussian Splatting trainer - video to splat to mesh, Vulkan or CUDA.",
+    "first_seen": "2026-09-24",
+    "language": "C++",
+    "last_checked": "2026-09-24",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-24",
+    "stars_at_check": 752,
     "verdict": "not-fit"
   },
   "heygen-com/hyperframes": {
@@ -1109,6 +1209,16 @@
     "stars_at_check": 2269,
     "verdict": "fit"
   },
+  "julyx10/lap": {
+    "description": "An offline-first photo manager for large local libraries",
+    "first_seen": "2026-09-25",
+    "language": "Vue",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 2886,
+    "verdict": "not-fit"
+  },
   "k1tbyte/Wand-Enhancer": {
     "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
     "first_seen": "2026-08-31",
@@ -1127,6 +1237,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 3835,
+    "verdict": "not-fit"
+  },
+  "leejet/stable-diffusion.cpp": {
+    "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++",
+    "first_seen": "2026-09-25",
+    "language": "C++",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 7256,
     "verdict": "not-fit"
   },
   "lightpanda-io/browser": {
@@ -1389,6 +1509,16 @@
     "stars_at_check": 22075,
     "verdict": "not-fit"
   },
+  "pbakaus/impeccable": {
+    "description": "The design language that makes your AI harness better at design.",
+    "first_seen": "2026-09-24",
+    "language": "JavaScript",
+    "last_checked": "2026-09-24",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-24",
+    "stars_at_check": 70365,
+    "verdict": "maybe"
+  },
   "peetzweg/opendisplay": {
     "description": "Free, open-source Sidecar/Duet alternative \u2014 use your iPhone or iPad as a true second monitor for your Mac over USB or WiFi. Low latency H.264, Retina HiDPI, touch input.",
     "first_seen": "2026-09-14",
@@ -1463,10 +1593,10 @@
     "description": "Learn it. Build it. Ship it for others.",
     "first_seen": "2026-09-09",
     "language": "Python",
-    "last_checked": "2026-09-09",
+    "last_checked": "2026-09-25",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-09",
-    "stars_at_check": 356,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 56608,
     "verdict": "maybe"
   },
   "ruanyf/weekly": {
@@ -1519,6 +1649,16 @@
     "stars_at_check": 5929,
     "verdict": "fit"
   },
+  "strands-agents/harness-sdk": {
+    "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents",
+    "first_seen": "2026-09-24",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 8264,
+    "verdict": "fit"
+  },
   "supabase/supabase": {
     "description": "The Postgres development platform providing dedicated database for web, mobile, AI apps",
     "first_seen": "2026-09-16",
@@ -1528,6 +1668,16 @@
     "profile_checked_against": "2026-09-18",
     "stars_at_check": 109977,
     "verdict": "not-fit"
+  },
+  "superdesigndev/treg": {
+    "description": "OpenRouter for agent tools",
+    "first_seen": "2026-09-24",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 3169,
+    "verdict": "fit"
   },
   "superlinked/sie": {
     "description": "Open-source inference server and production cluster for all the models your agent needs.",
@@ -1627,6 +1777,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-10",
     "stars_at_check": 2097,
+    "verdict": "fit"
+  },
+  "vectorize-io/hindsight": {
+    "description": "Hindsight: Agent Memory That Learns",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 27825,
     "verdict": "fit"
   },
   "vercel-labs/json-render": {

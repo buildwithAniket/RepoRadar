@@ -1178,23 +1178,159 @@ window.REPORADAR_DIGESTS = {
   },
   "2026-09-25": {
     "date": "2026-09-25",
-    "evaluatedCount": 0,
-    "skippedCount": 14,
+    "evaluatedCount": 9,
+    "skippedCount": 7,
     "stats": {
-      "fit": 0,
-      "maybe": 0,
-      "notFit": 0,
-      "total": 0
+      "fit": 5,
+      "maybe": 3,
+      "notFit": 1,
+      "total": 9
     },
     "summary": {
-      "evaluated": 0,
-      "skipped": 14,
-      "fit": 0,
-      "maybe": 0,
-      "notFit": 0,
-      "total": 0
+      "evaluated": 9,
+      "skipped": 7,
+      "fit": 5,
+      "maybe": 3,
+      "notFit": 1,
+      "total": 9
     },
-    "repos": []
+    "repos": [
+      {
+        "id": "paperclipai/paperclip",
+        "owner": "paperclipai",
+        "name": "paperclip",
+        "stars": 84685,
+        "language": "Unknown",
+        "pushedAt": "2026-09-21",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with Aniket's core interest in autonomous multi-agent systems and enterprise agent orchestration, providing an established, high-scale open-source framework for managing and coordinating AI agents in a workplace environment.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/paperclipai/paperclip"
+      },
+      {
+        "id": "anthropics/claude-plugins-official",
+        "owner": "anthropics",
+        "name": "claude-plugins-official",
+        "stars": 36885,
+        "language": "Unknown",
+        "pushedAt": "2026-09-25",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Essential for maintaining a competitive edge in AI-driven development and coding agent orchestration, this official directory tracks high-quality plugins specifically designed for Claude Code.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      {
+        "id": "anthropics/skills",
+        "owner": "anthropics",
+        "name": "skills",
+        "stars": 178260,
+        "language": "Markdown",
+        "pushedAt": "2026-09-25",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository provides core architectural components and standardized patterns for Agent Skills, mapping directly onto Aniket's deep focus on LLM orchestration and coding agent ecosystems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/anthropics/skills"
+      },
+      {
+        "id": "androoAGI/starnet",
+        "owner": "androoAGI",
+        "name": "starnet",
+        "stars": 440,
+        "language": "Unknown",
+        "pushedAt": "2026-09-20",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This local-first desktop agent harness matches Aniket's interest in local agent runners and autonomous multi-agent workflows, combining custom execution logic with a unique visualization layer.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/androoAGI/starnet"
+      },
+      {
+        "id": "shy3130/tick-stock-panel",
+        "owner": "shy3130",
+        "name": "tick-stock-panel",
+        "stars": 5117,
+        "language": "Unknown",
+        "pushedAt": "2026-09-25",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository targets Aniket's FinTech & Global Wealth Systems interest perfectly, offering an LLM-driven quantitative workspace for stock screening, monitoring, backtesting, and personalized strategy formulation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/shy3130/tick-stock-panel"
+      },
+      {
+        "id": "kelseyhightower/kubernetes-the-hard-way",
+        "owner": "kelseyhightower",
+        "name": "kubernetes-the-hard-way",
+        "stars": 50108,
+        "language": "Unknown",
+        "pushedAt": "2026-09-25",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While an elite resource for deep infrastructure knowledge and systems engineering, it is an educational guide rather than a functional tool or framework matching Aniket's primary AI, FinTech, or workflow automation tracks.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way"
+      },
+      {
+        "id": "pbakaus/impeccable",
+        "owner": "pbakaus",
+        "name": "impeccable",
+        "stars": 71144,
+        "language": "Unknown",
+        "pushedAt": "2026-09-25",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While it touches on AI agent harnesses, its primary focus is on UI/UX design language generation rather than core agent orchestration, backend tooling, or developer productivity.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/pbakaus/impeccable"
+      },
+      {
+        "id": "openbao/openbao",
+        "owner": "openbao",
+        "name": "openbao",
+        "stars": 7687,
+        "language": "Unknown",
+        "pushedAt": "2026-09-23",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "A strong infrastructure and secrets management solution, but it leans toward systems/DevOps security rather than Aniket's primary focus on AI agents, automated workflows, or financial technology systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/openbao/openbao"
+      },
+      {
+        "id": "derv82/wifit3",
+        "owner": "derv82",
+        "name": "wifit3",
+        "stars": 876,
+        "language": "Unknown",
+        "pushedAt": "2026-09-22",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This is a network security and wireless auditing utility that falls entirely outside Aniket's focus on AI agents, developer productivity tooling, and FinTech systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/derv82/wifit3"
+      }
+    ]
   }
 };
 
@@ -1214,7 +1350,7 @@ Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-22",
+  value: "2026-09-25",
   enumerable: false,
   configurable: true,
   writable: true

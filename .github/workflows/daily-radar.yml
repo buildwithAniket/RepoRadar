@@ -28,6 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.5-flash-lite' }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GMAIL_USER: ${{ secrets.GMAIL_USER }}
       GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

@@ -172,7 +172,7 @@ def judge_repositories(
     profile_text = Path(profile_path).read_text() if Path(profile_path).exists() else ""
 
     gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
-    gemini_model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+    gemini_model = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
     openai_key = os.environ.get("OPENAI_API_KEY")
 
     if not gemini_key and not openai_key:

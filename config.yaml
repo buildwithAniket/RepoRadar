@@ -1,0 +1,20 @@
+# RepoRadar V3 Configuration
+
+# State management
+state:
+  # Prune entries older than this many days from seen-repos.json
+  # Set to 0 to disable pruning.
+  prune_after_days: 90
+  # Max entries to keep when pruning (keeps newest). 0 = no cap.
+  max_entries: 0
+
+# Email delivery
+email:
+  # Delivery method: "smtp" or "mcp" (Gmail MCP/GAPI script)
+  method: smtp
+
+# Trending scraper
+scraper:
+  # Fail the pipeline if the trending scrape returns 0 repos?
+  # Set to false for lenient mode (continue with empty list).
+  fail_on_empty: true

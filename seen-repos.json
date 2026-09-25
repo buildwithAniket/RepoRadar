@@ -1,0 +1,884 @@
+{
+  "666ghj/MiroFish": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-03-07T13:45:58Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "The swarm intelligence engine is intriguing for multi-agent systems, but the documentation and practical application for software engineering workflows remain unclear compared to more specialized agent frameworks.",
+    "stars_at_check": 73464,
+    "verdict": "maybe"
+  },
+  "AgriciDaniel/claude-obsidian": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "Strong fit for your developer productivity and knowledge management interests; it bridges the gap between AI agents and personal knowledge bases, which is vital for long-term career-ops.",
+    "stars_at_check": 0,
+    "verdict": "fit"
+  },
+  "ChromeDevTools/chrome-devtools-mcp": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": "2026-08-25T11:35:48Z",
+    "profile_checked_against": "2026-08-29",
+    "reason": "Directly aligns with your interest in coding agents. Providing an MCP (Model Context Protocol) interface for Chrome DevTools allows agents to interact with the browser as a developer would, significantly enhancing the capabilities of autonomous coding agents.",
+    "stars_at_check": 50021,
+    "verdict": "fit"
+  },
+  "ComposioHQ/awesome-claude-skills": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "A valuable resource for discovering new integrations and skills to enhance your Claude-based coding agents and automation pipelines.",
+    "stars_at_check": 0,
+    "verdict": "fit"
+  },
+  "ConardLi/garden-skills": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "A useful collection of agent skills that could serve as a template for building your own custom automation tools for job-search or financial tracking.",
+    "stars_at_check": 0,
+    "verdict": "maybe"
+  },
+  "Crosstalk-Solutions/project-nomad": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-02T18:59:46Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Interesting for offline-first knowledge management, but its utility for your specific career-ops or financial automation goals is currently limited.",
+    "stars_at_check": 37050,
+    "verdict": "maybe"
+  },
+  "DietrichGebert/ponytail": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-07T21:15:11Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "Directly aligns with your interest in developer productivity and the 'lazy' senior developer philosophy, providing a unique architectural approach to minimizing code bloat in agent workflows.",
+    "stars_at_check": 122157,
+    "verdict": "fit"
+  },
+  "FxEmbed/FxEmbed": {
+    "first_seen": "2026-09-25",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "reason": "This repository is a utility for social media embeds. It does not align with your core focus areas of AI agents, career-ops, or financial technology, and falls under the category of frontend-adjacent tooling.",
+    "stars_at_check": 5402,
+    "verdict": "not-fit"
+  },
+  "Gitlawb/openclaude": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-31T02:25:05Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "A versatile agent runner that aligns with your interest in flexible, multi-agent orchestration systems that can run in diverse environments.",
+    "stars_at_check": 32083,
+    "verdict": "fit"
+  },
+  "HKUDS/CLI-Anything": {
+    "first_seen": "2026-09-25",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": "2026-06-25T15:17:49Z",
+    "profile_checked_against": "2026-09-25",
+    "reason": "This is highly relevant to your interest in developer productivity and agent-native workflows. By making software 'agent-native' via CLI, it provides a powerful primitive for building the autonomous coding agents you are tracking.",
+    "stars_at_check": 50401,
+    "verdict": "fit"
+  },
+  "Imbad0202/academic-research-skills": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-24T11:21:21Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "Directly enhances your coding agent capabilities by providing structured research and review workflows, which is highly applicable to your interest in advanced AI coding agents.",
+    "stars_at_check": 45691,
+    "verdict": "fit"
+  },
+  "JetBrains/go-modern-guidelines": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "Directly supports your interest in AI coding agents by providing the necessary context and standards to improve the quality of AI-generated code in Go.",
+    "stars_at_check": 0,
+    "verdict": "fit"
+  },
+  "JuliusBrussee/caveman": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-09-02T13:43:33Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "A clever, high-impact optimization for Claude Code that directly addresses token efficiency, aligning with your focus on high-performance AI coding agents.",
+    "stars_at_check": 102758,
+    "verdict": "fit"
+  },
+  "JustVugg/colibri": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-13T13:44:10Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Highly relevant for your interest in high-performance local AI orchestration. The zero-dependency, C-based engine for streaming MoE models provides the architectural efficiency needed for running sophisticated agents on local hardware.",
+    "stars_at_check": 32714,
+    "verdict": "fit"
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "While the domain is scientific, the library's focus on 'Agent Skills' and compatibility with Claude Code/Cursor makes it a useful reference for building your own agentic toolsets.",
+    "stars_at_check": 0,
+    "verdict": "maybe"
+  },
+  "Lakr233/vphone-cli": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-10T08:13:01Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "Lacks sufficient documentation and clear architectural utility within your specific focus areas of AI agents or career-ops automation.",
+    "stars_at_check": 13452,
+    "verdict": "not-fit"
+  },
+  "NVIDIA/Model-Optimizer": {
+    "first_seen": "2026-09-25",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": "2026-09-23T18:55:03Z",
+    "profile_checked_against": "2026-09-25",
+    "reason": "This is a high-performance tool essential for your interest in developer productivity and AI engineering. Mastering model compression and inference optimization is a key differentiator for building scalable, production-grade agent systems.",
+    "stars_at_check": 4156,
+    "verdict": "fit"
+  },
+  "NationalSecurityAgency/ghidra": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": "2026-08-18T16:19:52Z",
+    "profile_checked_against": "2026-08-29",
+    "reason": "Ghidra is a massive, industry-standard reverse engineering framework. While impressive, it falls outside your current focus on AI orchestration, career automation, and financial tech, and is likely too specialized for your immediate goals.",
+    "stars_at_check": 73407,
+    "verdict": "not-fit"
+  },
+  "NousResearch/hermes-agent": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-31T19:29:49Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "As a core interest area, this repository represents a significant advancement in autonomous agent systems that you should monitor for integration into your coding workflows.",
+    "stars_at_check": 240294,
+    "verdict": "fit"
+  },
+  "OpenBMB/VoxCPM": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-05-11T11:59:20Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Advanced speech generation is impressive, but it does not align with your current focus on coding agents, career automation, or financial technology.",
+    "stars_at_check": 37497,
+    "verdict": "not-fit"
+  },
+  "OpenCut-app/OpenCut": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "A frontend-heavy application for video editing that does not align with your focus on backend-heavy AI orchestration or financial automation.",
+    "stars_at_check": 0,
+    "verdict": "not-fit"
+  },
+  "Panniantong/Agent-Reach": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-06-11T12:29:59Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "An essential utility for your AI agent stack. Providing agents with zero-fee, CLI-based access to real-time web data (Twitter, GitHub, etc.) is a force multiplier for automating job-search research and market monitoring.",
+    "stars_at_check": 81687,
+    "verdict": "fit"
+  },
+  "SnailSploit/Claude-Red": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-08-30T11:02:25Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Highly relevant for your interest in coding agents. By providing structured, expert-level methodology for Claude, it serves as a practical example of how to extend agent capabilities for specialized tasks.",
+    "stars_at_check": 5028,
+    "verdict": "fit"
+  },
+  "TauricResearch/TradingAgents": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-08-31T03:10:43Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Remains a strong fit for your wealth-building and cross-border finance interests. The multi-agent approach to financial trading is a sophisticated application of the LLM orchestration frameworks you are currently tracking.",
+    "stars_at_check": 106402,
+    "verdict": "fit"
+  },
+  "Tencent/BrowserSkill": {
+    "first_seen": "2026-09-18",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": "2026-09-17T02:22:24Z",
+    "profile_checked_against": "2026-09-18",
+    "reason": "This aligns perfectly with your interest in AI agents and coding assistants. By enabling agents to interact with logged-in browser sessions, it provides a powerful primitive for automating complex web-based workflows, such as job application portals or financial tracking, which are central to your career-ops and wealth-building goals.",
+    "stars_at_check": 4100,
+    "verdict": "fit"
+  },
+  "Tencent/WeKnora": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-03T07:03:36Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "Highly relevant for your interest in RAG and autonomous reasoning. This provides a structured way to manage knowledge, which is essential for building agents that can handle complex, domain-specific tasks like cross-border finance.",
+    "stars_at_check": 25622,
+    "verdict": "fit"
+  },
+  "TencentCloud/Octop": {
+    "first_seen": "2026-09-18",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": "2026-09-14T02:48:02Z",
+    "profile_checked_against": "2026-09-18",
+    "reason": "As a self-hosted multi-agent framework, this is highly relevant to your interest in AI orchestration. It offers a robust backend for building custom agents that could be tailored to automate your job search pipelines or manage cross-border financial data, fitting your requirement for architectural depth.",
+    "stars_at_check": 3421,
+    "verdict": "fit"
+  },
+  "abhigyanpatwari/GitNexus": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": "2026-08-27T22:49:55Z",
+    "profile_checked_against": "2026-08-29",
+    "reason": "Highly relevant to your interest in AI Agents and code intelligence. A client-side Graph RAG agent for codebases provides a unique architectural approach to local repository analysis, aligning perfectly with your focus on developer productivity and advanced LLM orchestration.",
+    "stars_at_check": 46218,
+    "verdict": "fit"
+  },
+  "abi/screenshot-to-code": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-29",
+    "reason": "This is a well-known, mature project that functions primarily as a frontend-to-code wrapper. It lacks the architectural depth and backend complexity required to meet your criteria for innovative AI engineering tools.",
+    "stars_at_check": 75675,
+    "verdict": "not-fit"
+  },
+  "abue-ammar/tinycast": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-13T23:10:18Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "While a useful utility, it is a frontend-focused macOS tool that lacks the backend complexity or AI-driven automation required for your core focus areas.",
+    "stars_at_check": 5753,
+    "verdict": "not-fit"
+  },
+  "actions/checkout": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "A standard GitHub Action; it is a foundational utility rather than an innovative tool for your specific AI or career-ops interests.",
+    "stars_at_check": 0,
+    "verdict": "not-fit"
+  },
+  "addyosmani/agent-skills": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-05T03:25:18Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "Directly addresses your need for high-performance, production-grade engineering skills for AI agents. This is essential for moving beyond toy applications into reliable, autonomous coding workflows.",
+    "stars_at_check": 95607,
+    "verdict": "fit"
+  },
+  "affaan-m/ECC": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-28T19:55:05Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "A comprehensive agent harness that touches on memory, security, and research-first development, perfectly matching your interest in high-performance AI orchestration.",
+    "stars_at_check": 246513,
+    "verdict": "fit"
+  },
+  "agent-substrate/substrate": {
+    "first_seen": "2026-09-22",
+    "last_checked": "2026-09-22",
+    "latest_release_at_check": "2026-09-10T23:39:13Z",
+    "profile_checked_against": "2026-09-22",
+    "reason": "This is a high-signal repository for your interest in AI agent orchestration. As a core system for agents, it likely provides the architectural primitives needed for building complex, autonomous multi-agent workflows, fitting perfectly into your focus on advanced LLM orchestration.",
+    "stars_at_check": 2675,
+    "verdict": "fit"
+  },
+  "alibaba/open-code-review": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-14T11:23:26Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Directly aligns with your focus on coding agents and developer productivity. The hybrid architecture combining deterministic rules with LLM agents offers a robust, production-grade solution for automating code quality, which is essential for your career-ops workflows.",
+    "stars_at_check": 26649,
+    "verdict": "fit"
+  },
+  "alphaXiv/OpenResearch": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-17T01:46:04Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "Strong alignment with your interest in AI agents. Turning coding agents into research agents is a critical evolution for automating complex tasks, including the deep research required for job hunting or financial analysis.",
+    "stars_at_check": 4592,
+    "verdict": "fit"
+  },
+  "ankitects/anki": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-15T21:26:03Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "While a classic tool, it is not an agentic framework. However, it could be integrated into your career-ops pipeline for interview preparation and technical knowledge retention.",
+    "stars_at_check": 30960,
+    "verdict": "maybe"
+  },
+  "anthropics/claude-code": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-17T00:12:02Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "This is a top-tier match for your interest in coding agents. It represents the current state-of-the-art in terminal-based autonomous development, directly impacting your developer productivity goals.",
+    "stars_at_check": 145644,
+    "verdict": "fit"
+  },
+  "anthropics/claude-plugins-official": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "Essential for your focus on LLM orchestration; staying updated with official plugins for Claude Code is critical for maintaining a competitive edge in AI-driven development.",
+    "stars_at_check": 0,
+    "verdict": "fit"
+  },
+  "anthropics/financial-services": {
+    "first_seen": "2026-09-22",
+    "last_checked": "2026-09-22",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-22",
+    "reason": "While the description is empty, the repository name suggests a focus on financial services, which aligns with your interest in global finance and wealth management. However, without documentation or code visibility, it remains a 'maybe' until its utility for financial engineering or compliance is verified.",
+    "stars_at_check": 36020,
+    "verdict": "maybe"
+  },
+  "anthropics/knowledge-work-plugins": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-17",
+    "reason": "Highly relevant for your interest in AI agents. These plugins extend the capabilities of Claude Cowork, providing a blueprint for how to build modular, task-specific agentic workflows.",
+    "stars_at_check": 24358,
+    "verdict": "fit"
+  },
+  "asgeirtj/system_prompts_leaks": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-15",
+    "reason": "High value for your interest in LLM orchestration. Accessing the system prompts of frontier models like Claude Code and Cursor is critical for reverse-engineering their behavior and building better custom agent workflows.",
+    "stars_at_check": 67020,
+    "verdict": "fit"
+  },
+  "bilawalsidhu/gods-eye-view": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "While visually impressive, this is a spatial intelligence visualization tool that lacks the backend utility or agentic orchestration focus required for your core interests.",
+    "stars_at_check": 0,
+    "verdict": "not-fit"
+  },
+  "blader/humanizer": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-18T00:59:37Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "Potentially useful for refining AI-generated content in your career-ops workflows (e.g., cover letters or outreach), but may be considered a 'wrapper' depending on its implementation.",
+    "stars_at_check": 40699,
+    "verdict": "maybe"
+  },
+  "browser-use/video-use": {
+    "first_seen": "2026-09-22",
+    "last_checked": "2026-09-22",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-22",
+    "reason": "While it utilizes coding agents, the domain (video editing) does not align with your current focus areas of career-ops, financial management, or general developer productivity tooling. It is a specialized application rather than a foundational orchestration tool.",
+    "stars_at_check": 25490,
+    "verdict": "not-fit"
+  },
+  "calesthio/OpenMontage": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "An interesting application of agentic workflows to video production; while outside your core focus, the architectural patterns used for agent skills could be adapted for your career-ops automation.",
+    "stars_at_check": 0,
+    "verdict": "maybe"
+  },
+  "cilium/cilium": {
+    "first_seen": "2026-09-18",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": "2026-09-16T01:53:22Z",
+    "profile_checked_against": "2026-09-18",
+    "reason": "While technically impressive, Cilium is a deep infrastructure project focused on eBPF-based networking and security. It lacks direct utility for your current focus on AI orchestration, job-search automation, or personal finance management, and falls outside your immediate scope of developer productivity tooling.",
+    "stars_at_check": 25260,
+    "verdict": "not-fit"
+  },
+  "cline/cline": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-17T03:35:22Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "A critical repository for your interest in autonomous coding agents. Its versatility as an SDK and IDE extension makes it a foundational tool for your developer productivity and agent orchestration goals.",
+    "stars_at_check": 68458,
+    "verdict": "fit"
+  },
+  "cloudflare/security-audit-skill": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-17",
+    "reason": "Directly aligns with your interest in AI agent orchestration and coding agents. This provides a specialized, verifiable skill set for autonomous agents, which is highly relevant for building robust, production-grade coding assistants.",
+    "stars_at_check": 7855,
+    "verdict": "fit"
+  },
+  "coder/coder": {
+    "first_seen": "2026-09-18",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": "2026-09-10T13:56:21Z",
+    "profile_checked_against": "2026-09-18",
+    "reason": "Coder provides secure, remote development environments which are excellent for developer productivity. While it supports your interest in agent-based workflows, it is primarily an infrastructure tool; it is a 'maybe' depending on whether you need a standardized environment to host your autonomous agents.",
+    "stars_at_check": 14822,
+    "verdict": "maybe"
+  },
+  "cursor/plugins": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-29",
+    "reason": "While potentially useful for your developer workflow, it is a plugin specification rather than an autonomous system. It is worth monitoring if you intend to build custom extensions for your coding agents, but it currently lacks the 'agentic' complexity you prioritize.",
+    "stars_at_check": 6019,
+    "verdict": "maybe"
+  },
+  "dani-garcia/vaultwarden": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-13T15:03:37Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "A solid self-hosted security tool, but it lacks direct integration with your primary interests in AI agents or career-ops automation.",
+    "stars_at_check": 67602,
+    "verdict": "maybe"
+  },
+  "davila7/claude-code-templates": {
+    "first_seen": "2026-09-22",
+    "last_checked": "2026-09-22",
+    "latest_release_at_check": "2026-09-17T01:14:32Z",
+    "profile_checked_against": "2026-09-22",
+    "reason": "Directly supports your interest in coding agents like Claude Code. This tool will enhance your developer productivity by streamlining the configuration and monitoring of your coding agent workflows, making it a practical addition to your toolkit.",
+    "stars_at_check": 30915,
+    "verdict": "fit"
+  },
+  "debpalash/VoiceStudio": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-28T15:24:35Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "A powerful local tool, but its utility for your specific goals (career-ops and wealth management) is limited unless you are building voice-based interview prep agents.",
+    "stars_at_check": 15217,
+    "verdict": "maybe"
+  },
+  "dream-num/univer": {
+    "first_seen": "2026-09-22",
+    "last_checked": "2026-09-22",
+    "latest_release_at_check": "2026-09-17T04:37:21Z",
+    "profile_checked_against": "2026-09-22",
+    "reason": "Univer is highly relevant as an 'Office Harness for AI Agents.' Its ability to unify spreadsheets, docs, and relational tables into a single runtime provides the exact type of structured data environment needed to build sophisticated agents for your career-ops or financial tracking projects.",
+    "stars_at_check": 14885,
+    "verdict": "fit"
+  },
+  "ever-co/ever-gauzy": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-07-04T20:25:10Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "An extensive ERP/ATS platform. While it touches on career-ops (ATS), it is a massive, complex system that may be overkill for your specific goal of automating job-search pipelines.",
+    "stars_at_check": 6179,
+    "verdict": "maybe"
+  },
+  "firecrawl/pdf-inspector": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-17T18:07:57Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "Useful for building robust RAG pipelines or document processing agents, which could be applied to your wealth management or career-ops document analysis tasks.",
+    "stars_at_check": 18623,
+    "verdict": "maybe"
+  },
+  "fmtlib/fmt": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-06-16T05:30:06Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "While a high-quality library, it is a low-level C++ utility that does not align with your focus on high-level AI orchestration or career automation.",
+    "stars_at_check": 24472,
+    "verdict": "not-fit"
+  },
+  "freestylefly/awesome-gpt-image-2": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "This is a curated list of prompt engineering resources rather than a functional framework or tool for agentic orchestration.",
+    "stars_at_check": 0,
+    "verdict": "not-fit"
+  },
+  "google-research/timesfm": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-28T23:42:49Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "Relevant if you intend to build custom financial portfolio tracking or predictive wealth management tools, but lacks immediate application to your core agent orchestration focus.",
+    "stars_at_check": 30187,
+    "verdict": "maybe"
+  },
+  "google/ax": {
+    "first_seen": "2026-09-22",
+    "last_checked": "2026-09-22",
+    "latest_release_at_check": "2026-09-20T03:33:20Z",
+    "profile_checked_against": "2026-09-22",
+    "reason": "As an open agentic orchestration runtime from Google, this is a top-tier candidate for your AI Agents & LLM Orchestration focus. It provides the backend depth and architectural innovation required for building scalable agentic systems.",
+    "stars_at_check": 6720,
+    "verdict": "fit"
+  },
+  "google/googletest": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "A standard testing library that does not provide the architectural innovation or agentic utility you are looking for.",
+    "stars_at_check": 0,
+    "verdict": "not-fit"
+  },
+  "huggingface/transformers": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-09T15:42:45Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "While foundational for all AI work, it is a general-purpose library. Unless you are building custom models from scratch, it may be too broad compared to the specialized agent frameworks you prefer.",
+    "stars_at_check": 166122,
+    "verdict": "maybe"
+  },
+  "jamiepine/voicebox": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-04-25T22:46:53Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "Interesting for multi-modal agent capabilities, but currently leans more toward creative voice synthesis than the agentic orchestration or developer productivity tools you are prioritizing.",
+    "stars_at_check": 54536,
+    "verdict": "maybe"
+  },
+  "julyx10/lap": {
+    "first_seen": "2026-09-25",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": "2026-09-12T14:36:17Z",
+    "profile_checked_against": "2026-09-25",
+    "reason": "While an offline-first photo manager is a useful tool, it does not intersect with your core interests in AI engineering, career-ops, or financial technology. It lacks the backend complexity or agentic utility you prioritize.",
+    "stars_at_check": 2945,
+    "verdict": "not-fit"
+  },
+  "leejet/stable-diffusion.cpp": {
+    "first_seen": "2026-09-25",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": "2026-09-24T22:21:34Z",
+    "profile_checked_against": "2026-09-25",
+    "reason": "While this is a high-performance C++ implementation, its utility depends on whether you intend to integrate generative image capabilities into your agent workflows. It is technically impressive but currently tangential to your primary focus on agent orchestration.",
+    "stars_at_check": 7291,
+    "verdict": "maybe"
+  },
+  "livekit/agents": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": "2026-08-27T03:42:44Z",
+    "profile_checked_against": "2026-08-29",
+    "reason": "A powerful framework for real-time voice AI agents. This fits your interest in advanced LLM orchestration and autonomous systems, offering a robust backend for building interactive agents that could be applied to interview prep or automated assistant workflows.",
+    "stars_at_check": 13403,
+    "verdict": "fit"
+  },
+  "localsend/localsend": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-08-21T14:02:01Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "While a useful utility, it is a standalone file-transfer tool that does not contribute to your specific goals in AI orchestration, career automation, or financial tech.",
+    "stars_at_check": 91525,
+    "verdict": "not-fit"
+  },
+  "marin-community/marin": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "Relevant if you intend to move beyond using agents into the R&D of foundation models, though it may be too low-level for your current focus on orchestration.",
+    "stars_at_check": 0,
+    "verdict": "maybe"
+  },
+  "mattpocock/skills": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-06T14:05:28Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "Provides practical, real-world agent skills that can be directly integrated into your existing agent runners to improve your daily coding productivity.",
+    "stars_at_check": 245566,
+    "verdict": "fit"
+  },
+  "multimodal-art-projection/YuE": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-09T19:10:05Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "While technically impressive, this focuses on music generation, which falls outside your core interests in coding agents, financial tech, and career automation.",
+    "stars_at_check": 8699,
+    "verdict": "not-fit"
+  },
+  "mvt-project/mvt": {
+    "first_seen": "2026-09-22",
+    "last_checked": "2026-09-22",
+    "latest_release_at_check": "2026-09-21T09:03:53Z",
+    "profile_checked_against": "2026-09-22",
+    "reason": "While technically impressive, this tool is focused on mobile forensics and security auditing. It falls outside your core interests of AI orchestration, career-ops automation, and financial technology.",
+    "stars_at_check": 13779,
+    "verdict": "not-fit"
+  },
+  "n8n-io/n8n": {
+    "first_seen": "2026-09-18",
+    "last_checked": "2026-09-18",
+    "latest_release_at_check": "2026-09-17T07:44:43Z",
+    "profile_checked_against": "2026-09-18",
+    "reason": "n8n is a high-utility platform for your career-ops and wealth-building goals. Its ability to integrate disparate APIs makes it ideal for building automated pipelines for job tracking, interview scheduling, and cross-border financial monitoring without needing to write custom boilerplate for every integration.",
+    "stars_at_check": 204969,
+    "verdict": "fit"
+  },
+  "obra/superpowers": {
+    "first_seen": "2026-09-25",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": "2026-09-19T00:32:44Z",
+    "profile_checked_against": "2026-09-25",
+    "reason": "As an agentic skills framework, this directly addresses your interest in multi-agent systems and coding agents. Its focus on methodology and production-ready software development makes it a high-value repository for your professional growth.",
+    "stars_at_check": 291305,
+    "verdict": "fit"
+  },
+  "pacifio/atlas": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-25T13:54:58Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "Highly relevant for managing multi-agent coding environments, offering a centralized way to track changes and query agent outputs, which is critical for your developer productivity focus.",
+    "stars_at_check": 3018,
+    "verdict": "fit"
+  },
+  "peetzweg/opendisplay": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-01T19:41:24Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "A hardware-focused productivity utility that does not involve the software engineering or AI automation workflows you are prioritizing.",
+    "stars_at_check": 3763,
+    "verdict": "not-fit"
+  },
+  "protocolbuffers/protobuf": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-31T22:10:23Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "A foundational data interchange format; while useful for general engineering, it does not provide the specific agent-based or career-automation utility you are seeking.",
+    "stars_at_check": 71965,
+    "verdict": "not-fit"
+  },
+  "reconurge/flowsint": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-08-26T07:56:39Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Primarily focused on cybersecurity investigations; while high-performance, it does not align with your core interests in agent orchestration or wealth-building.",
+    "stars_at_check": 8485,
+    "verdict": "not-fit"
+  },
+  "rlaope/oh-my-hermes": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-12T02:21:19Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Directly supports your interest in coding agents. As a plugin ecosystem for Hermes, it provides the long-term memory and workflow optimizations necessary to turn a basic coding agent into a high-productivity assistant.",
+    "stars_at_check": 2272,
+    "verdict": "fit"
+  },
+  "roboflow/supervision": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-09-14T13:08:59Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "Excellent for computer vision, but falls outside your current focus on LLM orchestration, career-ops, and financial tooling.",
+    "stars_at_check": 50672,
+    "verdict": "not-fit"
+  },
+  "rohitg00/ai-engineering-from-scratch": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": "2026-09-07T11:42:35Z",
+    "profile_checked_against": "2026-09-25",
+    "reason": "While this repository has gained significant traction, it serves primarily as a broad educational resource. Given your advanced focus on agent orchestration and professional career-ops, this lacks the architectural depth and specialized utility required for your current goals.",
+    "stars_at_check": 56805,
+    "verdict": "not-fit"
+  },
+  "ruvnet/RuView": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-11T14:05:30Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Innovative spatial intelligence, but lacks a clear application to your professional focus areas of software engineering, career-ops, or financial automation.",
+    "stars_at_check": 94010,
+    "verdict": "not-fit"
+  },
+  "sngyai/Sequoia-X": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-03",
+    "reason": "This is a region-specific stock screening tool for the Chinese domestic market, which does not align with your focus on global career-ops automation or cross-border FinTech systems.",
+    "stars_at_check": 6276,
+    "verdict": "not-fit"
+  },
+  "strands-agents/harness-sdk": {
+    "first_seen": "2026-09-25",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": "2026-09-24T21:27:30Z",
+    "profile_checked_against": "2026-09-25",
+    "reason": "This is a direct hit for your AI Agents & LLM Orchestration focus. An SDK designed for end-to-end control of production agents is exactly the type of infrastructure you need to build and deploy your own autonomous systems.",
+    "stars_at_check": 8328,
+    "verdict": "fit"
+  },
+  "supabase/supabase": {
+    "first_seen": "2026-09-17",
+    "last_checked": "2026-09-17",
+    "latest_release_at_check": "2026-08-07T13:57:57Z",
+    "profile_checked_against": "2026-09-17",
+    "reason": "A powerful backend platform that could serve as the infrastructure for your career-ops or financial tracking applications, though it is a general-purpose tool rather than a specialized agentic framework.",
+    "stars_at_check": 109862,
+    "verdict": "maybe"
+  },
+  "superdesigndev/treg": {
+    "first_seen": "2026-09-22",
+    "last_checked": "2026-09-22",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-22",
+    "reason": "The concept of an 'OpenRouter for agent tools' is interesting for your interest in LLM orchestration, but the lack of a release and limited documentation makes it a 'maybe.' It requires further investigation to ensure it isn't just a basic wrapper.",
+    "stars_at_check": 1960,
+    "verdict": "maybe"
+  },
+  "superlinked/sie": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-27T19:30:01Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "Provides the necessary infrastructure for production-grade agent orchestration, which is essential for scaling your local/cloud agent runners.",
+    "stars_at_check": 3126,
+    "verdict": "fit"
+  },
+  "swoole/typephp": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": "2026-08-27T09:36:53Z",
+    "profile_checked_against": "2026-08-29",
+    "reason": "Compiling PHP to native binaries is an interesting performance play, but it does not align with your core focus areas of AI agents, career-ops, or financial tooling. It lacks the ecosystem relevance to your current stack.",
+    "stars_at_check": 845,
+    "verdict": "not-fit"
+  },
+  "tailscale/tailcat": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-29",
+    "reason": "A high-performance networking utility that could be useful for your cross-border infrastructure or secure remote access needs. While not directly related to AI agents, its utility for developer productivity and secure connectivity makes it a strong candidate for your toolkit.",
+    "stars_at_check": 2944,
+    "verdict": "maybe"
+  },
+  "tashfeenahmed/freellmapi": {
+    "first_seen": "2026-08-29",
+    "last_checked": "2026-08-29",
+    "latest_release_at_check": "2026-08-26T09:06:42Z",
+    "profile_checked_against": "2026-08-29",
+    "reason": "This is a high-utility tool for your AI Agent research. By aggregating free LLM endpoints with smart routing and failover, it provides a cost-effective infrastructure layer for experimenting with multi-agent systems without the overhead of paid API keys.",
+    "stars_at_check": 21744,
+    "verdict": "fit"
+  },
+  "tech-leads-club/agent-skills": {
+    "first_seen": "2026-09-15",
+    "last_checked": "2026-09-15",
+    "latest_release_at_check": "2026-09-10T13:33:45Z",
+    "profile_checked_against": "2026-09-15",
+    "reason": "Highly relevant for your interest in coding agents. A secure, validated registry for agent skills is a critical piece of infrastructure for building reliable, production-ready autonomous coding pipelines.",
+    "stars_at_check": 6189,
+    "verdict": "fit"
+  },
+  "test-org/victory-audit-test": {
+    "first_seen": "2026-09-24",
+    "last_checked": "2026-09-24",
+    "latest_release_at_check": "v1.0.0",
+    "profile_checked_against": "2026-09-24",
+    "reason": "Independent audit dry-run validation.",
+    "stars_at_check": 1234,
+    "verdict": "fit"
+  },
+  "thedotmack/claude-mem": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "Highly relevant; persistent context management is a critical missing piece in current agentic workflows and directly addresses your interest in high-performance AI orchestration.",
+    "stars_at_check": 0,
+    "verdict": "fit"
+  },
+  "tt-a1i/archify": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "Highly relevant to your developer productivity focus; it provides a structured way to generate verifiable architecture diagrams, which is a high-value skill for AI-assisted software engineering workflows.",
+    "stars_at_check": 0,
+    "verdict": "fit"
+  },
+  "vectorize-io/hindsight": {
+    "first_seen": "2026-09-25",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": "2026-09-21T15:24:30Z",
+    "profile_checked_against": "2026-09-25",
+    "reason": "This aligns perfectly with your interest in AI Agents & LLM Orchestration. Memory management is a critical bottleneck for autonomous agents; a framework that enables agents to 'learn' from history provides the exact type of architectural innovation you are looking for.",
+    "stars_at_check": 28172,
+    "verdict": "fit"
+  },
+  "vercel-labs/portless": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-08-24T16:40:13Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "An excellent developer productivity tool that simplifies local environment management for both humans and agents, fitting your interest in workflow enhancers.",
+    "stars_at_check": 11889,
+    "verdict": "fit"
+  },
+  "zedeus/nitter": {
+    "first_seen": "2026-08-28",
+    "last_checked": "2026-08-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-08-28",
+    "reason": "This is a legacy project for a defunct Twitter frontend; it does not align with your focus on AI agents or career-ops automation.",
+    "stars_at_check": 0,
+    "verdict": "not-fit"
+  },
+  "zyronon/TypeWords": {
+    "first_seen": "2026-09-03",
+    "last_checked": "2026-09-03",
+    "latest_release_at_check": "2026-06-17T13:42:25Z",
+    "profile_checked_against": "2026-09-03",
+    "reason": "A language practice tool that lacks the backend depth or architectural innovation required for your professional engineering and automation interests.",
+    "stars_at_check": 9445,
+    "verdict": "not-fit"
+  }
+}

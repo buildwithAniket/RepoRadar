@@ -1,0 +1,55 @@
+name: Daily Radar
+
+# Scheduled scouting run: prepare -> judge -> finalize, then commit the new
+# report + state + UI bundle and redeploy Pages.
+#
+# Opt-in: set the repository variable RADAR_ENABLED=true and add the secrets
+# GEMINI_API_KEY and/or OPENAI_API_KEY (optionally GMAIL_USER and
+# GMAIL_APP_PASSWORD for the email digest).
+
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-radar
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    if: vars.RADAR_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GMAIL_USER: ${{ secrets.GMAIL_USER }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -e .
+      - name: Configure git identity
+        run: |
+          git config user.name "reporadar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Prepare
+        run: python src/scan.py prepare
+      - name: Judge
+        run: python src/scan.py judge
+      - name: Finalize (report, state, UI bundle, commit)
+        run: python src/scan.py finalize
+      - name: Push
+        run: git push origin HEAD:main
+
+  deploy:
+    needs: scan
+    uses: ./.github/workflows/deploy-pages.yml

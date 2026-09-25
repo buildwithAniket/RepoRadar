@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reporadar"
+version = "3.0.0"
+description = "Autonomous GitHub scouting with deterministic pre-filtering, LLM-as-judge, and a 3D WebGL vinyl record archive."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.28.0",
+    "beautifulsoup4>=4.11.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.0",
+    "black>=24.0",
+    "ruff>=0.5",
+]
+
+# The pipeline runs as scripts (`python src/scan.py`) or modules
+# (`python -m src.scan`), not as an installed package. `pip install -e ".[dev]"`
+# installs dependencies only.
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+extend-exclude = ["ui"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Entry points and tests put src/ on sys.path before importing siblings.
+"src/*.py" = ["E402"]
+"tests/*.py" = ["E402"]
+
+[tool.black]
+line-length = 120
+target-version = ["py39"]

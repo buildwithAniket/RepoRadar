@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RepoRadar V3 Architecture Diagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 2rem;
+      color: white;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      margin-bottom: 2rem;
+    }
+    
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .pulse-dot {
+      width: 12px;
+      height: 12px;
+      background: #34d399;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+    
+    .subtitle {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      margin-left: 1.75rem;
+    }
+    
+    .diagram-container {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 1rem;
+      border: 1px solid #1e293b;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+    
+    svg {
+      width: 100%;
+      min-width: 1000px;
+      display: block;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 0.75rem;
+      border: 1px solid #1e293b;
+      padding: 1.25rem;
+    }
+    
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+    
+    .card-dot.cyan { background: #22d3ee; }
+    .card-dot.emerald { background: #34d399; }
+    .card-dot.violet { background: #a78bfa; }
+    .card-dot.amber { background: #fbbf24; }
+    .card-dot.rose { background: #fb7185; }
+    
+    .card h3 {
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+    
+    .card ul {
+      list-style: none;
+      color: #94a3b8;
+      font-size: 0.75rem;
+    }
+    
+    .card li {
+      margin-bottom: 0.375rem;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #475569;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>RepoRadar V3 Architecture</h1>
+      </div>
+      <p class="subtitle">Production-Grade Deterministic Python Pipeline & LLM Intelligence for GitHub Repository Tracking</p>
+    </div>
+
+    <!-- Main Diagram -->
+    <div class="diagram-container">
+      <svg viewBox="0 0 1050 720">
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- Region/Cloud Boundary -->
+        <rect x="30" y="30" width="990" height="520" rx="12" fill="rgba(251, 191, 36, 0.03)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="8,4"/>
+        <text x="45" y="55" fill="#fbbf24" font-size="11" font-weight="600">RepoRadar V3 Core Pipeline & Execution Environment</text>
+
+        <!-- 1. Cron / External Trigger -->
+        <rect x="60" y="100" width="130" height="60" rx="6" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="125" y="123" fill="white" font-size="11" font-weight="600" text-anchor="middle">Cron Schedule</text>
+        <text x="125" y="141" fill="#94a3b8" font-size="9" text-anchor="middle">Daily 13:00 UTC</text>
+
+        <!-- 2. Scan Orchestrator -->
+        <rect x="235" y="90" width="150" height="80" rx="6" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="310" y="118" fill="white" font-size="11" font-weight="600" text-anchor="middle">Scan Orchestrator</text>
+        <text x="310" y="136" fill="#34d399" font-size="9" text-anchor="middle">src/scan.py</text>
+        <text x="310" y="152" fill="#94a3b8" font-size="8" text-anchor="middle">prepare / finalize</text>
+
+        <!-- 3. GitHub Scraper & API -->
+        <rect x="440" y="90" width="140" height="80" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="510" y="118" fill="white" font-size="11" font-weight="600" text-anchor="middle">GitHub API</text>
+        <text x="510" y="136" fill="#fbbf24" font-size="9" text-anchor="middle">src/github_api.py</text>
+        <text x="510" y="152" fill="#94a3b8" font-size="8" text-anchor="middle">src/scraper.py</text>
+
+        <!-- 4. Diff Engine -->
+        <rect x="635" y="90" width="140" height="80" rx="6" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="705" y="118" fill="white" font-size="11" font-weight="600" text-anchor="middle">Diff Engine</text>
+        <text x="705" y="136" fill="#34d399" font-size="9" text-anchor="middle">src/diff_engine.py</text>
+        <text x="705" y="152" fill="#94a3b8" font-size="8" text-anchor="middle">Star Jumps &gt;= 2x</text>
+
+        <!-- 5. State Store (JSON) -->
+        <rect x="635" y="235" width="140" height="80" rx="6" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="705" y="263" fill="white" font-size="11" font-weight="600" text-anchor="middle">State Manager</text>
+        <text x="705" y="281" fill="#a78bfa" font-size="9" text-anchor="middle">seen-repos.json</text>
+        <text x="705" y="297" fill="#94a3b8" font-size="8" text-anchor="middle">src/state.py</text>
+
+        <!-- 6. LLM Judge Layer -->
+        <rect x="440" y="380" width="140" height="80" rx="6" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+        <text x="510" y="408" fill="white" font-size="11" font-weight="600" text-anchor="middle">LLM-as-Judge</text>
+        <text x="510" y="426" fill="#fb7185" font-size="9" text-anchor="middle">src/judge.py</text>
+        <text x="510" y="442" fill="#94a3b8" font-size="8" text-anchor="middle">Verdicts Filtering</text>
+
+        <!-- 7. Report & Mailer -->
+        <rect x="235" y="380" width="150" height="80" rx="6" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="310" y="408" fill="white" font-size="11" font-weight="600" text-anchor="middle">Digest & Mailer</text>
+        <text x="310" y="426" fill="#34d399" font-size="9" text-anchor="middle">src/report.py</text>
+        <text x="310" y="442" fill="#94a3b8" font-size="8" text-anchor="middle">src/mailer.py (SMTP)</text>
+
+        <!-- 8. Git Sync / Output Reports -->
+        <rect x="60" y="380" width="130" height="80" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="125" y="408" fill="white" font-size="11" font-weight="600" text-anchor="middle">Git Sync</text>
+        <text x="125" y="426" fill="#22d3ee" font-size="9" text-anchor="middle">Auto-Commit</text>
+        <text x="125" y="442" fill="#94a3b8" font-size="8" text-anchor="middle">reports/*.md</text>
+
+        <!-- ARROWS & FLOWS -->
+        <!-- Cron -> Scan -->
+        <line x1="190" y1="130" x2="233" y2="130" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="211" y="122" fill="#94a3b8" font-size="8" text-anchor="middle">Trigger</text>
+
+        <!-- Scan -> GitHub API -->
+        <line x1="385" y1="130" x2="438" y2="130" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="411" y="122" fill="#94a3b8" font-size="8" text-anchor="middle">Fetch</text>
+
+        <!-- GitHub API -> Diff Engine -->
+        <line x1="580" y1="130" x2="633" y2="130" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="606" y="122" fill="#94a3b8" font-size="8" text-anchor="middle">Raw Repos</text>
+
+        <!-- Diff Engine <-> State Store -->
+        <line x1="705" y1="170" x2="705" y2="233" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="718" y="205" fill="#a78bfa" font-size="8">Deltas</text>
+
+        <!-- Diff Engine -> LLM Judge (Downward flow) -->
+        <path d="M 635 150 L 610 150 Q 590 150 590 170 L 590 350 Q 590 370 570 370 L 510 370 L 510 378" fill="none" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrowhead)"/>
+        <text x="612" y="260" fill="#fb7185" font-size="8">Candidates</text>
+
+        <!-- LLM Judge -> Mailer -->
+        <line x1="440" y1="420" x2="387" y2="420" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="413" y="412" fill="#94a3b8" font-size="8" text-anchor="middle">Verdicts</text>
+
+        <!-- Mailer -> Git Sync -->
+        <line x1="235" y1="420" x2="192" y2="420" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="213" y="412" fill="#94a3b8" font-size="8" text-anchor="middle">Save</text>
+
+        <!-- =================================================================
+             LEGEND
+             ================================================================= -->
+        <text x="820" y="65" fill="white" font-size="10" font-weight="600">Legend</text>
+        
+        <rect x="820" y="78" width="16" height="10" rx="2" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1"/>
+        <text x="842" y="86" fill="#94a3b8" font-size="8">Core Logic / CLI</text>
+        
+        <rect x="820" y="94" width="16" height="10" rx="2" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1"/>
+        <text x="842" y="102" fill="#94a3b8" font-size="8">GitHub API / Scraper</text>
+        
+        <rect x="820" y="110" width="16" height="10" rx="2" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1"/>
+        <text x="842" y="118" fill="#94a3b8" font-size="8">State Storage</text>
+        
+        <rect x="820" y="126" width="16" height="10" rx="2" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1"/>
+        <text x="842" y="134" fill="#94a3b8" font-size="8">LLM Judgment</text>
+
+        <rect x="820" y="142" width="16" height="10" rx="2" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1"/>
+        <text x="842" y="150" fill="#94a3b8" font-size="8">Output & Git</text>
+        
+        <line x1="820" y1="168" x2="836" y2="168" stroke="#fb7185" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="842" y="171" fill="#94a3b8" font-size="8">LLM Feedback Flow</text>
+      </svg>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="cards">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot emerald"></div>
+          <h3>Deterministic Pipeline</h3>
+        </div>
+        <ul>
+          <li>• Star jump thresholds (&gt;= 2x growth)</li>
+          <li>• Strict release & profile change diffing</li>
+          <li>• Zero LLM hallucinations during ingestion</li>
+          <li>• Local JSON state persistence (`seen-repos.json`)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot rose"></div>
+          <h3>LLM-as-Judge Step</h3>
+        </div>
+        <ul>
+          <li>• Filters out noise from raw trending spikes</li>
+          <li>• Evaluates genuine repository significance</li>
+          <li>• Decoupled judgment from deterministic fetch</li>
+          <li>• Structured verdict inputs (`verdicts.json`)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot cyan"></div>
+          <h3>Delivery & Sync</h3>
+        </div>
+        <ul>
+          <li>• Automated Gmail SMTP daily dispatches</li>
+          <li>• Markdown reports saved under `reports/`</li>
+          <li>• Git auto-commit & push synchronization</li>
+          <li>• Cron-scheduled execution at 13:00 UTC</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">
+      RepoRadar V3 • Generated via Architecture Diagram Skill
+    </p>
+  </div>
+</body>
+</html>

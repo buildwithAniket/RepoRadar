@@ -1,0 +1,51 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "ui/**"
+      - "reports/**"
+      - "seen-repos.json"
+      - "src/build_ui_data.py"
+      - "docs/architecture.html"
+  workflow_dispatch:
+  # Called by daily-radar.yml: pushes made with GITHUB_TOKEN do not trigger other workflows.
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # build_ui_data.py uses only the standard library.
+      - name: Regenerate UI data bundle
+        run: python src/build_ui_data.py
+      - name: Assemble site (UI + architecture deep dive)
+        run: |
+          mkdir -p _site
+          cp -R ui/. _site/
+          cp docs/architecture.html _site/architecture.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

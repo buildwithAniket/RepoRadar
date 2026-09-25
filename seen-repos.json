@@ -119,6 +119,16 @@
     "stars_at_check": 33166,
     "verdict": "not-fit"
   },
+  "FxEmbed/FxEmbed": {
+    "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
+    "first_seen": "2026-09-25",
+    "language": "TypeScript",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 5372,
+    "verdict": "not-fit"
+  },
   "Gitlawb/openclaude": {
     "description": "runs anywhere. uses anything",
     "first_seen": "2026-09-01",
@@ -128,6 +138,16 @@
     "profile_checked_against": "2026-09-01",
     "stars_at_check": 31035,
     "verdict": "maybe"
+  },
+  "HKUDS/CLI-Anything": {
+    "description": "CLI-Anything: Making ALL Software Agent-Native",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 50342,
+    "verdict": "fit"
   },
   "Homebrew/BrewUI": {
     "description": "Homebrew's official macOS GUI",
@@ -217,6 +237,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-07",
     "stars_at_check": 9593,
+    "verdict": "not-fit"
+  },
+  "NVIDIA/Model-Optimizer": {
+    "description": "A unified library of model optimization techniques for deep learning model compression",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 4093,
     "verdict": "not-fit"
   },
   "NationalSecurityAgency/ghidra": {
@@ -879,6 +909,16 @@
     "stars_at_check": 66762,
     "verdict": "maybe"
   },
+  "dream-num/univer": {
+    "description": "The Office Harness for AI Agents \u2014 Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+    "first_seen": "2026-09-25",
+    "language": "TypeScript",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 17789,
+    "verdict": "fit"
+  },
   "earendil-works/pi": {
     "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
     "first_seen": "2026-09-15",
@@ -978,6 +1018,16 @@
     "profile_checked_against": "2026-09-02",
     "stars_at_check": 29052,
     "verdict": "maybe"
+  },
+  "google/ax": {
+    "description": "Google's open agentic orchestration runtime",
+    "first_seen": "2026-09-25",
+    "language": "Go",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 10505,
+    "verdict": "fit"
   },
   "google/googletest": {
     "description": "GoogleTest - Google Testing and Mocking Framework",
@@ -1109,6 +1159,16 @@
     "stars_at_check": 2269,
     "verdict": "fit"
   },
+  "julyx10/lap": {
+    "description": "An offline-first photo manager for large local libraries",
+    "first_seen": "2026-09-25",
+    "language": "Vue",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 2886,
+    "verdict": "not-fit"
+  },
   "k1tbyte/Wand-Enhancer": {
     "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
     "first_seen": "2026-08-31",
@@ -1127,6 +1187,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-08-30",
     "stars_at_check": 3835,
+    "verdict": "not-fit"
+  },
+  "leejet/stable-diffusion.cpp": {
+    "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++",
+    "first_seen": "2026-09-25",
+    "language": "C++",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 7256,
     "verdict": "not-fit"
   },
   "lightpanda-io/browser": {
@@ -1463,10 +1533,10 @@
     "description": "Learn it. Build it. Ship it for others.",
     "first_seen": "2026-09-09",
     "language": "Python",
-    "last_checked": "2026-09-09",
+    "last_checked": "2026-09-25",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-09",
-    "stars_at_check": 356,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 56608,
     "verdict": "maybe"
   },
   "ruanyf/weekly": {
@@ -1519,6 +1589,16 @@
     "stars_at_check": 5929,
     "verdict": "fit"
   },
+  "strands-agents/harness-sdk": {
+    "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 8264,
+    "verdict": "fit"
+  },
   "supabase/supabase": {
     "description": "The Postgres development platform providing dedicated database for web, mobile, AI apps",
     "first_seen": "2026-09-16",
@@ -1528,6 +1608,16 @@
     "profile_checked_against": "2026-09-18",
     "stars_at_check": 109977,
     "verdict": "not-fit"
+  },
+  "superdesigndev/treg": {
+    "description": "OpenRouter for agent tools",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 3169,
+    "verdict": "fit"
   },
   "superlinked/sie": {
     "description": "Open-source inference server and production cluster for all the models your agent needs.",
@@ -1627,6 +1717,16 @@
     "latest_release_at_check": null,
     "profile_checked_against": "2026-09-10",
     "stars_at_check": 2097,
+    "verdict": "fit"
+  },
+  "vectorize-io/hindsight": {
+    "description": "Hindsight: Agent Memory That Learns",
+    "first_seen": "2026-09-25",
+    "language": "Python",
+    "last_checked": "2026-09-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-25",
+    "stars_at_check": 27825,
     "verdict": "fit"
   },
   "vercel-labs/json-render": {

@@ -1274,9 +1274,9 @@ window.REPORADAR_DIGESTS = {
         "id": "kelseyhightower/kubernetes-the-hard-way",
         "owner": "kelseyhightower",
         "name": "kubernetes-the-hard-way",
-        "stars": 50108,
+        "stars": 50163,
         "language": "Unknown",
-        "pushedAt": "2026-09-25",
+        "pushedAt": "2026-09-26",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
@@ -1289,7 +1289,7 @@ window.REPORADAR_DIGESTS = {
         "id": "pbakaus/impeccable",
         "owner": "pbakaus",
         "name": "impeccable",
-        "stars": 71144,
+        "stars": 71305,
         "language": "Unknown",
         "pushedAt": "2026-09-25",
         "confidence": "medium",
@@ -1304,7 +1304,7 @@ window.REPORADAR_DIGESTS = {
         "id": "openbao/openbao",
         "owner": "openbao",
         "name": "openbao",
-        "stars": 7687,
+        "stars": 7819,
         "language": "Unknown",
         "pushedAt": "2026-09-23",
         "confidence": "medium",
@@ -1319,7 +1319,7 @@ window.REPORADAR_DIGESTS = {
         "id": "derv82/wifit3",
         "owner": "derv82",
         "name": "wifit3",
-        "stars": 876,
+        "stars": 1029,
         "language": "Unknown",
         "pushedAt": "2026-09-22",
         "confidence": "low",
@@ -1334,23 +1334,99 @@ window.REPORADAR_DIGESTS = {
   },
   "2026-09-26": {
     "date": "2026-09-26",
-    "evaluatedCount": 0,
-    "skippedCount": 16,
+    "evaluatedCount": 5,
+    "skippedCount": 11,
     "stats": {
       "fit": 0,
-      "maybe": 0,
-      "notFit": 0,
-      "total": 0
+      "maybe": 3,
+      "notFit": 2,
+      "total": 5
     },
     "summary": {
-      "evaluated": 0,
-      "skipped": 16,
+      "evaluated": 5,
+      "skipped": 11,
       "fit": 0,
-      "maybe": 0,
-      "notFit": 0,
-      "total": 0
+      "maybe": 3,
+      "notFit": 2,
+      "total": 5
     },
-    "repos": []
+    "repos": [
+      {
+        "id": "kelseyhightower/kubernetes-the-hard-way",
+        "owner": "kelseyhightower",
+        "name": "kubernetes-the-hard-way",
+        "stars": 50163,
+        "language": "Unknown",
+        "pushedAt": "2026-09-26",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While an elite resource for systems engineering and deep infrastructure knowledge, it serves as an educational guide rather than a functional tool, framework, or utility matching Aniket's primary core tracks.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way"
+      },
+      {
+        "id": "pbakaus/impeccable",
+        "owner": "pbakaus",
+        "name": "impeccable",
+        "stars": 71305,
+        "language": "Unknown",
+        "pushedAt": "2026-09-25",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While it deals with AI agent harnesses, its core orientation around UI/UX design language generation diverges from Aniket's primary interests in core agent orchestration, backend tooling, and FinTech systems.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/pbakaus/impeccable"
+      },
+      {
+        "id": "openbao/openbao",
+        "owner": "openbao",
+        "name": "openbao",
+        "stars": 7819,
+        "language": "Unknown",
+        "pushedAt": "2026-09-23",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "Though it provides robust secrets and data management infrastructure useful in secure backend architectures, it tilts more toward enterprise DevOps and security than Aniket's direct focus on AI agents, automation, and wealth systems.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/openbao/openbao"
+      },
+      {
+        "id": "derv82/wifit3",
+        "owner": "derv82",
+        "name": "wifit3",
+        "stars": 1029,
+        "language": "Unknown",
+        "pushedAt": "2026-09-22",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This is a network security and wireless auditing utility that remains completely outside Aniket's focus areas of AI agents, developer productivity tooling, and FinTech systems.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/derv82/wifit3"
+      },
+      {
+        "id": "rohitg00/ai-engineering-from-scratch",
+        "owner": "rohitg00",
+        "name": "ai-engineering-from-scratch",
+        "stars": 57733,
+        "language": "Unknown",
+        "pushedAt": "2026-09-07",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository acts primarily as a broad educational curriculum. Given Aniket's advanced focus on agent orchestration and specialized workflows, it lacks the custom architectural depth required.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+      }
+    ]
   }
 };
 
@@ -1370,7 +1446,7 @@ Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-25",
+  value: "2026-09-26",
   enumerable: false,
   configurable: true,
   writable: true

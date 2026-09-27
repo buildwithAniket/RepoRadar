@@ -370,9 +370,9 @@ window.REPORADAR_DIGESTS = {
         "id": "debpalash/VoiceStudio",
         "owner": "debpalash",
         "name": "VoiceStudio",
-        "stars": 15217,
+        "stars": 38717,
         "language": "Python",
-        "pushedAt": "2026-08-28",
+        "pushedAt": "2026-09-23",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
@@ -1427,26 +1427,122 @@ window.REPORADAR_DIGESTS = {
         "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
       }
     ]
+  },
+  "2026-09-27": {
+    "date": "2026-09-27",
+    "evaluatedCount": 5,
+    "skippedCount": 4,
+    "stats": {
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 3,
+      "total": 5
+    },
+    "summary": {
+      "evaluated": 5,
+      "skipped": 4,
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 3,
+      "total": 5
+    },
+    "repos": [
+      {
+        "id": "vercel-labs/scriptc",
+        "owner": "vercel-labs",
+        "name": "scriptc",
+        "stars": 5212,
+        "language": "TypeScript",
+        "pushedAt": "2026-09-26",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "A TypeScript-to-native compiler directly aligns with the profile's interest in developer productivity and tooling, presenting innovative compiler-level infrastructure designed to enhance developer workflows and execution performance.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vercel-labs/scriptc"
+      },
+      {
+        "id": "mvschwarz/openrig",
+        "owner": "mvschwarz",
+        "name": "openrig",
+        "stars": 620,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project directly aligns with the AI agents and LLM orchestration focus area, serving as a multi-agent harness explicitly built to integrate and coordinate coding agents such as Claude Code and Codex within a unified system.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/mvschwarz/openrig"
+      },
+      {
+        "id": "debpalash/VoiceStudio",
+        "owner": "debpalash",
+        "name": "VoiceStudio",
+        "stars": 38717,
+        "language": "Python",
+        "pushedAt": "2026-09-23",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While an impressive open-source local audio and speech synthesis platform, VoiceStudio centers on media generation and voice cloning rather than autonomous AI agents, LLM orchestration, FinTech, career workflows, or developer productivity tooling specified in the profile.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/debpalash/VoiceStudio"
+      },
+      {
+        "id": "InfinityLoop1308/PipePipe",
+        "owner": "InfinityLoop1308",
+        "name": "PipePipe",
+        "stars": 6383,
+        "language": "Unknown",
+        "pushedAt": "2026-09-24",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is an Android front-end client for streaming YouTube and other media services, falling entirely outside the profile's core interests in AI agents, developer productivity tooling, career-ops, and FinTech systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/InfinityLoop1308/PipePipe"
+      },
+      {
+        "id": "willfaust/Madeira",
+        "owner": "willfaust",
+        "name": "Madeira",
+        "stars": 685,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This project centers on emulation technology to run Windows games on iOS devices, offering no architectural relevance or utility to the profile's core focus areas of AI agents, developer tooling, workflow automation, or FinTech.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/willfaust/Madeira"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-09-26",
+  value: "2026-09-27",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-26",
+  value: "2026-09-27",
   enumerable: false,
   configurable: true,
   writable: true

@@ -98,6 +98,15 @@
     "stars_at_check": 45691,
     "verdict": "fit"
   },
+  "InfinityLoop1308/PipePipe": {
+    "first_seen": "2026-09-27",
+    "last_checked": "2026-09-27",
+    "latest_release_at_check": "2026-09-24T23:36:27Z",
+    "profile_checked_against": "2026-09-27",
+    "reason": "This repository is an Android front-end client for streaming YouTube and other media services, falling entirely outside the profile's core interests in AI agents, developer productivity tooling, career-ops, and FinTech systems.",
+    "stars_at_check": 6383,
+    "verdict": "not-fit"
+  },
   "JetBrains/go-modern-guidelines": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-08-28",
@@ -496,12 +505,12 @@
   },
   "debpalash/VoiceStudio": {
     "first_seen": "2026-09-03",
-    "last_checked": "2026-09-03",
-    "latest_release_at_check": "2026-08-28T15:24:35Z",
-    "profile_checked_against": "2026-09-03",
-    "reason": "A powerful local tool, but its utility for your specific goals (career-ops and wealth management) is limited unless you are building voice-based interview prep agents.",
-    "stars_at_check": 15217,
-    "verdict": "maybe"
+    "last_checked": "2026-09-27",
+    "latest_release_at_check": "2026-09-23T08:53:32Z",
+    "profile_checked_against": "2026-09-27",
+    "reason": "While an impressive open-source local audio and speech synthesis platform, VoiceStudio centers on media generation and voice cloning rather than autonomous AI agents, LLM orchestration, FinTech, career workflows, or developer productivity tooling specified in the profile.",
+    "stars_at_check": 38717,
+    "verdict": "not-fit"
   },
   "derv82/wifit3": {
     "first_seen": "2026-09-25",
@@ -673,6 +682,15 @@
     "reason": "While technically impressive, this focuses on music generation, which falls outside your core interests in coding agents, financial tech, and career automation.",
     "stars_at_check": 8699,
     "verdict": "not-fit"
+  },
+  "mvschwarz/openrig": {
+    "first_seen": "2026-09-27",
+    "last_checked": "2026-09-27",
+    "latest_release_at_check": "2026-09-27T07:43:24Z",
+    "profile_checked_against": "2026-09-27",
+    "reason": "This project directly aligns with the AI agents and LLM orchestration focus area, serving as a multi-agent harness explicitly built to integrate and coordinate coding agents such as Claude Code and Codex within a unified system.",
+    "stars_at_check": 620,
+    "verdict": "fit"
   },
   "mvt-project/mvt": {
     "first_seen": "2026-09-22",
@@ -934,6 +952,24 @@
     "reason": "An excellent developer productivity tool that simplifies local environment management for both humans and agents, fitting your interest in workflow enhancers.",
     "stars_at_check": 11889,
     "verdict": "fit"
+  },
+  "vercel-labs/scriptc": {
+    "first_seen": "2026-09-27",
+    "last_checked": "2026-09-27",
+    "latest_release_at_check": "2026-09-26T15:38:27Z",
+    "profile_checked_against": "2026-09-27",
+    "reason": "A TypeScript-to-native compiler directly aligns with the profile's interest in developer productivity and tooling, presenting innovative compiler-level infrastructure designed to enhance developer workflows and execution performance.",
+    "stars_at_check": 5212,
+    "verdict": "fit"
+  },
+  "willfaust/Madeira": {
+    "first_seen": "2026-09-27",
+    "last_checked": "2026-09-27",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-09-27",
+    "reason": "This project centers on emulation technology to run Windows games on iOS devices, offering no architectural relevance or utility to the profile's core focus areas of AI agents, developer tooling, workflow automation, or FinTech.",
+    "stars_at_check": 685,
+    "verdict": "not-fit"
   },
   "zedeus/nitter": {
     "first_seen": "2026-08-28",

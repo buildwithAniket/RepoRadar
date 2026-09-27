@@ -1304,7 +1304,7 @@ window.REPORADAR_DIGESTS = {
         "id": "openbao/openbao",
         "owner": "openbao",
         "name": "openbao",
-        "stars": 7819,
+        "stars": 8110,
         "language": "Unknown",
         "pushedAt": "2026-09-23",
         "confidence": "medium",
@@ -1385,7 +1385,7 @@ window.REPORADAR_DIGESTS = {
         "id": "openbao/openbao",
         "owner": "openbao",
         "name": "openbao",
-        "stars": 7819,
+        "stars": 8110,
         "language": "Unknown",
         "pushedAt": "2026-09-23",
         "confidence": "medium",
@@ -1415,9 +1415,9 @@ window.REPORADAR_DIGESTS = {
         "id": "rohitg00/ai-engineering-from-scratch",
         "owner": "rohitg00",
         "name": "ai-engineering-from-scratch",
-        "stars": 57733,
+        "stars": 58726,
         "language": "Unknown",
-        "pushedAt": "2026-09-07",
+        "pushedAt": "2026-09-27",
         "confidence": "low",
         "verdict": "not-fit",
         "verdictLabel": "ARCHIVED / PASS",
@@ -1427,26 +1427,212 @@ window.REPORADAR_DIGESTS = {
         "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
       }
     ]
+  },
+  "2026-09-27": {
+    "date": "2026-09-27",
+    "evaluatedCount": 11,
+    "skippedCount": 4,
+    "stats": {
+      "fit": 3,
+      "maybe": 2,
+      "notFit": 6,
+      "total": 11
+    },
+    "summary": {
+      "evaluated": 11,
+      "skipped": 4,
+      "fit": 3,
+      "maybe": 2,
+      "notFit": 6,
+      "total": 11
+    },
+    "repos": [
+      {
+        "id": "zhaoxuya520/reverse-skill",
+        "owner": "zhaoxuya520",
+        "name": "reverse-skill",
+        "stars": 38243,
+        "language": "Unknown",
+        "pushedAt": "2026-08-08",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns well with Aniket's interest in coding agents and AI agent runners by providing an AI-powered skill router and on-demand toolchain specifically integrated with modern AI coding clients like Claude Code and Cursor.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/zhaoxuya520/reverse-skill"
+      },
+      {
+        "id": "anthropics/claude-code-action",
+        "owner": "anthropics",
+        "name": "claude-code-action",
+        "stars": 9192,
+        "language": "Unknown",
+        "pushedAt": "2025-08-26",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly targets AI coding agents and developer workflows, making it highly relevant to Aniket's focus on autonomous coding agents, LLM orchestration, and automated CI/CD developer productivity pipelines.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/anthropics/claude-code-action"
+      },
+      {
+        "id": "mobile-next/mobile-mcp",
+        "owner": "mobile-next",
+        "name": "mobile-mcp",
+        "stars": 7634,
+        "language": "Unknown",
+        "pushedAt": "2026-09-13",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Leveraging the Model Context Protocol (MCP) for automated mobile interaction and scraping bridges AI agents and cross-platform tooling, directly matching Aniket's core interest in LLM orchestration and specialized agent runners.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/mobile-next/mobile-mcp"
+      },
+      {
+        "id": "openbao/openbao",
+        "owner": "openbao",
+        "name": "openbao",
+        "stars": 8110,
+        "language": "Unknown",
+        "pushedAt": "2026-09-23",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While OpenBao offers robust secrets and data management infrastructure useful for secure backend architectures, it tilts more toward enterprise DevOps and security infrastructure than Aniket's core focus on AI agents, workflow automation, and financial systems.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/openbao/openbao"
+      },
+      {
+        "id": "block/buzz",
+        "owner": "block",
+        "name": "buzz",
+        "stars": 34951,
+        "language": "Unknown",
+        "pushedAt": "2026-09-24",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "As a hive mind communication platform, it touches upon multi-agent paradigms and distributed systems, making it potentially interesting for Aniket's interest in autonomous multi-agent systems, though its direct architectural fit depends heavily on its LLM orchestration depth.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/block/buzz"
+      },
+      {
+        "id": "tensorflow/tensorflow",
+        "owner": "tensorflow",
+        "name": "tensorflow",
+        "stars": 200545,
+        "language": "Unknown",
+        "pushedAt": "2026-03-06",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "As a massive foundational machine learning framework, TensorFlow is far too broad and low-level compared to Aniket's specialized focus on autonomous AI agents, LLM orchestration, and practical developer automation tools.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "id": "rohitg00/ai-engineering-from-scratch",
+        "owner": "rohitg00",
+        "name": "ai-engineering-from-scratch",
+        "stars": 58726,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository serves primarily as an introductory, broad educational curriculum. Given Aniket's advanced focus on agent orchestration and specialized workflows, it lacks the custom architectural depth and production utility required.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+      },
+      {
+        "id": "microsoft/vscode",
+        "owner": "microsoft",
+        "name": "vscode",
+        "stars": 193157,
+        "language": "Unknown",
+        "pushedAt": "2026-09-25",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "VS Code is a foundational code editor rather than a targeted tool, utility, or framework matching Aniket's specific profile in AI agents, developer productivity enhancements, or workflow automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/microsoft/vscode"
+      },
+      {
+        "id": "llvm/llvm-project",
+        "owner": "llvm",
+        "name": "llvm-project",
+        "stars": 40798,
+        "language": "Unknown",
+        "pushedAt": "2026-09-22",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "The LLVM compiler infrastructure project focuses on low-level compiler and toolchain technologies, which falls completely outside Aniket's core areas of AI agents, workflow automation, and developer productivity tools.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/llvm/llvm-project"
+      },
+      {
+        "id": "actions/runner-images",
+        "owner": "actions",
+        "name": "runner-images",
+        "stars": 13372,
+        "language": "Unknown",
+        "pushedAt": "2026-09-23",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "GitHub Actions runner images are standard DevOps infrastructure configurations rather than custom developer productivity utilities, workflow automation engines, or AI agent frameworks.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/actions/runner-images"
+      },
+      {
+        "id": "vercel/next.js",
+        "owner": "vercel",
+        "name": "next.js",
+        "stars": 142757,
+        "language": "JavaScript",
+        "pushedAt": "2026-09-22",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Next.js is a general-purpose React web framework. Without specific backend utility for AI agent orchestration or FinTech systems, it violates Aniket's exclusion criteria regarding frontend-heavy or broad foundational web frameworks.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vercel/next.js"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-09-26",
+  value: "2026-09-27",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-26",
+  value: "2026-09-27",
   enumerable: false,
   configurable: true,
   writable: true

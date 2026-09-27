@@ -757,11 +757,11 @@
   },
   "openbao/openbao": {
     "first_seen": "2026-09-25",
-    "last_checked": "2026-09-26",
+    "last_checked": "2026-09-27",
     "latest_release_at_check": "2026-09-23T17:39:54Z",
-    "profile_checked_against": "2026-09-26",
-    "reason": "Though it provides robust secrets and data management infrastructure useful in secure backend architectures, it tilts more toward enterprise DevOps and security than Aniket's direct focus on AI agents, automation, and wealth systems.",
-    "stars_at_check": 7819,
+    "profile_checked_against": "2026-09-27",
+    "reason": "OpenBao provides critical enterprise-grade secrets and sensitive data management infrastructure. While it leans towards foundational security and DevOps rather than AI agents or FinTech applications directly, its robust compliance and security tooling can be a useful backend utility for securing multi-currency wealth systems or agent execution environments.",
+    "stars_at_check": 8061,
     "verdict": "maybe"
   },
   "pacifio/atlas": {
@@ -838,11 +838,11 @@
   },
   "rohitg00/ai-engineering-from-scratch": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-09-26",
+    "last_checked": "2026-09-27",
     "latest_release_at_check": "2026-09-07T11:42:35Z",
-    "profile_checked_against": "2026-09-26",
-    "reason": "This repository acts primarily as a broad educational curriculum. Given Aniket's advanced focus on agent orchestration and specialized workflows, it lacks the custom architectural depth required.",
-    "stars_at_check": 57733,
+    "profile_checked_against": "2026-09-27",
+    "reason": "This repository remains primarily an educational curriculum and learning resource. Despite Aniket's strong focus on AI agents and LLM orchestration, it lacks the advanced architectural depth, custom agent runners, or production-grade utility required by his profile.",
+    "stars_at_check": 58574,
     "verdict": "not-fit"
   },
   "ruvnet/RuView": {

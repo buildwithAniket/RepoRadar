@@ -278,15 +278,6 @@
     "stars_at_check": 0,
     "verdict": "not-fit"
   },
-  "actions/runner-images": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-09-23T10:00:42Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "GitHub Actions runner images are standard DevOps infrastructure configurations rather than custom developer productivity utilities, workflow automation engines, or AI agent frameworks.",
-    "stars_at_check": 13372,
-    "verdict": "not-fit"
-  },
   "addyosmani/agent-skills": {
     "first_seen": "2026-09-17",
     "last_checked": "2026-09-17",
@@ -359,15 +350,6 @@
     "stars_at_check": 145644,
     "verdict": "fit"
   },
-  "anthropics/claude-code-action": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2025-08-26T17:01:10Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "This repository directly targets AI coding agents and developer workflows, making it highly relevant to Aniket's focus on autonomous coding agents, LLM orchestration, and automated CI/CD developer productivity pipelines.",
-    "stars_at_check": 9192,
-    "verdict": "fit"
-  },
   "anthropics/claude-plugins-official": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-09-25",
@@ -429,15 +411,6 @@
     "profile_checked_against": "2026-09-03",
     "reason": "Potentially useful for refining AI-generated content in your career-ops workflows (e.g., cover letters or outreach), but may be considered a 'wrapper' depending on its implementation.",
     "stars_at_check": 40699,
-    "verdict": "maybe"
-  },
-  "block/buzz": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-09-24T19:38:08Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "As a hive mind communication platform, it touches upon multi-agent paradigms and distributed systems, making it potentially interesting for Aniket's interest in autonomous multi-agent systems, though its direct architectural fit depends heavily on its LLM orchestration depth.",
-    "stars_at_check": 34951,
     "verdict": "maybe"
   },
   "browser-use/video-use": {
@@ -665,15 +638,6 @@
     "stars_at_check": 13403,
     "verdict": "fit"
   },
-  "llvm/llvm-project": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-09-22T06:49:10Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "The LLVM compiler infrastructure project focuses on low-level compiler and toolchain technologies, which falls completely outside Aniket's core areas of AI agents, workflow automation, and developer productivity tools.",
-    "stars_at_check": 40798,
-    "verdict": "not-fit"
-  },
   "localsend/localsend": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -699,24 +663,6 @@
     "profile_checked_against": "2026-09-03",
     "reason": "Provides practical, real-world agent skills that can be directly integrated into your existing agent runners to improve your daily coding productivity.",
     "stars_at_check": 245566,
-    "verdict": "fit"
-  },
-  "microsoft/vscode": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-09-25T09:58:03Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "VS Code is a foundational code editor rather than a targeted tool, utility, or framework matching Aniket's specific profile in AI agents, developer productivity enhancements, or workflow automation.",
-    "stars_at_check": 193157,
-    "verdict": "not-fit"
-  },
-  "mobile-next/mobile-mcp": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-09-13T20:24:38Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "Leveraging the Model Context Protocol (MCP) for automated mobile interaction and scraping bridges AI agents and cross-platform tooling, directly matching Aniket's core interest in LLM orchestration and specialized agent runners.",
-    "stars_at_check": 7634,
     "verdict": "fit"
   },
   "multimodal-art-projection/YuE": {
@@ -757,11 +703,11 @@
   },
   "openbao/openbao": {
     "first_seen": "2026-09-25",
-    "last_checked": "2026-09-27",
+    "last_checked": "2026-09-26",
     "latest_release_at_check": "2026-09-23T17:39:54Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "While OpenBao offers robust secrets and data management infrastructure useful for secure backend architectures, it tilts more toward enterprise DevOps and security infrastructure than Aniket's core focus on AI agents, workflow automation, and financial systems.",
-    "stars_at_check": 8110,
+    "profile_checked_against": "2026-09-26",
+    "reason": "Though it provides robust secrets and data management infrastructure useful in secure backend architectures, it tilts more toward enterprise DevOps and security than Aniket's direct focus on AI agents, automation, and wealth systems.",
+    "stars_at_check": 7819,
     "verdict": "maybe"
   },
   "pacifio/atlas": {
@@ -838,11 +784,11 @@
   },
   "rohitg00/ai-engineering-from-scratch": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-09-27T10:17:34Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "This repository serves primarily as an introductory, broad educational curriculum. Given Aniket's advanced focus on agent orchestration and specialized workflows, it lacks the custom architectural depth and production utility required.",
-    "stars_at_check": 58726,
+    "last_checked": "2026-09-26",
+    "latest_release_at_check": "2026-09-07T11:42:35Z",
+    "profile_checked_against": "2026-09-26",
+    "reason": "This repository acts primarily as a broad educational curriculum. Given Aniket's advanced focus on agent orchestration and specialized workflows, it lacks the custom architectural depth required.",
+    "stars_at_check": 57733,
     "verdict": "not-fit"
   },
   "ruvnet/RuView": {
@@ -944,15 +890,6 @@
     "stars_at_check": 6189,
     "verdict": "fit"
   },
-  "tensorflow/tensorflow": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-03-06T19:48:15Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "As a massive foundational machine learning framework, TensorFlow is far too broad and low-level compared to Aniket's specialized focus on autonomous AI agents, LLM orchestration, and practical developer automation tools.",
-    "stars_at_check": 200545,
-    "verdict": "not-fit"
-  },
   "test-org/victory-audit-test": {
     "first_seen": "2026-09-24",
     "last_checked": "2026-09-24",
@@ -998,15 +935,6 @@
     "stars_at_check": 11889,
     "verdict": "fit"
   },
-  "vercel/next.js": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-09-22T17:15:10Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "Next.js is a general-purpose React web framework. Without specific backend utility for AI agent orchestration or FinTech systems, it violates Aniket's exclusion criteria regarding frontend-heavy or broad foundational web frameworks.",
-    "stars_at_check": 142757,
-    "verdict": "not-fit"
-  },
   "zedeus/nitter": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-08-28",
@@ -1015,15 +943,6 @@
     "reason": "This is a legacy project for a defunct Twitter frontend; it does not align with your focus on AI agents or career-ops automation.",
     "stars_at_check": 0,
     "verdict": "not-fit"
-  },
-  "zhaoxuya520/reverse-skill": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": "2026-08-08T10:16:19Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "This repository aligns well with Aniket's interest in coding agents and AI agent runners by providing an AI-powered skill router and on-demand toolchain specifically integrated with modern AI coding clients like Claude Code and Cursor.",
-    "stars_at_check": 38243,
-    "verdict": "fit"
   },
   "zyronon/TypeWords": {
     "first_seen": "2026-09-03",

@@ -55,6 +55,21 @@ def _load_config() -> dict:
 
 
 def _profile_mtime(profile_path: Path, today: str) -> str:
+    # Prefer the last commit touching the profile: a fresh CI checkout stamps
+    # every file with the current time, which would flag the profile as changed
+    # on every run. Needs full history (fetch-depth: 0) in CI.
+    try:
+        committed = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--", profile_path.name],
+            cwd=profile_path.parent,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip()
+        if committed:
+            return committed
+    except (OSError, subprocess.CalledProcessError):
+        pass
     if profile_path.exists():
         mtime = datetime.datetime.fromtimestamp(profile_path.stat().st_mtime).date()
         return mtime.isoformat()

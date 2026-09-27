@@ -1427,26 +1427,182 @@ window.REPORADAR_DIGESTS = {
         "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
       }
     ]
+  },
+  "2026-09-27": {
+    "date": "2026-09-27",
+    "evaluatedCount": 9,
+    "skippedCount": 6,
+    "stats": {
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 6,
+      "total": 9
+    },
+    "summary": {
+      "evaluated": 9,
+      "skipped": 6,
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 6,
+      "total": 9
+    },
+    "repos": [
+      {
+        "id": "anthropics/claude-code-action",
+        "owner": "anthropics",
+        "name": "claude-code-action",
+        "stars": 9103,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "A GitHub Actions integration for a coding agent, letting it run inside CI/automation workflows. This lands squarely in the AI agents & developer tooling interest — coding-agent automation and CI/workflow integration for agentic tools is exactly the kind of thing being tracked.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/anthropics/claude-code-action"
+      },
+      {
+        "id": "mobile-next/mobile-mcp",
+        "owner": "mobile-next",
+        "name": "mobile-mcp",
+        "stars": 7378,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "An MCP (Model Context Protocol) server for mobile automation and scraping. This is a direct match for the interest in MCP servers/integrations and agentic automation tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/mobile-next/mobile-mcp"
+      },
+      {
+        "id": "block/buzz",
+        "owner": "block",
+        "name": "buzz",
+        "stars": 34840,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "The description ('a hive mind communication platform') is too vague to place confidently — it could be a multi-agent coordination/communication layer, which would fit the AI agents & dev tooling interest, or it could be a general team-chat product, which wouldn't. Flagging as maybe rather than dropping it silently, pending more detail.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/block/buzz"
+      },
+      {
+        "id": "tensorflow/tensorflow",
+        "owner": "tensorflow",
+        "name": "tensorflow",
+        "stars": 200467,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This is a general-purpose, foundational machine learning framework rather than an AI agent orchestration tool, developer-productivity CLI utility, career tool, or finance tool — it doesn't map onto any of the current focus areas, and its enormous existing popularity means it isn't new signal either.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "id": "microsoft/vscode",
+        "owner": "microsoft",
+        "name": "vscode",
+        "stars": 193079,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "A long-established, general-purpose code editor rather than a focused CLI utility, testing pipeline, or workflow enhancer. It doesn't add new signal for developer-productivity tooling and isn't related to AI agents, career tooling, or finance.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/microsoft/vscode"
+      },
+      {
+        "id": "zhaoxuya520/reverse-skill",
+        "owner": "zhaoxuya520",
+        "name": "reverse-skill",
+        "stars": 38034,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "A reverse-engineering / penetration-testing toolkit — security research tooling that sits entirely outside the AI agents, career-automation, finance, and productivity focus areas.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/zhaoxuya520/reverse-skill"
+      },
+      {
+        "id": "llvm/llvm-project",
+        "owner": "llvm",
+        "name": "llvm-project",
+        "stars": 40755,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Compiler and toolchain infrastructure. Foundational systems software, but unrelated to AI agent orchestration, career tooling, finance, or personal productivity automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/llvm/llvm-project"
+      },
+      {
+        "id": "actions/runner-images",
+        "owner": "actions",
+        "name": "runner-images",
+        "stars": 13307,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Generic CI runner VM images — general DevOps/CI infrastructure rather than an agent framework, career tool, finance tool, or a distinctive personal productivity utility.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/actions/runner-images"
+      },
+      {
+        "id": "vercel/next.js",
+        "owner": "vercel",
+        "name": "next.js",
+        "stars": 142652,
+        "language": "JavaScript",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "A general-purpose web application framework. Not related to AI agents/dev tooling, career automation, finance, or personal productivity workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vercel/next.js"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-09-26",
+  value: "2026-09-27",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-26",
+  value: "2026-09-27",
   enumerable: false,
   configurable: true,
   writable: true

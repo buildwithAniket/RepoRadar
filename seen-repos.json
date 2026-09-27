@@ -278,15 +278,6 @@
     "stars_at_check": 0,
     "verdict": "not-fit"
   },
-  "actions/runner-images": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "Generic CI runner VM images \u2014 general DevOps/CI infrastructure rather than an agent framework, career tool, finance tool, or a distinctive personal productivity utility.",
-    "stars_at_check": 13307,
-    "verdict": "not-fit"
-  },
   "addyosmani/agent-skills": {
     "first_seen": "2026-09-17",
     "last_checked": "2026-09-17",
@@ -359,15 +350,6 @@
     "stars_at_check": 145644,
     "verdict": "fit"
   },
-  "anthropics/claude-code-action": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "A GitHub Actions integration for a coding agent, letting it run inside CI/automation workflows. This lands squarely in the AI agents & developer tooling interest \u2014 coding-agent automation and CI/workflow integration for agentic tools is exactly the kind of thing being tracked.",
-    "stars_at_check": 9103,
-    "verdict": "fit"
-  },
   "anthropics/claude-plugins-official": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-09-25",
@@ -429,15 +411,6 @@
     "profile_checked_against": "2026-09-03",
     "reason": "Potentially useful for refining AI-generated content in your career-ops workflows (e.g., cover letters or outreach), but may be considered a 'wrapper' depending on its implementation.",
     "stars_at_check": 40699,
-    "verdict": "maybe"
-  },
-  "block/buzz": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "The description ('a hive mind communication platform') is too vague to place confidently \u2014 it could be a multi-agent coordination/communication layer, which would fit the AI agents & dev tooling interest, or it could be a general team-chat product, which wouldn't. Flagging as maybe rather than dropping it silently, pending more detail.",
-    "stars_at_check": 34840,
     "verdict": "maybe"
   },
   "browser-use/video-use": {
@@ -665,15 +638,6 @@
     "stars_at_check": 13403,
     "verdict": "fit"
   },
-  "llvm/llvm-project": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "Compiler and toolchain infrastructure. Foundational systems software, but unrelated to AI agent orchestration, career tooling, finance, or personal productivity automation.",
-    "stars_at_check": 40755,
-    "verdict": "not-fit"
-  },
   "localsend/localsend": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -699,24 +663,6 @@
     "profile_checked_against": "2026-09-03",
     "reason": "Provides practical, real-world agent skills that can be directly integrated into your existing agent runners to improve your daily coding productivity.",
     "stars_at_check": 245566,
-    "verdict": "fit"
-  },
-  "microsoft/vscode": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "A long-established, general-purpose code editor rather than a focused CLI utility, testing pipeline, or workflow enhancer. It doesn't add new signal for developer-productivity tooling and isn't related to AI agents, career tooling, or finance.",
-    "stars_at_check": 193079,
-    "verdict": "not-fit"
-  },
-  "mobile-next/mobile-mcp": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "An MCP (Model Context Protocol) server for mobile automation and scraping. This is a direct match for the interest in MCP servers/integrations and agentic automation tooling.",
-    "stars_at_check": 7378,
     "verdict": "fit"
   },
   "multimodal-art-projection/YuE": {
@@ -757,11 +703,11 @@
   },
   "openbao/openbao": {
     "first_seen": "2026-09-25",
-    "last_checked": "2026-09-27",
+    "last_checked": "2026-09-26",
     "latest_release_at_check": "2026-09-23T17:39:54Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "OpenBao provides critical enterprise-grade secrets and sensitive data management infrastructure. While it leans towards foundational security and DevOps rather than AI agents or FinTech applications directly, its robust compliance and security tooling can be a useful backend utility for securing multi-currency wealth systems or agent execution environments.",
-    "stars_at_check": 8061,
+    "profile_checked_against": "2026-09-26",
+    "reason": "Though it provides robust secrets and data management infrastructure useful in secure backend architectures, it tilts more toward enterprise DevOps and security than Aniket's direct focus on AI agents, automation, and wealth systems.",
+    "stars_at_check": 7819,
     "verdict": "maybe"
   },
   "pacifio/atlas": {
@@ -838,11 +784,11 @@
   },
   "rohitg00/ai-engineering-from-scratch": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-09-27",
+    "last_checked": "2026-09-26",
     "latest_release_at_check": "2026-09-07T11:42:35Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "This repository remains primarily an educational curriculum and learning resource. Despite Aniket's strong focus on AI agents and LLM orchestration, it lacks the advanced architectural depth, custom agent runners, or production-grade utility required by his profile.",
-    "stars_at_check": 58574,
+    "profile_checked_against": "2026-09-26",
+    "reason": "This repository acts primarily as a broad educational curriculum. Given Aniket's advanced focus on agent orchestration and specialized workflows, it lacks the custom architectural depth required.",
+    "stars_at_check": 57733,
     "verdict": "not-fit"
   },
   "ruvnet/RuView": {
@@ -944,15 +890,6 @@
     "stars_at_check": 6189,
     "verdict": "fit"
   },
-  "tensorflow/tensorflow": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "This is a general-purpose, foundational machine learning framework rather than an AI agent orchestration tool, developer-productivity CLI utility, career tool, or finance tool \u2014 it doesn't map onto any of the current focus areas, and its enormous existing popularity means it isn't new signal either.",
-    "stars_at_check": 200467,
-    "verdict": "not-fit"
-  },
   "test-org/victory-audit-test": {
     "first_seen": "2026-09-24",
     "last_checked": "2026-09-24",
@@ -998,15 +935,6 @@
     "stars_at_check": 11889,
     "verdict": "fit"
   },
-  "vercel/next.js": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "A general-purpose web application framework. Not related to AI agents/dev tooling, career automation, finance, or personal productivity workflows.",
-    "stars_at_check": 142652,
-    "verdict": "not-fit"
-  },
   "zedeus/nitter": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-08-28",
@@ -1014,15 +942,6 @@
     "profile_checked_against": "2026-08-28",
     "reason": "This is a legacy project for a defunct Twitter frontend; it does not align with your focus on AI agents or career-ops automation.",
     "stars_at_check": 0,
-    "verdict": "not-fit"
-  },
-  "zhaoxuya520/reverse-skill": {
-    "first_seen": "2026-09-27",
-    "last_checked": "2026-09-27",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-27",
-    "reason": "A reverse-engineering / penetration-testing toolkit \u2014 security research tooling that sits entirely outside the AI agents, career-automation, finance, and productivity focus areas.",
-    "stars_at_check": 38034,
     "verdict": "not-fit"
   },
   "zyronon/TypeWords": {

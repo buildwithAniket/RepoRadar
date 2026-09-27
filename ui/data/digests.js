@@ -1304,7 +1304,7 @@ window.REPORADAR_DIGESTS = {
         "id": "openbao/openbao",
         "owner": "openbao",
         "name": "openbao",
-        "stars": 8061,
+        "stars": 7819,
         "language": "Unknown",
         "pushedAt": "2026-09-23",
         "confidence": "medium",
@@ -1385,7 +1385,7 @@ window.REPORADAR_DIGESTS = {
         "id": "openbao/openbao",
         "owner": "openbao",
         "name": "openbao",
-        "stars": 8061,
+        "stars": 7819,
         "language": "Unknown",
         "pushedAt": "2026-09-23",
         "confidence": "medium",
@@ -1415,7 +1415,7 @@ window.REPORADAR_DIGESTS = {
         "id": "rohitg00/ai-engineering-from-scratch",
         "owner": "rohitg00",
         "name": "ai-engineering-from-scratch",
-        "stars": 58574,
+        "stars": 57733,
         "language": "Unknown",
         "pushedAt": "2026-09-07",
         "confidence": "low",
@@ -1427,77 +1427,26 @@ window.REPORADAR_DIGESTS = {
         "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
       }
     ]
-  },
-  "2026-09-27": {
-    "date": "2026-09-27",
-    "evaluatedCount": 2,
-    "skippedCount": 13,
-    "stats": {
-      "fit": 0,
-      "maybe": 1,
-      "notFit": 1,
-      "total": 2
-    },
-    "summary": {
-      "evaluated": 2,
-      "skipped": 13,
-      "fit": 0,
-      "maybe": 1,
-      "notFit": 1,
-      "total": 2
-    },
-    "repos": [
-      {
-        "id": "openbao/openbao",
-        "owner": "openbao",
-        "name": "openbao",
-        "stars": 8061,
-        "language": "Unknown",
-        "pushedAt": "2026-09-23",
-        "confidence": "medium",
-        "verdict": "maybe",
-        "verdictLabel": "UNDER REVIEW",
-        "reason": "OpenBao provides critical enterprise-grade secrets and sensitive data management infrastructure. While it leans towards foundational security and DevOps rather than AI agents or FinTech applications directly, its robust compliance and security tooling can be a useful backend utility for securing multi-currency wealth systems or agent execution environments.",
-        "classification": "profile-changed",
-        "topics": [],
-        "url": "https://github.com/openbao/openbao"
-      },
-      {
-        "id": "rohitg00/ai-engineering-from-scratch",
-        "owner": "rohitg00",
-        "name": "ai-engineering-from-scratch",
-        "stars": 58574,
-        "language": "Unknown",
-        "pushedAt": "2026-09-07",
-        "confidence": "low",
-        "verdict": "not-fit",
-        "verdictLabel": "ARCHIVED / PASS",
-        "reason": "This repository remains primarily an educational curriculum and learning resource. Despite Aniket's strong focus on AI agents and LLM orchestration, it lacks the advanced architectural depth, custom agent runners, or production-grade utility required by his profile.",
-        "classification": "profile-changed",
-        "topics": [],
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
-      }
-    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-09-27",
+  value: "2026-09-26",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-27",
+  value: "2026-09-26",
   enumerable: false,
   configurable: true,
   writable: true

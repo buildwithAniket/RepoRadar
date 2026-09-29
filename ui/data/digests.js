@@ -1466,9 +1466,9 @@ window.REPORADAR_DIGESTS = {
         "id": "mvschwarz/openrig",
         "owner": "mvschwarz",
         "name": "openrig",
-        "stars": 620,
+        "stars": 2273,
         "language": "Unknown",
-        "pushedAt": "2026-09-27",
+        "pushedAt": "2026-09-29",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -1543,26 +1543,167 @@ window.REPORADAR_DIGESTS = {
       "total": 0
     },
     "repos": []
+  },
+  "2026-09-29": {
+    "date": "2026-09-29",
+    "evaluatedCount": 8,
+    "skippedCount": 6,
+    "stats": {
+      "fit": 3,
+      "maybe": 2,
+      "notFit": 3,
+      "total": 8
+    },
+    "summary": {
+      "evaluated": 8,
+      "skipped": 6,
+      "fit": 3,
+      "maybe": 2,
+      "notFit": 3,
+      "total": 8
+    },
+    "repos": [
+      {
+        "id": "NVIDIA/OpenShell",
+        "owner": "NVIDIA",
+        "name": "OpenShell",
+        "stars": 10369,
+        "language": "Unknown",
+        "pushedAt": "2026-09-28",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's interest in AI agents and LLM orchestration by providing a safe, private runtime environment specifically designed for autonomous AI agents.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/NVIDIA/OpenShell"
+      },
+      {
+        "id": "mvschwarz/openrig",
+        "owner": "mvschwarz",
+        "name": "openrig",
+        "stars": 2273,
+        "language": "Unknown",
+        "pushedAt": "2026-09-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project is a strong fit for the profile's core focus on AI agents and coding agents, as it implements a multi-agent harness to orchestrate systems like Claude Code and Codex together.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/mvschwarz/openrig"
+      },
+      {
+        "id": "VectifyAI/PageIndex",
+        "owner": "VectifyAI",
+        "name": "PageIndex",
+        "stars": 37137,
+        "language": "Unknown",
+        "pushedAt": "2026-09-28",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository fits the profile's interest in advanced LLM infrastructure and structured retrieval/generation frameworks by introducing a vectorless, reasoning-based RAG document index.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/VectifyAI/PageIndex"
+      },
+      {
+        "id": "t8y2/dbx",
+        "owner": "t8y2",
+        "name": "dbx",
+        "stars": 21837,
+        "language": "Unknown",
+        "pushedAt": "2026-09-29",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While primarily a database utility, the inclusion of built-in AI and an MCP Server connects well with the developer productivity and modern LLM tooling interests outlined in the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/t8y2/dbx"
+      },
+      {
+        "id": "rakyll/hey",
+        "owner": "rakyll",
+        "name": "hey",
+        "stars": 20431,
+        "language": "Unknown",
+        "pushedAt": "2026-01-10",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "As a lightweight CLI HTTP load generator, it aligns loosely with the developer productivity and high-performance system tooling categories, though it lacks direct AI or automation depth.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/rakyll/hey"
+      },
+      {
+        "id": "oblien/openship",
+        "owner": "oblien",
+        "name": "openship",
+        "stars": 13722,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This self-hosted deployment platform falls outside the profile's specific focus areas, lacking direct ties to AI orchestration, developer workflow automation utilities, or financial systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/oblien/openship"
+      },
+      {
+        "id": "averygan/reclip",
+        "owner": "averygan",
+        "name": "reclip",
+        "stars": 9959,
+        "language": "Unknown",
+        "pushedAt": "2026-09-29",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "A self-hosted media downloader utility does not intersect with any of the core focus areas or exclusion filters specified in the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/averygan/reclip"
+      },
+      {
+        "id": "cs341-illinois/coursebook",
+        "owner": "cs341-illinois",
+        "name": "coursebook",
+        "stars": 2997,
+        "language": "Unknown",
+        "pushedAt": "2019-08-18",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "An academic systems programming textbook lacks the active tooling, software architecture, or workflow automation capabilities targeted by the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/cs341-illinois/coursebook"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-09-28",
+  value: "2026-09-29",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-27",
+  value: "2026-09-29",
   enumerable: false,
   configurable: true,
   writable: true

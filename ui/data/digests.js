@@ -1466,9 +1466,9 @@ window.REPORADAR_DIGESTS = {
         "id": "mvschwarz/openrig",
         "owner": "mvschwarz",
         "name": "openrig",
-        "stars": 620,
+        "stars": 2249,
         "language": "Unknown",
-        "pushedAt": "2026-09-27",
+        "pushedAt": "2026-09-29",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -1543,26 +1543,167 @@ window.REPORADAR_DIGESTS = {
       "total": 0
     },
     "repos": []
+  },
+  "2026-09-29": {
+    "date": "2026-09-29",
+    "evaluatedCount": 8,
+    "skippedCount": 6,
+    "stats": {
+      "fit": 6,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 8
+    },
+    "summary": {
+      "evaluated": 8,
+      "skipped": 6,
+      "fit": 6,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 8
+    },
+    "repos": [
+      {
+        "id": "NVIDIA/OpenShell",
+        "owner": "NVIDIA",
+        "name": "OpenShell",
+        "stars": 10325,
+        "language": "Unknown",
+        "pushedAt": "2026-09-28",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "NVIDIA/OpenShell directly aligns with the profile's primary focus on AI Agents & LLM Orchestration, specifically serving as a secure and private runtime for autonomous agent execution. As an agent environment framework built for isolated execution, it addresses critical infrastructure needs in local and cloud agent deployment pipelines.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/NVIDIA/OpenShell"
+      },
+      {
+        "id": "t8y2/dbx",
+        "owner": "t8y2",
+        "name": "dbx",
+        "stars": 21818,
+        "language": "Unknown",
+        "pushedAt": "2026-09-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository fits the profile's emphasis on Developer Productivity & Tooling as well as LLM Orchestration through its lightweight CLI and desktop interface with integrated MCP server support. Its multi-database client capabilities and developer-centric workflow enhancements match the criteria for high-utility engineering tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/t8y2/dbx"
+      },
+      {
+        "id": "mvschwarz/openrig",
+        "owner": "mvschwarz",
+        "name": "openrig",
+        "stars": 2249,
+        "language": "Unknown",
+        "pushedAt": "2026-09-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project fits the profile's core focus on AI Agents & LLM Orchestration, specifically targeting multi-agent systems that coordinate coding agents like Claude Code and Codex. Its framework for orchestrating complementary agent executions provides distinct utility within local and cloud developer workflow automation.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/mvschwarz/openrig"
+      },
+      {
+        "id": "oblien/openship",
+        "owner": "oblien",
+        "name": "openship",
+        "stars": 13708,
+        "language": "Unknown",
+        "pushedAt": "2026-09-27",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns with the profile's interest in Developer Productivity & Tooling by providing a self-hosted platform to streamline application deployment workflows. It offers backend infrastructure depth aimed at enhancing developer delivery pipelines without overlapping excluded frontend-only applications.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/oblien/openship"
+      },
+      {
+        "id": "VectifyAI/PageIndex",
+        "owner": "VectifyAI",
+        "name": "PageIndex",
+        "stars": 37093,
+        "language": "Unknown",
+        "pushedAt": "2026-09-28",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "PageIndex fits the profile's focus on AI Agents & LLM Orchestration by offering a novel, reasoning-based approach to document indexing for RAG pipelines without vector embeddings. Its custom architecture for context generation directly serves autonomous systems and structured generation frameworks.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/VectifyAI/PageIndex"
+      },
+      {
+        "id": "rakyll/hey",
+        "owner": "rakyll",
+        "name": "hey",
+        "stars": 20427,
+        "language": "Unknown",
+        "pushedAt": "2026-01-10",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This tool aligns with the profile's interest in Developer Productivity & Tooling, specifically providing a clean, high-performance CLI utility for HTTP load generation and API performance testing. It offers straightforward utility for modern developer benchmarking and pipeline automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/rakyll/hey"
+      },
+      {
+        "id": "averygan/reclip",
+        "owner": "averygan",
+        "name": "reclip",
+        "stars": 9940,
+        "language": "Unknown",
+        "pushedAt": "2026-09-29",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While a useful utility, this self-hosted media downloader falls outside the core focus areas of the profile, which center on AI agents, career-ops automation, fintech systems, and developer productivity tooling. It lacks alignment with high-performance developer workflows or LLM orchestration needs.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/averygan/reclip"
+      },
+      {
+        "id": "cs341-illinois/coursebook",
+        "owner": "cs341-illinois",
+        "name": "coursebook",
+        "stars": 2983,
+        "language": "Unknown",
+        "pushedAt": "2019-08-18",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is an educational textbook for introductory systems programming and does not align with the profile's core focus areas such as AI agents, career automation, fintech, or actionable developer productivity tools. Additionally, it serves primarily as static reference material rather than software infrastructure or tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/cs341-illinois/coursebook"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-09-28",
+  value: "2026-09-29",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-27",
+  value: "2026-09-29",
   enumerable: false,
   configurable: true,
   writable: true

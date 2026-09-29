@@ -18,3 +18,17 @@ scraper:
   # Fail the pipeline if the trending scrape returns 0 repos?
   # Set to false for lenient mode (continue with empty list).
   fail_on_empty: true
+
+# LLM judge (Gemini). Models are tried in order; the first success wins.
+# A GEMINI_MODEL env var/repo variable, if set, is tried before this list.
+judge:
+  gemini_models:
+    - gemini-3.8-flash
+    - gemini-2.5-flash
+    - gemini-2.5-flash-lite
+  # Also append other flash models found via the Gemini model-list API
+  # (newest first) after the configured ones.
+  discover_models: true
+  # Tries per model for transient errors (429/5xx/timeout) before moving on.
+  attempts_per_model: 2
+  timeout_seconds: 60

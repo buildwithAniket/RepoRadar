@@ -3,8 +3,9 @@
 Evaluates repos from .needs_evaluation.json against the user's profile
 and writes structured verdicts to verdicts.json.
 
-FAILS LOUDLY when no LLM API key is configured or all retries are exhausted,
-rather than silently producing mock "fit" verdicts.
+Tries a chain of Gemini models (config.yaml ``judge.gemini_models``) in order,
+moving on when a model is overloaded or unavailable. FAILS LOUDLY when no API
+key is configured or every model fails, rather than fabricating verdicts.
 """
 
 from __future__ import annotations
@@ -53,88 +54,153 @@ def _parse_llm_response(text: str) -> str:
     return text.strip()
 
 
-def _call_gemini(gemini_key: str, gemini_model: str, prompt: str, attempt: int) -> list[Verdict] | str | None:
-    """Try a single Gemini call.
+_GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+_TRANSIENT_STATUS = {429, 500, 502, 503, 504}
+# Model-name fragments that are not general text generators.
+_NON_TEXT_MARKERS = ("tts", "image", "embedding", "live", "audio", "aqa", "imagen", "veo", "robotics", "computer-use")
+_DEFAULT_JUDGE_CONFIG = {
+    "gemini_models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"],
+    "discover_models": True,
+    "attempts_per_model": 2,
+    "timeout_seconds": 60,
+}
 
-    Returns:
-        - list[Verdict] on success
-        - "RETRY" when rate-limited and should be retried
-        - None on non-retryable failure
-    """
+
+class GeminiCallError(Exception):
+    """A failed Gemini call. ``transient`` means the same model may succeed on retry."""
+
+    def __init__(self, message: str, *, transient: bool) -> None:
+        super().__init__(message)
+        self.transient = transient
+
+
+def _load_judge_config() -> dict:
+    import yaml
+
+    cfg = dict(_DEFAULT_JUDGE_CONFIG)
+    config_path = Path(__file__).resolve().parent.parent / "config.yaml"
+    if config_path.is_file():
+        with open(config_path) as f:
+            cfg.update((yaml.safe_load(f) or {}).get("judge") or {})
+    return cfg
+
+
+def _list_gemini_models(gemini_key: str, timeout: int) -> list[str] | None:
+    """Return text-generation model names available to this key, or None if the
+    list call fails. Note: this reports what exists, not current load/health."""
     import requests
 
     from logger import log
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{gemini_model}:generateContent?key={gemini_key}"
+    names: list[str] = []
+    page_token = ""
+    try:
+        while True:
+            params = {"key": gemini_key, "pageSize": 1000}
+            if page_token:
+                params["pageToken"] = page_token
+            resp = requests.get(f"{_GEMINI_BASE}/models", params=params, timeout=timeout)
+            if resp.status_code != 200:
+                log.warning("Gemini model list failed (%d); using configured models as-is.", resp.status_code)
+                return None
+            data = resp.json()
+            for m in data.get("models", []):
+                name = m.get("name", "").removeprefix("models/")
+                if "generateContent" in m.get("supportedGenerationMethods", []) and not any(
+                    marker in name for marker in _NON_TEXT_MARKERS
+                ):
+                    names.append(name)
+            page_token = data.get("nextPageToken", "")
+            if not page_token:
+                return names
+    except Exception as e:
+        log.warning("Gemini model list failed (%s); using configured models as-is.", e)
+        return None
+
+
+def _version_key(name: str) -> tuple:
+    import re
+
+    return tuple(int(n) for n in re.findall(r"\d+", name))
+
+
+def _build_model_chain(
+    configured: list[str], available: list[str] | None, discover: bool, preferred: str | None
+) -> list[str]:
+    """Preferred env model, then configured order, then (optionally) other
+    discovered flash models, newest first."""
+    from logger import log
+
+    chain: list[str] = []
+
+    def add(name: str) -> None:
+        if name and name not in chain:
+            chain.append(name)
+
+    if preferred:
+        add(preferred)
+    for name in configured:
+        if available is not None and name not in available:
+            log.warning("Configured Gemini model %s not in model list; skipping.", name)
+            continue
+        add(name)
+    if discover and available:
+        for name in sorted((n for n in available if "flash" in n), key=_version_key, reverse=True):
+            add(name)
+    return chain
+
+
+def _call_gemini(gemini_key: str, gemini_model: str, prompt: str, timeout: int) -> list[Verdict]:
+    """Single Gemini call. Returns verdicts or raises ``GeminiCallError``."""
+    import requests
+
+    url = f"{_GEMINI_BASE}/models/{gemini_model}:generateContent?key={gemini_key}"
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": 0.2},
     }
     try:
-        resp = requests.post(url, json=body, timeout=30)
-        if resp.status_code == 200:
-            data = resp.json()
-            content = data["candidates"][0]["content"]["parts"][0]["text"]
-            parsed = _parse_llm_response(content)
-            return json.loads(parsed)
-        elif resp.status_code == 429:
-            wait_time = 2 ** (attempt + 1)
-            log.warning("Gemini rate limited (429). Retrying in %ds...", wait_time)
-            time.sleep(wait_time)
-            return "RETRY"
-        else:
-            log.error("Gemini API error (%d): %s", resp.status_code, resp.text[:300])
-            return None
-    except Exception as e:
-        log.error("Gemini API exception: %s", e)
-        time.sleep(2)
-        return None
+        resp = requests.post(url, json=body, timeout=timeout)
+    except requests.RequestException as e:
+        raise GeminiCallError(f"request error: {e}", transient=True) from e
+
+    if resp.status_code != 200:
+        raise GeminiCallError(
+            f"HTTP {resp.status_code}: {resp.text[:200]}",
+            transient=resp.status_code in _TRANSIENT_STATUS,
+        )
+    try:
+        content = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+        return json.loads(_parse_llm_response(content))
+    except (KeyError, IndexError, ValueError) as e:
+        raise GeminiCallError(f"unparseable response: {e}", transient=False) from e
 
 
-def _call_openai(openai_key: str, prompt: str, attempt: int) -> list[Verdict] | str | None:
-    """Try a single OpenAI call.
-
-    Returns:
-        - list[Verdict] on success
-        - "RETRY" when rate-limited and should be retried
-        - None on non-retryable failure
-    """
-    import requests
-
+def _judge_with_fallback(gemini_key: str, chain: list[str], prompt: str, attempts: int, timeout: int) -> list[Verdict]:
     from logger import log
 
-    headers = {
-        "Authorization": f"Bearer {openai_key}",
-        "Content-Type": "application/json",
-    }
-    body = {
-        "model": "gpt-4o-mini",
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.2,
-    }
-    try:
-        resp = requests.post(
-            "https://api.openai.com/v1/chat/completions",
-            headers=headers,
-            json=body,
-            timeout=30,
-        )
-        if resp.status_code == 200:
-            content = resp.json()["choices"][0]["message"]["content"]
-            parsed = _parse_llm_response(content)
-            return json.loads(parsed)
-        elif resp.status_code == 429:
-            wait_time = 2 ** (attempt + 1)
-            log.warning("OpenAI rate limited (429). Retrying in %ds...", wait_time)
-            time.sleep(wait_time)
-            return "RETRY"
-        else:
-            log.error("OpenAI API error (%d): %s", resp.status_code, resp.text[:300])
-            return None
-    except Exception as e:
-        log.error("OpenAI exception: %s", e)
-        time.sleep(2)
-        return None
+    failures: list[str] = []
+    for model in chain:
+        for attempt in range(attempts):
+            log.info("Judging with %s (attempt %d/%d)...", model, attempt + 1, attempts)
+            try:
+                verdicts = _call_gemini(gemini_key, model, prompt, timeout)
+            except GeminiCallError as e:
+                log.warning("%s failed: %s", model, e)
+                if not e.transient:
+                    failures.append(f"{model}: {e}")
+                    break
+                if attempt + 1 < attempts:
+                    time.sleep(2 ** (attempt + 1))
+                else:
+                    failures.append(f"{model}: {e}")
+                continue
+            if verdicts:
+                log.info("Judged with %s.", model)
+                return verdicts
+            failures.append(f"{model}: empty verdicts")
+            break
+    raise RuntimeError("LLM judgment failed on every Gemini model:\n  " + "\n  ".join(failures))
 
 
 # --------------------------------------------------------------------------- #
@@ -151,7 +217,7 @@ def judge_repositories(
     """Run LLM judgment on the repos from *needs_evaluation_path*.
 
     Returns the parsed verdicts list. Raises ``RuntimeError`` when no LLM
-    API key is available or all retry attempts are exhausted, so the caller
+    API key is available or every model in the chain fails, so the caller
     (scan.py finalize) does not silently proceed with fabricated verdicts.
     """
     from logger import log
@@ -180,14 +246,20 @@ def judge_repositories(
         prompt_repos.append({**entry, "prior": facts})
 
     gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
-    gemini_model = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
-    openai_key = os.environ.get("OPENAI_API_KEY")
-
-    if not gemini_key and not openai_key:
+    if not gemini_key:
         raise RuntimeError(
-            "No LLM API key configured. Set GEMINI_API_KEY / GOOGLE_API_KEY "
-            "or OPENAI_API_KEY in your environment or .env file."
+            "No LLM API key configured. Set GEMINI_API_KEY / GOOGLE_API_KEY in your environment or .env file."
         )
+
+    cfg = _load_judge_config()
+    timeout = int(cfg["timeout_seconds"])
+    available = _list_gemini_models(gemini_key, timeout) if cfg["discover_models"] else None
+    chain = _build_model_chain(
+        cfg["gemini_models"], available, bool(cfg["discover_models"]), os.environ.get("GEMINI_MODEL") or None
+    )
+    if not chain:
+        raise RuntimeError("No Gemini models to try. Check judge.gemini_models in config.yaml.")
+    log.info("Gemini model chain: %s", ", ".join(chain))
 
     # Judgments are published in public reports, so the prompt never names the
     # profile owner and tells the model not to either.
@@ -205,46 +277,7 @@ Return a JSON array where each entry has:
 In judgments, refer to "the profile" and its focus areas. Never use a person's name, pronouns, or possessives like "his" or "the user's".
 Return ONLY valid JSON array without extra markdown formatting."""
 
-    max_retries = 3
-    verdicts: list[Verdict] | None = None
-
-    for attempt in range(max_retries):
-        log.info("LLM judgment attempt %d/%d...", attempt + 1, max_retries)
-
-        if gemini_key and not openai_key:
-            result = _call_gemini(gemini_key, gemini_model, prompt, attempt)
-        elif openai_key and not gemini_key:
-            result = _call_openai(openai_key, prompt, attempt)
-        elif gemini_key:
-            # Gemini preferred, OpenAI fallback on failure
-            result = _call_gemini(gemini_key, gemini_model, prompt, attempt)
-            if result == "RETRY":
-                continue
-            if isinstance(result, list):
-                verdicts = result
-                break
-            # Non-retryable Gemini failure → try OpenAI
-            log.info("Gemini failed; falling back to OpenAI...")
-            if openai_key:
-                result = _call_openai(openai_key, prompt, attempt)
-            else:
-                break
-        else:
-            # Only OpenAI available
-            result = _call_openai(openai_key, prompt, attempt)
-
-        if result == "RETRY":
-            continue
-        if isinstance(result, list):
-            verdicts = result
-            break
-        # result is None (non-retryable error) → try next attempt or fallback
-
-    if not verdicts:
-        raise RuntimeError(
-            "LLM judgment failed after {max_retries} attempts. "
-            "Check your API key, network connectivity, and rate limits."
-        )
+    verdicts = _judge_with_fallback(gemini_key, chain, prompt, int(cfg["attempts_per_model"]), timeout)
 
     Path(output_path).write_text(json.dumps(verdicts, indent=2))
     log.info("Wrote %d verdicts to %s", len(verdicts), output_path)

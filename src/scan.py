@@ -2,7 +2,7 @@
 
 Three-stage pipeline:
   prepare  → fetch trending, diff, lazy-release-fetch, write .needs_evaluation.json
-  judge    → LLM verdict via Gemini/OpenAI → verdicts.json
+  judge    → LLM verdict via Gemini (model fallback chain) → verdicts.json
   finalize → merge verdicts into state, render report, email, git commit
 
 Robustness: structured logging, config-driven state pruning, fail-fast on

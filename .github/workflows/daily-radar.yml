@@ -4,7 +4,7 @@ name: Daily Radar
 # report + state + UI bundle and redeploy Pages.
 #
 # Opt-in: set the repository variable RADAR_ENABLED=true and add the secrets
-# GEMINI_API_KEY and/or OPENAI_API_KEY (optionally GMAIL_USER and
+# GEMINI_API_KEY (optionally GMAIL_USER and
 # GMAIL_APP_PASSWORD for the email digest).
 
 on:
@@ -28,8 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.8-flash' }}
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      # Optional: tried first; the fallback list lives in config.yaml (judge.gemini_models).
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
       GMAIL_USER: ${{ secrets.GMAIL_USER }}
       GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
     steps:

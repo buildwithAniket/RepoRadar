@@ -20,7 +20,7 @@ Runs as a daily cron job (13:00 UTC) on a personal workstation or server; proces
 ## Capabilities and Constraints
 - Deterministic scraping & diffing engine (star jumps ≥2x, new releases, profile changes)
 - Monolithic JSON state management (`seen-repos.json`)
-- Automated LLM-as-judge step (Gemini/OpenAI) with exponential backoff and fallback
+- Automated LLM-as-judge step (Gemini) with exponential backoff and model fallback
 - Gmail SMTP daily digest delivery
 - Automated git commit & push sync
 - Configurable state pruning (max age 90 days)

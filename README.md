@@ -43,7 +43,7 @@ The surviving candidates are evaluated **in a single batched request** against t
 
 - Output contract: a JSON array of `{repo, verdict ∈ fit | maybe | not-fit, judgment}`, extracted from fenced or raw responses.
 - Low temperature (0.2) for repeatable verdicts.
-- Gemini (`gemini-2.5-flash`) primary, OpenAI fallback, 3 attempts with exponential backoff.
+- Gemini only, with a model fallback chain from [`config.yaml`](config.yaml) (`judge.gemini_models`, plus discovered flash models). Transient errors (429/5xx/timeout) are retried with backoff, then the next model is tried.
 - **Fails loud:** with no API key, or after exhausting retries, it raises `RuntimeError` rather than fabricating verdicts.
 
 ### Stage 3 — Sync and presentation
@@ -58,7 +58,7 @@ flowchart LR
     P[profile.md] --> B
     B -- skip<br/>no API call --> R
     B -- new / resurfaced /<br/>profile-changed --> C[.needs_evaluation.json]
-    C --> D[LLM judge<br/>Gemini → OpenAI fallback]
+    C --> D[LLM judge<br/>Gemini model chain]
     D --> E[verdicts.json]
     E --> F[finalize<br/>merge + 90-day prune]
     F --> S
@@ -97,7 +97,7 @@ python -m http.server 8000 --directory ui  # then open http://localhost:8000
 **Run the pipeline**
 
 ```bash
-cp .env.example .env                     # add GEMINI_API_KEY and/or OPENAI_API_KEY
+cp .env.example .env                     # add GEMINI_API_KEY
 python src/scan.py prepare               # scrape + diff → .needs_evaluation.json
 python src/scan.py judge                 # LLM verdicts → verdicts.json
 python src/scan.py finalize --dry-run    # report + state + UI bundle, no email/commit
@@ -111,7 +111,7 @@ python src/scan.py finalize --dry-run    # report + state + UI bundle, no email/
 | [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | changes to `ui/`, `reports/`, state | Regenerates the bundle and deploys the archive to GitHub Pages |
 | [`daily-radar.yml`](.github/workflows/daily-radar.yml) | cron `0 2 * * *` (04:00 CEST) | `prepare → judge → finalize`, commits the new edition, redeploys Pages |
 
-The daily workflow is inert until you set the repository variable `RADAR_ENABLED=true` and add the `GEMINI_API_KEY` / `OPENAI_API_KEY` secrets (plus `GMAIL_USER` / `GMAIL_APP_PASSWORD` for email).
+The daily workflow is inert until you set the repository variable `RADAR_ENABLED=true` and add the `GEMINI_API_KEY` secret (plus `GMAIL_USER` / `GMAIL_APP_PASSWORD` for email).
 
 ## Repository layout
 

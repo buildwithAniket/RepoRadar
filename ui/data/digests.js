@@ -1684,19 +1684,39 @@ window.REPORADAR_DIGESTS = {
         "url": "https://github.com/cs341-illinois/coursebook"
       }
     ]
+  },
+  "2026-09-30": {
+    "date": "2026-09-30",
+    "evaluatedCount": 0,
+    "skippedCount": 14,
+    "stats": {
+      "fit": 0,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 0
+    },
+    "summary": {
+      "evaluated": 0,
+      "skipped": 14,
+      "fit": 0,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 0
+    },
+    "repos": []
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-09-29",
+  value: "2026-09-30",
   enumerable: false,
   configurable: true,
   writable: true

@@ -564,7 +564,6 @@
       padding: 60px 54px 60px 48px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       background: var(--bg);
       z-index: 10;
       user-select: text;
@@ -578,6 +577,8 @@
 
     .docket-content-wrap {
       max-width: 520px;
+      /* Auto margins centre short content but collapse when it overflows, so the top stays scrollable. */
+      margin-block: auto;
       opacity: 1;
       transform: translateY(0);
       transition: opacity 0.4s var(--ease-cinematic), transform 0.4s var(--ease-cinematic);

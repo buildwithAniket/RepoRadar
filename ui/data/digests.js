@@ -58,7 +58,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Highly relevant to your interest in AI Agents and code intelligence. A client-side Graph RAG agent for codebases provides a unique architectural approach to local repository analysis, aligning perfectly with your focus on developer productivity and advanced LLM orchestration.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/abhigyanpatwari/GitNexus"
+        "url": "https://github.com/abhigyanpatwari/GitNexus",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "tashfeenahmed/freellmapi",
@@ -73,7 +75,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This is a high-utility tool for your AI Agent research. By aggregating free LLM endpoints with smart routing and failover, it provides a cost-effective infrastructure layer for experimenting with multi-agent systems without the overhead of paid API keys.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/tashfeenahmed/freellmapi"
+        "url": "https://github.com/tashfeenahmed/freellmapi",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "ChromeDevTools/chrome-devtools-mcp",
@@ -88,7 +92,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Directly aligns with your interest in coding agents. Providing an MCP (Model Context Protocol) interface for Chrome DevTools allows agents to interact with the browser as a developer would, significantly enhancing the capabilities of autonomous coding agents.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "livekit/agents",
@@ -103,22 +109,26 @@ window.REPORADAR_DIGESTS = {
         "reason": "A powerful framework for real-time voice AI agents. This fits your interest in advanced LLM orchestration and autonomous systems, offering a robust backend for building interactive agents that could be applied to interview prep or automated assistant workflows.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/livekit/agents"
+        "url": "https://github.com/livekit/agents",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "cursor/plugins",
         "owner": "cursor",
         "name": "plugins",
-        "stars": 6019,
+        "stars": 9314,
         "language": "TypeScript",
-        "pushedAt": "2026-08-29",
+        "pushedAt": "2026-10-01",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
         "reason": "While potentially useful for your developer workflow, it is a plugin specification rather than an autonomous system. It is worth monitoring if you intend to build custom extensions for your coding agents, but it currently lacks the 'agentic' complexity you prioritize.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/cursor/plugins"
+        "url": "https://github.com/cursor/plugins",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "tailscale/tailcat",
@@ -133,7 +143,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A high-performance networking utility that could be useful for your cross-border infrastructure or secure remote access needs. While not directly related to AI agents, its utility for developer productivity and secure connectivity makes it a strong candidate for your toolkit.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/tailscale/tailcat"
+        "url": "https://github.com/tailscale/tailcat",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "abi/screenshot-to-code",
@@ -148,7 +160,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This is a well-known, mature project that functions primarily as a frontend-to-code wrapper. It lacks the architectural depth and backend complexity required to meet your criteria for innovative AI engineering tools.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/abi/screenshot-to-code"
+        "url": "https://github.com/abi/screenshot-to-code",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "NationalSecurityAgency/ghidra",
@@ -163,7 +177,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Ghidra is a massive, industry-standard reverse engineering framework. While impressive, it falls outside your current focus on AI orchestration, career automation, and financial tech, and is likely too specialized for your immediate goals.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/NationalSecurityAgency/ghidra"
+        "url": "https://github.com/NationalSecurityAgency/ghidra",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "swoole/typephp",
@@ -178,7 +194,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Compiling PHP to native binaries is an interesting performance play, but it does not align with your core focus areas of AI agents, career-ops, or financial tooling. It lacks the ecosystem relevance to your current stack.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/swoole/typephp"
+        "url": "https://github.com/swoole/typephp",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -214,7 +232,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Directly aligns with your interest in developer productivity and the 'lazy' senior developer philosophy, providing a unique architectural approach to minimizing code bloat in agent workflows.",
         "classification": "resurfaced",
         "topics": [],
-        "url": "https://github.com/DietrichGebert/ponytail"
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "NousResearch/hermes-agent",
@@ -229,7 +249,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "As a core interest area, this repository represents a significant advancement in autonomous agent systems that you should monitor for integration into your coding workflows.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/NousResearch/hermes-agent"
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "superlinked/sie",
@@ -244,7 +266,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Provides the necessary infrastructure for production-grade agent orchestration, which is essential for scaling your local/cloud agent runners.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/superlinked/sie"
+        "url": "https://github.com/superlinked/sie",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "pacifio/atlas",
@@ -259,7 +283,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Highly relevant for managing multi-agent coding environments, offering a centralized way to track changes and query agent outputs, which is critical for your developer productivity focus.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/pacifio/atlas"
+        "url": "https://github.com/pacifio/atlas",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "Imbad0202/academic-research-skills",
@@ -274,7 +300,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Directly enhances your coding agent capabilities by providing structured research and review workflows, which is highly applicable to your interest in advanced AI coding agents.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/Imbad0202/academic-research-skills"
+        "url": "https://github.com/Imbad0202/academic-research-skills",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "affaan-m/ECC",
@@ -289,7 +317,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A comprehensive agent harness that touches on memory, security, and research-first development, perfectly matching your interest in high-performance AI orchestration.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/affaan-m/ECC"
+        "url": "https://github.com/affaan-m/ECC",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "vercel-labs/portless",
@@ -304,7 +334,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "An excellent developer productivity tool that simplifies local environment management for both humans and agents, fitting your interest in workflow enhancers.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/vercel-labs/portless"
+        "url": "https://github.com/vercel-labs/portless",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "JuliusBrussee/caveman",
@@ -319,7 +351,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A clever, high-impact optimization for Claude Code that directly addresses token efficiency, aligning with your focus on high-performance AI coding agents.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/JuliusBrussee/caveman"
+        "url": "https://github.com/JuliusBrussee/caveman",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "mattpocock/skills",
@@ -334,7 +368,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Provides practical, real-world agent skills that can be directly integrated into your existing agent runners to improve your daily coding productivity.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/mattpocock/skills"
+        "url": "https://github.com/mattpocock/skills",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "Gitlawb/openclaude",
@@ -349,7 +385,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A versatile agent runner that aligns with your interest in flexible, multi-agent orchestration systems that can run in diverse environments.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/Gitlawb/openclaude"
+        "url": "https://github.com/Gitlawb/openclaude",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "google-research/timesfm",
@@ -364,7 +402,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Relevant if you intend to build custom financial portfolio tracking or predictive wealth management tools, but lacks immediate application to your core agent orchestration focus.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/google-research/timesfm"
+        "url": "https://github.com/google-research/timesfm",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "debpalash/VoiceStudio",
@@ -379,7 +419,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A powerful local tool, but its utility for your specific goals (career-ops and wealth management) is limited unless you are building voice-based interview prep agents.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/debpalash/VoiceStudio"
+        "url": "https://github.com/debpalash/VoiceStudio",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "blader/humanizer",
@@ -394,7 +436,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Potentially useful for refining AI-generated content in your career-ops workflows (e.g., cover letters or outreach), but may be considered a 'wrapper' depending on its implementation.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/blader/humanizer"
+        "url": "https://github.com/blader/humanizer",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "firecrawl/pdf-inspector",
@@ -409,7 +453,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Useful for building robust RAG pipelines or document processing agents, which could be applied to your wealth management or career-ops document analysis tasks.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/firecrawl/pdf-inspector"
+        "url": "https://github.com/firecrawl/pdf-inspector",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "fmtlib/fmt",
@@ -424,7 +470,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While a high-quality library, it is a low-level C++ utility that does not align with your focus on high-level AI orchestration or career automation.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/fmtlib/fmt"
+        "url": "https://github.com/fmtlib/fmt",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "sngyai/Sequoia-X",
@@ -439,7 +487,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This is a region-specific stock screening tool for the Chinese market, which does not align with your focus on global career-ops automation or cross-border FinTech systems.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/sngyai/Sequoia-X"
+        "url": "https://github.com/sngyai/Sequoia-X",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "zyronon/TypeWords",
@@ -454,7 +504,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A language practice tool that lacks the backend depth or architectural innovation required for your professional engineering and automation interests.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/zyronon/TypeWords"
+        "url": "https://github.com/zyronon/TypeWords",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "protocolbuffers/protobuf",
@@ -469,7 +521,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A foundational data interchange format; while useful for general engineering, it does not provide the specific agent-based or career-automation utility you are seeking.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/protocolbuffers/protobuf"
+        "url": "https://github.com/protocolbuffers/protobuf",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -505,7 +559,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Highly relevant for your interest in high-performance local AI orchestration. The zero-dependency, C-based engine for streaming MoE models provides the architectural efficiency needed for running sophisticated agents on local hardware.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/JustVugg/colibri"
+        "url": "https://github.com/JustVugg/colibri",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "alibaba/open-code-review",
@@ -520,7 +576,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Directly aligns with your focus on coding agents and developer productivity. The hybrid architecture combining deterministic rules with LLM agents offers a robust, production-grade solution for automating code quality, which is essential for your career-ops workflows.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/alibaba/open-code-review"
+        "url": "https://github.com/alibaba/open-code-review",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "Panniantong/Agent-Reach",
@@ -535,7 +593,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "An essential utility for your AI agent stack. Providing agents with zero-fee, CLI-based access to real-time web data (Twitter, GitHub, etc.) is a force multiplier for automating job-search research and market monitoring.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/Panniantong/Agent-Reach"
+        "url": "https://github.com/Panniantong/Agent-Reach",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "asgeirtj/system_prompts_leaks",
@@ -550,7 +610,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "High value for your interest in LLM orchestration. Accessing the system prompts of frontier models like Claude Code and Cursor is critical for reverse-engineering their behavior and building better custom agent workflows.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/asgeirtj/system_prompts_leaks"
+        "url": "https://github.com/asgeirtj/system_prompts_leaks",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "rlaope/oh-my-hermes",
@@ -565,7 +627,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Directly supports your interest in coding agents. As a plugin ecosystem for Hermes, it provides the long-term memory and workflow optimizations necessary to turn a basic coding agent into a high-productivity assistant.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/rlaope/oh-my-hermes"
+        "url": "https://github.com/rlaope/oh-my-hermes",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "TauricResearch/TradingAgents",
@@ -580,7 +644,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Remains a strong fit for your wealth-building and cross-border finance interests. The multi-agent approach to financial trading is a sophisticated application of the LLM orchestration frameworks you are currently tracking.",
         "classification": "resurfaced",
         "topics": [],
-        "url": "https://github.com/TauricResearch/TradingAgents"
+        "url": "https://github.com/TauricResearch/TradingAgents",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "tech-leads-club/agent-skills",
@@ -595,7 +661,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Highly relevant for your interest in coding agents. A secure, validated registry for agent skills is a critical piece of infrastructure for building reliable, production-ready autonomous coding pipelines.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/tech-leads-club/agent-skills"
+        "url": "https://github.com/tech-leads-club/agent-skills",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "SnailSploit/Claude-Red",
@@ -610,7 +678,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Highly relevant for your interest in coding agents. By providing structured, expert-level methodology for Claude, it serves as a practical example of how to extend agent capabilities for specialized tasks.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/SnailSploit/Claude-Red"
+        "url": "https://github.com/SnailSploit/Claude-Red",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "666ghj/MiroFish",
@@ -625,7 +695,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "The swarm intelligence engine is intriguing for multi-agent systems, but the documentation and practical application for software engineering workflows remain unclear compared to more specialized agent frameworks.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/666ghj/MiroFish"
+        "url": "https://github.com/666ghj/MiroFish",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "dani-garcia/vaultwarden",
@@ -640,7 +712,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A solid self-hosted security tool, but it lacks direct integration with your primary interests in AI agents or career-ops automation.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/dani-garcia/vaultwarden"
+        "url": "https://github.com/dani-garcia/vaultwarden",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "huggingface/transformers",
@@ -655,7 +729,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While foundational for all AI work, it is a general-purpose library. Unless you are building custom models from scratch, it may be too broad compared to the specialized agent frameworks you prefer.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/huggingface/transformers"
+        "url": "https://github.com/huggingface/transformers",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "ever-co/ever-gauzy",
@@ -670,7 +746,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "An extensive ERP/ATS platform. While it touches on career-ops (ATS), it is a massive, complex system that may be overkill for your specific goal of automating job-search pipelines.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/ever-co/ever-gauzy"
+        "url": "https://github.com/ever-co/ever-gauzy",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "Crosstalk-Solutions/project-nomad",
@@ -685,7 +763,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Interesting for offline-first knowledge management, but its utility for your specific career-ops or financial automation goals is currently limited.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/Crosstalk-Solutions/project-nomad"
+        "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "multimodal-art-projection/YuE",
@@ -700,7 +780,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While technically impressive, this focuses on music generation, which falls outside your core interests in coding agents, financial tech, and career automation.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/multimodal-art-projection/YuE"
+        "url": "https://github.com/multimodal-art-projection/YuE",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "localsend/localsend",
@@ -715,7 +797,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While a useful utility, it is a standalone file-transfer tool that does not contribute to your specific goals in AI orchestration, career automation, or financial tech.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/localsend/localsend"
+        "url": "https://github.com/localsend/localsend",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "ruvnet/RuView",
@@ -730,7 +814,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Innovative spatial intelligence, but lacks a clear application to your professional focus areas of software engineering, career-ops, or financial automation.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/ruvnet/RuView"
+        "url": "https://github.com/ruvnet/RuView",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "OpenBMB/VoxCPM",
@@ -745,7 +831,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Advanced speech generation is impressive, but it does not align with your current focus on coding agents, career automation, or financial technology.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/OpenBMB/VoxCPM"
+        "url": "https://github.com/OpenBMB/VoxCPM",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "reconurge/flowsint",
@@ -760,7 +848,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Primarily focused on cybersecurity investigations; while high-performance, it does not align with your core interests in agent orchestration or wealth-building.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/reconurge/flowsint"
+        "url": "https://github.com/reconurge/flowsint",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "peetzweg/opendisplay",
@@ -775,7 +865,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A hardware-focused productivity utility that does not involve the software engineering or AI automation workflows you are prioritizing.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/peetzweg/opendisplay"
+        "url": "https://github.com/peetzweg/opendisplay",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -811,7 +903,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Directly aligns with your interest in AI agent orchestration and coding agents. This provides a specialized, verifiable skill set for autonomous agents, which is highly relevant for building robust, production-grade coding assistants.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/cloudflare/security-audit-skill"
+        "url": "https://github.com/cloudflare/security-audit-skill",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "anthropics/knowledge-work-plugins",
@@ -826,7 +920,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Highly relevant for your interest in AI agents. These plugins extend the capabilities of Claude Cowork, providing a blueprint for how to build modular, task-specific agentic workflows.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/anthropics/knowledge-work-plugins"
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "anthropics/claude-code",
@@ -841,7 +937,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This is a top-tier match for your interest in coding agents. It represents the current state-of-the-art in terminal-based autonomous development, directly impacting your developer productivity goals.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/anthropics/claude-code"
+        "url": "https://github.com/anthropics/claude-code",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "alphaXiv/OpenResearch",
@@ -856,7 +954,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Strong alignment with your interest in AI agents. Turning coding agents into research agents is a critical evolution for automating complex tasks, including the deep research required for job hunting or financial analysis.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/alphaXiv/OpenResearch"
+        "url": "https://github.com/alphaXiv/OpenResearch",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "Tencent/WeKnora",
@@ -871,7 +971,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Highly relevant for your interest in RAG and autonomous reasoning. This provides a structured way to manage knowledge, which is essential for building agents that can handle complex, domain-specific tasks like cross-border finance.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/Tencent/WeKnora"
+        "url": "https://github.com/Tencent/WeKnora",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "addyosmani/agent-skills",
@@ -886,7 +988,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Directly addresses your need for high-performance, production-grade engineering skills for AI agents. This is essential for moving beyond toy applications into reliable, autonomous coding workflows.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/addyosmani/agent-skills"
+        "url": "https://github.com/addyosmani/agent-skills",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "cline/cline",
@@ -901,7 +1005,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A critical repository for your interest in autonomous coding agents. Its versatility as an SDK and IDE extension makes it a foundational tool for your developer productivity and agent orchestration goals.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/cline/cline"
+        "url": "https://github.com/cline/cline",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "jamiepine/voicebox",
@@ -916,7 +1022,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Interesting for multi-modal agent capabilities, but currently leans more toward creative voice synthesis than the agentic orchestration or developer productivity tools you are prioritizing.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/jamiepine/voicebox"
+        "url": "https://github.com/jamiepine/voicebox",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "ankitects/anki",
@@ -931,7 +1039,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While a classic tool, it is not an agentic framework. However, it could be integrated into your career-ops pipeline for interview preparation and technical knowledge retention.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/ankitects/anki"
+        "url": "https://github.com/ankitects/anki",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "supabase/supabase",
@@ -946,7 +1056,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A powerful backend platform that could serve as the infrastructure for your career-ops or financial tracking applications, though it is a general-purpose tool rather than a specialized agentic framework.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/supabase/supabase"
+        "url": "https://github.com/supabase/supabase",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "abue-ammar/tinycast",
@@ -961,7 +1073,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While a useful utility, it is a frontend-focused macOS tool that lacks the backend complexity or AI-driven automation required for your core focus areas.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/abue-ammar/tinycast"
+        "url": "https://github.com/abue-ammar/tinycast",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "Lakr233/vphone-cli",
@@ -976,7 +1090,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Lacks sufficient documentation and clear architectural utility within your specific focus areas of AI agents or career-ops automation.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/Lakr233/vphone-cli"
+        "url": "https://github.com/Lakr233/vphone-cli",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "roboflow/supervision",
@@ -991,7 +1107,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Excellent for computer vision, but falls outside your current focus on LLM orchestration, career-ops, and financial tooling.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/roboflow/supervision"
+        "url": "https://github.com/roboflow/supervision",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -1047,7 +1165,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This is a high-signal repository for your interest in AI agent orchestration. As a core system for agents, it likely provides the architectural primitives needed for building complex, autonomous multi-agent workflows, fitting perfectly into your focus on advanced LLM orchestration.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/agent-substrate/substrate"
+        "url": "https://github.com/agent-substrate/substrate",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "dream-num/univer",
@@ -1062,7 +1182,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Univer is highly relevant as an 'Office Harness for AI Agents.' Its ability to unify spreadsheets, docs, and relational tables into a single runtime provides the exact type of structured data environment needed to build sophisticated agents for your career-ops or financial tracking projects.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/dream-num/univer"
+        "url": "https://github.com/dream-num/univer",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "davila7/claude-code-templates",
@@ -1077,7 +1199,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Directly supports your interest in coding agents like Claude Code. This tool will enhance your developer productivity by streamlining the configuration and monitoring of your coding agent workflows, making it a practical addition to your toolkit.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/davila7/claude-code-templates"
+        "url": "https://github.com/davila7/claude-code-templates",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "google/ax",
@@ -1092,7 +1216,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "As an open agentic orchestration runtime from Google, this is a top-tier candidate for your AI Agents & LLM Orchestration focus. It provides the backend depth and architectural innovation required for building scalable agentic systems.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/google/ax"
+        "url": "https://github.com/google/ax",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "anthropics/financial-services",
@@ -1107,7 +1233,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While the description is empty, the repository name suggests a focus on financial services, which aligns with your interest in global finance and wealth management. However, without documentation or code visibility, it remains a 'maybe' until its utility for financial engineering or compliance is verified.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/anthropics/financial-services"
+        "url": "https://github.com/anthropics/financial-services",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "superdesigndev/treg",
@@ -1122,7 +1250,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "The concept of an 'OpenRouter for agent tools' is interesting for your interest in LLM orchestration, but the lack of a release and limited documentation makes it a 'maybe.' It requires further investigation to ensure it isn't just a basic wrapper.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/superdesigndev/treg"
+        "url": "https://github.com/superdesigndev/treg",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "mvt-project/mvt",
@@ -1137,7 +1267,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While technically impressive, this tool is focused on mobile forensics and security auditing. It falls outside your core interests of AI orchestration, career-ops automation, and financial technology.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/mvt-project/mvt"
+        "url": "https://github.com/mvt-project/mvt",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "browser-use/video-use",
@@ -1152,7 +1284,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While it utilizes coding agents, the domain (video editing) does not align with your current focus areas of career-ops, financial management, or general developer productivity tooling. It is a specialized application rather than a foundational orchestration tool.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/browser-use/video-use"
+        "url": "https://github.com/browser-use/video-use",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -1208,7 +1342,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This repository aligns directly with Aniket's core interest in autonomous multi-agent systems and enterprise agent orchestration, providing an established, high-scale open-source framework for managing and coordinating AI agents in a workplace environment.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/paperclipai/paperclip"
+        "url": "https://github.com/paperclipai/paperclip",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "anthropics/claude-plugins-official",
@@ -1223,7 +1359,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Essential for maintaining a competitive edge in AI-driven development and coding agent orchestration, this official directory tracks high-quality plugins specifically designed for Claude Code.",
         "classification": "resurfaced",
         "topics": [],
-        "url": "https://github.com/anthropics/claude-plugins-official"
+        "url": "https://github.com/anthropics/claude-plugins-official",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "anthropics/skills",
@@ -1238,7 +1376,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This repository provides core architectural components and standardized patterns for Agent Skills, mapping directly onto Aniket's deep focus on LLM orchestration and coding agent ecosystems.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/anthropics/skills"
+        "url": "https://github.com/anthropics/skills",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "androoAGI/starnet",
@@ -1253,7 +1393,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This local-first desktop agent harness matches Aniket's interest in local agent runners and autonomous multi-agent workflows, combining custom execution logic with a unique visualization layer.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/androoAGI/starnet"
+        "url": "https://github.com/androoAGI/starnet",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "shy3130/tick-stock-panel",
@@ -1268,7 +1410,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This repository targets Aniket's FinTech & Global Wealth Systems interest perfectly, offering an LLM-driven quantitative workspace for stock screening, monitoring, backtesting, and personalized strategy formulation.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/shy3130/tick-stock-panel"
+        "url": "https://github.com/shy3130/tick-stock-panel",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "kelseyhightower/kubernetes-the-hard-way",
@@ -1283,22 +1427,26 @@ window.REPORADAR_DIGESTS = {
         "reason": "While an elite resource for deep infrastructure knowledge and systems engineering, it is an educational guide rather than a functional tool or framework matching Aniket's primary AI, FinTech, or workflow automation tracks.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way"
+        "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "pbakaus/impeccable",
         "owner": "pbakaus",
         "name": "impeccable",
-        "stars": 71305,
+        "stars": 73634,
         "language": "Unknown",
-        "pushedAt": "2026-09-25",
+        "pushedAt": "2026-10-01",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
         "reason": "While it touches on AI agent harnesses, its primary focus is on UI/UX design language generation rather than core agent orchestration, backend tooling, or developer productivity.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/pbakaus/impeccable"
+        "url": "https://github.com/pbakaus/impeccable",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "openbao/openbao",
@@ -1313,7 +1461,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A strong infrastructure and secrets management solution, but it leans toward systems/DevOps security rather than Aniket's primary focus on AI agents, automated workflows, or financial technology systems.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/openbao/openbao"
+        "url": "https://github.com/openbao/openbao",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "derv82/wifit3",
@@ -1328,7 +1478,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This is a network security and wireless auditing utility that falls entirely outside Aniket's focus on AI agents, developer productivity tooling, and FinTech systems.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/derv82/wifit3"
+        "url": "https://github.com/derv82/wifit3",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -1364,22 +1516,26 @@ window.REPORADAR_DIGESTS = {
         "reason": "While an elite resource for systems engineering and deep infrastructure knowledge, it serves as an educational guide rather than a functional tool, framework, or utility matching Aniket's primary core tracks.",
         "classification": "profile-changed",
         "topics": [],
-        "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way"
+        "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "pbakaus/impeccable",
         "owner": "pbakaus",
         "name": "impeccable",
-        "stars": 71305,
+        "stars": 73634,
         "language": "Unknown",
-        "pushedAt": "2026-09-25",
+        "pushedAt": "2026-10-01",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
         "reason": "While it deals with AI agent harnesses, its core orientation around UI/UX design language generation diverges from Aniket's primary interests in core agent orchestration, backend tooling, and FinTech systems.",
         "classification": "profile-changed",
         "topics": [],
-        "url": "https://github.com/pbakaus/impeccable"
+        "url": "https://github.com/pbakaus/impeccable",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "openbao/openbao",
@@ -1394,7 +1550,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "Though it provides robust secrets and data management infrastructure useful in secure backend architectures, it tilts more toward enterprise DevOps and security than Aniket's direct focus on AI agents, automation, and wealth systems.",
         "classification": "profile-changed",
         "topics": [],
-        "url": "https://github.com/openbao/openbao"
+        "url": "https://github.com/openbao/openbao",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "derv82/wifit3",
@@ -1409,7 +1567,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This is a network security and wireless auditing utility that remains completely outside Aniket's focus areas of AI agents, developer productivity tooling, and FinTech systems.",
         "classification": "profile-changed",
         "topics": [],
-        "url": "https://github.com/derv82/wifit3"
+        "url": "https://github.com/derv82/wifit3",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "rohitg00/ai-engineering-from-scratch",
@@ -1424,7 +1584,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This repository acts primarily as a broad educational curriculum. Given Aniket's advanced focus on agent orchestration and specialized workflows, it lacks the custom architectural depth required.",
         "classification": "profile-changed",
         "topics": [],
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+        "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -1460,7 +1622,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A TypeScript-to-native compiler directly aligns with the profile's interest in developer productivity and tooling, presenting innovative compiler-level infrastructure designed to enhance developer workflows and execution performance.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/vercel-labs/scriptc"
+        "url": "https://github.com/vercel-labs/scriptc",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "mvschwarz/openrig",
@@ -1475,7 +1639,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This project directly aligns with the AI agents and LLM orchestration focus area, serving as a multi-agent harness explicitly built to integrate and coordinate coding agents such as Claude Code and Codex within a unified system.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/mvschwarz/openrig"
+        "url": "https://github.com/mvschwarz/openrig",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "debpalash/VoiceStudio",
@@ -1490,7 +1656,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While an impressive open-source local audio and speech synthesis platform, VoiceStudio centers on media generation and voice cloning rather than autonomous AI agents, LLM orchestration, FinTech, career workflows, or developer productivity tooling specified in the profile.",
         "classification": "profile-changed",
         "topics": [],
-        "url": "https://github.com/debpalash/VoiceStudio"
+        "url": "https://github.com/debpalash/VoiceStudio",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "InfinityLoop1308/PipePipe",
@@ -1505,7 +1673,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This repository is an Android front-end client for streaming YouTube and other media services, falling entirely outside the profile's core interests in AI agents, developer productivity tooling, career-ops, and FinTech systems.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/InfinityLoop1308/PipePipe"
+        "url": "https://github.com/InfinityLoop1308/PipePipe",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "willfaust/Madeira",
@@ -1520,7 +1690,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This project centers on emulation technology to run Windows games on iOS devices, offering no architectural relevance or utility to the profile's core focus areas of AI agents, developer tooling, workflow automation, or FinTech.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/willfaust/Madeira"
+        "url": "https://github.com/willfaust/Madeira",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -1576,7 +1748,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This repository aligns directly with the profile's interest in AI agents and LLM orchestration by providing a safe, private runtime environment specifically designed for autonomous AI agents.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/NVIDIA/OpenShell"
+        "url": "https://github.com/NVIDIA/OpenShell",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "mvschwarz/openrig",
@@ -1591,7 +1765,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This project is a strong fit for the profile's core focus on AI agents and coding agents, as it implements a multi-agent harness to orchestrate systems like Claude Code and Codex together.",
         "classification": "resurfaced",
         "topics": [],
-        "url": "https://github.com/mvschwarz/openrig"
+        "url": "https://github.com/mvschwarz/openrig",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "VectifyAI/PageIndex",
@@ -1606,7 +1782,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This repository fits the profile's interest in advanced LLM infrastructure and structured retrieval/generation frameworks by introducing a vectorless, reasoning-based RAG document index.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/VectifyAI/PageIndex"
+        "url": "https://github.com/VectifyAI/PageIndex",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "t8y2/dbx",
@@ -1621,7 +1799,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "While primarily a database utility, the inclusion of built-in AI and an MCP Server connects well with the developer productivity and modern LLM tooling interests outlined in the profile.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/t8y2/dbx"
+        "url": "https://github.com/t8y2/dbx",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "rakyll/hey",
@@ -1636,7 +1816,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "As a lightweight CLI HTTP load generator, it aligns loosely with the developer productivity and high-performance system tooling categories, though it lacks direct AI or automation depth.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/rakyll/hey"
+        "url": "https://github.com/rakyll/hey",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "oblien/openship",
@@ -1651,7 +1833,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "This self-hosted deployment platform falls outside the profile's specific focus areas, lacking direct ties to AI orchestration, developer workflow automation utilities, or financial systems.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/oblien/openship"
+        "url": "https://github.com/oblien/openship",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "averygan/reclip",
@@ -1666,7 +1850,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "A self-hosted media downloader utility does not intersect with any of the core focus areas or exclusion filters specified in the profile.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/averygan/reclip"
+        "url": "https://github.com/averygan/reclip",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
         "id": "cs341-illinois/coursebook",
@@ -1681,7 +1867,9 @@ window.REPORADAR_DIGESTS = {
         "reason": "An academic systems programming textbook lacks the active tooling, software architecture, or workflow automation capabilities targeted by the profile.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/cs341-illinois/coursebook"
+        "url": "https://github.com/cs341-illinois/coursebook",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   },
@@ -1707,172 +1895,184 @@ window.REPORADAR_DIGESTS = {
   },
   "2026-10-01": {
     "date": "2026-10-01",
-    "evaluatedCount": 10,
-    "skippedCount": 7,
+    "evaluatedCount": 7,
+    "skippedCount": 8,
     "stats": {
-      "fit": 4,
+      "fit": 2,
       "maybe": 2,
-      "notFit": 4,
-      "total": 10
+      "notFit": 3,
+      "total": 7
     },
     "summary": {
-      "evaluated": 10,
-      "skipped": 7,
-      "fit": 4,
+      "evaluated": 7,
+      "skipped": 8,
+      "fit": 2,
       "maybe": 2,
-      "notFit": 4,
-      "total": 10
+      "notFit": 3,
+      "total": 7
     },
     "repos": [
       {
-        "id": "mksglu/context-mode",
-        "owner": "mksglu",
-        "name": "context-mode",
-        "stars": 24584,
-        "language": "Unknown",
-        "pushedAt": "2026-06-29",
+        "id": "cursor/plugins",
+        "owner": "cursor",
+        "name": "plugins",
+        "stars": 9314,
+        "language": "TypeScript",
+        "pushedAt": "2026-10-01",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
-        "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration and Developer Productivity by providing context window sandboxing, session memory persistence, and MCP-based routing tailored specifically for AI coding agents.",
-        "classification": "new",
+        "reason": "This repository provides specifications and official extensions for Cursor, directly intersecting with the profile's focus on coding agents, AI agent orchestration, and developer productivity tooling.",
+        "classification": "profile-changed",
         "topics": [],
-        "url": "https://github.com/mksglu/context-mode"
+        "url": "https://github.com/cursor/plugins",
+        "useCases": [
+          {
+            "title": "Orchestrate Parallel Cloud Agents for Coding",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Fan out complex development tasks across planners, workers, and verifiers to accelerate autonomous coding workflows. This enables structured, multi-agent coordination with built-in handoffs directly inside the agent runtime.",
+            "firstStep": "Inspect the agent flow specifications inside `orchestrate/` and check its `.cursor-plugin/plugin.json` manifest to set up the multi-agent role definitions."
+          },
+          {
+            "title": "Automate Candidate Tracking Within Developer Workflows",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Connect recruitment pipelines and technical interview preparation directly into editor workflows to reduce context switching. This brings candidate search, task management, and interview prep straight to agent tool calls.",
+            "firstStep": "Examine the plugin definitions in `third_party/ashby/` and configure its `.cursor-plugin/plugin.json` manifest for candidate management automation."
+          }
+        ],
+        "useCaseNote": ""
       },
       {
-        "id": "openclaw/openclaw",
-        "owner": "openclaw",
-        "name": "openclaw",
-        "stars": 391075,
+        "id": "earendil-works/pi",
+        "owner": "earendil-works",
+        "name": "pi",
+        "stars": 111176,
+        "language": "Unknown",
+        "pushedAt": "2026-10-01",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project is a strong match for the profile's core interest in AI agents and LLM orchestration, offering an agent loop, unified LLM API, terminal interface, and a dedicated coding agent CLI.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/earendil-works/pi",
+        "useCases": [
+          {
+            "title": "Orchestrate multi-provider LLMs with agent core",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Standardize provider calls across OpenAI, Anthropic, and Google using a single interface with built-in tool calling and state management. This reduces custom provider integration code and stabilizes agent execution workflows.",
+            "firstStep": "Run `npm run build` to build the workspace and inspect `packages/ai` to integrate the multi-provider LLM API."
+          },
+          {
+            "title": "Sandbox coding agent execution using containers",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Isolate autonomous agent commands and tool executions inside dedicated micro-VMs or plain Docker containers. This prevents unverified shell or filesystem operations from affecting the host environment.",
+            "firstStep": "Review container isolation strategies in `packages/coding-agent/docs/containerization.md` and test source execution with `./pi-test.sh`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "tile-ai/tilelang",
+        "owner": "tile-ai",
+        "name": "tilelang",
+        "stars": 8086,
         "language": "Unknown",
         "pushedAt": "2026-09-30",
-        "confidence": "high",
-        "verdict": "fit",
-        "verdictLabel": "OFFICIAL SELECTION",
-        "reason": "This project aligns with the profile's interest in autonomous multi-agent systems and agent execution platforms, providing cross-platform computer-use and OS-level agent automation capabilities.",
-        "classification": "new",
-        "topics": [],
-        "url": "https://github.com/openclaw/openclaw"
-      },
-      {
-        "id": "modelcontextprotocol/servers",
-        "owner": "modelcontextprotocol",
-        "name": "servers",
-        "stars": 90875,
-        "language": "Unknown",
-        "pushedAt": "2026-08-31",
-        "confidence": "high",
-        "verdict": "fit",
-        "verdictLabel": "OFFICIAL SELECTION",
-        "reason": "This repository provides essential reference implementations and servers for the Model Context Protocol (MCP), aligning directly with the profile's focus on AI agent orchestration, tool integration, and developer infrastructure.",
-        "classification": "new",
-        "topics": [],
-        "url": "https://github.com/modelcontextprotocol/servers"
-      },
-      {
-        "id": "colbymchenry/codegraph",
-        "owner": "colbymchenry",
-        "name": "codegraph",
-        "stars": 72692,
-        "language": "Unknown",
-        "pushedAt": "2026-09-29",
-        "confidence": "high",
-        "verdict": "fit",
-        "verdictLabel": "OFFICIAL SELECTION",
-        "reason": "This project directly aligns with the profile's focus on coding agents (such as Claude Code, Codex, and Hermes Agent) and developer productivity by providing a local, pre-indexed code knowledge graph that reduces token usage and tool call overhead.",
-        "classification": "new",
-        "topics": [],
-        "url": "https://github.com/colbymchenry/codegraph"
-      },
-      {
-        "id": "ComposioHQ/awesome-claude-skills",
-        "owner": "ComposioHQ",
-        "name": "awesome-claude-skills",
-        "stars": 76233,
-        "language": "Markdown",
-        "pushedAt": "2026-10-01",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
-        "reason": "While it touches upon Claude workflows and tool customization relevant to AI agent orchestration, it is primarily a curated markdown list of external skills and resources rather than an engineered tool or framework.",
-        "classification": "resurfaced",
+        "reason": "While tilelang targets high-performance systems and developer tooling by simplifying GPU/accelerator kernel development, it focuses on low-level hardware compilation rather than the profile's core application layers of AI agents, fintech, or workflow automation.",
+        "classification": "new",
         "topics": [],
-        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+        "url": "https://github.com/tile-ai/tilelang",
+        "useCases": [],
+        "useCaseNote": "TileLang focuses on low-level hardware kernel compilation (GEMM, FlashAttention) across GPUs and accelerators, which falls outside the profile's application-layer focus on AI agents, workflow automation, and developer tooling."
       },
       {
-        "id": "heygen-com/hyperframes",
-        "owner": "heygen-com",
-        "name": "hyperframes",
-        "stars": 54919,
+        "id": "pbakaus/impeccable",
+        "owner": "pbakaus",
+        "name": "impeccable",
+        "stars": 73634,
         "language": "Unknown",
         "pushedAt": "2026-10-01",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
-        "reason": "This tool provides an agent-oriented HTML-to-video rendering framework, offering developer utility at the intersection of agent interfaces and media rendering, though it is adjacent to the profile's primary focus on coding agents, fintech, and workflow automation.",
-        "classification": "new",
+        "reason": "Focused on improving AI agent outputs for design systems, this project connects loosely to coding agent guidance and developer workflow enhancement, though it leans more toward design guidelines than core LLM orchestration or backend tooling.",
+        "classification": "profile-changed",
         "topics": [],
-        "url": "https://github.com/heygen-com/hyperframes"
+        "url": "https://github.com/pbakaus/impeccable",
+        "useCases": [
+          {
+            "title": "Polish RepoRadar static frontend design",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "RepoRadar",
+            "pitch": "Audit and refine RepoRadar's static Three.js and GSAP frontend to eliminate generic AI design tropes like Inter defaults and card nesting. Running Impeccable commands helps enforce intentional layout, typography, and motion across the trending repo dashboard.",
+            "firstStep": "Run `npx impeccable install` from the RepoRadar project root, then execute `/impeccable init` inside the AI coding agent to record durable context in `PRODUCT.md`."
+          }
+        ],
+        "useCaseNote": ""
       },
       {
-        "id": "harry0703/MoneyPrinterTurbo",
-        "owner": "harry0703",
-        "name": "MoneyPrinterTurbo",
-        "stars": 127727,
+        "id": "pablostanley/yoinks",
+        "owner": "pablostanley",
+        "name": "yoinks",
+        "stars": 2896,
         "language": "Unknown",
-        "pushedAt": "2026-09-13",
-        "confidence": "low",
-        "verdict": "not-fit",
-        "verdictLabel": "ARCHIVED / PASS",
-        "reason": "This repository focuses on automated short-video generation for social media content creation, which does not fall under the profile's core areas of AI agent orchestration, career-ops automation, fintech systems, or developer tooling.",
-        "classification": "new",
-        "topics": [],
-        "url": "https://github.com/harry0703/MoneyPrinterTurbo"
-      },
-      {
-        "id": "firebase/firebase-ios-sdk",
-        "owner": "firebase",
-        "name": "firebase-ios-sdk",
-        "stars": 6790,
-        "language": "Unknown",
-        "pushedAt": "2026-09-15",
-        "confidence": "low",
-        "verdict": "not-fit",
-        "verdictLabel": "ARCHIVED / PASS",
-        "reason": "This is a standard client SDK for Apple platforms and does not align with the profile's focus on AI agents, LLM orchestration, fintech infrastructure, or developer productivity tools.",
-        "classification": "new",
-        "topics": [],
-        "url": "https://github.com/firebase/firebase-ios-sdk"
-      },
-      {
-        "id": "byoungd/up",
-        "owner": "byoungd",
-        "name": "up",
-        "stars": 66517,
-        "language": "Markdown",
         "pushedAt": "2026-10-01",
         "confidence": "low",
         "verdict": "not-fit",
         "verdictLabel": "ARCHIVED / PASS",
-        "reason": "This repository is a personal career and life advancement guide written in markdown, lacking technical depth, software architecture, or alignment with the profile's engineering focus areas.",
+        "reason": "This is a basic CLI video downloader that functions primarily as a lightweight wrapper utility, lacking relevance to AI agent orchestration, career-ops, fintech, or advanced developer tooling.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/byoungd/up"
+        "url": "https://github.com/pablostanley/yoinks",
+        "useCases": [],
+        "useCaseNote": ""
       },
       {
-        "id": "NawfalMotii79/PLFM_RADAR",
-        "owner": "NawfalMotii79",
-        "name": "PLFM_RADAR",
-        "stars": 26483,
+        "id": "HunxByts/GhostTrack",
+        "owner": "HunxByts",
+        "name": "GhostTrack",
+        "stars": 16367,
         "language": "Unknown",
-        "pushedAt": "2026-04-20",
+        "pushedAt": "2026-10-01",
         "confidence": "low",
         "verdict": "not-fit",
         "verdictLabel": "ARCHIVED / PASS",
-        "reason": "This is a hardware and RF phased array radar engineering project, which falls completely outside the profile's scope of AI agents, fintech, career automation, and software developer tooling.",
+        "reason": "This phone and location tracking script falls under basic OSINT tooling and does not align with any of the profile's primary focus areas in AI agents, fintech, career automation, or developer workflows.",
         "classification": "new",
         "topics": [],
-        "url": "https://github.com/NawfalMotii79/PLFM_RADAR"
+        "url": "https://github.com/HunxByts/GhostTrack",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Friedrich-M/UniMate",
+        "owner": "Friedrich-M",
+        "name": "UniMate",
+        "stars": 1054,
+        "language": "Unknown",
+        "pushedAt": "2026-10-01",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This academic project focuses on 3D computer graphics and skeleton animation, which falls outside the profile's scope of AI agents, developer tooling, workflow automation, and financial systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Friedrich-M/UniMate",
+        "useCases": [],
+        "useCaseNote": ""
       }
     ]
   }

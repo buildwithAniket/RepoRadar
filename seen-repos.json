@@ -62,6 +62,15 @@
     "stars_at_check": 122157,
     "verdict": "fit"
   },
+  "Friedrich-M/UniMate": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-01",
+    "reason": "This academic project focuses on 3D computer graphics and skeleton animation, which falls outside the profile's scope of AI agents, developer tooling, workflow automation, and financial systems.",
+    "stars_at_check": 1054,
+    "verdict": "not-fit"
+  },
   "FxEmbed/FxEmbed": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -88,6 +97,15 @@
     "reason": "This is highly relevant to your interest in developer productivity and agent-native workflows. By making software 'agent-native' via CLI, it provides a powerful primitive for building the autonomous coding agents you are tracking.",
     "stars_at_check": 50401,
     "verdict": "fit"
+  },
+  "HunxByts/GhostTrack": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-01",
+    "reason": "This phone and location tracking script falls under basic OSINT tooling and does not align with any of the profile's primary focus areas in AI agents, fintech, career automation, or developer workflows.",
+    "stars_at_check": 16367,
+    "verdict": "not-fit"
   },
   "Imbad0202/academic-research-skills": {
     "first_seen": "2026-09-03",
@@ -541,12 +559,12 @@
   },
   "cursor/plugins": {
     "first_seen": "2026-08-29",
-    "last_checked": "2026-08-29",
+    "last_checked": "2026-10-01",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-29",
-    "reason": "While potentially useful for your developer workflow, it is a plugin specification rather than an autonomous system. It is worth monitoring if you intend to build custom extensions for your coding agents, but it currently lacks the 'agentic' complexity you prioritize.",
-    "stars_at_check": 6019,
-    "verdict": "maybe"
+    "profile_checked_against": "2026-10-01",
+    "reason": "This repository provides specifications and official extensions for Cursor, directly intersecting with the profile's focus on coding agents, AI agent orchestration, and developer productivity tooling.",
+    "stars_at_check": 9314,
+    "verdict": "fit"
   },
   "dani-garcia/vaultwarden": {
     "first_seen": "2026-09-15",
@@ -591,6 +609,15 @@
     "profile_checked_against": "2026-09-22",
     "reason": "Univer is highly relevant as an 'Office Harness for AI Agents.' Its ability to unify spreadsheets, docs, and relational tables into a single runtime provides the exact type of structured data environment needed to build sophisticated agents for your career-ops or financial tracking projects.",
     "stars_at_check": 14885,
+    "verdict": "fit"
+  },
+  "earendil-works/pi": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-10-01T19:20:55Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This project is a strong match for the profile's core interest in AI agents and LLM orchestration, offering an agent loop, unified LLM API, terminal interface, and a dedicated coding agent CLI.",
+    "stars_at_check": 111176,
     "verdict": "fit"
   },
   "ever-co/ever-gauzy": {
@@ -854,6 +881,15 @@
     "stars_at_check": 391075,
     "verdict": "fit"
   },
+  "pablostanley/yoinks": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-01",
+    "reason": "This is a basic CLI video downloader that functions primarily as a lightweight wrapper utility, lacking relevance to AI agent orchestration, career-ops, fintech, or advanced developer tooling.",
+    "stars_at_check": 2896,
+    "verdict": "not-fit"
+  },
   "pacifio/atlas": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -874,11 +910,11 @@
   },
   "pbakaus/impeccable": {
     "first_seen": "2026-09-25",
-    "last_checked": "2026-09-26",
-    "latest_release_at_check": "2026-09-25T00:23:08Z",
-    "profile_checked_against": "2026-09-26",
-    "reason": "While it deals with AI agent harnesses, its core orientation around UI/UX design language generation diverges from Aniket's primary interests in core agent orchestration, backend tooling, and FinTech systems.",
-    "stars_at_check": 71305,
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-10-01T20:34:21Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "Focused on improving AI agent outputs for design systems, this project connects loosely to coding agent guidance and developer workflow enhancement, though it leans more toward design guidelines than core LLM orchestration or backend tooling.",
+    "stars_at_check": 73634,
     "verdict": "maybe"
   },
   "peetzweg/opendisplay": {
@@ -1069,6 +1105,15 @@
     "reason": "Highly relevant; persistent context management is a critical missing piece in current agentic workflows and directly addresses your interest in high-performance AI orchestration.",
     "stars_at_check": 0,
     "verdict": "fit"
+  },
+  "tile-ai/tilelang": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-09-30T00:29:55Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "While tilelang targets high-performance systems and developer tooling by simplifying GPU/accelerator kernel development, it focuses on low-level hardware compilation rather than the profile's core application layers of AI agents, fintech, or workflow automation.",
+    "stars_at_check": 8086,
+    "verdict": "maybe"
   },
   "tt-a1i/archify": {
     "first_seen": "2026-08-28",

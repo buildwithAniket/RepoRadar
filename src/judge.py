@@ -59,7 +59,7 @@ _TRANSIENT_STATUS = {429, 500, 502, 503, 504}
 # Model-name fragments that are not general text generators.
 _NON_TEXT_MARKERS = ("tts", "image", "embedding", "live", "audio", "aqa", "imagen", "veo", "robotics", "computer-use")
 _DEFAULT_JUDGE_CONFIG = {
-    "gemini_models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"],
+    "gemini_models": ["gemini-3.5-flash-lite"],
     "discover_models": True,
     "attempts_per_model": 2,
     "timeout_seconds": 60,

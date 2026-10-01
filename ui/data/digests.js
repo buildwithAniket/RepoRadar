@@ -1684,26 +1684,217 @@ window.REPORADAR_DIGESTS = {
         "url": "https://github.com/cs341-illinois/coursebook"
       }
     ]
+  },
+  "2026-09-30": {
+    "date": "2026-09-30",
+    "evaluatedCount": 0,
+    "skippedCount": 14,
+    "stats": {
+      "fit": 0,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 0
+    },
+    "summary": {
+      "evaluated": 0,
+      "skipped": 14,
+      "fit": 0,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 0
+    },
+    "repos": []
+  },
+  "2026-10-01": {
+    "date": "2026-10-01",
+    "evaluatedCount": 10,
+    "skippedCount": 7,
+    "stats": {
+      "fit": 4,
+      "maybe": 2,
+      "notFit": 4,
+      "total": 10
+    },
+    "summary": {
+      "evaluated": 10,
+      "skipped": 7,
+      "fit": 4,
+      "maybe": 2,
+      "notFit": 4,
+      "total": 10
+    },
+    "repos": [
+      {
+        "id": "mksglu/context-mode",
+        "owner": "mksglu",
+        "name": "context-mode",
+        "stars": 24584,
+        "language": "Unknown",
+        "pushedAt": "2026-06-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration and Developer Productivity by providing context window sandboxing, session memory persistence, and MCP-based routing tailored specifically for AI coding agents.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/mksglu/context-mode"
+      },
+      {
+        "id": "openclaw/openclaw",
+        "owner": "openclaw",
+        "name": "openclaw",
+        "stars": 391075,
+        "language": "Unknown",
+        "pushedAt": "2026-09-30",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project aligns with the profile's interest in autonomous multi-agent systems and agent execution platforms, providing cross-platform computer-use and OS-level agent automation capabilities.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/openclaw/openclaw"
+      },
+      {
+        "id": "modelcontextprotocol/servers",
+        "owner": "modelcontextprotocol",
+        "name": "servers",
+        "stars": 90875,
+        "language": "Unknown",
+        "pushedAt": "2026-08-31",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository provides essential reference implementations and servers for the Model Context Protocol (MCP), aligning directly with the profile's focus on AI agent orchestration, tool integration, and developer infrastructure.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/modelcontextprotocol/servers"
+      },
+      {
+        "id": "colbymchenry/codegraph",
+        "owner": "colbymchenry",
+        "name": "codegraph",
+        "stars": 72692,
+        "language": "Unknown",
+        "pushedAt": "2026-09-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project directly aligns with the profile's focus on coding agents (such as Claude Code, Codex, and Hermes Agent) and developer productivity by providing a local, pre-indexed code knowledge graph that reduces token usage and tool call overhead.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/colbymchenry/codegraph"
+      },
+      {
+        "id": "ComposioHQ/awesome-claude-skills",
+        "owner": "ComposioHQ",
+        "name": "awesome-claude-skills",
+        "stars": 76233,
+        "language": "Markdown",
+        "pushedAt": "2026-10-01",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While it touches upon Claude workflows and tool customization relevant to AI agent orchestration, it is primarily a curated markdown list of external skills and resources rather than an engineered tool or framework.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+      },
+      {
+        "id": "heygen-com/hyperframes",
+        "owner": "heygen-com",
+        "name": "hyperframes",
+        "stars": 54919,
+        "language": "Unknown",
+        "pushedAt": "2026-10-01",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This tool provides an agent-oriented HTML-to-video rendering framework, offering developer utility at the intersection of agent interfaces and media rendering, though it is adjacent to the profile's primary focus on coding agents, fintech, and workflow automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/heygen-com/hyperframes"
+      },
+      {
+        "id": "harry0703/MoneyPrinterTurbo",
+        "owner": "harry0703",
+        "name": "MoneyPrinterTurbo",
+        "stars": 127727,
+        "language": "Unknown",
+        "pushedAt": "2026-09-13",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository focuses on automated short-video generation for social media content creation, which does not fall under the profile's core areas of AI agent orchestration, career-ops automation, fintech systems, or developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+      },
+      {
+        "id": "firebase/firebase-ios-sdk",
+        "owner": "firebase",
+        "name": "firebase-ios-sdk",
+        "stars": 6790,
+        "language": "Unknown",
+        "pushedAt": "2026-09-15",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This is a standard client SDK for Apple platforms and does not align with the profile's focus on AI agents, LLM orchestration, fintech infrastructure, or developer productivity tools.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/firebase/firebase-ios-sdk"
+      },
+      {
+        "id": "byoungd/up",
+        "owner": "byoungd",
+        "name": "up",
+        "stars": 66517,
+        "language": "Markdown",
+        "pushedAt": "2026-10-01",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a personal career and life advancement guide written in markdown, lacking technical depth, software architecture, or alignment with the profile's engineering focus areas.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/byoungd/up"
+      },
+      {
+        "id": "NawfalMotii79/PLFM_RADAR",
+        "owner": "NawfalMotii79",
+        "name": "PLFM_RADAR",
+        "stars": 26483,
+        "language": "Unknown",
+        "pushedAt": "2026-04-20",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This is a hardware and RF phased array radar engineering project, which falls completely outside the profile's scope of AI agents, fintech, career automation, and software developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/NawfalMotii79/PLFM_RADAR"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-09-29",
+  value: "2026-10-01",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-09-29",
+  value: "2026-10-01",
   enumerable: false,
   configurable: true,
   writable: true

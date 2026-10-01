@@ -28,12 +28,12 @@
   },
   "ComposioHQ/awesome-claude-skills": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
+    "last_checked": "2026-10-01",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "A valuable resource for discovering new integrations and skills to enhance your Claude-based coding agents and automation pipelines.",
-    "stars_at_check": 0,
-    "verdict": "fit"
+    "profile_checked_against": "2026-10-01",
+    "reason": "While it touches upon Claude workflows and tool customization relevant to AI agent orchestration, it is primarily a curated markdown list of external skills and resources rather than an engineered tool or framework.",
+    "stars_at_check": 76233,
+    "verdict": "maybe"
   },
   "ConardLi/garden-skills": {
     "first_seen": "2026-08-28",
@@ -177,6 +177,15 @@
     "profile_checked_against": "2026-08-29",
     "reason": "Ghidra is a massive, industry-standard reverse engineering framework. While impressive, it falls outside your current focus on AI orchestration, career automation, and financial tech, and is likely too specialized for your immediate goals.",
     "stars_at_check": 73407,
+    "verdict": "not-fit"
+  },
+  "NawfalMotii79/PLFM_RADAR": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-04-20T19:42:20Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This is a hardware and RF phased array radar engineering project, which falls completely outside the profile's scope of AI agents, fintech, career automation, and software developer tooling.",
+    "stars_at_check": 26483,
     "verdict": "not-fit"
   },
   "NousResearch/hermes-agent": {
@@ -458,6 +467,15 @@
     "stars_at_check": 25490,
     "verdict": "not-fit"
   },
+  "byoungd/up": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-01",
+    "reason": "This repository is a personal career and life advancement guide written in markdown, lacking technical depth, software architecture, or alignment with the profile's engineering focus areas.",
+    "stars_at_check": 66517,
+    "verdict": "not-fit"
+  },
   "calesthio/OpenMontage": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-08-28",
@@ -502,6 +520,15 @@
     "reason": "Coder provides secure, remote development environments which are excellent for developer productivity. While it supports your interest in agent-based workflows, it is primarily an infrastructure tool; it is a 'maybe' depending on whether you need a standardized environment to host your autonomous agents.",
     "stars_at_check": 14822,
     "verdict": "maybe"
+  },
+  "colbymchenry/codegraph": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-09-29T05:08:55Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This project directly aligns with the profile's focus on coding agents (such as Claude Code, Codex, and Hermes Agent) and developer productivity by providing a local, pre-indexed code knowledge graph that reduces token usage and tool call overhead.",
+    "stars_at_check": 72692,
+    "verdict": "fit"
   },
   "cs341-illinois/coursebook": {
     "first_seen": "2026-09-29",
@@ -575,6 +602,15 @@
     "stars_at_check": 6179,
     "verdict": "maybe"
   },
+  "firebase/firebase-ios-sdk": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-09-15T22:16:58Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This is a standard client SDK for Apple platforms and does not align with the profile's focus on AI agents, LLM orchestration, fintech infrastructure, or developer productivity tools.",
+    "stars_at_check": 6790,
+    "verdict": "not-fit"
+  },
   "firecrawl/pdf-inspector": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -628,6 +664,24 @@
     "reason": "A standard testing library that does not provide the architectural innovation or agentic utility you are looking for.",
     "stars_at_check": 0,
     "verdict": "not-fit"
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-09-13T12:26:39Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This repository focuses on automated short-video generation for social media content creation, which does not fall under the profile's core areas of AI agent orchestration, career-ops automation, fintech systems, or developer tooling.",
+    "stars_at_check": 127727,
+    "verdict": "not-fit"
+  },
+  "heygen-com/hyperframes": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-10-01T07:21:09Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This tool provides an agent-oriented HTML-to-video rendering framework, offering developer utility at the intersection of agent interfaces and media rendering, though it is adjacent to the profile's primary focus on coding agents, fintech, and workflow automation.",
+    "stars_at_check": 54919,
+    "verdict": "maybe"
   },
   "huggingface/transformers": {
     "first_seen": "2026-09-15",
@@ -710,6 +764,24 @@
     "stars_at_check": 245566,
     "verdict": "fit"
   },
+  "mksglu/context-mode": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-06-29T18:18:53Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration and Developer Productivity by providing context window sandboxing, session memory persistence, and MCP-based routing tailored specifically for AI coding agents.",
+    "stars_at_check": 24584,
+    "verdict": "fit"
+  },
+  "modelcontextprotocol/servers": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-08-31T20:34:32Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This repository provides essential reference implementations and servers for the Model Context Protocol (MCP), aligning directly with the profile's focus on AI agent orchestration, tool integration, and developer infrastructure.",
+    "stars_at_check": 90875,
+    "verdict": "fit"
+  },
   "multimodal-art-projection/YuE": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -772,6 +844,15 @@
     "reason": "Though it provides robust secrets and data management infrastructure useful in secure backend architectures, it tilts more toward enterprise DevOps and security than Aniket's direct focus on AI agents, automation, and wealth systems.",
     "stars_at_check": 7819,
     "verdict": "maybe"
+  },
+  "openclaw/openclaw": {
+    "first_seen": "2026-10-01",
+    "last_checked": "2026-10-01",
+    "latest_release_at_check": "2026-09-30T04:44:14Z",
+    "profile_checked_against": "2026-10-01",
+    "reason": "This project aligns with the profile's interest in autonomous multi-agent systems and agent execution platforms, providing cross-platform computer-use and OS-level agent automation capabilities.",
+    "stars_at_check": 391075,
+    "verdict": "fit"
   },
   "pacifio/atlas": {
     "first_seen": "2026-09-03",

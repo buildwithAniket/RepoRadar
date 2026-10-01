@@ -1,6 +1,6 @@
 name: Daily Radar
 
-# Scheduled scouting run: prepare -> judge -> finalize, then commit the new
+# Scheduled scouting run: prepare -> judge -> ideate -> finalize, then commit the new
 # report + state + UI bundle and redeploy Pages.
 #
 # Opt-in: set the repository variable RADAR_ENABLED=true and add the secrets
@@ -50,6 +50,9 @@ jobs:
         run: python src/scan.py prepare
       - name: Judge
         run: python src/scan.py judge
+      - name: Ideate (use-case suggestions)
+        continue-on-error: true
+        run: python src/scan.py ideate
       - name: Finalize (report, state, UI bundle, commit)
         run: python src/scan.py finalize
       - name: Push

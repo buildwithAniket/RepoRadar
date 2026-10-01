@@ -343,3 +343,164 @@ def test_cli_execution(tmp_path):
     match = re.search(r"Successfully wrote (\d+) digests", combined_output)
     assert match, f"Missing success line in CLI output: {combined_output}"
     assert int(match.group(1)) == len(_discover_report_dates(REPO_ROOT / "reports"))
+
+
+def test_parse_report_with_use_cases_round_trip(tmp_path):
+    """Verify a report produced by render_report with use cases round-trips into useCases with matching fields."""
+    from report import render_report
+
+    # Create evaluated items with use cases
+    evaluated = [
+        {
+            "verdict": "fit",
+            "repo": "org1/repo1",
+            "stars": 100,
+            "reason": "trending",
+            "judgment": "excellent fit",
+            "use_cases": [
+                {
+                    "title": "Data Pipeline",
+                    "kind": "Processing",
+                    "effort": "low",
+                    "focus": "speed",
+                    "pitch": "Fast batch processing",
+                    "first_step": "Install package",
+                },
+                {
+                    "title": "ML Training",
+                    "kind": "ML",
+                    "effort": "high",
+                    "focus": "accuracy",
+                    "pitch": "Neural network training",
+                    "first_step": "Read docs",
+                },
+            ],
+        },
+    ]
+
+    # Generate report markdown
+    report_md = render_report("2026-10-01", evaluated, 0)
+
+    # Write to temp file
+    report_file = tmp_path / "2026-10-01.md"
+    report_file.write_text(report_md)
+
+    # Parse it back
+    digest = parse_report_file(report_file, {})
+
+    # Verify
+    assert digest["evaluatedCount"] == 1
+    assert len(digest["repos"]) == 1
+    repo = digest["repos"][0]
+
+    assert repo["id"] == "org1/repo1"
+    assert repo["useCases"] == [
+        {
+            "title": "Data Pipeline",
+            "kind": "Processing",
+            "effort": "low",
+            "focus": "speed",
+            "pitch": "Fast batch processing",
+            "firstStep": "Install package",
+        },
+        {
+            "title": "ML Training",
+            "kind": "ML",
+            "effort": "high",
+            "focus": "accuracy",
+            "pitch": "Neural network training",
+            "firstStep": "Read docs",
+        },
+    ]
+
+
+def test_parse_report_use_case_pitch_with_first_step_text():
+    """Verify pitch containing 'First step:' text still splits at the last occurrence."""
+    report_md = (
+        "# RepoRadar Daily Digest — 2026-10-01\n\n"
+        "Scanned trending repositories: evaluated 1 (skipped 0 unchanged/filtered).\n\n"
+        "## 🟡 Maybe\n"
+        "- **[test/repo](https://github.com/test/repo)** (100 stars) [new]: judgment\n"
+        "  - ✦ **Test** · Kind · low · focus: This pitch mentions First step: in the middle First step: Read README\n"
+    )
+
+    tmp_file = Path("/tmp/test_pitch_first_step.md")
+    tmp_file.write_text(report_md)
+
+    try:
+        digest = parse_report_file(tmp_file, {})
+        repo = digest["repos"][0]
+
+        assert len(repo["useCases"]) == 1
+        uc = repo["useCases"][0]
+        # The pitch should contain "first step:" mention
+        assert "First step:" in uc["pitch"]
+        assert uc["firstStep"] == "Read README"
+    finally:
+        tmp_file.unlink()
+
+
+def test_parse_report_skip_note_line(tmp_path):
+    """Verify skip-note line → useCaseNote."""
+    report_md = (
+        "# RepoRadar Daily Digest — 2026-10-01\n\n"
+        "Scanned trending repositories: evaluated 1 (skipped 0 unchanged/filtered).\n\n"
+        "## 🟡 Maybe\n"
+        "- **[test/repo](https://github.com/test/repo)** (100 stars) [new]: judgment\n"
+        "  - ✦ No strong use case: Unable to integrate with current stack\n"
+    )
+
+    report_file = tmp_path / "2026-10-01.md"
+    report_file.write_text(report_md)
+
+    digest = parse_report_file(report_file, {})
+    repo = digest["repos"][0]
+
+    assert repo["useCases"] == []
+    assert repo["useCaseNote"] == "Unable to integrate with current stack"
+
+
+def test_parse_report_old_style_no_use_case_lines():
+    """Verify old-style report without ✦ lines gives useCases == [] and useCaseNote == '' for every repo."""
+    report_md = (
+        "# RepoRadar Daily Digest — 2026-10-01\n\n"
+        "Scanned trending repositories: evaluated 2 (skipped 0 unchanged/filtered).\n\n"
+        "## 🟢 Fit\n"
+        "- **[org/repo1](https://github.com/org/repo1)** (100 stars) [new]: judgment1\n"
+        "- **[org/repo2](https://github.com/org/repo2)** (200 stars) [new]: judgment2\n"
+    )
+
+    tmp_file = Path("/tmp/test_old_style.md")
+    tmp_file.write_text(report_md)
+
+    try:
+        digest = parse_report_file(tmp_file, {})
+        assert len(digest["repos"]) == 2
+
+        for repo in digest["repos"]:
+            assert repo["useCases"] == []
+            assert repo["useCaseNote"] == ""
+    finally:
+        tmp_file.unlink()
+
+
+def test_parse_report_use_case_lines_repo_count_unchanged():
+    """Verify the repo count is unchanged by ✦ lines."""
+    report_md = (
+        "# RepoRadar Daily Digest — 2026-10-01\n\n"
+        "Scanned trending repositories: evaluated 1 (skipped 0 unchanged/filtered).\n\n"
+        "## 🟢 Fit\n"
+        "- **[test/repo](https://github.com/test/repo)** (100 stars) [new]: judgment\n"
+        "  - ✦ **Use Case** · Kind · low · focus: pitch First step: step\n"
+    )
+
+    tmp_file = Path("/tmp/test_repo_count.md")
+    tmp_file.write_text(report_md)
+
+    try:
+        digest = parse_report_file(tmp_file, {})
+        # Should still be 1 repo, not 2
+        assert digest["evaluatedCount"] == 1
+        assert len(digest["repos"]) == 1
+    finally:
+        tmp_file.unlink()

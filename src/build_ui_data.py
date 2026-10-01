@@ -103,6 +103,11 @@ REPO_LINE_PATTERN = re.compile(
     r"(?:\s+\[(?P<tag>[^\]]+)\])?:\s*(?P<reason>.*)$"
 )
 
+USE_CASE_PATTERN = re.compile(
+    r"^-\s+✦\s+\*\*(?P<title>.+?)\*\*\s+·\s+(?P<kind>[^·]+?)\s+·\s+(?P<effort>[^·]+?)\s+·\s+(?P<focus>[^:]+?):\s+"
+    r"(?P<pitch>.*)\s+First step:\s+(?P<first_step>.+)$"
+)
+
 
 def parse_stars(stars_raw: Optional[Union[str, int, float]]) -> int:
     """Robustly parse star counts from string or numeric (raw integer, comma-separated, or suffixed)."""
@@ -278,6 +283,25 @@ def parse_report_file(filepath: Union[str, Path], seen_repos: Dict[str, Any]) ->
                 current_verdict = normalize_verdict(line_clean)
                 continue
 
+            # Use-case lines belong to the repo line above them
+            if line_clean.startswith("- ✦") and repos:
+                m_uc = USE_CASE_PATTERN.match(line_clean)
+                if m_uc:
+                    uc_groups = m_uc.groupdict()
+                    use_case = {
+                        "title": uc_groups.get("title", "").strip(),
+                        "kind": uc_groups.get("kind", "").strip(),
+                        "effort": uc_groups.get("effort", "").strip(),
+                        "focus": uc_groups.get("focus", "").strip(),
+                        "pitch": uc_groups.get("pitch", "").strip(),
+                        "firstStep": uc_groups.get("first_step", "").strip(),
+                    }
+                    repos[-1]["useCases"].append(use_case)
+                elif line_clean.startswith("- ✦ No strong use case:"):
+                    note_text = line_clean[len("- ✦ No strong use case:") :].strip()
+                    repos[-1]["useCaseNote"] = note_text
+                continue
+
             # Check for repo line
             if line_clean.startswith("- **[") or line_clean.startswith("- ["):
                 m = REPO_LINE_PATTERN.match(line_clean)
@@ -410,6 +434,8 @@ def parse_report_file(filepath: Union[str, Path], seen_repos: Dict[str, Any]) ->
                         "classification": classification,
                         "topics": topics,
                         "url": url,
+                        "useCases": [],
+                        "useCaseNote": "",
                     }
                 )
 

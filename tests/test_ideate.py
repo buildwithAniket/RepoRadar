@@ -256,3 +256,45 @@ def test_happy_path_writes_file(files):
     assert out[0]["use_cases"][0]["focus"] == "Developer Productivity & Tooling"
     assert out[0]["skipped_reason"] == ""
     assert json.loads(Path(files["output_path"]).read_text()) == out
+
+
+# ---- markdown-insensitive matching (from the 2026-10-01 dry run) ---------
+
+MD_README = (
+    "### [Integrate PageIndex with your own agent →](https://docs.pageindex.ai/sdk/agents)\n\n"
+    "Drop **PageIndex** tools into the `OpenAI Agents SDK` or any other framework.\n"
+    "<p align='center'>Run <code>pageindex serve</code></p>"
+)
+
+
+def test_evidence_quoted_as_rendered_text_matches_markdown_source():
+    item = uc(
+        evidence="Integrate PageIndex with your own agent → Drop PageIndex tools into the OpenAI Agents SDK",
+        first_step="Call the `OpenAI Agents SDK` integration.",
+    )
+    kept, reasons = ideate.validate_use_cases({"use_cases": [item]}, MD_README, LABELS)
+    assert kept and not reasons
+
+
+def test_first_step_token_matches_inside_html_and_markdown():
+    item = uc(evidence="Drop PageIndex tools into the OpenAI Agents SDK", first_step="Run `pageindex serve`.")
+    kept, _ = ideate.validate_use_cases({"use_cases": [item]}, MD_README, LABELS)
+    assert kept
+
+
+def test_link_url_is_not_quotable_evidence():
+    item = uc(evidence="https://docs.pageindex.ai/sdk/agents", first_step="Run `pageindex serve`.")
+    kept, reasons = ideate.validate_use_cases({"use_cases": [item]}, MD_README, LABELS)
+    assert kept == [] and "evidence" in reasons[0]
+
+
+def test_first_step_call_matches_on_function_name_when_args_span_lines():
+    readme = 'Quickstart:\n\nclient = PageIndexClient(\n    index="luna",   # comment\n)\nDrop PageIndex tools into any framework.'
+    item = uc(evidence="Drop PageIndex tools into any framework", first_step='Call `PageIndexClient(index="luna")`.')
+    assert ideate.validate_use_cases({"use_cases": [item]}, readme, LABELS)[0]
+
+
+def test_first_step_call_with_unknown_function_name_still_rejected():
+    readme = "Drop PageIndex tools into any framework. Uses PageIndexClient."
+    item = uc(evidence="Drop PageIndex tools into any framework", first_step="Call `MadeUpClient(x=1)`.")
+    assert ideate.validate_use_cases({"use_cases": [item]}, readme, LABELS)[0] == []

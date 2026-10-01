@@ -40,6 +40,10 @@ def extract_profile_labels(profile_text: str) -> list[str]:
 
 
 def _norm(text: str) -> str:
+    """Compare text as rendered: models quote READMEs without their markdown/HTML."""
+    text = re.sub(r"<[^>]+>", " ", text)  # HTML tags
+    text = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", text)  # links/images -> their text
+    text = re.sub(r"[*_`#>]", "", text)  # emphasis, code, heading, quote markers
     return re.sub(r"\s+", " ", text.lower()).strip()
 
 
@@ -60,6 +64,8 @@ def _check_item(item: object, readme_n: str, labels: list[str], used_kinds: set[
     if len(evidence_n) < _MIN_EVIDENCE_CHARS or evidence_n not in readme_n:
         return None, "evidence is not a quote from the README"
     tokens = re.findall(r"`([^`]+)`", clean["first_step"])
+    # A call's arguments often span lines in the README, so match it by name.
+    tokens += [t.split("(", 1)[0] for t in tokens if "(" in t]
     if not any(_norm(t) and _norm(t) in readme_n for t in tokens):
         return None, "first_step names no command/file/API found in the README"
     wanted = clean["focus"].rstrip(":").strip().lower()

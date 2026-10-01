@@ -1,8 +1,9 @@
 """CLI orchestrator for RepoRadar V3.
 
-Three-stage pipeline:
+Four-stage pipeline:
   prepare  → fetch trending, diff, lazy-release-fetch, write .needs_evaluation.json
   judge    → LLM verdict via Gemini (model fallback chain) → verdicts.json
+  ideate   → use-case suggestions for fit/maybe repos (best-effort) → use_cases.json
   finalize → merge verdicts into state, render report, email, git commit
 
 Robustness: structured logging, config-driven state pruning, fail-fast on
@@ -27,6 +28,7 @@ if str(REPO_ROOT) not in sys.path:
 
 from diff_engine import split_by_classification
 from github_api import get_latest_release
+from ideate import ideate_repositories
 from judge import judge_repositories
 from mailer import send_digest_email
 from report import render_report
@@ -147,6 +149,27 @@ def cmd_judge(args: argparse.Namespace) -> None:
         raise
 
 
+def cmd_ideate(args: argparse.Namespace) -> None:
+    log.info("Starting use-case suggestions (profile=%s, output=%s)", args.profile, args.out)
+    ideate_repositories(
+        needs_evaluation_path=str(NEEDS_EVALUATION),
+        verdicts_path=args.verdicts,
+        profile_path=args.profile,
+        output_path=args.out,
+    )
+
+
+def _load_use_cases(path_str: str) -> dict[str, dict]:
+    path = Path(path_str)
+    if not path.exists():
+        return {}
+    try:
+        return {r["repo"]: r for r in json.loads(path.read_text())}
+    except (ValueError, TypeError, KeyError) as e:
+        log.warning("Ignoring unreadable use-case file %s: %s", path, e)
+        return {}
+
+
 def cmd_finalize(args: argparse.Namespace) -> None:
     if not NEEDS_EVALUATION.exists():
         log.error(".needs_evaluation.json not found. Run `prepare` first.")
@@ -161,6 +184,7 @@ def cmd_finalize(args: argparse.Namespace) -> None:
     verdicts = json.loads(verdicts_path.read_text())
     verdicts_by_repo = {v["repo"]: v for v in verdicts}
     state = load_state()
+    use_cases_by_repo = _load_use_cases(getattr(args, "use_cases", "use_cases.json"))
 
     evaluated: list[dict] = []
     for entry in payload["repos"]:
@@ -182,15 +206,18 @@ def cmd_finalize(args: argparse.Namespace) -> None:
             "reason": v["judgment"],
             "profile_checked_against": payload["date"],
         }
-        evaluated.append(
-            {
-                "repo": full_name,
-                "stars": entry["stars"],
-                "reason": entry["reason"],
-                "verdict": v["verdict"],
-                "judgment": v["judgment"],
-            }
-        )
+        item = {
+            "repo": full_name,
+            "stars": entry["stars"],
+            "reason": entry["reason"],
+            "verdict": v["verdict"],
+            "judgment": v["judgment"],
+        }
+        ideas = use_cases_by_repo.get(full_name)
+        if ideas:
+            item["use_cases"] = ideas.get("use_cases", [])
+            item["skipped_reason"] = ideas.get("skipped_reason", "")
+        evaluated.append(item)
 
     # Prune stale state entries based on config
     config = _load_config()
@@ -259,9 +286,15 @@ def main() -> None:
     j_parser.add_argument("--profile", default="profile.md")
     j_parser.add_argument("--out", default="verdicts.json")
 
+    i_parser = subparsers.add_parser("ideate", help="Use-case suggestions → use_cases.json")
+    i_parser.add_argument("--profile", default="profile.md")
+    i_parser.add_argument("--verdicts", default="verdicts.json")
+    i_parser.add_argument("--out", default="use_cases.json")
+
     fin = subparsers.add_parser("finalize", help="Merge verdicts, report, email, commit")
     fin.add_argument("--verdicts", default="verdicts.json")
     fin.add_argument("--profile", default="profile.md")
+    fin.add_argument("--use-cases", default="use_cases.json")
     fin.add_argument(
         "--dry-run",
         action="store_true",
@@ -275,6 +308,8 @@ def main() -> None:
             cmd_prepare(args)
         elif args.command == "judge":
             cmd_judge(args)
+        elif args.command == "ideate":
+            cmd_ideate(args)
         elif args.command == "finalize":
             cmd_finalize(args)
     except Exception as e:

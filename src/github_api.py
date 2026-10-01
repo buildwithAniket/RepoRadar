@@ -65,3 +65,27 @@ def get_latest_release(full_name: str) -> str | None:
     except Exception as e:
         log.error("GitHub API release failed for %s: %s", full_name, e)
     return None
+
+
+_README_NAMES = ("README.md", "readme.md", "README.rst", "README")
+
+
+def get_readme_excerpt(full_name: str, max_chars: int = 8000) -> str:
+    """Return the first *max_chars* of the repo README, or "" when none is found.
+
+    Reads raw.githubusercontent.com directly: no REST API call, no token.
+    """
+    from logger import log
+
+    for fname in _README_NAMES:
+        url = f"https://raw.githubusercontent.com/{full_name}/HEAD/{fname}"
+        try:
+            resp = requests.get(url, headers=_headers(), timeout=10)
+            if resp.status_code == 200:
+                log.debug("README for %s: %s", full_name, fname)
+                return resp.text[:max_chars]
+            log.debug("README %s for %s returned %d", fname, full_name, resp.status_code)
+        except Exception as e:
+            log.warning("README fetch failed for %s/%s: %s", full_name, fname, e)
+    log.warning("No README found for %s", full_name)
+    return ""

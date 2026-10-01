@@ -176,15 +176,29 @@ def _call_gemini(gemini_key: str, gemini_model: str, prompt: str, timeout: int) 
         raise GeminiCallError(f"unparseable response: {e}", transient=False) from e
 
 
-def _judge_with_fallback(gemini_key: str, chain: list[str], prompt: str, attempts: int, timeout: int) -> list[Verdict]:
+def _call_with_fallback(
+    gemini_key: str,
+    chain: list[str],
+    prompt: str,
+    attempts: int,
+    timeout: int,
+    *,
+    label: str = "Judging",
+    require_nonempty: bool = True,
+):
+    """Try each model in *chain* (retrying transient errors) and return the parsed JSON.
+
+    With ``require_nonempty`` an empty result counts as a failure; otherwise an
+    empty list/dict is a valid answer. Raises ``RuntimeError`` when all models fail.
+    """
     from logger import log
 
     failures: list[str] = []
     for model in chain:
         for attempt in range(attempts):
-            log.info("Judging with %s (attempt %d/%d)...", model, attempt + 1, attempts)
+            log.info("%s with %s (attempt %d/%d)...", label, model, attempt + 1, attempts)
             try:
-                verdicts = _call_gemini(gemini_key, model, prompt, timeout)
+                result = _call_gemini(gemini_key, model, prompt, timeout)
             except GeminiCallError as e:
                 log.warning("%s failed: %s", model, e)
                 if not e.transient:
@@ -195,12 +209,32 @@ def _judge_with_fallback(gemini_key: str, chain: list[str], prompt: str, attempt
                 else:
                     failures.append(f"{model}: {e}")
                 continue
-            if verdicts:
-                log.info("Judged with %s.", model)
-                return verdicts
+            if result or not require_nonempty:
+                log.info("%s done with %s.", label, model)
+                return result
             failures.append(f"{model}: empty verdicts")
             break
     raise RuntimeError("LLM judgment failed on every Gemini model:\n  " + "\n  ".join(failures))
+
+
+def _judge_with_fallback(gemini_key: str, chain: list[str], prompt: str, attempts: int, timeout: int) -> list[Verdict]:
+    return _call_with_fallback(gemini_key, chain, prompt, attempts, timeout)
+
+
+def _resolve_gemini_chain(gemini_key: str) -> tuple[list[str], dict]:
+    """Load judge config, discover models and build the chain. Returns (chain, cfg)."""
+    from logger import log
+
+    cfg = _load_judge_config()
+    timeout = int(cfg["timeout_seconds"])
+    available = _list_gemini_models(gemini_key, timeout) if cfg["discover_models"] else None
+    chain = _build_model_chain(
+        cfg["gemini_models"], available, bool(cfg["discover_models"]), os.environ.get("GEMINI_MODEL") or None
+    )
+    if not chain:
+        raise RuntimeError("No Gemini models to try. Check judge.gemini_models in config.yaml.")
+    log.info("Gemini model chain: %s", ", ".join(chain))
+    return chain, cfg
 
 
 # --------------------------------------------------------------------------- #
@@ -251,15 +285,8 @@ def judge_repositories(
             "No LLM API key configured. Set GEMINI_API_KEY / GOOGLE_API_KEY in your environment or .env file."
         )
 
-    cfg = _load_judge_config()
+    chain, cfg = _resolve_gemini_chain(gemini_key)
     timeout = int(cfg["timeout_seconds"])
-    available = _list_gemini_models(gemini_key, timeout) if cfg["discover_models"] else None
-    chain = _build_model_chain(
-        cfg["gemini_models"], available, bool(cfg["discover_models"]), os.environ.get("GEMINI_MODEL") or None
-    )
-    if not chain:
-        raise RuntimeError("No Gemini models to try. Check judge.gemini_models in config.yaml.")
-    log.info("Gemini model chain: %s", ", ".join(chain))
 
     # Judgments are published in public reports, so the prompt never names the
     # profile owner and tells the model not to either.

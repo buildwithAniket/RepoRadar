@@ -25,9 +25,11 @@ htmlcov/
 verdicts.json
 needs_evaluation.json
 .needs_evaluation.json
+use_cases.json
 
 # OS / editor metadata
 .DS_Store
 .idea/
 .vscode/
 _site/
+node_modules/

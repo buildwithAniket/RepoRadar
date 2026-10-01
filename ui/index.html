@@ -75,6 +75,7 @@
       --tracklist-pill-hover: rgba(18, 19, 20, 0.09);
       --tracklist-pill-active: #121314;
       --tracklist-pill-active-text: #f3f2ee;
+      --usecase-accent: #891a20;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -113,6 +114,7 @@
         --tracklist-pill-hover: rgba(255, 255, 255, 0.12);
         --tracklist-pill-active: #f4f3ef;
         --tracklist-pill-active-text: #111313;
+        --usecase-accent: #f0a3a8;
       }
     }
 
@@ -152,6 +154,7 @@
         --tracklist-pill-hover: rgba(255, 255, 255, 0.12);
         --tracklist-pill-active: #f4f3ef;
         --tracklist-pill-active-text: #111313;
+        --usecase-accent: #f0a3a8;
     }
 
     [data-theme="light"] {
@@ -190,6 +193,7 @@
       --tracklist-pill-hover: rgba(18, 19, 20, 0.09);
       --tracklist-pill-active: #121314;
       --tracklist-pill-active-text: #f3f2ee;
+      --usecase-accent: #891a20;
     }
 
     /* Screen Reader Accessibility Utility */
@@ -217,6 +221,8 @@
 
     /* Reduced Motion Preference Compliance */
     @media (prefers-reduced-motion: reduce) {
+      .use-case-card { animation: none !important; }
+      .use-case-step summary svg { transition: none !important; }
       .film-grain,
       .light-leak {
         animation: none !important;
@@ -651,6 +657,60 @@
       color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;
       margin-top: 12px; font-style: normal;
     }
+
+    /* Director's Notes (use-case suggestions) */
+    .use-case-notes { margin-bottom: 32px; min-width: 0; }
+    .use-case-notes[hidden] { display: none; }
+    .use-case-heading {
+      font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+      color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em;
+      margin: 0 0 12px;
+    }
+    .use-case-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    .use-case-card {
+      min-width: 0; padding: 16px 18px; background: var(--bg-surface);
+      border: 1px solid var(--border-strong); border-radius: 6px;
+      animation: use-case-in 0.3s var(--ease-cinematic) both;
+    }
+    @keyframes use-case-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .use-case-title {
+      font-family: var(--font-display); font-size: 17px; line-height: 1.3; font-weight: 700;
+      color: var(--text); margin: 0 0 10px; overflow-wrap: anywhere;
+    }
+    .use-case-pills { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-bottom: 10px; }
+    .use-case-pill {
+      display: inline-flex; align-items: center; white-space: nowrap;
+      font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 3px 9px; border-radius: 12px;
+      background: var(--tracklist-pill-bg); color: var(--text); border: 1px solid var(--border-strong);
+    }
+    .use-case-pill.kind { color: var(--usecase-accent); border-color: var(--usecase-accent); }
+    .use-case-focus {
+      font-family: var(--font-mono); font-size: 12px; color: var(--text-secondary);
+      overflow-wrap: anywhere; min-width: 0;
+    }
+    .use-case-pitch { font-size: 15px; line-height: 1.6; color: var(--text); margin: 0 0 8px; overflow-wrap: anywhere; text-wrap: pretty; }
+    .use-case-step summary {
+      display: flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer;
+      font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+      color: var(--usecase-accent); text-transform: uppercase; list-style: none;
+      border-radius: 4px;
+    }
+    .use-case-step summary::-webkit-details-marker { display: none; }
+    .use-case-step summary:focus-visible { outline: 2px solid var(--usecase-accent); outline-offset: 2px; }
+    .use-case-step summary svg { transition: transform 0.2s ease; flex: none; }
+    .use-case-step[open] summary svg { transform: rotate(90deg); }
+    .use-case-step-body { font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin: 0 0 4px; overflow-wrap: anywhere; }
+    .use-case-step-body code {
+      font-family: var(--font-mono); font-size: 13px; background: var(--tracklist-pill-bg);
+      color: var(--text); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere;
+    }
+    .use-case-none { font-size: 14px; color: var(--text-secondary); margin: 0; }
+    .track-usecase-badge {
+      display: inline-flex; align-items: center; gap: 3px; flex: none; white-space: nowrap;
+      font-family: var(--font-mono); font-size: 11px; font-weight: 600; color: var(--usecase-accent);
+    }
+    .track-usecase-badge svg { width: 11px; height: 11px; fill: currentColor; }
 
     /* Technical Dossier Grid (Film Specs Metaphor) */
     .spec-grid {
@@ -1428,6 +1488,12 @@
           <p class="critic-quote-text" id="docket-quote">“As a core interest area, this repository represents a significant advancement in autonomous agent systems that you should monitor for integration into your coding workflows.”</p>
           <span class="critic-label">VERDICT RATIONALE · GEMINI-AS-JUDGE</span>
         </blockquote>
+
+        <!-- Director's Notes: LLM use-case suggestions -->
+        <section class="use-case-notes" id="docket-use-cases" aria-labelledby="use-case-heading" hidden>
+          <h3 class="use-case-heading" id="use-case-heading">DIRECTOR'S NOTES · HOW TO USE IT</h3>
+          <div class="use-case-list" id="docket-use-case-list"></div>
+        </section>
 
         <!-- Film Specs Metaphor Grid -->
         <div class="spec-grid">
@@ -2398,6 +2464,7 @@
 
         // LLM Quote
         document.getElementById('docket-quote').textContent = `“${repo.reason || 'No evaluation notes recorded.'}”`;
+        renderUseCases(repo);
 
         // Spec Grid
         document.getElementById('docket-iso').textContent = ISO_MAP(repo.stars || 0);
@@ -2418,6 +2485,57 @@
       }, 200);
     }
 
+    const USE_CASE_EFFORT = { hour: '~1 HOUR', weekend: 'WEEKEND', project: 'PROJECT' };
+
+    function renderUseCases(repo) {
+      const section = document.getElementById('docket-use-cases');
+      const list = document.getElementById('docket-use-case-list');
+      if (!section || !list) return;
+      list.textContent = '';
+      const cases = Array.isArray(repo && repo.useCases) ? repo.useCases.slice(0, 2) : [];
+      const note = (repo && typeof repo.useCaseNote === 'string') ? repo.useCaseNote.trim() : '';
+      const el = (tag, cls, text) => {
+        const n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text != null) n.textContent = text;
+        return n;
+      };
+      if (cases.length === 0) {
+        if (!note) { section.hidden = true; return; }
+        list.appendChild(el('p', 'use-case-none', 'No strong use case — ' + note));
+        section.hidden = false;
+        return;
+      }
+      cases.forEach(uc => {
+        const card = el('article', 'use-case-card');
+        card.appendChild(el('h4', 'use-case-title', uc.title || 'Untitled'));
+        const pills = el('div', 'use-case-pills');
+        pills.appendChild(el('span', 'use-case-pill kind', String(uc.kind || '').toUpperCase()));
+        pills.appendChild(el('span', 'use-case-pill effort', USE_CASE_EFFORT[uc.effort] || String(uc.effort || '').toUpperCase()));
+        if (uc.focus) pills.appendChild(el('span', 'use-case-focus', uc.focus));
+        card.appendChild(pills);
+        card.appendChild(el('p', 'use-case-pitch', uc.pitch || ''));
+        const det = el('details', 'use-case-step');
+        const sum = el('summary');
+        sum.innerHTML = '<svg aria-hidden="true" width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 1l6 4-6 4z"/></svg>';
+        sum.appendChild(document.createTextNode('FIRST STEP'));
+        det.appendChild(sum);
+        const body = el('p', 'use-case-step-body');
+        String(uc.firstStep || '').split(/(`[^`]+`)/).forEach(part => {
+          if (!part) return;
+          if (part.length > 2 && part[0] === '`' && part[part.length - 1] === '`') {
+            body.appendChild(el('code', null, part.slice(1, -1)));
+          } else {
+            body.appendChild(document.createTextNode(part));
+          }
+        });
+        det.appendChild(body);
+        card.appendChild(det);
+        list.appendChild(card);
+      });
+      section.hidden = false;
+    }
+
     function updateDocketEmptyState(dateStr, skippedCount) {
       docketWrap.classList.add('switching');
       setTimeout(() => {
@@ -2430,6 +2548,8 @@
         document.getElementById('docket-stars').textContent = `${skippedCount || 0} SKIPPED / UNCHANGED`;
         document.getElementById('docket-quote').textContent =
           `“On ${dateStr}, all scanned trending repositories were either previously evaluated or filtered by domain criteria. No new candidate records met the threshold for pressing.”`;
+        const ucSection = document.getElementById('docket-use-cases');
+        if (ucSection) ucSection.hidden = true;
         document.getElementById('docket-iso').textContent = 'ISO 25 · REST SLATE';
         document.getElementById('docket-gauge').textContent = 'Contact Sheet · Standby';
         document.getElementById('docket-exposure').textContent = '±0 EV · BALANCED READ';
@@ -2713,7 +2833,7 @@
         row.dataset.index = idx;
         row.setAttribute('role', 'listitem');
         row.setAttribute('aria-current', isAct ? 'true' : 'false');
-        row.setAttribute('aria-label', `Track ${trackCode}: ${repo.name || 'Untitled'} by ${repo.owner || 'Unknown'}, ${repo.language || 'Unknown'}, ${(repo.stars || 0).toLocaleString()} stars, verdict ${verdictLabel}`);
+        row.setAttribute('aria-label', `Track ${trackCode}: ${repo.name || 'Untitled'} by ${repo.owner || 'Unknown'}, ${repo.language || 'Unknown'}, ${(repo.stars || 0).toLocaleString()} stars, verdict ${verdictLabel}${repo.useCases && repo.useCases.length ? `, ${repo.useCases.length} use-case suggestion${repo.useCases.length === 1 ? '' : 's'}` : ''}`);
 
         row.innerHTML = `
           <div class="track-side-col">
@@ -2727,6 +2847,7 @@
           <div class="track-info-col">
             <div class="track-name-row">
               <span class="track-name">${escapeHtml(repo.name || 'Untitled')}</span>
+              ${(repo.useCases && repo.useCases.length > 0) ? `<span class="track-usecase-badge" role="img" aria-label="${repo.useCases.length} use-case suggestion${repo.useCases.length === 1 ? '' : 's'}"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"/></svg><span aria-hidden="true">${repo.useCases.length}</span></span>` : ''}
               ${isAct ? '<span class="cued-indicator" aria-label="Currently cued"><span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span></span>' : ''}
             </div>
             <div class="track-meta-row">

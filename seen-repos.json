@@ -62,6 +62,15 @@
     "stars_at_check": 122157,
     "verdict": "fit"
   },
+  "Effect-TS/effect": {
+    "first_seen": "2026-10-03",
+    "last_checked": "2026-10-03",
+    "latest_release_at_check": "2026-10-01T01:48:43Z",
+    "profile_checked_against": "2026-10-03",
+    "reason": "Effect is an advanced functional programming framework for TypeScript applications. Despite its technical sophistication, it lies outside the profile's primary ecosystem and target domains, which emphasize Python systems, autonomous AI agents, career-ops pipelines, and fintech tooling.",
+    "stars_at_check": 16629,
+    "verdict": "not-fit"
+  },
   "Friedrich-M/UniMate": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -548,6 +557,15 @@
     "stars_at_check": 72692,
     "verdict": "fit"
   },
+  "coreyhaines31/marketingskills": {
+    "first_seen": "2026-10-03",
+    "last_checked": "2026-10-03",
+    "latest_release_at_check": "2026-10-03T01:51:50Z",
+    "profile_checked_against": "2026-10-03",
+    "reason": "Directly targets AI agents and coding agents like Claude Code, which is an explicit priority within the profile's AI Agents & LLM Orchestration focus area. Providing structured capabilities and growth engineering workflows for agent runtimes makes it highly relevant to agentic workflow automation.",
+    "stars_at_check": 52507,
+    "verdict": "fit"
+  },
   "cs341-illinois/coursebook": {
     "first_seen": "2026-09-29",
     "last_checked": "2026-09-29",
@@ -665,6 +683,15 @@
     "stars_at_check": 0,
     "verdict": "not-fit"
   },
+  "getsentry/sentry": {
+    "first_seen": "2026-10-03",
+    "last_checked": "2026-10-03",
+    "latest_release_at_check": "2026-09-15T17:19:59Z",
+    "profile_checked_against": "2026-10-03",
+    "reason": "Although Sentry is a foundational Python-based developer platform, it is a massive, established enterprise observability and error-monitoring suite rather than a focused developer workflow utility, autonomous agent framework, or fintech system highlighted in the profile.",
+    "stars_at_check": 45076,
+    "verdict": "not-fit"
+  },
   "google-research/timesfm": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -691,6 +718,15 @@
     "reason": "A standard testing library that does not provide the architectural innovation or agentic utility you are looking for.",
     "stars_at_check": 0,
     "verdict": "not-fit"
+  },
+  "google/skills": {
+    "first_seen": "2026-10-03",
+    "last_checked": "2026-10-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-03",
+    "reason": "Aligns directly with the profile's primary focus on AI Agents & LLM Orchestration by providing standardized agent skills and tool integrations for Google services. It enhances autonomous agent architectures through modular capabilities and tool-use patterns.",
+    "stars_at_check": 20827,
+    "verdict": "fit"
   },
   "harry0703/MoneyPrinterTurbo": {
     "first_seen": "2026-10-01",

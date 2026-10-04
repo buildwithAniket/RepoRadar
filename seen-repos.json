@@ -235,11 +235,11 @@
   },
   "OpenCut-app/OpenCut": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "A frontend-heavy application for video editing that does not align with your focus on backend-heavy AI orchestration or financial automation.",
-    "stars_at_check": 0,
+    "last_checked": "2026-10-04",
+    "latest_release_at_check": "2026-04-15T02:04:44Z",
+    "profile_checked_against": "2026-10-04",
+    "reason": "This repository is an open-source video editing application. It falls outside the profile's core focus areas, which prioritize AI orchestration, career-ops automation, fintech systems, and developer productivity tools.",
+    "stars_at_check": 91739,
     "verdict": "not-fit"
   },
   "Panniantong/Agent-Reach": {
@@ -530,6 +530,15 @@
     "stars_at_check": 68458,
     "verdict": "fit"
   },
+  "cloudflare/cloudflare-os": {
+    "first_seen": "2026-10-04",
+    "last_checked": "2026-10-04",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-04",
+    "reason": "This repository is a strong fit for the profile's focus on AI Agents & LLM Orchestration. It offers a cloud-based agent workspace built on Cloudflare Workers for running agents with custom context, aligning perfectly with the profile's interest in local/cloud agent runners and autonomous multi-agent systems.",
+    "stars_at_check": 10660,
+    "verdict": "fit"
+  },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-09-17",
     "last_checked": "2026-09-17",
@@ -764,6 +773,15 @@
     "stars_at_check": 54536,
     "verdict": "maybe"
   },
+  "jamwithai/production-agentic-rag-course": {
+    "first_seen": "2026-10-04",
+    "last_checked": "2026-10-04",
+    "latest_release_at_check": "2025-11-26T09:24:07Z",
+    "profile_checked_against": "2026-10-04",
+    "reason": "This repository appears to be an educational course on production-grade agentic Retrieval-Augmented Generation (RAG). While the topic is highly relevant to the profile's interest in AI Agents & LLM Orchestration, it is classified as a maybe because it may function primarily as educational material rather than a reusable software tool or framework.",
+    "stars_at_check": 9455,
+    "verdict": "maybe"
+  },
   "julyx10/lap": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -826,6 +844,15 @@
     "reason": "Provides practical, real-world agent skills that can be directly integrated into your existing agent runners to improve your daily coding productivity.",
     "stars_at_check": 245566,
     "verdict": "fit"
+  },
+  "meituan-longcat/LongCat-Video": {
+    "first_seen": "2026-10-04",
+    "last_checked": "2026-10-04",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-04",
+    "reason": "This repository appears to be focused on video processing or generation models. It does not align with the profile's core focus areas of AI agents, career-ops, fintech, or developer productivity tooling.",
+    "stars_at_check": 8848,
+    "verdict": "not-fit"
   },
   "mksglu/context-mode": {
     "first_seen": "2026-10-01",
@@ -960,6 +987,15 @@
     "profile_checked_against": "2026-09-15",
     "reason": "A hardware-focused productivity utility that does not involve the software engineering or AI automation workflows you are prioritizing.",
     "stars_at_check": 3763,
+    "verdict": "not-fit"
+  },
+  "pingdotgg/t3code": {
+    "first_seen": "2026-10-04",
+    "last_checked": "2026-10-04",
+    "latest_release_at_check": "2026-10-02T18:17:31Z",
+    "profile_checked_against": "2026-10-04",
+    "reason": "This repository lacks a description and appears to be a web-based coding platform or tutorial repository associated with the T3 stack. It does not align with the profile's core focus areas of AI agents, career-ops, fintech, or high-performance developer productivity tooling.",
+    "stars_at_check": 24833,
     "verdict": "not-fit"
   },
   "protocolbuffers/protobuf": {
@@ -1135,11 +1171,11 @@
   },
   "thedotmack/claude-mem": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "Highly relevant; persistent context management is a critical missing piece in current agentic workflows and directly addresses your interest in high-performance AI orchestration.",
-    "stars_at_check": 0,
+    "last_checked": "2026-10-04",
+    "latest_release_at_check": "2026-10-03T05:35:46Z",
+    "profile_checked_against": "2026-10-04",
+    "reason": "This repository is an exceptional fit for the profile's primary focus on AI Agents & LLM Orchestration. It provides persistent context and memory management across sessions for coding agents like Claude Code, Gemini, and Hermes, directly addressing the developer productivity and agent runner interests highlighted in the profile.",
+    "stars_at_check": 95738,
     "verdict": "fit"
   },
   "tile-ai/tilelang": {

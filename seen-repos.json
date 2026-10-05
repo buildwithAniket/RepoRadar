@@ -449,6 +449,15 @@
     "stars_at_check": 178260,
     "verdict": "fit"
   },
+  "antirez/ds4": {
+    "first_seen": "2026-10-05",
+    "last_checked": "2026-10-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-05",
+    "reason": "This repository is a local inference engine for DeepSeek models optimized for Metal, CUDA, and ROCm. It aligns well with the profile's interest in local agent runners, high-performance systems, and developer productivity tooling for running LLMs locally.",
+    "stars_at_check": 23505,
+    "verdict": "fit"
+  },
   "asgeirtj/system_prompts_leaks": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -503,14 +512,23 @@
     "stars_at_check": 66517,
     "verdict": "not-fit"
   },
+  "caddyserver/caddy": {
+    "first_seen": "2026-10-05",
+    "last_checked": "2026-10-05",
+    "latest_release_at_check": "2026-10-03T05:58:33Z",
+    "profile_checked_against": "2026-10-05",
+    "reason": "This repository is a fast, extensible, multi-platform HTTP web server. Although it is a highly successful developer tool, it is a general-purpose infrastructure project that does not align with the profile's specific focus areas of AI agents, career-ops, fintech, or specialized developer productivity utilities.",
+    "stars_at_check": 76708,
+    "verdict": "not-fit"
+  },
   "calesthio/OpenMontage": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
+    "last_checked": "2026-10-05",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "An interesting application of agentic workflows to video production; while outside your core focus, the architectural patterns used for agent skills could be adapted for your career-ops automation.",
-    "stars_at_check": 0,
-    "verdict": "maybe"
+    "profile_checked_against": "2026-10-05",
+    "reason": "This repository is an open-source, agentic video production system featuring multiple production pipelines and hundreds of agent skills. It aligns perfectly with the profile's core focus on autonomous multi-agent systems, LLM orchestration, and advanced developer workflow automation.",
+    "stars_at_check": 63417,
+    "verdict": "fit"
   },
   "cilium/cilium": {
     "first_seen": "2026-09-18",
@@ -647,6 +665,15 @@
     "stars_at_check": 111176,
     "verdict": "fit"
   },
+  "earthtojake/text-to-cad": {
+    "first_seen": "2026-10-05",
+    "last_checked": "2026-10-05",
+    "latest_release_at_check": "2026-10-05T04:54:24Z",
+    "profile_checked_against": "2026-10-05",
+    "reason": "This repository provides CAD capabilities for AI agents, allowing them to generate and manipulate 3D models. It is a strong fit for the profile's focus on AI agents, LLM orchestration, and equipping autonomous agents with specialized tools and skills.",
+    "stars_at_check": 17018,
+    "verdict": "fit"
+  },
   "ever-co/ever-gauzy": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -691,6 +718,15 @@
     "reason": "This is a curated list of prompt engineering resources rather than a functional framework or tool for agentic orchestration.",
     "stars_at_check": 0,
     "verdict": "not-fit"
+  },
+  "garrytan/gstack": {
+    "first_seen": "2026-10-05",
+    "last_checked": "2026-10-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-05",
+    "reason": "This repository offers an opinionated multi-agent setup built on Claude Code, configuring specialized agent roles like CEO, Designer, and Release Manager. It directly matches the profile's core interest in autonomous multi-agent systems, coding agents, and developer workflow enhancers.",
+    "stars_at_check": 135247,
+    "verdict": "fit"
   },
   "getsentry/sentry": {
     "first_seen": "2026-10-03",
@@ -853,6 +889,15 @@
     "reason": "This repository appears to be focused on video processing or generation models. It does not align with the profile's core focus areas of AI agents, career-ops, fintech, or developer productivity tooling.",
     "stars_at_check": 8848,
     "verdict": "not-fit"
+  },
+  "michael-denyer/pstack-claude": {
+    "first_seen": "2026-10-05",
+    "last_checked": "2026-10-05",
+    "latest_release_at_check": "2026-10-04T16:08:25Z",
+    "profile_checked_against": "2026-10-05",
+    "reason": "This repository implements rigorous agent workflows and translates Cursor primitives for various coding agent harnesses, including Claude Code and Gemini. It is an excellent fit for the profile's interest in coding agents, local/cloud agent runners, and developer productivity tooling.",
+    "stars_at_check": 1238,
+    "verdict": "fit"
   },
   "mksglu/context-mode": {
     "first_seen": "2026-10-01",
@@ -1168,6 +1213,15 @@
     "reason": "Independent audit dry-run validation.",
     "stars_at_check": 1234,
     "verdict": "fit"
+  },
+  "tester-army/e2e": {
+    "first_seen": "2026-10-05",
+    "last_checked": "2026-10-05",
+    "latest_release_at_check": "2026-10-04T07:13:55Z",
+    "profile_checked_against": "2026-10-05",
+    "reason": "This repository is a next-generation end-to-end testing framework for web and mobile applications. While it aligns generally with the developer productivity and automated testing pipeline focus area of the profile, it lacks a specific connection to high-performance Python systems, AI agent orchestration, or the other core domains highlighted in the profile.",
+    "stars_at_check": 3571,
+    "verdict": "maybe"
   },
   "thedotmack/claude-mem": {
     "first_seen": "2026-08-28",

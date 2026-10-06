@@ -2561,26 +2561,149 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-06": {
+    "date": "2026-10-06",
+    "evaluatedCount": 5,
+    "skippedCount": 8,
+    "stats": {
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 4,
+      "total": 5
+    },
+    "summary": {
+      "evaluated": 5,
+      "skipped": 8,
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 4,
+      "total": 5
+    },
+    "repos": [
+      {
+        "id": "msitarzewski/agency-agents",
+        "owner": "msitarzewski",
+        "name": "agency-agents",
+        "stars": 157466,
+        "language": "Unknown",
+        "pushedAt": "2026-10-06",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration. It provides a multi-agent framework featuring specialized autonomous agents with distinct personalities and deliverables, matching the profile's interest in autonomous multi-agent systems and structured generation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/msitarzewski/agency-agents",
+        "useCases": [
+          {
+            "title": "Integrate specialized engineering agents into local IDEs",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Integrate specialized agent personas directly into local development tools like Claude Code or Cursor to automate code reviews, frontend development, and architectural decisions. This enhances developer productivity by providing domain-specific, battle-tested AI experts right in the terminal or IDE.",
+            "firstStep": "Run `./scripts/install.sh --tool claude-code --division engineering` to install the engineering division agents directly into the local Claude Code directory."
+          },
+          {
+            "title": "Automate multi-agent team provisioning using runbooks",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Automate the provisioning of specialized multi-agent teams for specific project phases (like a startup MVP) by parsing the repository's runbook rosters. This allows the profile to orchestrate complex, multi-agent workflows with pre-defined roles and communication styles.",
+            "firstStep": "Parse the `strategy/runbooks.json` file to extract the roster for the `startup-mvp` runbook and install the targeted agents using `./scripts/install.sh --tool claude-code --agents-file team.txt`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "boykopovar/AnyPS5",
+        "owner": "boykopovar",
+        "name": "AnyPS5",
+        "stars": 5206,
+        "language": "Unknown",
+        "pushedAt": "2026-09-28",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository focuses on low-level systems engineering and game porting (PS5 executables to Linux and Windows). It does not align with the profile's core focus areas of AI agents, career-ops automation, fintech systems, or general developer productivity tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/boykopovar/AnyPS5",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "DuarteSantos8/openGym",
+        "owner": "DuarteSantos8",
+        "name": "openGym",
+        "stars": 4655,
+        "language": "Unknown",
+        "pushedAt": "2026-09-28",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a self-hosted fitness and workout tracking application. While it features self-hosting capabilities and data ownership, it falls outside the profile's target domains of AI orchestration, career automation, financial technology, or developer productivity tools.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/DuarteSantos8/openGym",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Stremio/stremio-web",
+        "owner": "Stremio",
+        "name": "stremio-web",
+        "stars": 14374,
+        "language": "Unknown",
+        "pushedAt": "2026-10-05",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a web-based media streaming client. It does not align with the profile's interest in AI agents, career workflow automation, fintech, or high-performance developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Stremio/stremio-web",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "M-Abozaid/esp32-c3-adblock",
+        "owner": "M-Abozaid",
+        "name": "esp32-c3-adblock",
+        "stars": 1554,
+        "language": "Unknown",
+        "pushedAt": "2026-10-04",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is an embedded systems project implementing a DNS ad-blocker on an ESP32-C3 microcontroller. Although it showcases impressive low-level optimization and hashing techniques, it does not fit the profile's core focus areas of AI orchestration, career-ops, fintech, or developer productivity software.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/M-Abozaid/esp32-c3-adblock",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-05",
+  value: "2026-10-06",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-05",
+  value: "2026-10-06",
   enumerable: false,
   configurable: true,
   writable: true

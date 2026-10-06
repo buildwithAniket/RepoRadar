@@ -62,6 +62,15 @@
     "stars_at_check": 122157,
     "verdict": "fit"
   },
+  "DuarteSantos8/openGym": {
+    "first_seen": "2026-10-06",
+    "last_checked": "2026-10-06",
+    "latest_release_at_check": "2026-09-28T14:03:47Z",
+    "profile_checked_against": "2026-10-06",
+    "reason": "This repository is a self-hosted fitness and workout tracking application. While it features self-hosting capabilities and data ownership, it falls outside the profile's target domains of AI orchestration, career automation, financial technology, or developer productivity tools.",
+    "stars_at_check": 4655,
+    "verdict": "not-fit"
+  },
   "Effect-TS/effect": {
     "first_seen": "2026-10-03",
     "last_checked": "2026-10-03",
@@ -179,6 +188,15 @@
     "stars_at_check": 13452,
     "verdict": "not-fit"
   },
+  "M-Abozaid/esp32-c3-adblock": {
+    "first_seen": "2026-10-06",
+    "last_checked": "2026-10-06",
+    "latest_release_at_check": "2026-10-04T09:40:53Z",
+    "profile_checked_against": "2026-10-06",
+    "reason": "This repository is an embedded systems project implementing a DNS ad-blocker on an ESP32-C3 microcontroller. Although it showcases impressive low-level optimization and hashing techniques, it does not fit the profile's core focus areas of AI orchestration, career-ops, fintech, or developer productivity software.",
+    "stars_at_check": 1554,
+    "verdict": "not-fit"
+  },
   "NVIDIA/Model-Optimizer": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -259,6 +277,15 @@
     "reason": "Highly relevant for your interest in coding agents. By providing structured, expert-level methodology for Claude, it serves as a practical example of how to extend agent capabilities for specialized tasks.",
     "stars_at_check": 5028,
     "verdict": "fit"
+  },
+  "Stremio/stremio-web": {
+    "first_seen": "2026-10-06",
+    "last_checked": "2026-10-06",
+    "latest_release_at_check": "2026-10-05T10:56:30Z",
+    "profile_checked_against": "2026-10-06",
+    "reason": "This repository is a web-based media streaming client. It does not align with the profile's interest in AI agents, career workflow automation, fintech, or high-performance developer tooling.",
+    "stars_at_check": 14374,
+    "verdict": "not-fit"
   },
   "TauricResearch/TradingAgents": {
     "first_seen": "2026-08-28",
@@ -493,6 +520,15 @@
     "reason": "Potentially useful for refining AI-generated content in your career-ops workflows (e.g., cover letters or outreach), but may be considered a 'wrapper' depending on its implementation.",
     "stars_at_check": 40699,
     "verdict": "maybe"
+  },
+  "boykopovar/AnyPS5": {
+    "first_seen": "2026-10-06",
+    "last_checked": "2026-10-06",
+    "latest_release_at_check": "2026-09-28T23:34:39Z",
+    "profile_checked_against": "2026-10-06",
+    "reason": "This repository focuses on low-level systems engineering and game porting (PS5 executables to Linux and Windows). It does not align with the profile's core focus areas of AI agents, career-ops automation, fintech systems, or general developer productivity tooling.",
+    "stars_at_check": 5206,
+    "verdict": "not-fit"
   },
   "browser-use/video-use": {
     "first_seen": "2026-09-22",
@@ -915,6 +951,15 @@
     "profile_checked_against": "2026-10-01",
     "reason": "This repository provides essential reference implementations and servers for the Model Context Protocol (MCP), aligning directly with the profile's focus on AI agent orchestration, tool integration, and developer infrastructure.",
     "stars_at_check": 90875,
+    "verdict": "fit"
+  },
+  "msitarzewski/agency-agents": {
+    "first_seen": "2026-10-06",
+    "last_checked": "2026-10-06",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-06",
+    "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration. It provides a multi-agent framework featuring specialized autonomous agents with distinct personalities and deliverables, matching the profile's interest in autonomous multi-agent systems and structured generation.",
+    "stars_at_check": 157466,
     "verdict": "fit"
   },
   "multimodal-art-projection/YuE": {

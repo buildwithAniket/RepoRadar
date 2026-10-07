@@ -2684,26 +2684,167 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-07": {
+    "date": "2026-10-07",
+    "evaluatedCount": 4,
+    "skippedCount": 8,
+    "stats": {
+      "fit": 3,
+      "maybe": 1,
+      "notFit": 0,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 8,
+      "fit": 3,
+      "maybe": 1,
+      "notFit": 0,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "ayghri/i-have-adhd",
+        "owner": "ayghri",
+        "name": "i-have-adhd",
+        "stars": 54591,
+        "language": "Unknown",
+        "pushedAt": "2026-10-07",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project directly aligns with the profile's focus on AI agents, specifically coding agent workflows and developer productivity. By providing targeted skill additions that shape LLM output formatting for clarity, it enhances user interaction with modern coding assistants.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ayghri/i-have-adhd",
+        "useCases": [
+          {
+            "title": "Streamline coding assistant responses with direct formatting",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Install the skill into your coding assistant to eliminate preambles, limit tangents, and format agent outputs into direct, numbered steps. This accelerates daily debugging and development workflows by surfacing actionable edits immediately.",
+            "firstStep": "Execute `claude plugin install i-have-adhd@i-have-adhd` to register the output formatting skill with your local assistant."
+          },
+          {
+            "title": "Tailor agent prompt rules for strict output formatting",
+            "kind": "build",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Fork the repository to customize the system prompt rules for custom LLM agents and multi-agent runners. This enforces strict output constraints like action-first ordering, token-efficient lists, and concise state tracking across custom agent pipelines.",
+            "firstStep": "Open `skills/i-have-adhd/SKILL.md` and edit the prompt constraints to fit your agent framework's required response structure."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "morluto/rea",
+        "owner": "morluto",
+        "name": "rea",
+        "stars": 10810,
+        "language": "Unknown",
+        "pushedAt": "2026-10-06",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository strongly fits the profile's core focus on autonomous AI agents and developer tooling. By utilizing LLM agents for reverse engineering complex application behaviors and native binaries, it showcases advanced multi-agent orchestration applied to intricate technical tasks.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/morluto/rea",
+        "useCases": [
+          {
+            "title": "Connect REA MCP tools to coding agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate REA as an MCP provider into agent workflows like Claude Code or Codex to autonomously analyze application behaviors and extract architectural evidence without original source code.",
+            "firstStep": "Run `npx rea-agents setup` in the terminal to configure REA MCP integration with selected local coding agents."
+          },
+          {
+            "title": "Automate JavaScript application analysis via CLI",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Run headless static JavaScript analysis in terminal pipelines to automatically generate structured JSON reports detailing application graphs, limitations, and evidence for technical analysis.",
+            "firstStep": "Execute `npx -y rea-agents@latest analyze-javascript-application /absolute/path/to/app --json` on a local application directory to extract its dependency tree and evidence."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "cathrynlavery/diagram-design",
+        "owner": "cathrynlavery",
+        "name": "diagram-design",
+        "stars": 44278,
+        "language": "Unknown",
+        "pushedAt": "2026-10-07",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns well with the profile's interests in coding agent tooling (specifically highlighting systems like Claude Code and Codex) and developer productivity. By providing structured, self-contained visual output formats for AI assistants, it improves how agents communicate architectural and visual information.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/cathrynlavery/diagram-design",
+        "useCases": [
+          {
+            "title": "Generate editorial system diagrams with coding agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate the diagram design skill into coding agents like Claude Code or Codex to produce clean, self-contained HTML and SVG architecture diagrams without visual clutter or external runtime dependencies.",
+            "firstStep": "Inspect `docs/screenshots/architecture.png` to review editorial layout samples and register the skill in a supported agent host."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "deepseek-ai/DeepGEMM",
+        "owner": "deepseek-ai",
+        "name": "DeepGEMM",
+        "stars": 8799,
+        "language": "Python",
+        "pushedAt": "2025-10-15",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "DeepGEMM is a high-performance GPU kernel library for BLAS operations, which aligns broadly with underlying AI infrastructure. However, because it operates at the low-level CUDA kernel layer rather than higher-level Python systems, LLM orchestration, or developer workflow automation, it is only tangentially relevant to the profile's core application interests.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/deepseek-ai/DeepGEMM",
+        "useCases": [
+          {
+            "title": "Study GPU tensor core optimization techniques",
+            "kind": "learn",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Examine the clean C++ and CUDA codebase to understand high-performance tensor core execution, providing foundational knowledge for optimizing local inference engines.",
+            "firstStep": "Run `./develop.sh` to link essential includes and build the C++ extension."
+          }
+        ],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-06",
+  value: "2026-10-07",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-06",
+  value: "2026-10-07",
   enumerable: false,
   configurable: true,
   writable: true

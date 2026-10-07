@@ -503,6 +503,15 @@
     "stars_at_check": 9959,
     "verdict": "not-fit"
   },
+  "ayghri/i-have-adhd": {
+    "first_seen": "2026-10-07",
+    "last_checked": "2026-10-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-07",
+    "reason": "This project directly aligns with the profile's focus on AI agents, specifically coding agent workflows and developer productivity. By providing targeted skill additions that shape LLM output formatting for clarity, it enhances user interaction with modern coding assistants.",
+    "stars_at_check": 54591,
+    "verdict": "fit"
+  },
   "bilawalsidhu/gods-eye-view": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-08-28",
@@ -564,6 +573,15 @@
     "profile_checked_against": "2026-10-05",
     "reason": "This repository is an open-source, agentic video production system featuring multiple production pipelines and hundreds of agent skills. It aligns perfectly with the profile's core focus on autonomous multi-agent systems, LLM orchestration, and advanced developer workflow automation.",
     "stars_at_check": 63417,
+    "verdict": "fit"
+  },
+  "cathrynlavery/diagram-design": {
+    "first_seen": "2026-10-07",
+    "last_checked": "2026-10-07",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-07",
+    "reason": "This repository aligns well with the profile's interests in coding agent tooling (specifically highlighting systems like Claude Code and Codex) and developer productivity. By providing structured, self-contained visual output formats for AI assistants, it improves how agents communicate architectural and visual information.",
+    "stars_at_check": 44278,
     "verdict": "fit"
   },
   "cilium/cilium": {
@@ -673,6 +691,15 @@
     "reason": "While an impressive open-source local audio and speech synthesis platform, VoiceStudio centers on media generation and voice cloning rather than autonomous AI agents, LLM orchestration, FinTech, career workflows, or developer productivity tooling specified in the profile.",
     "stars_at_check": 38717,
     "verdict": "not-fit"
+  },
+  "deepseek-ai/DeepGEMM": {
+    "first_seen": "2026-10-07",
+    "last_checked": "2026-10-07",
+    "latest_release_at_check": "2025-10-15T14:30:54Z",
+    "profile_checked_against": "2026-10-07",
+    "reason": "DeepGEMM is a high-performance GPU kernel library for BLAS operations, which aligns broadly with underlying AI infrastructure. However, because it operates at the low-level CUDA kernel layer rather than higher-level Python systems, LLM orchestration, or developer workflow automation, it is only tangentially relevant to the profile's core application interests.",
+    "stars_at_check": 8799,
+    "verdict": "maybe"
   },
   "derv82/wifit3": {
     "first_seen": "2026-09-25",
@@ -951,6 +978,15 @@
     "profile_checked_against": "2026-10-01",
     "reason": "This repository provides essential reference implementations and servers for the Model Context Protocol (MCP), aligning directly with the profile's focus on AI agent orchestration, tool integration, and developer infrastructure.",
     "stars_at_check": 90875,
+    "verdict": "fit"
+  },
+  "morluto/rea": {
+    "first_seen": "2026-10-07",
+    "last_checked": "2026-10-07",
+    "latest_release_at_check": "2026-10-06T17:57:41Z",
+    "profile_checked_against": "2026-10-07",
+    "reason": "This repository strongly fits the profile's core focus on autonomous AI agents and developer tooling. By utilizing LLM agents for reverse engineering complex application behaviors and native binaries, it showcases advanced multi-agent orchestration applied to intricate technical tasks.",
+    "stars_at_check": 10810,
     "verdict": "fit"
   },
   "msitarzewski/agency-agents": {

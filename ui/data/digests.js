@@ -894,9 +894,9 @@ window.REPORADAR_DIGESTS = {
         "id": "cloudflare/security-audit-skill",
         "owner": "cloudflare",
         "name": "security-audit-skill",
-        "stars": 7855,
+        "stars": 26300,
         "language": "TypeScript",
-        "pushedAt": "2026-09-17",
+        "pushedAt": "2026-10-08",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -2521,9 +2521,9 @@ window.REPORADAR_DIGESTS = {
         "id": "tester-army/e2e",
         "owner": "tester-army",
         "name": "e2e",
-        "stars": 3571,
+        "stars": 7854,
         "language": "Python",
-        "pushedAt": "2026-10-04",
+        "pushedAt": "2026-10-06",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
@@ -2619,7 +2619,7 @@ window.REPORADAR_DIGESTS = {
         "id": "boykopovar/AnyPS5",
         "owner": "boykopovar",
         "name": "AnyPS5",
-        "stars": 5206,
+        "stars": 11945,
         "language": "Unknown",
         "pushedAt": "2026-09-28",
         "confidence": "low",
@@ -2825,26 +2825,200 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-08": {
+    "date": "2026-10-08",
+    "evaluatedCount": 6,
+    "skippedCount": 7,
+    "stats": {
+      "fit": 3,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 6
+    },
+    "summary": {
+      "evaluated": 6,
+      "skipped": 7,
+      "fit": 3,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 6
+    },
+    "repos": [
+      {
+        "id": "manaflow-ai/cmux",
+        "owner": "manaflow-ai",
+        "name": "cmux",
+        "stars": 27966,
+        "language": "Unknown",
+        "pushedAt": "2026-10-05",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository is an excellent fit for the profile as it directly targets the intersection of AI Agents (Focus Area 1) and Developer Productivity (Focus Area 4). By providing a terminal environment optimized with notifications and organization for AI coding agents, it serves as a highly relevant developer workflow enhancer.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/manaflow-ai/cmux",
+        "useCases": [
+          {
+            "title": "Orchestrate parallel agent sessions with notifications",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Wire notification hooks into agent workflows to easily manage multiple autonomous coding agents running in parallel. This gives the profile high visibility into agent status via workspace notification rings, eliminating manual task polling.",
+            "firstStep": "Execute `cmux claude-teams` to launch concurrent teammate panes, or integrate `cmux notify` into agent post-step hooks."
+          },
+          {
+            "title": "Automate browser verification for coding agents",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Combine terminal execution with scriptable browser automation in a single native environment. This enables local AI agents to interact with web applications and verify live dev server output directly beside terminal splits.",
+            "firstStep": "Define workspace layouts and project actions in `cmux.json` to launch terminal splits alongside scriptable browser panes."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "trycua/cua",
+        "owner": "trycua",
+        "name": "cua",
+        "stars": 28917,
+        "language": "Unknown",
+        "pushedAt": "2026-10-05",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project aligns perfectly with the profile's primary focus on AI Agents and LLM Orchestration. By offering open-source drivers, cross-OS fleet management, and benchmarks for computer-use agents, it provides critical infrastructure for local and cloud agent runners.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/trycua/cua",
+        "useCases": [
+          {
+            "title": "Integrate desktop automation into local agent workflows",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Connect autonomous agents to native GUI applications using Cua Driver's MCP and SDK interfaces. This allows agents to perform complex multi-modal actions across browsers and desktop apps without stealing user pointer focus.",
+            "firstStep": "Install the driver via `/bin/bash -c \"$(curl -fsSL https://cua.ai/driver/install.sh)\"` and follow `libs/cua-driver/README.md` to connect an MCP-compliant agent."
+          },
+          {
+            "title": "Automate reproducible macOS VM creation for testing",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Provision isolated macOS virtual machines on Apple Silicon on demand to run clean development and testing pipelines. This prevents environment contamination on the primary machine while providing SSH access for automated tasks.",
+            "firstStep": "Run `/bin/bash -c \"$(curl -fsSL https://cua.ai/lume/install.sh)\"` to install the Lume CLI and initialize a local macOS VM."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "cloudflare/security-audit-skill",
+        "owner": "cloudflare",
+        "name": "security-audit-skill",
+        "stars": 26300,
+        "language": "TypeScript",
+        "pushedAt": "2026-10-08",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository is a strong fit for the profile, aligning with both AI Agents (specifically coding agents) and Developer Productivity. It provides a structured, machine-readable security auditing skill for coding agents, directly supporting automated testing and agent orchestration workflows.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/cloudflare/security-audit-skill",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "tester-army/e2e",
+        "owner": "tester-army",
+        "name": "e2e",
+        "stars": 7854,
+        "language": "Python",
+        "pushedAt": "2026-10-06",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This repository is a potential match as it addresses automated testing pipelines under the Developer Productivity and Tooling focus area. However, because it is a general-purpose end-to-end web and mobile testing framework, it is less aligned with the profile's specific emphasis on Python-based systems, CLI utilities, and agent orchestration.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/tester-army/e2e",
+        "useCases": [
+          {
+            "title": "Automate E2E testing with natural language agents",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Replace brittle UI locators with goal-driven agent actions that record and replay interactions without ongoing LLM call costs. This allows agentic testing of web and mobile applications while keeping inference budgets strictly controlled.",
+            "firstStep": "Run `npx e2e init` to set up the engine configuration and specify agent actions using `agent.act`."
+          },
+          {
+            "title": "Provide offline documentation to coding agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Expose locally bundled documentation to autonomous coding tools without relying on external web lookups. This enables offline-first context injection so AI agents write accurate test specs faster.",
+            "firstStep": "Point local coding agent context settings to `node_modules/e2e/docs` to supply full API documentation."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "boykopovar/AnyPS5",
+        "owner": "boykopovar",
+        "name": "AnyPS5",
+        "stars": 11945,
+        "language": "Python",
+        "pushedAt": "2026-09-28",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository focuses on low-level systems engineering for porting console executables to PC platforms. It does not align with any of the core focus areas in the profile, such as AI agents, fintech, career-ops, or the specified developer productivity tools like Python systems and testing pipelines.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/boykopovar/AnyPS5",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "EpicGames/raddebugger",
+        "owner": "EpicGames",
+        "name": "raddebugger",
+        "stars": 7953,
+        "language": "Python",
+        "pushedAt": "2026-09-30",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Although this is a developer tool, it is a native, graphical, user-mode debugger primarily aimed at low-level C/C++ systems development. It falls outside the profile's developer productivity interests, which favor clean CLI utilities, high-performance Python systems, and automated testing pipelines.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/EpicGames/raddebugger",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-07",
+  value: "2026-10-08",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-07",
+  value: "2026-10-08",
   enumerable: false,
   configurable: true,
   writable: true

@@ -80,6 +80,15 @@
     "stars_at_check": 16629,
     "verdict": "not-fit"
   },
+  "EpicGames/raddebugger": {
+    "first_seen": "2026-10-08",
+    "last_checked": "2026-10-08",
+    "latest_release_at_check": "2026-09-30T22:12:40Z",
+    "profile_checked_against": "2026-10-08",
+    "reason": "Although this is a developer tool, it is a native, graphical, user-mode debugger primarily aimed at low-level C/C++ systems development. It falls outside the profile's developer productivity interests, which favor clean CLI utilities, high-performance Python systems, and automated testing pipelines.",
+    "stars_at_check": 7953,
+    "verdict": "not-fit"
+  },
   "Friedrich-M/UniMate": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -532,11 +541,11 @@
   },
   "boykopovar/AnyPS5": {
     "first_seen": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-08",
     "latest_release_at_check": "2026-09-28T23:34:39Z",
-    "profile_checked_against": "2026-10-06",
-    "reason": "This repository focuses on low-level systems engineering and game porting (PS5 executables to Linux and Windows). It does not align with the profile's core focus areas of AI agents, career-ops automation, fintech systems, or general developer productivity tooling.",
-    "stars_at_check": 5206,
+    "profile_checked_against": "2026-10-08",
+    "reason": "This repository focuses on low-level systems engineering for porting console executables to PC platforms. It does not align with any of the core focus areas in the profile, such as AI agents, fintech, career-ops, or the specified developer productivity tools like Python systems and testing pipelines.",
+    "stars_at_check": 11945,
     "verdict": "not-fit"
   },
   "browser-use/video-use": {
@@ -613,11 +622,11 @@
   },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-09-17",
-    "last_checked": "2026-09-17",
+    "last_checked": "2026-10-08",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-09-17",
-    "reason": "Directly aligns with your interest in AI agent orchestration and coding agents. This provides a specialized, verifiable skill set for autonomous agents, which is highly relevant for building robust, production-grade coding assistants.",
-    "stars_at_check": 7855,
+    "profile_checked_against": "2026-10-08",
+    "reason": "This repository is a strong fit for the profile, aligning with both AI Agents (specifically coding agents) and Developer Productivity. It provides a structured, machine-readable security auditing skill for coding agents, directly supporting automated testing and agent orchestration workflows.",
+    "stars_at_check": 26300,
     "verdict": "fit"
   },
   "coder/coder": {
@@ -925,6 +934,15 @@
     "reason": "While a useful utility, it is a standalone file-transfer tool that does not contribute to your specific goals in AI orchestration, career automation, or financial tech.",
     "stars_at_check": 91525,
     "verdict": "not-fit"
+  },
+  "manaflow-ai/cmux": {
+    "first_seen": "2026-10-08",
+    "last_checked": "2026-10-08",
+    "latest_release_at_check": "2026-10-05T21:16:53Z",
+    "profile_checked_against": "2026-10-08",
+    "reason": "This repository is an excellent fit for the profile as it directly targets the intersection of AI Agents (Focus Area 1) and Developer Productivity (Focus Area 4). By providing a terminal environment optimized with notifications and organization for AI coding agents, it serves as a highly relevant developer workflow enhancer.",
+    "stars_at_check": 27966,
+    "verdict": "fit"
   },
   "marin-community/marin": {
     "first_seen": "2026-08-28",
@@ -1297,11 +1315,11 @@
   },
   "tester-army/e2e": {
     "first_seen": "2026-10-05",
-    "last_checked": "2026-10-05",
-    "latest_release_at_check": "2026-10-04T07:13:55Z",
-    "profile_checked_against": "2026-10-05",
-    "reason": "This repository is a next-generation end-to-end testing framework for web and mobile applications. While it aligns generally with the developer productivity and automated testing pipeline focus area of the profile, it lacks a specific connection to high-performance Python systems, AI agent orchestration, or the other core domains highlighted in the profile.",
-    "stars_at_check": 3571,
+    "last_checked": "2026-10-08",
+    "latest_release_at_check": "2026-10-06T13:31:58Z",
+    "profile_checked_against": "2026-10-08",
+    "reason": "This repository is a potential match as it addresses automated testing pipelines under the Developer Productivity and Tooling focus area. However, because it is a general-purpose end-to-end web and mobile testing framework, it is less aligned with the profile's specific emphasis on Python-based systems, CLI utilities, and agent orchestration.",
+    "stars_at_check": 7854,
     "verdict": "maybe"
   },
   "thedotmack/claude-mem": {
@@ -1321,6 +1339,15 @@
     "reason": "While tilelang targets high-performance systems and developer tooling by simplifying GPU/accelerator kernel development, it focuses on low-level hardware compilation rather than the profile's core application layers of AI agents, fintech, or workflow automation.",
     "stars_at_check": 8086,
     "verdict": "maybe"
+  },
+  "trycua/cua": {
+    "first_seen": "2026-10-08",
+    "last_checked": "2026-10-08",
+    "latest_release_at_check": "2026-10-05T12:19:15Z",
+    "profile_checked_against": "2026-10-08",
+    "reason": "This project aligns perfectly with the profile's primary focus on AI Agents and LLM Orchestration. By offering open-source drivers, cross-OS fleet management, and benchmarks for computer-use agents, it provides critical infrastructure for local and cloud agent runners.",
+    "stars_at_check": 28917,
+    "verdict": "fit"
   },
   "tt-a1i/archify": {
     "first_seen": "2026-08-28",

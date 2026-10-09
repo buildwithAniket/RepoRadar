@@ -2742,9 +2742,9 @@ window.REPORADAR_DIGESTS = {
         "id": "morluto/rea",
         "owner": "morluto",
         "name": "rea",
-        "stars": 10810,
+        "stars": 32021,
         "language": "Unknown",
-        "pushedAt": "2026-10-06",
+        "pushedAt": "2026-10-09",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -2999,26 +2999,115 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-09": {
+    "date": "2026-10-09",
+    "evaluatedCount": 3,
+    "skippedCount": 6,
+    "stats": {
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 6,
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "morluto/rea",
+        "owner": "morluto",
+        "name": "rea",
+        "stars": 32021,
+        "language": "Unknown",
+        "pushedAt": "2026-10-09",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's primary focus on autonomous AI agents and developer tooling. Applying agentic orchestration to complex binary analysis and reverse engineering provides high technical depth and practical utility for advanced engineering workflows.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/morluto/rea",
+        "useCases": [
+          {
+            "title": "Connect REA MCP Server to Coding Agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Register REA as an MCP server for local coding agents like Claude Code or Cursor to enable agentic inspection of binaries and client apps. This allows LLM agents to autonomously extract pseudocode, assembly, and architectural evidence to guide feature reproduction.",
+            "firstStep": "Run `npx rea-agents setup` to select supported agents and register REA's MCP server configuration."
+          },
+          {
+            "title": "Automate Electron App Architecture Extraction",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Extract modules, internal imports, and IPC boundary structures from packaged JavaScript and Electron applications directly from the terminal. This provides structured JSON analysis to understand undocumented client architectures without manual decompilation.",
+            "firstStep": "Run `npx -y rea-agents@latest analyze-javascript-application /absolute/path/to/app --json` against an extracted application directory or ASAR archive to generate a structured analysis report."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "storytold/artcraft",
+        "owner": "storytold",
+        "name": "artcraft",
+        "stars": 9161,
+        "language": "Unknown",
+        "pushedAt": "2026-09-26",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This project targets creative workflows for artists, designers, and filmmakers, which falls outside the profile's core pillars of AI agent orchestration, developer tooling, fintech systems, and career automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/storytold/artcraft",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "liquidslr/system-design-notes",
+        "owner": "liquidslr",
+        "name": "system-design-notes",
+        "stars": 25025,
+        "language": "Unknown",
+        "pushedAt": "2026-10-09",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Although relevant to interview preparation topics, this repository is a static collection of book summary notes rather than an automated tool, script, or software system. It lacks the software architecture, programmatic tooling, or active workflow automation targeted by the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/liquidslr/system-design-notes",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-08",
+  value: "2026-10-09",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-08",
+  value: "2026-10-09",
   enumerable: false,
   configurable: true,
   writable: true

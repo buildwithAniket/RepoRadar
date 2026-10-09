@@ -917,6 +917,15 @@
     "stars_at_check": 7291,
     "verdict": "maybe"
   },
+  "liquidslr/system-design-notes": {
+    "first_seen": "2026-10-09",
+    "last_checked": "2026-10-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-09",
+    "reason": "Although relevant to interview preparation topics, this repository is a static collection of book summary notes rather than an automated tool, script, or software system. It lacks the software architecture, programmatic tooling, or active workflow automation targeted by the profile.",
+    "stars_at_check": 25025,
+    "verdict": "not-fit"
+  },
   "livekit/agents": {
     "first_seen": "2026-08-29",
     "last_checked": "2026-08-29",
@@ -1000,11 +1009,11 @@
   },
   "morluto/rea": {
     "first_seen": "2026-10-07",
-    "last_checked": "2026-10-07",
-    "latest_release_at_check": "2026-10-06T17:57:41Z",
-    "profile_checked_against": "2026-10-07",
-    "reason": "This repository strongly fits the profile's core focus on autonomous AI agents and developer tooling. By utilizing LLM agents for reverse engineering complex application behaviors and native binaries, it showcases advanced multi-agent orchestration applied to intricate technical tasks.",
-    "stars_at_check": 10810,
+    "last_checked": "2026-10-09",
+    "latest_release_at_check": "2026-10-09T01:08:45Z",
+    "profile_checked_against": "2026-10-09",
+    "reason": "This repository aligns directly with the profile's primary focus on autonomous AI agents and developer tooling. Applying agentic orchestration to complex binary analysis and reverse engineering provides high technical depth and practical utility for advanced engineering workflows.",
+    "stars_at_check": 32021,
     "verdict": "fit"
   },
   "msitarzewski/agency-agents": {
@@ -1221,6 +1230,15 @@
     "profile_checked_against": "2026-09-03",
     "reason": "This is a region-specific stock screening tool for the Chinese domestic market, which does not align with your focus on global career-ops automation or cross-border FinTech systems.",
     "stars_at_check": 6276,
+    "verdict": "not-fit"
+  },
+  "storytold/artcraft": {
+    "first_seen": "2026-10-09",
+    "last_checked": "2026-10-09",
+    "latest_release_at_check": "2026-09-26T11:14:22Z",
+    "profile_checked_against": "2026-10-09",
+    "reason": "This project targets creative workflows for artists, designers, and filmmakers, which falls outside the profile's core pillars of AI agent orchestration, developer tooling, fintech systems, and career automation.",
+    "stars_at_check": 9161,
     "verdict": "not-fit"
   },
   "strands-agents/harness-sdk": {

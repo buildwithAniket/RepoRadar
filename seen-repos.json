@@ -17,6 +17,15 @@
     "stars_at_check": 0,
     "verdict": "fit"
   },
+  "BerriAI/litellm": {
+    "first_seen": "2026-10-10",
+    "last_checked": "2026-10-10",
+    "latest_release_at_check": "2026-10-08T08:39:07Z",
+    "profile_checked_against": "2026-10-10",
+    "reason": "Aligns strongly with the profile's focus on AI agents, LLM orchestration, and developer productivity tooling. As an AI gateway offering unified API interfaces, load balancing, cost tracking, and fallback chains across multiple LLM providers, it directly complements LLM pipeline architectures and high-performance Python systems.",
+    "stars_at_check": 60810,
+    "verdict": "fit"
+  },
   "ChromeDevTools/chrome-devtools-mcp": {
     "first_seen": "2026-08-29",
     "last_checked": "2026-08-29",
@@ -277,6 +286,15 @@
     "reason": "An essential utility for your AI agent stack. Providing agents with zero-fee, CLI-based access to real-time web data (Twitter, GitHub, etc.) is a force multiplier for automating job-search research and market monitoring.",
     "stars_at_check": 81687,
     "verdict": "fit"
+  },
+  "Robbyant/lingbot-map": {
+    "first_seen": "2026-10-10",
+    "last_checked": "2026-10-10",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-10",
+    "reason": "Focuses on streaming 3D reconstruction and geometric context transformers for computer vision research. While technically advanced, academic 3D spatial mapping falls outside the profile's target domains of LLM orchestration, career workflow automation, FinTech, and developer utilities.",
+    "stars_at_check": 17833,
+    "verdict": "not-fit"
   },
   "SnailSploit/Claude-Red": {
     "first_seen": "2026-09-15",
@@ -1374,6 +1392,15 @@
     "profile_checked_against": "2026-08-28",
     "reason": "Highly relevant to your developer productivity focus; it provides a structured way to generate verifiable architecture diagrams, which is a high-value skill for AI-assisted software engineering workflows.",
     "stars_at_check": 0,
+    "verdict": "fit"
+  },
+  "twostraws/SwiftUI-Agent-Skill": {
+    "first_seen": "2026-10-10",
+    "last_checked": "2026-10-10",
+    "latest_release_at_check": "2026-10-09T14:08:20Z",
+    "profile_checked_against": "2026-10-10",
+    "reason": "Directly maps to the profile's explicit interest in coding agents such as Claude Code and Codex under the AI agents and orchestration category. Supplying specialized domain context and skills to autonomous coding assistants strengthens developer productivity and agent-driven engineering workflows.",
+    "stars_at_check": 5596,
     "verdict": "fit"
   },
   "vectorize-io/hindsight": {

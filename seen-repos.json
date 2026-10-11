@@ -559,11 +559,11 @@
   },
   "boykopovar/AnyPS5": {
     "first_seen": "2026-10-06",
-    "last_checked": "2026-10-08",
+    "last_checked": "2026-10-11",
     "latest_release_at_check": "2026-09-28T23:34:39Z",
-    "profile_checked_against": "2026-10-08",
-    "reason": "This repository focuses on low-level systems engineering for porting console executables to PC platforms. It does not align with any of the core focus areas in the profile, such as AI agents, fintech, career-ops, or the specified developer productivity tools like Python systems and testing pipelines.",
-    "stars_at_check": 11945,
+    "profile_checked_against": "2026-10-11",
+    "reason": "This tool focuses on porting PlayStation 5 console executables to Linux and Windows. It falls outside the core focus areas of AI agent orchestration, career operations, fintech systems, and Python-centric developer productivity.",
+    "stars_at_check": 27716,
     "verdict": "not-fit"
   },
   "browser-use/video-use": {
@@ -791,6 +791,15 @@
     "stars_at_check": 18623,
     "verdict": "maybe"
   },
+  "flutter/flutter": {
+    "first_seen": "2026-10-11",
+    "last_checked": "2026-10-11",
+    "latest_release_at_check": "2024-01-11T18:31:57Z",
+    "profile_checked_against": "2026-10-11",
+    "reason": "Flutter is a broad cross-platform mobile and desktop UI framework. It does not align with the profile's specialized interests in AI agent orchestration, career workflow automation, fintech tooling, or backend developer infrastructure.",
+    "stars_at_check": 179663,
+    "verdict": "not-fit"
+  },
   "fmtlib/fmt": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -883,11 +892,20 @@
   },
   "huggingface/transformers": {
     "first_seen": "2026-09-15",
-    "last_checked": "2026-09-15",
-    "latest_release_at_check": "2026-09-09T15:42:45Z",
-    "profile_checked_against": "2026-09-15",
-    "reason": "While foundational for all AI work, it is a general-purpose library. Unless you are building custom models from scratch, it may be too broad compared to the specialized agent frameworks you prefer.",
-    "stars_at_check": 166122,
+    "last_checked": "2026-10-11",
+    "latest_release_at_check": "2026-10-06T16:39:23Z",
+    "profile_checked_against": "2026-10-11",
+    "reason": "Transformers serves as the standard library for loading and fine-tuning model architectures across multimodal tasks. Although it powers many underlying LLM implementations, it is a baseline model framework rather than a dedicated multi-agent orchestration or developer workflow utility.",
+    "stars_at_check": 167421,
+    "verdict": "maybe"
+  },
+  "hugohe3/ppt-master": {
+    "first_seen": "2026-10-11",
+    "last_checked": "2026-10-11",
+    "latest_release_at_check": "2026-10-08T02:01:38Z",
+    "profile_checked_against": "2026-10-11",
+    "reason": "This project leverages LLMs for structured generation to produce native PowerPoint presentations, which touches upon workflow automation and structured output generation. However, it leans more toward content and slide generation rather than career-ops, developer tooling, or agent orchestration.",
+    "stars_at_check": 59844,
     "verdict": "maybe"
   },
   "jamiepine/voicebox": {
@@ -1027,11 +1045,11 @@
   },
   "morluto/rea": {
     "first_seen": "2026-10-07",
-    "last_checked": "2026-10-09",
-    "latest_release_at_check": "2026-10-09T01:08:45Z",
-    "profile_checked_against": "2026-10-09",
-    "reason": "This repository aligns directly with the profile's primary focus on autonomous AI agents and developer tooling. Applying agentic orchestration to complex binary analysis and reverse engineering provides high technical depth and practical utility for advanced engineering workflows.",
-    "stars_at_check": 32021,
+    "last_checked": "2026-10-11",
+    "latest_release_at_check": "2026-10-11T03:58:03Z",
+    "profile_checked_against": "2026-10-11",
+    "reason": "This repository directly targets AI Agents & LLM Orchestration and Developer Productivity by deploying autonomous agents to automate complex reverse engineering workflows down to native binaries. It aligns strongly with the profile's interest in autonomous coding agents and advanced developer toolchains.",
+    "stars_at_check": 81102,
     "verdict": "fit"
   },
   "msitarzewski/agency-agents": {
@@ -1042,6 +1060,15 @@
     "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration. It provides a multi-agent framework featuring specialized autonomous agents with distinct personalities and deliverables, matching the profile's interest in autonomous multi-agent systems and structured generation.",
     "stars_at_check": 157466,
     "verdict": "fit"
+  },
+  "multica-ai/andrej-karpathy-skills": {
+    "first_seen": "2026-10-11",
+    "last_checked": "2026-10-11",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-11",
+    "reason": "This repository directly relates to Claude Code developer workflows by providing behavioral guidance derived from LLM coding patterns. However, because it consists solely of a single configuration file without custom software logic, tests, or backend architecture, its utility is limited from a systems engineering standpoint.",
+    "stars_at_check": 218516,
+    "verdict": "maybe"
   },
   "multimodal-art-projection/YuE": {
     "first_seen": "2026-09-15",
@@ -1176,6 +1203,15 @@
     "profile_checked_against": "2026-09-03",
     "reason": "A foundational data interchange format; while useful for general engineering, it does not provide the specific agent-based or career-automation utility you are seeking.",
     "stars_at_check": 71965,
+    "verdict": "not-fit"
+  },
+  "pytorch/pytorch": {
+    "first_seen": "2026-10-11",
+    "last_checked": "2026-10-11",
+    "latest_release_at_check": "2026-09-30T19:14:48Z",
+    "profile_checked_against": "2026-10-11",
+    "reason": "PyTorch is an underlying deep learning tensor and neural network library. While vital to machine learning infrastructure, it lies well outside the profile's specific focus on LLM agent orchestration, career-ops pipelines, and fintech tooling.",
+    "stars_at_check": 104220,
     "verdict": "not-fit"
   },
   "rakyll/hey": {
@@ -1339,6 +1375,15 @@
     "reason": "Highly relevant for your interest in coding agents. A secure, validated registry for agent skills is a critical piece of infrastructure for building reliable, production-ready autonomous coding pipelines.",
     "stars_at_check": 6189,
     "verdict": "fit"
+  },
+  "tensorflow/tensorflow": {
+    "first_seen": "2026-10-11",
+    "last_checked": "2026-10-11",
+    "latest_release_at_check": "2026-03-06T19:48:15Z",
+    "profile_checked_against": "2026-10-11",
+    "reason": "TensorFlow is a foundational deep learning framework rather than an agent runner, workflow automation pipeline, or developer tooling utility. Its general-purpose machine learning scope is broader than the specific application layers targeted by the profile.",
+    "stars_at_check": 200806,
+    "verdict": "not-fit"
   },
   "test-org/victory-audit-test": {
     "first_seen": "2026-09-24",

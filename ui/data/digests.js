@@ -720,9 +720,9 @@ window.REPORADAR_DIGESTS = {
         "id": "huggingface/transformers",
         "owner": "huggingface",
         "name": "transformers",
-        "stars": 166122,
+        "stars": 167421,
         "language": "Python",
-        "pushedAt": "2026-09-09",
+        "pushedAt": "2026-10-06",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
@@ -2619,7 +2619,7 @@ window.REPORADAR_DIGESTS = {
         "id": "boykopovar/AnyPS5",
         "owner": "boykopovar",
         "name": "AnyPS5",
-        "stars": 11945,
+        "stars": 27716,
         "language": "Unknown",
         "pushedAt": "2026-09-28",
         "confidence": "low",
@@ -2742,9 +2742,9 @@ window.REPORADAR_DIGESTS = {
         "id": "morluto/rea",
         "owner": "morluto",
         "name": "rea",
-        "stars": 32021,
+        "stars": 81102,
         "language": "Unknown",
-        "pushedAt": "2026-10-09",
+        "pushedAt": "2026-10-11",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -2968,7 +2968,7 @@ window.REPORADAR_DIGESTS = {
         "id": "boykopovar/AnyPS5",
         "owner": "boykopovar",
         "name": "AnyPS5",
-        "stars": 11945,
+        "stars": 27716,
         "language": "Python",
         "pushedAt": "2026-09-28",
         "confidence": "low",
@@ -3023,9 +3023,9 @@ window.REPORADAR_DIGESTS = {
         "id": "morluto/rea",
         "owner": "morluto",
         "name": "rea",
-        "stars": 32021,
+        "stars": 81102,
         "language": "Unknown",
-        "pushedAt": "2026-10-09",
+        "pushedAt": "2026-10-11",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -3194,26 +3194,200 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-11": {
+    "date": "2026-10-11",
+    "evaluatedCount": 8,
+    "skippedCount": 5,
+    "stats": {
+      "fit": 1,
+      "maybe": 3,
+      "notFit": 4,
+      "total": 8
+    },
+    "summary": {
+      "evaluated": 8,
+      "skipped": 5,
+      "fit": 1,
+      "maybe": 3,
+      "notFit": 4,
+      "total": 8
+    },
+    "repos": [
+      {
+        "id": "morluto/rea",
+        "owner": "morluto",
+        "name": "rea",
+        "stars": 81102,
+        "language": "Unknown",
+        "pushedAt": "2026-10-11",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly targets AI Agents & LLM Orchestration and Developer Productivity by deploying autonomous agents to automate complex reverse engineering workflows down to native binaries. It aligns strongly with the profile's interest in autonomous coding agents and advanced developer toolchains.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/morluto/rea",
+        "useCases": [
+          {
+            "title": "Equip Coding Agents with Reverse Engineering MCP",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Connect REA to coding agents like Claude Code or Gemini CLI via MCP to enable autonomous inspection of binary and application internals. This unlocks agent workflows that decompile and trace closed-source behavior with backed evidence.",
+            "firstStep": "Run `npx rea-agents setup` to select agents and install REA's MCP server configuration."
+          },
+          {
+            "title": "Automate Static Analysis of Electron Applications",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Inspect extracted JavaScript and Electron desktop apps from the command line to trace architecture and IPC communication. This speeds up technical audits and feature extraction without requiring manual ASAR unpacks or deobfuscation.",
+            "firstStep": "Run `npx -y rea-agents@latest analyze-javascript-application /absolute/path/to/app --json` against an extracted application directory to inspect its module boundaries."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "hugohe3/ppt-master",
+        "owner": "hugohe3",
+        "name": "ppt-master",
+        "stars": 59844,
+        "language": "Unknown",
+        "pushedAt": "2026-10-08",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This project leverages LLMs for structured generation to produce native PowerPoint presentations, which touches upon workflow automation and structured output generation. However, it leans more toward content and slide generation rather than career-ops, developer tooling, or agent orchestration.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/hugohe3/ppt-master",
+        "useCases": [],
+        "useCaseNote": "The repository focuses on PowerPoint presentation and content generation, which does not align with the core focus areas of agent infrastructure, developer tooling, or career/fintech workflows."
+      },
+      {
+        "id": "huggingface/transformers",
+        "owner": "huggingface",
+        "name": "transformers",
+        "stars": 167421,
+        "language": "Python",
+        "pushedAt": "2026-10-06",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "Transformers serves as the standard library for loading and fine-tuning model architectures across multimodal tasks. Although it powers many underlying LLM implementations, it is a baseline model framework rather than a dedicated multi-agent orchestration or developer workflow utility.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/huggingface/transformers",
+        "useCases": [],
+        "useCaseNote": "Transformers is a foundational model framework whose generic inference pipelines do not offer a specialized fit for the profile's agent orchestration or lightweight serverless workflows."
+      },
+      {
+        "id": "multica-ai/andrej-karpathy-skills",
+        "owner": "multica-ai",
+        "name": "andrej-karpathy-skills",
+        "stars": 218516,
+        "language": "Markdown",
+        "pushedAt": "2026-10-11",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This repository directly relates to Claude Code developer workflows by providing behavioral guidance derived from LLM coding patterns. However, because it consists solely of a single configuration file without custom software logic, tests, or backend architecture, its utility is limited from a systems engineering standpoint.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+        "useCases": [],
+        "useCaseNote": "Repository consists solely of markdown guidelines and configuration files without executable software logic or architectural depth."
+      },
+      {
+        "id": "boykopovar/AnyPS5",
+        "owner": "boykopovar",
+        "name": "AnyPS5",
+        "stars": 27716,
+        "language": "Python",
+        "pushedAt": "2026-09-28",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This tool focuses on porting PlayStation 5 console executables to Linux and Windows. It falls outside the core focus areas of AI agent orchestration, career operations, fintech systems, and Python-centric developer productivity.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/boykopovar/AnyPS5",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "flutter/flutter",
+        "owner": "flutter",
+        "name": "flutter",
+        "stars": 179663,
+        "language": "Dart",
+        "pushedAt": "2024-01-11",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Flutter is a broad cross-platform mobile and desktop UI framework. It does not align with the profile's specialized interests in AI agent orchestration, career workflow automation, fintech tooling, or backend developer infrastructure.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/flutter/flutter",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "tensorflow/tensorflow",
+        "owner": "tensorflow",
+        "name": "tensorflow",
+        "stars": 200806,
+        "language": "Unknown",
+        "pushedAt": "2026-03-06",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "TensorFlow is a foundational deep learning framework rather than an agent runner, workflow automation pipeline, or developer tooling utility. Its general-purpose machine learning scope is broader than the specific application layers targeted by the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/tensorflow/tensorflow",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "pytorch/pytorch",
+        "owner": "pytorch",
+        "name": "pytorch",
+        "stars": 104220,
+        "language": "Unknown",
+        "pushedAt": "2026-09-30",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "PyTorch is an underlying deep learning tensor and neural network library. While vital to machine learning infrastructure, it lies well outside the profile's specific focus on LLM agent orchestration, career-ops pipelines, and fintech tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/pytorch/pytorch",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-10",
+  value: "2026-10-11",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-10",
+  value: "2026-10-11",
   enumerable: false,
   configurable: true,
   writable: true

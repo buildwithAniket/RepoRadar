@@ -237,6 +237,40 @@ def _resolve_gemini_chain(gemini_key: str) -> tuple[list[str], dict]:
     return chain, cfg
 
 
+def prompt_repos_for(repos: list[dict]) -> list[dict]:
+    """Repo entries as shown to the model.
+
+    Show the model only factual history from the prior check. The prior
+    verdict and judgment text would anchor it to its earlier answer.
+    """
+    prompt_repos = []
+    for entry in repos:
+        prior = entry.get("prior")
+        facts = {k: prior[k] for k in ("first_seen", "stars_at_check") if k in prior} if prior else None
+        prompt_repos.append({**entry, "prior": facts})
+    return prompt_repos
+
+
+def build_judge_prompt(profile_text: str, repos: list[dict]) -> str:
+    """The judge prompt. Shared by the pipeline and evals/judge so both test the same text."""
+    prompt_repos = prompt_repos_for(repos)
+    # Judgments are published in public reports, so the prompt never names the
+    # profile owner and tells the model not to either.
+    return f"""You are an expert AI engineering scout evaluating GitHub repositories against an interest profile.
+Profile criteria & Interests:
+{profile_text}
+
+Repositories to evaluate:
+{json.dumps(prompt_repos, indent=2)}
+
+Return a JSON array where each entry has:
+- "repo": "owner/name"
+- "verdict": one of "fit", "maybe", "not-fit"
+- "judgment": one concise paragraph explaining why it is or isn't relevant to the profile.
+In judgments, refer to "the profile" and its focus areas. Never use a person's name, pronouns, or possessives like "his" or "the user's".
+Return ONLY valid JSON array without extra markdown formatting."""
+
+
 # --------------------------------------------------------------------------- #
 # Main entry point
 # --------------------------------------------------------------------------- #
@@ -271,14 +305,6 @@ def judge_repositories(
 
     profile_text = Path(profile_path).read_text() if Path(profile_path).exists() else ""
 
-    # Show the model only factual history from the prior check. The prior
-    # verdict and judgment text would anchor it to its earlier answer.
-    prompt_repos = []
-    for entry in repos:
-        prior = entry.get("prior")
-        facts = {k: prior[k] for k in ("first_seen", "stars_at_check") if k in prior} if prior else None
-        prompt_repos.append({**entry, "prior": facts})
-
     gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if not gemini_key:
         raise RuntimeError(
@@ -288,21 +314,7 @@ def judge_repositories(
     chain, cfg = _resolve_gemini_chain(gemini_key)
     timeout = int(cfg["timeout_seconds"])
 
-    # Judgments are published in public reports, so the prompt never names the
-    # profile owner and tells the model not to either.
-    prompt = f"""You are an expert AI engineering scout evaluating GitHub repositories against an interest profile.
-Profile criteria & Interests:
-{profile_text}
-
-Repositories to evaluate:
-{json.dumps(prompt_repos, indent=2)}
-
-Return a JSON array where each entry has:
-- "repo": "owner/name"
-- "verdict": one of "fit", "maybe", "not-fit"
-- "judgment": one concise paragraph explaining why it is or isn't relevant to the profile.
-In judgments, refer to "the profile" and its focus areas. Never use a person's name, pronouns, or possessives like "his" or "the user's".
-Return ONLY valid JSON array without extra markdown formatting."""
+    prompt = build_judge_prompt(profile_text, repos)
 
     verdicts = _judge_with_fallback(gemini_key, chain, prompt, int(cfg["attempts_per_model"]), timeout)
 

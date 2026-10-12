@@ -3057,7 +3057,7 @@ window.REPORADAR_DIGESTS = {
         "id": "storytold/artcraft",
         "owner": "storytold",
         "name": "artcraft",
-        "stars": 9161,
+        "stars": 19318,
         "language": "Unknown",
         "pushedAt": "2026-09-26",
         "confidence": "low",
@@ -3368,26 +3368,132 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-12": {
+    "date": "2026-10-12",
+    "evaluatedCount": 4,
+    "skippedCount": 4,
+    "stats": {
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 3,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 4,
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 3,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "lyogavin/airllm",
+        "owner": "lyogavin",
+        "name": "airllm",
+        "stars": 36840,
+        "language": "Python",
+        "pushedAt": "2026-09-05",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "AirLLM directly aligns with the profile's interest in LLM orchestration, local runners, and high-performance Python systems by enabling 70B model inference on single 4GB GPUs. Its layered loading and memory-efficient execution techniques provide clear value for local AI developer workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/lyogavin/airllm",
+        "useCases": [
+          {
+            "title": "Serve massive models for local agents",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Enable autonomous local agents to tap into 70B+ or MoE open weights without expensive multi-GPU clusters. By running layer-sharded inference within memory bounds, developers can test complex reasoning prompts locally on consumer hardware.",
+            "firstStep": "Install `airllm` via `pip install airllm` and load a test checkpoint using `AutoModel.from_pretrained(\"Qwen/Qwen3-32B\")` to verify layer-wise offloading."
+          },
+          {
+            "title": "Study layer streaming and memory sharding",
+            "kind": "learn",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Inspect how layer decomposition, sequential model streaming, and prefetching are implemented in Python to bypass VRAM bottlenecks. These systems concepts can inform custom caching and batching strategies in resource-constrained tooling pipelines.",
+            "firstStep": "Initialize an instance specifying `layer_shards_saving_path` during model init to inspect how weights are split, stored, and loaded sequentially during `model.generate()`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "storytold/artcraft",
+        "owner": "storytold",
+        "name": "artcraft",
+        "stars": 19318,
+        "language": "Unknown",
+        "pushedAt": "2026-09-26",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "ArtCraft focuses on creative workflows and intentional crafting for artists, designers, and filmmakers. It does not align with the profile's core focus areas of AI agents, career automation, financial technology, or developer productivity tooling.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/storytold/artcraft",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "bilawalsidhu/gods-eye-view",
+        "owner": "bilawalsidhu",
+        "name": "gods-eye-view",
+        "stars": 52357,
+        "language": "Unknown",
+        "pushedAt": "2026-10-03",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While this project offers an impressive real-time spatial intelligence tool on a 3D globe, it falls outside the core focus areas of the profile. It does not address LLM agent orchestration, career-ops workflows, financial technology, or developer productivity systems.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/bilawalsidhu/gods-eye-view",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "chrislgarry/Apollo-11",
+        "owner": "chrislgarry",
+        "name": "Apollo-11",
+        "stars": 74464,
+        "language": "Unknown",
+        "pushedAt": "2026-10-12",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a historical software archive containing the original Apollo Guidance Computer assembly code from 1969. Although historically notable, it offers no relevance to the profile's focus on modern AI orchestration, career automation, fintech, or modern developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/chrislgarry/Apollo-11",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-11",
+  value: "2026-10-12",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-11",
+  value: "2026-10-12",
   enumerable: false,
   configurable: true,
   writable: true

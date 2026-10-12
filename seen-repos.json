@@ -541,11 +541,11 @@
   },
   "bilawalsidhu/gods-eye-view": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "While visually impressive, this is a spatial intelligence visualization tool that lacks the backend utility or agentic orchestration focus required for your core interests.",
-    "stars_at_check": 0,
+    "last_checked": "2026-10-12",
+    "latest_release_at_check": "2026-10-03T05:36:23Z",
+    "profile_checked_against": "2026-10-12",
+    "reason": "While this project offers an impressive real-time spatial intelligence tool on a 3D globe, it falls outside the core focus areas of the profile. It does not address LLM agent orchestration, career-ops workflows, financial technology, or developer productivity systems.",
+    "stars_at_check": 52357,
     "verdict": "not-fit"
   },
   "blader/humanizer": {
@@ -610,6 +610,15 @@
     "reason": "This repository aligns well with the profile's interests in coding agent tooling (specifically highlighting systems like Claude Code and Codex) and developer productivity. By providing structured, self-contained visual output formats for AI assistants, it improves how agents communicate architectural and visual information.",
     "stars_at_check": 44278,
     "verdict": "fit"
+  },
+  "chrislgarry/Apollo-11": {
+    "first_seen": "2026-10-12",
+    "last_checked": "2026-10-12",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-12",
+    "reason": "This repository is a historical software archive containing the original Apollo Guidance Computer assembly code from 1969. Although historically notable, it offers no relevance to the profile's focus on modern AI orchestration, career automation, fintech, or modern developer tooling.",
+    "stars_at_check": 74464,
+    "verdict": "not-fit"
   },
   "cilium/cilium": {
     "first_seen": "2026-09-18",
@@ -980,6 +989,15 @@
     "stars_at_check": 91525,
     "verdict": "not-fit"
   },
+  "lyogavin/airllm": {
+    "first_seen": "2026-10-12",
+    "last_checked": "2026-10-12",
+    "latest_release_at_check": "2026-09-05T15:43:11Z",
+    "profile_checked_against": "2026-10-12",
+    "reason": "AirLLM directly aligns with the profile's interest in LLM orchestration, local runners, and high-performance Python systems by enabling 70B model inference on single 4GB GPUs. Its layered loading and memory-efficient execution techniques provide clear value for local AI developer workflows.",
+    "stars_at_check": 36840,
+    "verdict": "fit"
+  },
   "manaflow-ai/cmux": {
     "first_seen": "2026-10-08",
     "last_checked": "2026-10-08",
@@ -1288,11 +1306,11 @@
   },
   "storytold/artcraft": {
     "first_seen": "2026-10-09",
-    "last_checked": "2026-10-09",
+    "last_checked": "2026-10-12",
     "latest_release_at_check": "2026-09-26T11:14:22Z",
-    "profile_checked_against": "2026-10-09",
-    "reason": "This project targets creative workflows for artists, designers, and filmmakers, which falls outside the profile's core pillars of AI agent orchestration, developer tooling, fintech systems, and career automation.",
-    "stars_at_check": 9161,
+    "profile_checked_against": "2026-10-12",
+    "reason": "ArtCraft focuses on creative workflows and intentional crafting for artists, designers, and filmmakers. It does not align with the profile's core focus areas of AI agents, career automation, financial technology, or developer productivity tooling.",
+    "stars_at_check": 19318,
     "verdict": "not-fit"
   },
   "strands-agents/harness-sdk": {

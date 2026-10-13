@@ -2742,7 +2742,7 @@ window.REPORADAR_DIGESTS = {
         "id": "morluto/rea",
         "owner": "morluto",
         "name": "rea",
-        "stars": 81102,
+        "stars": 179109,
         "language": "Unknown",
         "pushedAt": "2026-10-11",
         "confidence": "high",
@@ -3023,7 +3023,7 @@ window.REPORADAR_DIGESTS = {
         "id": "morluto/rea",
         "owner": "morluto",
         "name": "rea",
-        "stars": 81102,
+        "stars": 179109,
         "language": "Unknown",
         "pushedAt": "2026-10-11",
         "confidence": "high",
@@ -3218,7 +3218,7 @@ window.REPORADAR_DIGESTS = {
         "id": "morluto/rea",
         "owner": "morluto",
         "name": "rea",
-        "stars": 81102,
+        "stars": 179109,
         "language": "Unknown",
         "pushedAt": "2026-10-11",
         "confidence": "high",
@@ -3474,26 +3474,141 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-13": {
+    "date": "2026-10-13",
+    "evaluatedCount": 4,
+    "skippedCount": 5,
+    "stats": {
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 5,
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "morluto/rea",
+        "owner": "morluto",
+        "name": "rea",
+        "stars": 179109,
+        "language": "Unknown",
+        "pushedAt": "2026-10-11",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the focus area of autonomous multi-agent systems and coding agents by applying agents to reverse engineering tasks. The significant scale and sophisticated orchestration match the technical depth required by the profile.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/morluto/rea",
+        "useCases": [
+          {
+            "title": "Reverse engineer app behavior with autonomous agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Connect coding agents directly to a Model Context Protocol server that inspects binaries, applications, and runtime behavior to extract logic and implement features.",
+            "firstStep": "Run `npx rea-agents setup` to register REA with your agent and install matching workflow instructions."
+          },
+          {
+            "title": "Analyze JavaScript applications from the command line",
+            "kind": "build",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Extract modules, imports, and Electron boundaries using automated CLI utilities to rapidly evaluate compiled web architectures.",
+            "firstStep": "Run `npx -y rea-agents@latest analyze-javascript-application /absolute/path/to/app --json` to inspect an extracted JavaScript/Electron app directory or ASAR."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Alishahryar1/free-claude-code",
+        "owner": "Alishahryar1",
+        "name": "free-claude-code",
+        "stars": 59645,
+        "language": "Unknown",
+        "pushedAt": "2026-10-13",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository targets coding agents and multi-harness development tools directly, fitting the core interest in terminal-based coding agents like Claude Code and developer productivity enhancers.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Alishahryar1/free-claude-code",
+        "useCases": [
+          {
+            "title": "Connect multiple coding agents to free providers",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "The profile focuses on autonomous agents and LLM orchestration, making this multi-harness utility ideal for running terminal tools like Claude Code and Codex across alternative provider models.",
+            "firstStep": "Run `fcc-server` to start the local proxy server and open the Admin UI."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "microsoft/BitNet",
+        "owner": "microsoft",
+        "name": "BitNet",
+        "stars": 41050,
+        "language": "Unknown",
+        "pushedAt": "2026-10-13",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This repository provides low-level inference frameworks for 1-bit LLMs, which touches upon high-performance systems and local LLM execution. However, it lacks direct alignment with agent orchestration or developer workflow automation unless integrated into a local agent runner stack.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/microsoft/BitNet",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "open-webui/open-webui",
+        "owner": "open-webui",
+        "name": "open-webui",
+        "stars": 155420,
+        "language": "Unknown",
+        "pushedAt": "2026-10-10",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While related to LLM interfaces, this repository acts primarily as a general-purpose chat frontend rather than an advanced orchestration backend, autonomous agent runner, or specialized tooling framework outlined in the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/open-webui/open-webui",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-12",
+  value: "2026-10-13",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-12",
+  value: "2026-10-13",
   enumerable: false,
   configurable: true,
   writable: true

@@ -17,6 +17,15 @@
     "stars_at_check": 0,
     "verdict": "fit"
   },
+  "Alishahryar1/free-claude-code": {
+    "first_seen": "2026-10-13",
+    "last_checked": "2026-10-13",
+    "latest_release_at_check": "2026-10-13T05:39:32Z",
+    "profile_checked_against": "2026-10-13",
+    "reason": "This repository targets coding agents and multi-harness development tools directly, fitting the core interest in terminal-based coding agents like Claude Code and developer productivity enhancers.",
+    "stars_at_check": 59645,
+    "verdict": "fit"
+  },
   "BerriAI/litellm": {
     "first_seen": "2026-10-10",
     "last_checked": "2026-10-10",
@@ -1043,6 +1052,15 @@
     "stars_at_check": 1238,
     "verdict": "fit"
   },
+  "microsoft/BitNet": {
+    "first_seen": "2026-10-13",
+    "last_checked": "2026-10-13",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-13",
+    "reason": "This repository provides low-level inference frameworks for 1-bit LLMs, which touches upon high-performance systems and local LLM execution. However, it lacks direct alignment with agent orchestration or developer workflow automation unless integrated into a local agent runner stack.",
+    "stars_at_check": 41050,
+    "verdict": "maybe"
+  },
   "mksglu/context-mode": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -1063,11 +1081,11 @@
   },
   "morluto/rea": {
     "first_seen": "2026-10-07",
-    "last_checked": "2026-10-11",
+    "last_checked": "2026-10-13",
     "latest_release_at_check": "2026-10-11T03:58:03Z",
-    "profile_checked_against": "2026-10-11",
-    "reason": "This repository directly targets AI Agents & LLM Orchestration and Developer Productivity by deploying autonomous agents to automate complex reverse engineering workflows down to native binaries. It aligns strongly with the profile's interest in autonomous coding agents and advanced developer toolchains.",
-    "stars_at_check": 81102,
+    "profile_checked_against": "2026-10-13",
+    "reason": "This repository aligns directly with the focus area of autonomous multi-agent systems and coding agents by applying agents to reverse engineering tasks. The significant scale and sophisticated orchestration match the technical depth required by the profile.",
+    "stars_at_check": 179109,
     "verdict": "fit"
   },
   "msitarzewski/agency-agents": {
@@ -1141,6 +1159,15 @@
     "reason": "As an agentic skills framework, this directly addresses your interest in multi-agent systems and coding agents. Its focus on methodology and production-ready software development makes it a high-value repository for your professional growth.",
     "stars_at_check": 291305,
     "verdict": "fit"
+  },
+  "open-webui/open-webui": {
+    "first_seen": "2026-10-13",
+    "last_checked": "2026-10-13",
+    "latest_release_at_check": "2026-10-10T21:13:24Z",
+    "profile_checked_against": "2026-10-13",
+    "reason": "While related to LLM interfaces, this repository acts primarily as a general-purpose chat frontend rather than an advanced orchestration backend, autonomous agent runner, or specialized tooling framework outlined in the profile.",
+    "stars_at_check": 155420,
+    "verdict": "not-fit"
   },
   "openbao/openbao": {
     "first_seen": "2026-09-25",

@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import datetime
+import hashlib
 import json
 import os
 import random
@@ -44,20 +45,56 @@ VERDICTS = {"fit", "maybe", "not-fit"}
 # Owner name from profile.md plus second-person / third-person references.
 IDENTITY_RE = re.compile(r"\b(aniket|you|your|yours|he|him|his|she|her|hers|the user'?s?)\b", re.I)
 MAX_WORDS = 90
+CACHE = HERE / "results" / "cache"
 
-GRADER_PROMPT = """You are checking AI-written repository judgments for unsupported claims.
+GRADER_PROMPT = """You check AI-written repository judgments for invented facts.
 
-For each item you get INPUT (everything the writer knew about the repository) and JUDGMENT (what it wrote).
-A claim is unsupported when it states a fact about the repository (features, tests, docs, quality, maturity,
-popularity, purpose) that INPUT does not state or directly imply. Comparisons to the interest profile are not
-claims about the repository; ignore them. Hedged guesses ("the name suggests") are allowed.
+For each item, INPUT is everything the writer knew about the repository. JUDGMENT is what it wrote.
+
+Flag a phrase only if it asserts a fact about the repository that INPUT does not contain, such as:
+- tests, documentation, code quality, completeness, architecture, or maturity not mentioned in INPUT
+- features or behavior not in the description
+
+Do NOT flag:
+- paraphrases or summaries of the description, even if worded differently
+- statements about the profile, fit, relevance, or which focus area or exclusion applies
+- "has no description" / "the description is empty" when INPUT's description is empty
+- hedged guesses ("the name suggests", "may", "unclear")
+
+Examples:
+- INPUT description "", JUDGMENT "lacks documentation and tests" -> flag "lacks documentation and tests"
+- INPUT description "KYC screening engine for payments", JUDGMENT "a compliance screening tool" -> no flag
 
 Items:
 {items}
 
 Return ONLY a JSON array, one entry per item, in the same order:
-[{{"id": "<id>", "unsupported_claims": ["<quoted claim>", ...]}}]
-Use an empty list when every claim is supported."""
+[{{"id": "<id>", "unsupported_claims": ["<exact phrase from JUDGMENT>", ...]}}]
+Use an empty list when nothing is invented."""
+
+
+def cached_call(cache_dir: Path, key: str, model: str, prompt: str, args, label: str, require_nonempty: bool):
+    """Call the model once per (model, prompt) and keep the parsed output on disk.
+
+    Re-running the eval reuses cached outputs, so only failed calls spend quota.
+    Changing a prompt changes its hash, which forces a fresh call.
+    """
+    path = cache_dir / f"{hashlib.sha256((model + prompt).encode()).hexdigest()[:16]}.json"
+    if path.exists():
+        return json.loads(path.read_text())
+    for attempt in range(args.retries + 1):
+        time.sleep(args.sleep if attempt == 0 else args.retry_wait)
+        try:
+            out = _call_with_fallback(
+                key, [model], prompt, args.attempts, args.timeout, label=label, require_nonempty=require_nonempty
+            )
+        except RuntimeError as e:
+            print(f"{label} failed (try {attempt + 1}/{args.retries + 1}): {str(e)[:200]}", file=sys.stderr)
+            continue
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(out, ensure_ascii=False))
+        return out
+    return None
 
 
 def batches(cases: list[dict], size: int, seed: int) -> list[list[dict]]:
@@ -103,9 +140,7 @@ def judgment_checks(item: dict | None) -> dict:
     }
 
 
-def grade_grounding(
-    key: str, model: str, batch: list[dict], rows: dict[str, dict], attempts: int, timeout: int
-) -> dict[str, list]:
+def grade_grounding(key: str, batch: list[dict], rows: dict[str, dict], args, label: str) -> dict[str, list]:
     items = []
     for c in batch:
         row = rows[c["id"]]
@@ -114,7 +149,9 @@ def grade_grounding(
     if not items:
         return {}
     prompt = GRADER_PROMPT.format(items=json.dumps(items, indent=2, ensure_ascii=False))
-    out = _call_with_fallback(key, [model], prompt, attempts, timeout, label="Grading", require_nonempty=False)
+    out = cached_call(CACHE / "grader", key, args.grader_model, prompt, args, f"{label} grading", False)
+    if not isinstance(out, list):
+        return {}
     return {o.get("id"): o.get("unsupported_claims") or [] for o in out if isinstance(o, dict)}
 
 
@@ -159,14 +196,16 @@ def main() -> None:
     ap.add_argument("--prompt", default="v1", choices=sorted(PROMPTS))
     ap.add_argument("--runs", type=int, default=3, help="repeat the whole dataset to measure consistency")
     ap.add_argument("--batch", type=int, default=6, help="repos per judge call (production sends a day's scan)")
-    ap.add_argument("--model", default=os.environ.get("EVAL_JUDGE_MODEL", "gemini-3.5-flash"))
-    ap.add_argument("--grader-model", default=os.environ.get("EVAL_GRADER_MODEL", "gemini-3.5-flash"))
+    ap.add_argument("--model", default=os.environ.get("EVAL_JUDGE_MODEL", "gemini-3.5-flash-lite"))
+    ap.add_argument("--grader-model", default=os.environ.get("EVAL_GRADER_MODEL", "gemini-3.5-flash-lite"))
     ap.add_argument("--no-grader", action="store_true", help="skip the LLM grounding grader")
     ap.add_argument("--dataset", default=str(HERE / "dataset.json"))
     ap.add_argument("--profile", default=str(ROOT / "profile.md"))
     ap.add_argument("--timeout", type=int, default=90)
     ap.add_argument("--sleep", type=float, default=6, help="seconds between API calls (free-tier rate limits)")
-    ap.add_argument("--attempts", type=int, default=3, help="tries per call for 429/5xx before giving up")
+    ap.add_argument("--attempts", type=int, default=3, help="tries per call for 429/5xx (short backoff)")
+    ap.add_argument("--retries", type=int, default=2, help="extra rounds per call after --attempts fail")
+    ap.add_argument("--retry-wait", type=float, default=60, help="seconds before each extra round")
     args = ap.parse_args()
 
     _load_env_file()
@@ -182,13 +221,9 @@ def main() -> None:
     for run in range(args.runs):
         for b_idx, batch in enumerate(batches(cases, args.batch, seed=run)):
             label = f"[{args.prompt} run {run + 1}/{args.runs} batch {b_idx + 1}]"
-            time.sleep(args.sleep)
             prompt = build(profile, [c["input"] for c in batch])
-            try:
-                output = _call_with_fallback(key, [args.model], prompt, args.attempts, args.timeout, label=label)
-            except RuntimeError as e:
-                print(f"{label} judge call failed: {e}", file=sys.stderr)
-                output = None
+            # Runs differ by batch order, so each run is a distinct prompt and a distinct cache entry.
+            output = cached_call(CACHE / "judge", key, args.model, prompt, args, label, True)
             checks = code_checks(batch, output)
             rows = {}
             for c in batch:
@@ -205,14 +240,10 @@ def main() -> None:
                     row["exact_ok"] = row["verdict"] == c["expected"]
                 rows[c["id"]] = row
             if not args.no_grader and output:
-                time.sleep(args.sleep)
-                try:
-                    claims = grade_grounding(key, args.grader_model, batch, rows, args.attempts, args.timeout)
-                    for cid, found in claims.items():
-                        if cid in rows:
-                            rows[cid]["unsupported_claims"] = found
-                except RuntimeError as e:
-                    print(f"{label} grader failed: {e}", file=sys.stderr)
+                claims = grade_grounding(key, batch, rows, args, label)
+                for cid, found in claims.items():
+                    if cid in rows:
+                        rows[cid]["unsupported_claims"] = found
             results.extend(rows.values())
 
     summary = summarize(results, args.runs)

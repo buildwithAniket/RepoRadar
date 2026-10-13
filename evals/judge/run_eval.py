@@ -30,6 +30,7 @@ import re
 import sys
 import time
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -79,14 +80,24 @@ def cached_call(cache_dir: Path, key: str, model: str, prompt: str, args, label:
     Re-running the eval reuses cached outputs, so only failed calls spend quota.
     Changing a prompt changes its hash, which forces a fresh call.
     """
-    path = cache_dir / f"{hashlib.sha256((model + prompt).encode()).hexdigest()[:16]}.json"
+    chain = [m.strip() for m in model.split(",") if m.strip()]
+    # Temperature 0.2 (production) keeps the original key so earlier caches stay valid.
+    key_model = chain[0] if args.temperature == 0.2 else f"{chain[0]}@t{args.temperature}"
+    path = cache_dir / f"{hashlib.sha256((key_model + prompt).encode()).hexdigest()[:16]}.json"
     if path.exists():
         return json.loads(path.read_text())
     for attempt in range(args.retries + 1):
         time.sleep(args.sleep if attempt == 0 else args.retry_wait)
         try:
             out = _call_with_fallback(
-                key, [model], prompt, args.attempts, args.timeout, label=label, require_nonempty=require_nonempty
+                key,
+                chain,
+                prompt,
+                args.attempts,
+                args.timeout,
+                label=label,
+                require_nonempty=require_nonempty,
+                temperature=args.temperature,
             )
         except RuntimeError as e:
             print(f"{label} failed (try {attempt + 1}/{args.retries + 1}): {str(e)[:200]}", file=sys.stderr)
@@ -197,15 +208,21 @@ def main() -> None:
     ap.add_argument("--runs", type=int, default=3, help="repeat the whole dataset to measure consistency")
     ap.add_argument("--batch", type=int, default=6, help="repos per judge call (production sends a day's scan)")
     ap.add_argument("--model", default=os.environ.get("EVAL_JUDGE_MODEL", "gemini-3.5-flash-lite"))
-    ap.add_argument("--grader-model", default=os.environ.get("EVAL_GRADER_MODEL", "gemini-3.5-flash-lite"))
+    ap.add_argument(
+        "--grader-model",
+        default=os.environ.get("EVAL_GRADER_MODEL", "gemini-3.5-flash-lite,gemini-3.7-flash,gemini-3.6-flash"),
+        help="comma-separated fallback chain; the first model is the cache key",
+    )
     ap.add_argument("--no-grader", action="store_true", help="skip the LLM grounding grader")
     ap.add_argument("--dataset", default=str(HERE / "dataset.json"))
     ap.add_argument("--profile", default=str(ROOT / "profile.md"))
     ap.add_argument("--timeout", type=int, default=90)
-    ap.add_argument("--sleep", type=float, default=6, help="seconds between API calls (free-tier rate limits)")
-    ap.add_argument("--attempts", type=int, default=3, help="tries per call for 429/5xx (short backoff)")
+    ap.add_argument("--sleep", type=float, default=0, help="seconds between API calls (free-tier rate limits)")
+    ap.add_argument("--attempts", type=int, default=2, help="tries per call for 429/5xx (short backoff)")
+    ap.add_argument("--temperature", type=float, default=0.2, help="judge and grader temperature (production: 0.2)")
+    ap.add_argument("--workers", type=int, default=6, help="parallel calls (flash-lite free tier: 15 RPM)")
     ap.add_argument("--retries", type=int, default=2, help="extra rounds per call after --attempts fail")
-    ap.add_argument("--retry-wait", type=float, default=60, help="seconds before each extra round")
+    ap.add_argument("--retry-wait", type=float, default=20, help="seconds before each extra round")
     args = ap.parse_args()
 
     _load_env_file()
@@ -218,33 +235,34 @@ def main() -> None:
     build = PROMPTS[args.prompt]
     results: list[dict] = []
 
-    for run in range(args.runs):
-        for b_idx, batch in enumerate(batches(cases, args.batch, seed=run)):
-            label = f"[{args.prompt} run {run + 1}/{args.runs} batch {b_idx + 1}]"
-            prompt = build(profile, [c["input"] for c in batch])
-            # Runs differ by batch order, so each run is a distinct prompt and a distinct cache entry.
-            output = cached_call(CACHE / "judge", key, args.model, prompt, args, label, True)
-            checks = code_checks(batch, output)
-            rows = {}
-            for c in batch:
-                row = judgment_checks(checks["by_repo"].get(c["input"]["repo"]))
-                row.update(
-                    id=c["id"],
-                    run=run,
-                    tags=c["tags"],
-                    expected=c["expected"],
-                    coverage_ok=checks["coverage_ok"],
-                )
-                if row["answered"]:
-                    row["acceptable_ok"] = row["verdict"] in c["acceptable"]
-                    row["exact_ok"] = row["verdict"] == c["expected"]
-                rows[c["id"]] = row
-            if not args.no_grader and output:
-                claims = grade_grounding(key, batch, rows, args, label)
-                for cid, found in claims.items():
-                    if cid in rows:
-                        rows[cid]["unsupported_claims"] = found
-            results.extend(rows.values())
+    def evaluate(run: int, b_idx: int, batch: list[dict]) -> list[dict]:
+        label = f"[{args.prompt} run {run + 1}/{args.runs} batch {b_idx + 1}]"
+        prompt = build(profile, [c["input"] for c in batch])
+        # Runs differ by batch order, so each run is a distinct prompt and a distinct cache entry.
+        output = cached_call(CACHE / "judge", key, args.model, prompt, args, label, True)
+        checks = code_checks(batch, output)
+        rows = {}
+        for c in batch:
+            row = judgment_checks(checks["by_repo"].get(c["input"]["repo"]))
+            row.update(id=c["id"], run=run, tags=c["tags"], expected=c["expected"], coverage_ok=checks["coverage_ok"])
+            if row["answered"]:
+                row["acceptable_ok"] = row["verdict"] in c["acceptable"]
+                row["exact_ok"] = row["verdict"] == c["expected"]
+            rows[c["id"]] = row
+        if not args.no_grader and output:
+            for cid, found in grade_grounding(key, batch, rows, args, label).items():
+                if cid in rows:
+                    rows[cid]["unsupported_claims"] = found
+        return list(rows.values())
+
+    jobs = [
+        (run, b_idx, batch)
+        for run in range(args.runs)
+        for b_idx, batch in enumerate(batches(cases, args.batch, seed=run))
+    ]
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for rows in pool.map(lambda job: evaluate(*job), jobs):
+            results.extend(rows)
 
     summary = summarize(results, args.runs)
     if summary["answered_rate"] < 1:
@@ -257,12 +275,15 @@ def main() -> None:
         "grader_model": None if args.no_grader else args.grader_model,
         "runs": args.runs,
         "batch": args.batch,
+        "temperature": args.temperature,
         "cases": len(cases),
         "at": datetime.datetime.now().isoformat(timespec="seconds"),
     }
     out_dir = HERE / "results"
     out_dir.mkdir(exist_ok=True)
-    out_path = out_dir / f"{args.prompt}.json"
+    out_path = out_dir / (
+        f"{args.prompt}.json" if args.temperature == 0.2 else f"{args.prompt}@t{args.temperature}.json"
+    )
     out_path.write_text(
         json.dumps({"meta": meta, "summary": summary, "results": results}, indent=2, ensure_ascii=False)
     )

@@ -730,11 +730,11 @@
   },
   "debpalash/VoiceStudio": {
     "first_seen": "2026-09-03",
-    "last_checked": "2026-09-27",
+    "last_checked": "2026-10-14",
     "latest_release_at_check": "2026-09-23T08:53:32Z",
-    "profile_checked_against": "2026-09-27",
-    "reason": "While an impressive open-source local audio and speech synthesis platform, VoiceStudio centers on media generation and voice cloning rather than autonomous AI agents, LLM orchestration, FinTech, career workflows, or developer productivity tooling specified in the profile.",
-    "stars_at_check": 38717,
+    "profile_checked_against": "2026-10-14",
+    "reason": "While this repository features high-performance audio processing systems, it focuses primarily on local voice cloning, video dubbing, and speech synthesis rather than AI agents, LLM orchestration, developer tooling, or financial systems outlined in the profile. It represents an audio-centric utility rather than core engineering infrastructure matching the designated interests.",
+    "stars_at_check": 64227,
     "verdict": "not-fit"
   },
   "deepseek-ai/DeepGEMM": {
@@ -1520,6 +1520,15 @@
     "stars_at_check": 5212,
     "verdict": "fit"
   },
+  "vercel-labs/skills": {
+    "first_seen": "2026-10-14",
+    "last_checked": "2026-10-14",
+    "latest_release_at_check": "2026-10-09T16:46:55Z",
+    "profile_checked_against": "2026-10-14",
+    "reason": "This repository aligns directly with the profile's core focus on AI agents and LLM orchestration. Providing an open agent skills tool via an intuitive command-line interface, it addresses agent capability management and workflow automation, making it a strong addition to modern developer productivity tooling for agent ecosystems.",
+    "stars_at_check": 34713,
+    "verdict": "fit"
+  },
   "willfaust/Madeira": {
     "first_seen": "2026-09-27",
     "last_checked": "2026-09-27",
@@ -1528,6 +1537,15 @@
     "reason": "This project centers on emulation technology to run Windows games on iOS devices, offering no architectural relevance or utility to the profile's core focus areas of AI agents, developer tooling, workflow automation, or FinTech.",
     "stars_at_check": 685,
     "verdict": "not-fit"
+  },
+  "xtool-org/xtool": {
+    "first_seen": "2026-10-14",
+    "last_checked": "2026-10-14",
+    "latest_release_at_check": "2026-10-14T00:30:10Z",
+    "profile_checked_against": "2026-10-14",
+    "reason": "This repository provides a cross-platform Xcode replacement aimed at developer productivity and multi-platform build systems. Although it falls outside the AI agent and FinTech domains, it intersects with developer productivity and high-performance tooling interests by streamlining cross-platform compilation workflows.",
+    "stars_at_check": 9788,
+    "verdict": "maybe"
   },
   "zedeus/nitter": {
     "first_seen": "2026-08-28",

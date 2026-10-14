@@ -410,7 +410,7 @@ window.REPORADAR_DIGESTS = {
         "id": "debpalash/VoiceStudio",
         "owner": "debpalash",
         "name": "VoiceStudio",
-        "stars": 38717,
+        "stars": 64227,
         "language": "Python",
         "pushedAt": "2026-09-23",
         "confidence": "medium",
@@ -1647,7 +1647,7 @@ window.REPORADAR_DIGESTS = {
         "id": "debpalash/VoiceStudio",
         "owner": "debpalash",
         "name": "VoiceStudio",
-        "stars": 38717,
+        "stars": 64227,
         "language": "Python",
         "pushedAt": "2026-09-23",
         "confidence": "low",
@@ -3589,26 +3589,115 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-14": {
+    "date": "2026-10-14",
+    "evaluatedCount": 3,
+    "skippedCount": 6,
+    "stats": {
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 6,
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "vercel-labs/skills",
+        "owner": "vercel-labs",
+        "name": "skills",
+        "stars": 34713,
+        "language": "Markdown",
+        "pushedAt": "2026-10-09",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's core focus on AI agents and LLM orchestration. Providing an open agent skills tool via an intuitive command-line interface, it addresses agent capability management and workflow automation, making it a strong addition to modern developer productivity tooling for agent ecosystems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vercel-labs/skills",
+        "useCases": [
+          {
+            "title": "Streamline coding agent setup with custom skills",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate structured domain knowledge directly into coding agents like Claude Code or OpenCode. This ensures consistent prompt execution and capability management across developer workflows.",
+            "firstStep": "Run `npx skills add vercel-labs/agent-skills` to install the desired capability."
+          },
+          {
+            "title": "Automate non-interactive agent configuration in pipelines",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Automate the deployment of specific agent skill sets during continuous integration or project initialization. This removes manual prompts and standardizes agent setups across team environments.",
+            "firstStep": "Execute `npx skills add vercel-labs/agent-skills --skill frontend-design -g -a claude-code -y` within your automation script."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "xtool-org/xtool",
+        "owner": "xtool-org",
+        "name": "xtool",
+        "stars": 9788,
+        "language": "Unknown",
+        "pushedAt": "2026-10-14",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This repository provides a cross-platform Xcode replacement aimed at developer productivity and multi-platform build systems. Although it falls outside the AI agent and FinTech domains, it intersects with developer productivity and high-performance tooling interests by streamlining cross-platform compilation workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/xtool-org/xtool",
+        "useCases": [],
+        "useCaseNote": "The profile has no active Swift or iOS development workflows, making a cross-platform Xcode replacement inapplicable beyond generic restatements of its primary build features."
+      },
+      {
+        "id": "debpalash/VoiceStudio",
+        "owner": "debpalash",
+        "name": "VoiceStudio",
+        "stars": 64227,
+        "language": "Python",
+        "pushedAt": "2026-09-23",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While this repository features high-performance audio processing systems, it focuses primarily on local voice cloning, video dubbing, and speech synthesis rather than AI agents, LLM orchestration, developer tooling, or financial systems outlined in the profile. It represents an audio-centric utility rather than core engineering infrastructure matching the designated interests.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/debpalash/VoiceStudio",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-13",
+  value: "2026-10-14",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-13",
+  value: "2026-10-14",
   enumerable: false,
   configurable: true,
   writable: true

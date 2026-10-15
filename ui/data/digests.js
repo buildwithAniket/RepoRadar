@@ -168,9 +168,9 @@ window.REPORADAR_DIGESTS = {
         "id": "NationalSecurityAgency/ghidra",
         "owner": "NationalSecurityAgency",
         "name": "ghidra",
-        "stars": 73407,
+        "stars": 87866,
         "language": "Java",
-        "pushedAt": "2026-08-18",
+        "pushedAt": "2026-09-21",
         "confidence": "low",
         "verdict": "not-fit",
         "verdictLabel": "ARCHIVED / PASS",
@@ -3678,26 +3678,201 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-15": {
+    "date": "2026-10-15",
+    "evaluatedCount": 7,
+    "skippedCount": 5,
+    "stats": {
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 4,
+      "total": 7
+    },
+    "summary": {
+      "evaluated": 7,
+      "skipped": 5,
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 4,
+      "total": 7
+    },
+    "repos": [
+      {
+        "id": "K-Dense-AI/scientific-agent-skills",
+        "owner": "K-Dense-AI",
+        "name": "scientific-agent-skills",
+        "stars": 49652,
+        "language": "Markdown",
+        "pushedAt": "2026-10-01",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's focus on autonomous multi-agent systems and coding agents, providing ready-to-use skills, tool integrations, and scientific databases that enhance AI agent capabilities for complex execution environments.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "useCases": [
+          {
+            "title": "Equip Coding Agents with Procedural Scientific Skills",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Load the standardized agent skills into coding agent environments like Claude Code or Cursor to enable domain-specific execution flows across data analysis and modeling. This gives existing agent setups pre-validated procedural guidance, conventions, and database access without authoring custom tool prompts from scratch.",
+            "firstStep": "Configure the agent host (such as Claude Code or Cursor) to load the repository's plugins by referencing `plugin.json` alongside the `skills/` directory."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ifixai-ai/iFixAi",
+        "owner": "ifixai-ai",
+        "name": "iFixAi",
+        "stars": 27843,
+        "language": "Unknown",
+        "pushedAt": "2026-10-08",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly addresses the profile's interest in AI agents and LLM orchestration by offering an independent auditing framework designed to verify agent behavior and ensure autonomous systems execute intended tasks correctly.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ifixai-ai/iFixAi",
+        "useCases": [
+          {
+            "title": "Audit RepoRadar LLM Judge Quality in CI",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "RepoRadar",
+            "pitch": "RepoRadar relies on a Gemini REST fallback chain to evaluate and categorize trending repositories daily. Integrating iFixAi into the GitHub Actions pipeline allows auditing the judge's scoring consistency and catching blind spots before committing daily digest Markdown reports.",
+            "firstStep": "Install the package and audit evaluation outputs by running `pip install \"ifixai[<provider>]\"` followed by `ifixai run --suite smoke` in a test workflow step."
+          },
+          {
+            "title": "Equip Coding Agents with Independent Auditing Skills",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Coding agents like Claude Code and Codex can automatically inspect their own trajectories and enforce operational constraints before completing tasks. Deploying the skill lets autonomous agents build their own fixtures and catch misaligned actions in under two minutes.",
+            "firstStep": "Run `uvx ifixai install` to scaffold `/ifixai-skill` into your agent environment and test the interactive scorecard output."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "vxcontrol/pentagi",
+        "owner": "vxcontrol",
+        "name": "pentagi",
+        "stars": 29927,
+        "language": "Unknown",
+        "pushedAt": "2026-10-05",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project fits the profile's interest in autonomous multi-agent systems by providing a specialized framework for executing complex, multi-step workflows in specialized domains through collaborative AI agents.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vxcontrol/pentagi",
+        "useCases": [
+          {
+            "title": "Automate routine security validation workflows",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "By leveraging a self-hosted multi-agent system with structured task planning, the profile can orchestrate complex, multi-step reconnaissance and testing pipelines automatically without manual tool execution.",
+            "firstStep": "Run the interactive installer via Docker Compose following instructions in `Quick Start`"
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "nvm-sh/nvm",
+        "owner": "nvm-sh",
+        "name": "nvm",
+        "stars": 95501,
+        "language": "Unknown",
+        "pushedAt": "2026-09-21",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While useful for development environments, this repository is a standard version manager shell script that lacks direct connection to the profile's core focus areas, such as AI orchestration, advanced developer productivity systems, or workflow automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/nvm-sh/nvm",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "rust-lang/rust",
+        "owner": "rust-lang",
+        "name": "rust",
+        "stars": 120169,
+        "language": "Rust",
+        "pushedAt": "2026-10-01",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Although foundational for high-performance software development, this general-purpose systems programming language repository is too broad and does not specifically target the profile's core interests in AI agents, workflow automation, or financial technology.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/rust-lang/rust",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ntdevlabs/tiny11builder",
+        "owner": "ntdevlabs",
+        "name": "tiny11builder",
+        "stars": 20367,
+        "language": "Unknown",
+        "pushedAt": "2026-10-12",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This utility is narrowly focused on customizing operating system images, which falls outside the profile's defined interest areas spanning AI orchestration, workflow automation, developer tooling, and financial tech systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ntdevlabs/tiny11builder",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "NationalSecurityAgency/ghidra",
+        "owner": "NationalSecurityAgency",
+        "name": "ghidra",
+        "stars": 87866,
+        "language": "Java",
+        "pushedAt": "2026-09-21",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While a powerful software reverse engineering framework, this tool caters to cybersecurity and binary analysis tasks rather than the profile's core focus areas of AI agent orchestration, developer productivity utilities, or workflow automation.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/NationalSecurityAgency/ghidra",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-14",
+  value: "2026-10-15",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-14",
+  value: "2026-10-15",
   enumerable: false,
   configurable: true,
   writable: true

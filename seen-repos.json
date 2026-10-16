@@ -215,6 +215,15 @@
     "stars_at_check": 13452,
     "verdict": "not-fit"
   },
+  "LibreSpark/LibreTV": {
+    "first_seen": "2026-10-16",
+    "last_checked": "2026-10-16",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-16",
+    "reason": "This repository is a self-hosted media streaming web application, which falls entirely outside the profile's focus areas of AI agent orchestration, career operations, FinTech, and developer tooling.",
+    "stars_at_check": 18312,
+    "verdict": "not-fit"
+  },
   "M-Abozaid/esp32-c3-adblock": {
     "first_seen": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -980,6 +989,15 @@
     "stars_at_check": 7291,
     "verdict": "maybe"
   },
+  "lightseekorg/tokenspeed": {
+    "first_seen": "2026-10-16",
+    "last_checked": "2026-10-16",
+    "latest_release_at_check": "2026-10-06T05:42:25Z",
+    "profile_checked_against": "2026-10-16",
+    "reason": "While this project provides a high-performance LLM inference engine relevant to foundational AI infrastructure, it sits at the model serving layer rather than the autonomous agent orchestration or developer workflow focus emphasized in the profile.",
+    "stars_at_check": 2570,
+    "verdict": "maybe"
+  },
   "liquidslr/system-design-notes": {
     "first_seen": "2026-10-09",
     "last_checked": "2026-10-09",
@@ -1349,6 +1367,15 @@
     "stars_at_check": 94010,
     "verdict": "not-fit"
   },
+  "ruvnet/ruflo": {
+    "first_seen": "2026-10-16",
+    "last_checked": "2026-10-16",
+    "latest_release_at_check": "2026-10-14T16:33:28Z",
+    "profile_checked_against": "2026-10-16",
+    "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration, offering a multi-agent harness for coordinating autonomous workflows, adaptive memory, and native integrations with coding agents like Claude Code, Codex, and Hermes.",
+    "stars_at_check": 75283,
+    "verdict": "fit"
+  },
   "shy3130/tick-stock-panel": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -1582,6 +1609,15 @@
     "reason": "This project centers on emulation technology to run Windows games on iOS devices, offering no architectural relevance or utility to the profile's core focus areas of AI agents, developer tooling, workflow automation, or FinTech.",
     "stars_at_check": 685,
     "verdict": "not-fit"
+  },
+  "xerj-org/xerj": {
+    "first_seen": "2026-10-16",
+    "last_checked": "2026-10-16",
+    "latest_release_at_check": "2026-10-12T03:01:25Z",
+    "profile_checked_against": "2026-10-16",
+    "reason": "This project fits the profile's interests in both AI agent memory/RAG systems and developer productivity tooling, providing a token-efficient indexing and search solution tailored for agentic workflows, documentation retrieval, and code search.",
+    "stars_at_check": 5969,
+    "verdict": "fit"
   },
   "xtool-org/xtool": {
     "first_seen": "2026-10-14",

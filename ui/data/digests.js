@@ -3969,26 +3969,107 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-17": {
+    "date": "2026-10-17",
+    "evaluatedCount": 3,
+    "skippedCount": 10,
+    "stats": {
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 10,
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "MadsLorentzen/ai-job-search",
+        "owner": "MadsLorentzen",
+        "name": "ai-job-search",
+        "stars": 48821,
+        "language": "Unknown",
+        "pushedAt": "2026-09-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly targets two primary focus areas of the profile: Career-Ops workflow automation and coding agent extensions built on Claude Code. By automating job post evaluation, resume customization, cover letter generation, and interview preparation locally, it represents an ideal match for the profile's career pipeline automation interests.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/MadsLorentzen/ai-job-search",
+        "useCases": [
+          {
+            "title": "Automate Application Drafting via Claude Code",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Deploy a local multi-agent pipeline using Claude Code to automate fit evaluation, resume tailoring, and LaTeX cover letter compilation. This creates an end-to-end local application funnel with reviewer agent critiques directly aligned with career operations.",
+            "firstStep": "Install portal CLIs via `python3 tools/install_portal_clis.py`, launch `claude`, and run `/setup` to initialize profile artifacts."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "android/skills",
+        "owner": "android",
+        "name": "skills",
+        "stars": 8152,
+        "language": "Python",
+        "pushedAt": "2026-10-14",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "With an empty repository description and lack of clear context or documentation regarding its architectural utility, this repository does not demonstrate clear alignment with the profile's focus on AI agent orchestration, Python developer tooling, or career-ops pipelines.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/android/skills",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "hmjz100/LinkSwift",
+        "owner": "hmjz100",
+        "name": "LinkSwift",
+        "stars": 23987,
+        "language": "Python",
+        "pushedAt": "2026-02-18",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a JavaScript-based direct download link extraction utility for various cloud storage providers. It falls outside the profile's focus areas of autonomous AI agents, Python developer productivity tools, FinTech platforms, and career automation workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/hmjz100/LinkSwift",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-16",
+  value: "2026-10-17",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-16",
+  value: "2026-10-17",
   enumerable: false,
   configurable: true,
   writable: true

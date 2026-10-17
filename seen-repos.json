@@ -233,6 +233,15 @@
     "stars_at_check": 1554,
     "verdict": "not-fit"
   },
+  "MadsLorentzen/ai-job-search": {
+    "first_seen": "2026-10-17",
+    "last_checked": "2026-10-17",
+    "latest_release_at_check": "2026-09-29T18:32:55Z",
+    "profile_checked_against": "2026-10-17",
+    "reason": "This repository directly targets two primary focus areas of the profile: Career-Ops workflow automation and coding agent extensions built on Claude Code. By automating job post evaluation, resume customization, cover letter generation, and interview preparation locally, it represents an ideal match for the profile's career pipeline automation interests.",
+    "stars_at_check": 48821,
+    "verdict": "fit"
+  },
   "NVIDIA/Model-Optimizer": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -457,6 +466,15 @@
     "reason": "Strong alignment with your interest in AI agents. Turning coding agents into research agents is a critical evolution for automating complex tasks, including the deep research required for job hunting or financial analysis.",
     "stars_at_check": 4592,
     "verdict": "fit"
+  },
+  "android/skills": {
+    "first_seen": "2026-10-17",
+    "last_checked": "2026-10-17",
+    "latest_release_at_check": "2026-10-14T11:24:10Z",
+    "profile_checked_against": "2026-10-17",
+    "reason": "With an empty repository description and lack of clear context or documentation regarding its architectural utility, this repository does not demonstrate clear alignment with the profile's focus on AI agent orchestration, Python developer tooling, or career-ops pipelines.",
+    "stars_at_check": 8152,
+    "verdict": "not-fit"
   },
   "androoAGI/starnet": {
     "first_seen": "2026-09-25",
@@ -916,6 +934,15 @@
     "reason": "This tool provides an agent-oriented HTML-to-video rendering framework, offering developer utility at the intersection of agent interfaces and media rendering, though it is adjacent to the profile's primary focus on coding agents, fintech, and workflow automation.",
     "stars_at_check": 54919,
     "verdict": "maybe"
+  },
+  "hmjz100/LinkSwift": {
+    "first_seen": "2026-10-17",
+    "last_checked": "2026-10-17",
+    "latest_release_at_check": "2026-02-18T08:54:33Z",
+    "profile_checked_against": "2026-10-17",
+    "reason": "This repository is a JavaScript-based direct download link extraction utility for various cloud storage providers. It falls outside the profile's focus areas of autonomous AI agents, Python developer productivity tools, FinTech platforms, and career automation workflows.",
+    "stars_at_check": 23987,
+    "verdict": "not-fit"
   },
   "huggingface/transformers": {
     "first_seen": "2026-09-15",

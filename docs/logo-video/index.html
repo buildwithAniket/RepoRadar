@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+        <script src="gsap.min.js"></script>
+    <style>
+      @font-face { font-family: 'Playfair Display'; font-weight: 700; src: url(fonts/pf.woff2); }
+      @font-face { font-family: 'Playfair Display'; font-weight: 700; font-style: italic; src: url(fonts/pfi.woff2); }
+      @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(fonts/jb.woff2); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #111313; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: radial-gradient(circle at 50% 42%, #1c2020 0%, #111313 60%); }
+      #mark { position: absolute; left: 50%; top: 400px; width: 420px; height: 420px; margin-left: -210px; margin-top: -210px; }
+      #mark svg { width: 100%; height: 100%; overflow: visible; }
+      
+      #word { position: absolute; left: 0; right: 0; top: 660px; text-align: center;
+        font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 140px; color: #f4f3ef; letter-spacing: -0.02em; }
+      #word em { color: #b8262d; font-style: italic; }
+      #tag { position: absolute; left: 0; right: 0; top: 860px; text-align: center;
+        font-family: 'JetBrains Mono', monospace; font-size: 26px; letter-spacing: 0.4em; color: #8c857b; text-transform: uppercase; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="6" data-width="1920" data-height="1080">
+      <div id="mark" class="clip" data-start="0" data-duration="6" data-track-index="0">
+        <svg viewBox="0 0 420 420">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#b8262d" stop-opacity="0" />
+              <stop offset="1" stop-color="#b8262d" stop-opacity="0.75" />
+            </linearGradient>
+          </defs>
+          <g id="disc">
+            <circle cx="210" cy="210" r="200" fill="#0a0b0b" stroke="#2a2e2e" stroke-width="2" />
+            <circle class="groove" cx="210" cy="210" r="175" fill="none" stroke="#252929" stroke-width="2" />
+            <circle class="groove" cx="210" cy="210" r="150" fill="none" stroke="#252929" stroke-width="2" />
+            <circle class="groove" cx="210" cy="210" r="125" fill="none" stroke="#252929" stroke-width="2" />
+            <circle class="groove" cx="210" cy="210" r="100" fill="none" stroke="#252929" stroke-width="2" />
+          </g>
+          <path id="sweep" d="M210 210 L410 210 A200 200 0 0 0 351.4 68.6 Z" fill="url(#g)" />
+          <circle class="blip" cx="300" cy="120" r="9" fill="#f4f3ef" />
+          <circle class="blip" cx="110" cy="160" r="7" fill="#f4f3ef" />
+          <circle class="blip" cx="250" cy="330" r="8" fill="#f4f3ef" />
+          <circle id="label" cx="210" cy="210" r="62" fill="#891a20" />
+          <circle cx="210" cy="210" r="7" fill="#111313" />
+        </svg>
+      </div>
+      <h1 id="word" class="clip" data-start="0" data-duration="6" data-track-index="1">Repo<em>Radar</em></h1>
+      <div id="tag" class="clip" data-start="0" data-duration="6" data-track-index="2">Autonomous GitHub scouting</div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#disc", { scale: 0.6, opacity: 0, svgOrigin: "210 210" }, { scale: 1, opacity: 1, duration: 0.9, ease: "power3.out" }, 0)
+        .fromTo(".groove", { opacity: 0 }, { opacity: 1, duration: 0.4, stagger: 0.08 }, 0.3)
+        .fromTo("#label", { scale: 0, svgOrigin: "210 210" }, { scale: 1, duration: 0.6, ease: "back.out(2)" }, 0.5)
+        .fromTo("#sweep", { rotation: 0, opacity: 0, svgOrigin: "210 210" }, { rotation: -720, opacity: 1, duration: 4.5, ease: "power1.inOut" }, 0.7)
+        .fromTo(".blip", { scale: 0, opacity: 0, transformOrigin: "center" }, { scale: 1, opacity: 1, duration: 0.3, stagger: 0.35, ease: "back.out(3)" }, 1.4)
+        .to(".blip", { opacity: 0.35, duration: 0.6, stagger: 0.35 }, 1.8)
+        .fromTo("#word", { y: 60, opacity: 0, scale: 0.94 }, { y: 0, opacity: 1, scale: 1, duration: 1, ease: "expo.out" }, 2.0)
+        .fromTo("#tag", { opacity: 0 }, { opacity: 1, duration: 0.8 }, 2.8)
+        .to("#root", { opacity: 0, duration: 0.5 }, 5.5);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

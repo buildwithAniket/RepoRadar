@@ -4050,26 +4050,149 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-18": {
+    "date": "2026-10-18",
+    "evaluatedCount": 3,
+    "skippedCount": 10,
+    "stats": {
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 10,
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "akitaonrails/ai-memory",
+        "owner": "akitaonrails",
+        "name": "ai-memory",
+        "stars": 10074,
+        "language": "Markdown",
+        "pushedAt": "2026-10-17",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's primary focus on AI Agents & LLM Orchestration and developer productivity tooling. By addressing long-term memory and cross-vendor handoffs specifically for coding agent CLIs, it targets a critical infrastructure challenge in agentic workflows with meaningful utility beyond simple prompt wrappers.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/akitaonrails/ai-memory",
+        "useCases": [
+          {
+            "title": "Preserve Coding Context Across Agent CLI Swaps",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Enable seamless context switching when moving between coding agent CLIs such as Claude Code, Codex, or Hermes without re-explaining failed approaches or architecture decisions. This reduces developer friction by retaining session memory and cross-agent handoffs in a local git-backed markdown store.",
+            "firstStep": "Install the binary and launch a coding session using `ai-memory run codex` to verify handoff state capture from existing agent sessions."
+          },
+          {
+            "title": "Standardize Repository Conventions Across Developer Agent Sessions",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Automatically inject baseline developer habits, package managers, and testing layouts into coding agent sessions across repositories so agents adhere to consistent conventions without explicit prompt engineering. This eliminates redundant setup prompts across different agent harnesses while keeping conventions stored in plain Markdown.",
+            "firstStep": "Review the configuration pattern outlined in `docs/cross-project-profile.md` to define standard package manager and testing layout defaults across local agent harnesses."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "stablyai/orca",
+        "owner": "stablyai",
+        "name": "orca",
+        "stars": 95695,
+        "language": "Unknown",
+        "pushedAt": "2026-10-17",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project fits squarely within the core focus on AI Agents & LLM Orchestration, particularly the interest in local and cloud agent runners for tools like Claude Code. Managing and running a fleet of coding agents across desktop and remote environments directly complements the profile's developer workflow and orchestration priorities.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/stablyai/orca",
+        "useCases": [
+          {
+            "title": "Benchmark RepoRadar Improvements Across Isolated Worktrees",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "RepoRadar",
+            "pitch": "Evaluate candidate updates to RepoRadar's parsing and Gemini prompting pipelines simultaneously using isolated Git branches. Comparing concurrent Claude Code and Codex outputs directly in separate worktrees ensures changes maintain test coverage before merging.",
+            "firstStep": "Install the Orca application, open the RepoRadar repository, and run `orca worktree create` to generate isolated worktrees for parallel agent tasks."
+          },
+          {
+            "title": "Script Autonomous Agent Workflows Using CLI",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Programmatically provision agent workspaces and control automated UI inspection for coding agents via CLI primitives. This replaces ad-hoc terminal setups with a scripted, multi-agent execution pipeline across local or remote boxes.",
+            "firstStep": "Invoke `orca worktree create` from your shell or orchestrator script to instantiate a workspace and automate interaction steps using `snapshot` and `fill`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "anomalyco/opencode",
+        "owner": "anomalyco",
+        "name": "opencode",
+        "stars": 215676,
+        "language": "Unknown",
+        "pushedAt": "2026-10-16",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository matches the profile's primary interest in AI Agents & LLM Orchestration, specifically autonomous coding agents. As an open-source coding agent implementation, it offers high architectural relevance and insights into autonomous code generation and developer productivity systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/anomalyco/opencode",
+        "useCases": [
+          {
+            "title": "Audit Codebases Safely Using Plan Mode",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Enforce safe code inspection and pre-change evaluation across local projects without the risk of unwanted file mutations. The plan agent isolates code exploration and read-only analysis before handing tasks to the full-access build agent.",
+            "firstStep": "Install the CLI with `npm i -g @opencode/cli@latest` and toggle to the `plan` agent using `Tab` to safely review a local codebase."
+          },
+          {
+            "title": "Study Coding Agent Task Delegation Patterns",
+            "kind": "learn",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Investigate how OpenCode isolates read-only analysis, file editing, and subagent invocation for multistep tasks. Inspecting this architecture informs how to structure safe permissions and subagent handoffs in custom autonomous coding workflows.",
+            "firstStep": "Review `./CONTRIBUTING.md` and inspect the agent orchestration source files to trace how `@general` handles multistep subagent delegation."
+          }
+        ],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-17",
+  value: "2026-10-18",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-17",
+  value: "2026-10-18",
   enumerable: false,
   configurable: true,
   writable: true

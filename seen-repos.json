@@ -449,6 +449,15 @@
     "stars_at_check": 2675,
     "verdict": "fit"
   },
+  "akitaonrails/ai-memory": {
+    "first_seen": "2026-10-18",
+    "last_checked": "2026-10-18",
+    "latest_release_at_check": "2026-10-17T18:09:02Z",
+    "profile_checked_against": "2026-10-18",
+    "reason": "This repository aligns directly with the profile's primary focus on AI Agents & LLM Orchestration and developer productivity tooling. By addressing long-term memory and cross-vendor handoffs specifically for coding agent CLIs, it targets a critical infrastructure challenge in agentic workflows with meaningful utility beyond simple prompt wrappers.",
+    "stars_at_check": 10074,
+    "verdict": "fit"
+  },
   "alibaba/open-code-review": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -493,6 +502,15 @@
     "reason": "While a classic tool, it is not an agentic framework. However, it could be integrated into your career-ops pipeline for interview preparation and technical knowledge retention.",
     "stars_at_check": 30960,
     "verdict": "maybe"
+  },
+  "anomalyco/opencode": {
+    "first_seen": "2026-10-18",
+    "last_checked": "2026-10-18",
+    "latest_release_at_check": "2026-10-16T12:31:52Z",
+    "profile_checked_against": "2026-10-18",
+    "reason": "This repository matches the profile's primary interest in AI Agents & LLM Orchestration, specifically autonomous coding agents. As an open-source coding agent implementation, it offers high architectural relevance and insights into autonomous code generation and developer productivity systems.",
+    "stars_at_check": 215676,
+    "verdict": "fit"
   },
   "anthropics/claude-code": {
     "first_seen": "2026-09-17",
@@ -1420,6 +1438,15 @@
     "reason": "This is a region-specific stock screening tool for the Chinese domestic market, which does not align with your focus on global career-ops automation or cross-border FinTech systems.",
     "stars_at_check": 6276,
     "verdict": "not-fit"
+  },
+  "stablyai/orca": {
+    "first_seen": "2026-10-18",
+    "last_checked": "2026-10-18",
+    "latest_release_at_check": "2026-10-17T06:54:05Z",
+    "profile_checked_against": "2026-10-18",
+    "reason": "This project fits squarely within the core focus on AI Agents & LLM Orchestration, particularly the interest in local and cloud agent runners for tools like Claude Code. Managing and running a fleet of coding agents across desktop and remote environments directly complements the profile's developer workflow and orchestration priorities.",
+    "stars_at_check": 95695,
+    "verdict": "fit"
   },
   "storytold/artcraft": {
     "first_seen": "2026-10-09",

@@ -44,6 +44,15 @@
     "stars_at_check": 50021,
     "verdict": "fit"
   },
+  "Comfy-Org/ComfyUI": {
+    "first_seen": "2026-10-19",
+    "last_checked": "2026-10-19",
+    "latest_release_at_check": "2026-10-19T01:33:54Z",
+    "profile_checked_against": "2026-10-19",
+    "reason": "ComfyUI is a modular graph-based execution engine and backend for local generative models, demonstrating robust pipeline orchestration and local inference mechanics. While its node-based execution engine aligns broadly with workflow automation concepts, its specialized focus on diffusion models and media generation places it tangential to the profile's emphasis on LLM orchestration, autonomous agents, and developer productivity tooling.",
+    "stars_at_check": 138921,
+    "verdict": "maybe"
+  },
   "ComposioHQ/awesome-claude-skills": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-10-01",
@@ -205,6 +214,15 @@
     "reason": "This repository aligns directly with the profile's focus on autonomous multi-agent systems and coding agents, providing ready-to-use skills, tool integrations, and scientific databases that enhance AI agent capabilities for complex execution environments.",
     "stars_at_check": 49652,
     "verdict": "fit"
+  },
+  "Kruk2/jasna": {
+    "first_seen": "2026-10-19",
+    "last_checked": "2026-10-19",
+    "latest_release_at_check": "2026-10-17T17:16:37Z",
+    "profile_checked_against": "2026-10-19",
+    "reason": "This repository provides a specialized desktop utility for video restoration and multimedia enhancement. It does not align with the profile's core focus areas of LLM orchestration, autonomous agent systems, FinTech infrastructure, or developer workflow tooling.",
+    "stars_at_check": 2597,
+    "verdict": "not-fit"
   },
   "Lakr233/vphone-cli": {
     "first_seen": "2026-09-17",
@@ -1141,6 +1159,15 @@
     "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration and Developer Productivity by providing context window sandboxing, session memory persistence, and MCP-based routing tailored specifically for AI coding agents.",
     "stars_at_check": 24584,
     "verdict": "fit"
+  },
+  "mlabonne/llm-course": {
+    "first_seen": "2026-10-19",
+    "last_checked": "2026-10-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-19",
+    "reason": "This repository is a comprehensive educational roadmap and hands-on notebook collection covering LLM architecture, fine-tuning, quantization, and deployment. While it contains valuable technical references for understanding language model mechanics, it serves primarily as an instructional course rather than a deployable software framework, agent runtime, or productivity tool highlighted in the profile.",
+    "stars_at_check": 84224,
+    "verdict": "maybe"
   },
   "modelcontextprotocol/servers": {
     "first_seen": "2026-10-01",

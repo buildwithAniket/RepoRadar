@@ -4254,26 +4254,124 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-20": {
+    "date": "2026-10-20",
+    "evaluatedCount": 3,
+    "skippedCount": 9,
+    "stats": {
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 9,
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "headroomlabs-ai/headroom",
+        "owner": "headroomlabs-ai",
+        "name": "headroom",
+        "stars": 76395,
+        "language": "Unknown",
+        "pushedAt": "2026-10-14",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Directly aligns with the profile's focus on AI agents, LLM orchestration, and developer productivity tooling. By offering a library, proxy, and MCP server to compress tool outputs, logs, and RAG contexts specifically targeting coding agents, it provides high utility for agent execution workflows and context window optimization.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/headroomlabs-ai/headroom",
+        "useCases": [
+          {
+            "title": "Wrap local coding agents for compressed context",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Automatically route local coding agent prompts, tool outputs, and log dumps through Headroom's proxy layer. This reduces token consumption and cost for agent execution loops without requiring custom orchestration code.",
+            "firstStep": "Install the CLI using `uv tool install --python 3.13 \"headroom-ai[all]\"` and run `headroom wrap claude` to activate local agent context compression."
+          },
+          {
+            "title": "Compress scraped Markdown reports in RepoRadar judge pipeline",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "RepoRadar",
+            "pitch": "Integrate Headroom's inline Python library into RepoRadar's judge stage to compress long fetched README excerpts before forwarding them to the Gemini API. This keeps daily automated repo evaluation runs well within token limits while preserving crucial technical detail.",
+            "firstStep": "Install `pip install \"headroom-ai[all]\"` into the RepoRadar environment and import `from headroom import compress` to compress judge prompt payloads prior to calling the Gemini REST API."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "shiyu-coder/Kronos",
+        "owner": "shiyu-coder",
+        "name": "Kronos",
+        "stars": 41871,
+        "language": "Unknown",
+        "pushedAt": "2026-10-20",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Strongly aligns with the profile's focus on FinTech and LLM architectures. As a foundation model built specifically for the language and dynamics of financial markets, it offers deep architectural relevance to algorithmic finance and financial intelligence systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/shiyu-coder/Kronos",
+        "useCases": [
+          {
+            "title": "Build quantitative K-line forecasting pipelines",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "FinTech & Global Wealth Systems",
+            "pitch": "Enhance quantitative asset tracking and portfolio modeling by deploying foundation-model forecasts directly on multi-exchange K-line (OHLCV) time-series data.",
+            "firstStep": "Install dependencies using `pip install -r requirements.txt` and run a sample forecast by instantiating `Kronos.from_pretrained(\"NeoQuasar/Kronos-small\")` and calling `KronosPredictor.predict()` on a test DataFrame."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "withmarbleapp/os-taxonomy",
+        "owner": "withmarbleapp",
+        "name": "os-taxonomy",
+        "stars": 6311,
+        "language": "Unknown",
+        "pushedAt": "2026-10-20",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Does not align with the profile due to an absence of repository documentation, description, or clear relevance to core focus areas like autonomous agents, FinTech systems, career operations, or developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/withmarbleapp/os-taxonomy",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-19",
+  value: "2026-10-20",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-19",
+  value: "2026-10-20",
   enumerable: false,
   configurable: true,
   writable: true

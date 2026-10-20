@@ -962,6 +962,15 @@
     "stars_at_check": 127727,
     "verdict": "not-fit"
   },
+  "headroomlabs-ai/headroom": {
+    "first_seen": "2026-10-20",
+    "last_checked": "2026-10-20",
+    "latest_release_at_check": "2026-10-14T22:46:09Z",
+    "profile_checked_against": "2026-10-20",
+    "reason": "Directly aligns with the profile's focus on AI agents, LLM orchestration, and developer productivity tooling. By offering a library, proxy, and MCP server to compress tool outputs, logs, and RAG contexts specifically targeting coding agents, it provides high utility for agent execution workflows and context window optimization.",
+    "stars_at_check": 76395,
+    "verdict": "fit"
+  },
   "heygen-com/hyperframes": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -1448,6 +1457,15 @@
     "stars_at_check": 75283,
     "verdict": "fit"
   },
+  "shiyu-coder/Kronos": {
+    "first_seen": "2026-10-20",
+    "last_checked": "2026-10-20",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-20",
+    "reason": "Strongly aligns with the profile's focus on FinTech and LLM architectures. As a foundation model built specifically for the language and dynamics of financial markets, it offers deep architectural relevance to algorithmic finance and financial intelligence systems.",
+    "stars_at_check": 41871,
+    "verdict": "fit"
+  },
   "shy3130/tick-stock-panel": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -1689,6 +1707,15 @@
     "profile_checked_against": "2026-09-27",
     "reason": "This project centers on emulation technology to run Windows games on iOS devices, offering no architectural relevance or utility to the profile's core focus areas of AI agents, developer tooling, workflow automation, or FinTech.",
     "stars_at_check": 685,
+    "verdict": "not-fit"
+  },
+  "withmarbleapp/os-taxonomy": {
+    "first_seen": "2026-10-20",
+    "last_checked": "2026-10-20",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-20",
+    "reason": "Does not align with the profile due to an absence of repository documentation, description, or clear relevance to core focus areas like autonomous agents, FinTech systems, career operations, or developer tooling.",
+    "stars_at_check": 6311,
     "verdict": "not-fit"
   },
   "xerj-org/xerj": {

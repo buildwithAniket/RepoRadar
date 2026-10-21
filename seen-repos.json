@@ -143,6 +143,15 @@
     "stars_at_check": 32083,
     "verdict": "fit"
   },
+  "Graphify-Labs/graphify": {
+    "first_seen": "2026-10-21",
+    "last_checked": "2026-10-21",
+    "latest_release_at_check": "2026-10-20T16:29:43Z",
+    "profile_checked_against": "2026-10-21",
+    "reason": "This repository aligns directly with the profile's focus on AI agents, coding assistants (such as Claude Code, Codex, and Cursor), and developer productivity tooling. By offering a deterministic AST-based codebase knowledge graph without external vector stores, it delivers an innovative approach to augmenting coding agent context and reasoning capabilities.",
+    "stars_at_check": 130617,
+    "verdict": "fit"
+  },
   "HKUDS/CLI-Anything": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -1475,6 +1484,15 @@
     "stars_at_check": 5117,
     "verdict": "fit"
   },
+  "sickn33/agentic-awesome-skills": {
+    "first_seen": "2026-10-21",
+    "last_checked": "2026-10-21",
+    "latest_release_at_check": "2026-10-20T18:04:36Z",
+    "profile_checked_against": "2026-10-21",
+    "reason": "This repository strongly corresponds with the profile's emphasis on autonomous agent orchestration, local agent runners, and developer tooling. Offering a local, agent-first control plane with MCP integration, stack validation, and extensive agentic skill management makes it highly relevant to agent runtime architecture.",
+    "stars_at_check": 48216,
+    "verdict": "fit"
+  },
   "sngyai/Sequoia-X": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -1691,6 +1709,15 @@
     "stars_at_check": 34713,
     "verdict": "fit"
   },
+  "vllm-project/vllm": {
+    "first_seen": "2026-10-21",
+    "last_checked": "2026-10-21",
+    "latest_release_at_check": "2026-10-18T06:50:48Z",
+    "profile_checked_against": "2026-10-21",
+    "reason": "This repository aligns with the profile's focus on high-performance Python systems and infrastructure for local and cloud LLM execution. As the standard high-throughput, memory-efficient inference engine powering modern structured generation and agent backends, it represents critical foundational technology for LLM orchestration.",
+    "stars_at_check": 94557,
+    "verdict": "fit"
+  },
   "vxcontrol/pentagi": {
     "first_seen": "2026-10-15",
     "last_checked": "2026-10-15",
@@ -1717,6 +1744,15 @@
     "reason": "Does not align with the profile due to an absence of repository documentation, description, or clear relevance to core focus areas like autonomous agents, FinTech systems, career operations, or developer tooling.",
     "stars_at_check": 6311,
     "verdict": "not-fit"
+  },
+  "wshobson/agents": {
+    "first_seen": "2026-10-21",
+    "last_checked": "2026-10-21",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-21",
+    "reason": "This project fits the profile's core interest in AI agent orchestration and coding agent environments. Providing a multi-harness plugin marketplace across leading agent runtimes such as Claude Code, Cursor, and Codex directly supports developer workflows and multi-agent extensibility.",
+    "stars_at_check": 41348,
+    "verdict": "fit"
   },
   "xerj-org/xerj": {
     "first_seen": "2026-10-16",

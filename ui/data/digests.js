@@ -4352,26 +4352,151 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-21": {
+    "date": "2026-10-21",
+    "evaluatedCount": 4,
+    "skippedCount": 11,
+    "stats": {
+      "fit": 4,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 11,
+      "fit": 4,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "Graphify-Labs/graphify",
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "stars": 130617,
+        "language": "Unknown",
+        "pushedAt": "2026-10-20",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's focus on AI agents, coding assistants (such as Claude Code, Codex, and Cursor), and developer productivity tooling. By offering a deterministic AST-based codebase knowledge graph without external vector stores, it delivers an innovative approach to augmenting coding agent context and reasoning capabilities.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "useCases": [
+          {
+            "title": "Augment coding assistants with deterministic codebase graphs",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate local AST-based knowledge graphs into coding agents to replace raw file grepping and significantly cut token consumption.",
+            "firstStep": "Run `uv tool install graphifyy` followed by `graphify install` to register the skill."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "wshobson/agents",
+        "owner": "wshobson",
+        "name": "agents",
+        "stars": 41348,
+        "language": "Unknown",
+        "pushedAt": "2026-10-21",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project fits the profile's core interest in AI agent orchestration and coding agent environments. Providing a multi-harness plugin marketplace across leading agent runtimes such as Claude Code, Cursor, and Codex directly supports developer workflows and multi-agent extensibility.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/wshobson/agents",
+        "useCases": [
+          {
+            "title": "Standardize multi-harness AI agent workflows",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "The profile can unify agentic plugins, skills, and commands across multiple development runtimes like Claude Code, Cursor, and Codex. This ensures consistent autonomous coding agent behavior regardless of the underlying harness.",
+            "firstStep": "Run `/plugin marketplace add wshobson/agents` inside Claude Code to register the marketplace and install required components."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "sickn33/agentic-awesome-skills",
+        "owner": "sickn33",
+        "name": "agentic-awesome-skills",
+        "stars": 48216,
+        "language": "Markdown",
+        "pushedAt": "2026-10-20",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository strongly corresponds with the profile's emphasis on autonomous agent orchestration, local agent runners, and developer tooling. Offering a local, agent-first control plane with MCP integration, stack validation, and extensive agentic skill management makes it highly relevant to agent runtime architecture.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/sickn33/agentic-awesome-skills",
+        "useCases": [
+          {
+            "title": "Validate agent skill manifests in developer workflows",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Standardize local developer workflows by validating agent-selected manifest files and generating execution previews via CLI. This prevents structural and identity errors in selected skill sets before any setup changes occur.",
+            "firstStep": "Validate an existing `aas-stack.json` manifest in your workspace by running `aas stack validate`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "vllm-project/vllm",
+        "owner": "vllm-project",
+        "name": "vllm",
+        "stars": 94557,
+        "language": "Python",
+        "pushedAt": "2026-10-18",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns with the profile's focus on high-performance Python systems and infrastructure for local and cloud LLM execution. As the standard high-throughput, memory-efficient inference engine powering modern structured generation and agent backends, it represents critical foundational technology for LLM orchestration.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vllm-project/vllm",
+        "useCases": [
+          {
+            "title": "Serve local backends for multi-agent workflows",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Deploy high-throughput open-weights LLMs using vLLM's server with built-in tool calling and structured output parsing. This provides low-latency execution and prefix caching for autonomous agent loops without relying on cloud API availability.",
+            "firstStep": "Install the dependencies with `uv pip install vllm` and run `vllm download-kernels` before launching an OpenAI-compatible endpoint for structured generation testing."
+          }
+        ],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-20",
+  value: "2026-10-21",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-20",
+  value: "2026-10-21",
   enumerable: false,
   configurable: true,
   writable: true

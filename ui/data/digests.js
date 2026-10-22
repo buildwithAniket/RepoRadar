@@ -1047,7 +1047,7 @@ window.REPORADAR_DIGESTS = {
         "id": "supabase/supabase",
         "owner": "supabase",
         "name": "supabase",
-        "stars": 109862,
+        "stars": 113165,
         "language": "TypeScript",
         "pushedAt": "2026-08-07",
         "confidence": "medium",
@@ -4477,26 +4477,132 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-22": {
+    "date": "2026-10-22",
+    "evaluatedCount": 3,
+    "skippedCount": 9,
+    "stats": {
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 9,
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "strelov1/freehire",
+        "owner": "strelov1",
+        "name": "freehire",
+        "stars": 2543,
+        "language": "Unknown",
+        "pushedAt": "2026-10-21",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Freehire directly aligns with the profile's focus on Career-Ops & Workflow Automation as an open-source search engine tailored for job seekers. Its tooling around opportunity aggregation and career discovery fits squarely into the candidate tracking, talent discovery, and job pipeline automation priorities.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/strelov1/freehire",
+        "useCases": [
+          {
+            "title": "Query ATS job listings via API",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Access deduplicated job postings crawled directly from company career pages to feed automated job tracking pipelines and candidate discovery workflows.",
+            "firstStep": "Run `curl localhost:8080/api/v1/jobs` to inspect the structured JSON schema for live job postings."
+          },
+          {
+            "title": "Self-host local job search infrastructure",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Spin up the full search engine, vector database, and Meilisearch index locally to build an independent, privacy-focused career management stack.",
+            "firstStep": "Run `make up` to launch the API, PostgreSQL, Meilisearch, Redis, and S3 containers."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "twentyhq/twenty",
+        "owner": "twentyhq",
+        "name": "twenty",
+        "stars": 59379,
+        "language": "Unknown",
+        "pushedAt": "2026-10-21",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "Twenty is an open-source, AI-designed CRM with modern workflow orchestration and relational pipeline capabilities. Although its primary domain is customer relationship management rather than talent tracking or algorithmic finance, its extensible AI-native pipeline architecture overlaps sufficiently with the profile's workflow automation interests to warrant consideration.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/twentyhq/twenty",
+        "useCases": [
+          {
+            "title": "Build a candidate pipeline tracker using code primitives",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Replace rigid ATS software by defining candidate, interview, and offer objects directly as code within Twenty's extensible architecture. This brings version control, custom schema fields, and automated tracking to talent discovery pipelines.",
+            "firstStep": "Run `npx create-twenty-app my-app` to scaffold a workspace application and define custom candidate schema models with `twenty-sdk/define`."
+          },
+          {
+            "title": "Integrate Twenty app skills into coding agent runners",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Equip local coding agents like Claude Code or Codex with specialized capabilities to construct and modify CRM objects, workflows, and logic programmatically. This allows autonomous agents to manage schema migrations and business logic directly in Twenty.",
+            "firstStep": "Run `npx skills add https://github.com/twentyhq/twenty/tree/agent-skills --list` to install skill definitions into the agent environment."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "supabase/supabase",
+        "owner": "supabase",
+        "name": "supabase",
+        "stars": 113165,
+        "language": "TypeScript",
+        "pushedAt": "2026-08-07",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While Supabase is an established open-source Postgres and backend-as-a-service platform with support for AI applications and vector embeddings, it represents general-purpose cloud infrastructure rather than the profile's targeted focus areas of AI agent orchestration, career-ops pipelines, fintech architecture, or specialized developer productivity utilities.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/supabase/supabase",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-21",
+  value: "2026-10-22",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-21",
+  value: "2026-10-22",
   enumerable: false,
   configurable: true,
   writable: true

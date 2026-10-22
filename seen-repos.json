@@ -1529,14 +1529,23 @@
     "stars_at_check": 8328,
     "verdict": "fit"
   },
+  "strelov1/freehire": {
+    "first_seen": "2026-10-22",
+    "last_checked": "2026-10-22",
+    "latest_release_at_check": "2026-10-21T04:15:11Z",
+    "profile_checked_against": "2026-10-22",
+    "reason": "Freehire directly aligns with the profile's focus on Career-Ops & Workflow Automation as an open-source search engine tailored for job seekers. Its tooling around opportunity aggregation and career discovery fits squarely into the candidate tracking, talent discovery, and job pipeline automation priorities.",
+    "stars_at_check": 2543,
+    "verdict": "fit"
+  },
   "supabase/supabase": {
     "first_seen": "2026-09-17",
-    "last_checked": "2026-09-17",
+    "last_checked": "2026-10-22",
     "latest_release_at_check": "2026-08-07T13:57:57Z",
-    "profile_checked_against": "2026-09-17",
-    "reason": "A powerful backend platform that could serve as the infrastructure for your career-ops or financial tracking applications, though it is a general-purpose tool rather than a specialized agentic framework.",
-    "stars_at_check": 109862,
-    "verdict": "maybe"
+    "profile_checked_against": "2026-10-22",
+    "reason": "While Supabase is an established open-source Postgres and backend-as-a-service platform with support for AI applications and vector embeddings, it represents general-purpose cloud infrastructure rather than the profile's targeted focus areas of AI agent orchestration, career-ops pipelines, fintech architecture, or specialized developer productivity utilities.",
+    "stars_at_check": 113165,
+    "verdict": "not-fit"
   },
   "superdesigndev/treg": {
     "first_seen": "2026-09-22",
@@ -1663,6 +1672,15 @@
     "reason": "Highly relevant to your developer productivity focus; it provides a structured way to generate verifiable architecture diagrams, which is a high-value skill for AI-assisted software engineering workflows.",
     "stars_at_check": 0,
     "verdict": "fit"
+  },
+  "twentyhq/twenty": {
+    "first_seen": "2026-10-22",
+    "last_checked": "2026-10-22",
+    "latest_release_at_check": "2026-10-21T10:13:13Z",
+    "profile_checked_against": "2026-10-22",
+    "reason": "Twenty is an open-source, AI-designed CRM with modern workflow orchestration and relational pipeline capabilities. Although its primary domain is customer relationship management rather than talent tracking or algorithmic finance, its extensible AI-native pipeline architecture overlaps sufficiently with the profile's workflow automation interests to warrant consideration.",
+    "stars_at_check": 59379,
+    "verdict": "maybe"
   },
   "twostraws/SwiftUI-Agent-Skill": {
     "first_seen": "2026-10-10",

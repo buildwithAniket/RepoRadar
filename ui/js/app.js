@@ -1,32 +1,16 @@
-import { initScene, getDiscs, buildDiscs, disposeDiscs, focusDisc, settleDiscs, pickDiscIndex, setDragging, dragFeedback, releaseBrokenDisc, exitEdition, enterEdition } from './scene.js';
-import { getBrokenDisc, isBrokenDiscVisible } from './broken-disc.js';
-import { initEditions, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition, adjacentDate } from './editions.js';
+import { initScene, getDiscs, buildDiscs, disposeDiscs, focusDisc, exitEdition, enterEdition } from './scene.js';
+import { getBrokenDisc } from './broken-disc.js';
+import { initEditions, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition } from './editions.js';
 import { renderRepo, renderEmptyEdition } from './docket.js';
 import { renderFilmstrip, setActiveFrame } from './filmstrip.js';
-import { initTracklist, renderTracklist, updateTracklistActive, openTracklist, closeTracklist, toggleTracklist, isTracklistOpen, resetTracklist, refocusIfOpen, handleTracklistKeyDown } from './tracklist.js';
+import { initTracklist, renderTracklist, updateTracklistActive, openTracklist, closeTracklist, toggleTracklist, isTracklistOpen, resetTracklist, refocusIfOpen } from './tracklist.js';
+import { announce as announceA11y } from './a11y.js';
+import { initTheme } from './theme.js';
+import { initInput } from './input.js';
 
-
-  // ─── Accessibility & Media Preferences ───
-  let a11yTimer = null;
-  function announceA11y(msg) {
-    const announcer = document.getElementById('a11y-announcer');
-    if (announcer) {
-      if (a11yTimer) clearTimeout(a11yTimer);
-      announcer.textContent = '';
-      a11yTimer = setTimeout(() => {
-        announcer.textContent = msg;
-        a11yTimer = null;
-      }, 40);
-    }
-  }
-
-  const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
   // ─── Data Ingestion & State ───
   let currentIndex = 0;
-  let isDragging = false;
-  let startX = 0;
-  let dragDelta = 0;
   let isSwitchingDate = false;
 
   await initEditions();
@@ -178,89 +162,6 @@ import { initTracklist, renderTracklist, updateTracklistActive, openTracklist, c
     };
   }
 
-  // ─── Interaction Handlers ───
-
-  function handleKeyDown(e) {
-    if (handleTracklistKeyDown(e)) return;
-
-    if (e.key === '[' || e.key === '{') {
-      // Navigate previous edition
-      const prevDate = adjacentDate(-1);
-      if (prevDate) switchEdition(prevDate);
-    } else if (e.key === ']' || e.key === '}') {
-      // Navigate next edition
-      const nextDate = adjacentDate(1);
-      if (nextDate) switchEdition(nextDate);
-    } else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {
-      navigateTo(currentIndex + 1);
-    } else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {
-      navigateTo(currentIndex - 1);
-    }
-  }
-
-  let wheelDebounce = false;
-  function handleWheel(e) {
-    if (repos.length <= 1) return;
-    e.preventDefault();
-    if (wheelDebounce) return;
-    wheelDebounce = true;
-    setTimeout(() => wheelDebounce = false, 320);
-
-    if (e.deltaY > 20 || e.deltaX > 20) {
-      navigateTo(currentIndex + 1);
-    } else if (e.deltaY < -20 || e.deltaX < -20) {
-      navigateTo(currentIndex - 1);
-    }
-  }
-
-  function onPointerDown(e) {
-    if (repos.length === 0 && !isBrokenDiscVisible()) return;
-    isDragging = true;
-    setDragging(true);
-    startX = e.clientX || (e.touches && e.touches[0].clientX);
-    dragDelta = 0;
-  }
-
-  function onPointerMove(e) {
-    if (!isDragging) return;
-    const curX = e.clientX || (e.touches && e.touches[0].clientX);
-    dragDelta = curX - startX;
-    
-    dragFeedback(dragDelta);
-  }
-
-  function onPointerUp(e) {
-    if (!isDragging) return;
-    isDragging = false;
-    setDragging(false);
-
-    releaseBrokenDisc(dragDelta);
-
-    // Click detection (small drag threshold)
-    if (Math.abs(dragDelta) < 10 && repos.length > 0) {
-      const clientX = e.clientX !== undefined ? e.clientX : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : null);
-      const clientY = e.clientY !== undefined ? e.clientY : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientY : null);
-
-      if (clientX !== null && clientY !== null) {
-        const hitIndex = pickDiscIndex(clientX, clientY);
-        if (hitIndex !== null) {
-          navigateTo(hitIndex);
-          return;
-        }
-      }
-    }
-
-    if (repos.length > 1) {
-      if (dragDelta < -45) {
-        navigateTo(currentIndex + 1);
-      } else if (dragDelta > 45) {
-        navigateTo(currentIndex - 1);
-      } else {
-        settleDiscs();
-      }
-    }
-  }
-
   // ─── Bootstrap ───
 
   function init() {
@@ -326,54 +227,15 @@ import { initTracklist, renderTracklist, updateTracklistActive, openTracklist, c
       }
     }
 
-    // Theme Management
-    function getActiveTheme() {
-      const explicit = document.documentElement.getAttribute('data-theme');
-      if (explicit === 'dark' || explicit === 'light') return explicit;
-      return systemDarkQuery.matches ? 'dark' : 'light';
-    }
+    initTheme({ announce: announceA11y });
 
-    function applyTheme(theme, save = true) {
-      document.documentElement.setAttribute('data-theme', theme);
-      const meta = document.querySelector('meta[name="color-scheme"]');
-      if (meta) meta.content = theme;
-      const themeBtn = document.getElementById('theme-btn');
-      if (themeBtn) {
-        themeBtn.textContent = theme === 'dark' ? 'INVERT LIGHT' : 'INVERT DARK';
-        themeBtn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
-      }
-      if (save) {
-        try { localStorage.setItem('reporadar-theme', theme); } catch (e) {}
-      }
-    }
-
-    // Initialize button text & state based on active theme
-    const initialTheme = getActiveTheme();
-    applyTheme(initialTheme, false);
-
-    const themeBtn = document.getElementById('theme-btn');
-    if (themeBtn) {
-      themeBtn.addEventListener('click', () => {
-        const current = getActiveTheme();
-        const next = current === 'dark' ? 'light' : 'dark';
-        applyTheme(next, true);
-        announceA11y(`Color scheme changed to ${next} mode`);
-      });
-    }
-
-    // React to system OS color scheme changes if user hasn't explicitly set a preference
-    systemDarkQuery.addEventListener('change', (e) => {
-      if (!localStorage.getItem('reporadar-theme')) {
-        applyTheme(e.matches ? 'dark' : 'light', false);
-      }
+    initInput({
+      container,
+      getRepoCount: () => repos.length,
+      getActiveIndex: () => currentIndex,
+      navigateTo,
+      switchEdition
     });
-
-    // Event listeners
-    window.addEventListener('keydown', handleKeyDown);
-    container.addEventListener('wheel', handleWheel, { passive: false });
-    container.addEventListener('pointerdown', onPointerDown);
-    window.addEventListener('pointermove', onPointerMove);
-    window.addEventListener('pointerup', onPointerUp);
   }
 
   if (document.readyState === 'loading') {

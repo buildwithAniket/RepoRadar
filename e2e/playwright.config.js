@@ -4,6 +4,8 @@ module.exports = defineConfig({
   testDir: './tests',
   timeout: 30000,
   retries: process.env.CI ? 1 : 0,
+  // Software WebGL starves when spec files run in parallel pages; keep one worker.
+  workers: 1,
   use: {
     baseURL: 'http://localhost:8123',
     launchOptions: { args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] },

@@ -1,7 +1,8 @@
 import { createConcentricGroovesTexture, createLabelTexture } from './disc-textures.js';
-import { initEditions, getAvailableDates, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition, adjacentDate } from './editions.js';
+import { initEditions, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition, adjacentDate } from './editions.js';
 import { repoCode, escapeHtml, filterRepos } from './specs.js';
 import { renderRepo, renderEmptyEdition } from './docket.js';
+import { renderFilmstrip, setActiveFrame } from './filmstrip.js';
 
 
   // ─── Accessibility & Media Preferences ───
@@ -32,7 +33,6 @@ import { renderRepo, renderEmptyEdition } from './docket.js';
   let startX = 0;
   let dragDelta = 0;
   let isSwitchingDate = false;
-  let filmstripInteractionsBound = false;
   let isTracklistOpen = false;
   let currentTracklistFilter = 'all';
   let currentTracklistSearch = '';
@@ -782,115 +782,13 @@ import { renderRepo, renderEmptyEdition } from './docket.js';
     }
   }
 
-  // ─── Celluloid Filmstrip Timeline Component ───
-
-  function renderFilmstrip() {
-    const track = document.getElementById('filmstrip-track');
-    if (!track) return;
-    track.innerHTML = '';
-
-    getAvailableDates().forEach(dateStr => {
-      const digest = getDigest(dateStr);
-      const count = digest ? (digest.evaluatedCount !== undefined ? digest.evaluatedCount : (digest.repos ? digest.repos.length : 0)) : repos.length;
-      const hasFit = digest ? (digest.stats && digest.stats.fit > 0) : true;
-      const hasMaybe = digest ? (digest.stats && digest.stats.maybe > 0) : true;
-
-      const frame = document.createElement('button');
-      frame.type = 'button';
-      frame.className = `film-frame ${dateStr === getActiveDate() ? 'active' : ''}`;
-      frame.dataset.date = dateStr;
-      frame.setAttribute('aria-label', `Edition ${dateStr}, ${count} candidates`);
-
-      let dotClass = 'empty';
-      if (hasFit) dotClass = 'fit';
-      else if (hasMaybe) dotClass = 'maybe';
-
-      frame.innerHTML = `
-        <span class="film-frame-date">${dateStr}</span>
-        <span class="film-frame-meta">
-          <span class="film-frame-dot ${dotClass}"></span>
-          <span>${count} REPOS</span>
-        </span>
-      `;
-
-      track.appendChild(frame);
-    });
-
-    setupFilmstripInteractions();
-    scrollActiveFrameIntoView();
-  }
-
-  function updateFilmstripActive(dateStr) {
-    const frames = document.querySelectorAll('.film-frame');
-    frames.forEach(frame => {
-      frame.classList.toggle('active', frame.dataset.date === dateStr);
-    });
-    scrollActiveFrameIntoView();
-  }
-
-  function scrollActiveFrameIntoView() {
-    const activeFrame = document.querySelector('.film-frame.active');
-    const trackContainer = document.getElementById('filmstrip-track-container');
-    if (activeFrame && trackContainer) {
-      const containerRect = trackContainer.getBoundingClientRect();
-      const frameRect = activeFrame.getBoundingClientRect();
-      const offset = (frameRect.left + frameRect.width / 2) - (containerRect.left + containerRect.width / 2);
-      trackContainer.scrollBy({ left: offset, behavior: 'smooth' });
-    }
-  }
-
-  function setupFilmstripInteractions() {
-    if (filmstripInteractionsBound) return;
-    const trackContainer = document.getElementById('filmstrip-track-container');
-    if (!trackContainer) return;
-    filmstripInteractionsBound = true;
-
-    let isStripDragging = false;
-    let stripStartX = 0;
-    let stripScrollLeft = 0;
-    let stripMovedDist = 0;
-
-    trackContainer.addEventListener('pointerdown', (e) => {
-      isStripDragging = true;
-      stripStartX = e.clientX;
-      stripScrollLeft = trackContainer.scrollLeft;
-      stripMovedDist = 0;
-    });
-
-    window.addEventListener('pointermove', (e) => {
-      if (!isStripDragging) return;
-      const delta = e.clientX - stripStartX;
-      stripMovedDist = Math.abs(delta);
-      if (stripMovedDist >= 5) {
-        trackContainer.scrollLeft = stripScrollLeft - delta;
-      }
-    });
-
-    window.addEventListener('pointerup', () => {
-      if (!isStripDragging) return;
-      isStripDragging = false;
-    });
-
-    trackContainer.addEventListener('click', (e) => {
-      if (stripMovedDist >= 5) {
-        e.preventDefault();
-        e.stopPropagation();
-        return;
-      }
-      const frame = e.target.closest('.film-frame');
-      if (frame && frame.dataset.date) {
-        switchEdition(frame.dataset.date);
-      }
-    });
-  }
-
   // ─── 3D Turntable Dataset Swapping Choreography ───
 
   function switchEdition(newDate) {
     if (isSwitchingDate || !canSwitchTo(newDate)) return;
     isSwitchingDate = true;
 
-    updateFilmstripActive(newDate);
+    setActiveFrame(newDate);
 
     const performMount = () => {
       disposeDiscs();
@@ -1317,7 +1215,7 @@ import { renderRepo, renderEmptyEdition } from './docket.js';
   function init() {
     init3D();
     initScrubber();
-    renderFilmstrip();
+    renderFilmstrip(switchEdition);
     updateDocket(currentIndex);
     updateHeaderStats(getDigest(getActiveDate()));
     updateRadarBridge();

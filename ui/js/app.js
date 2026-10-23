@@ -7,6 +7,7 @@ import { initTracklist, renderTracklist, updateTracklistActive, openTracklist, c
 import { announce as announceA11y } from './a11y.js';
 import { initTheme } from './theme.js';
 import { initInput } from './input.js';
+import { verdictPresentation } from './specs.js';
 
 
   // ─── Data Ingestion & State ───
@@ -22,9 +23,9 @@ import { initInput } from './input.js';
   // ─── Header Statistics Dynamic Binding ───
   function updateHeaderStats(digest) {
     const stats = digest?.stats || (repos.length > 0 ? {
-      fit: repos.filter(r => r.verdict === 'fit').length,
-      maybe: repos.filter(r => r.verdict === 'maybe').length,
-      notFit: repos.filter(r => r.verdict === 'not-fit').length,
+      fit: repos.filter(r => verdictPresentation(r).key === 'fit').length,
+      maybe: repos.filter(r => verdictPresentation(r).key === 'maybe').length,
+      notFit: repos.filter(r => verdictPresentation(r).key === 'not-fit').length,
       total: repos.length
     } : { fit: 0, maybe: 0, notFit: 0, total: 0 });
 
@@ -63,7 +64,7 @@ import { initInput } from './input.js';
 
     renderRepo(repo, { index, total: repos.length, date: getActiveDate() }, () => {
       updateScrubber(index);
-      announceA11y(`Showing repository ${index + 1} of ${repos.length}: ${repo.name} by ${repo.owner}. Verdict: ${repo.verdictLabel || repo.verdict}`);
+      announceA11y(`Showing repository ${index + 1} of ${repos.length}: ${repo.name} by ${repo.owner}. Verdict: ${verdictPresentation(repo).label}`);
     });
   }
 

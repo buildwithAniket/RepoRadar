@@ -6,7 +6,7 @@
 //   announce(msg)     -> screen-reader announcement
 //   onOpenChange()    -> called after the drawer opens or closes
 import { getActiveDate, getActiveRepos } from './editions.js';
-import { repoCode, escapeHtml, filterRepos } from './specs.js';
+import { repoCode, escapeHtml, filterRepos, verdictPresentation, filterName } from './specs.js';
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -138,13 +138,7 @@ export function renderTracklist() {
     }));
 
   if (filtered.length === 0) {
-    const filterNames = {
-      all: 'ARCHIVE',
-      fit: 'SELECTS',
-      maybe: 'REVIEW',
-      'not-fit': 'PASS'
-    };
-    const activeName = filterNames[filter] || 'ALL';
+    const activeName = filterName(filter);
     body.innerHTML = `
       <div class="tracklist-empty-slate">
         <div class="empty-slate-icon" aria-hidden="true">
@@ -198,17 +192,7 @@ export function renderTracklist() {
 
     const { repo, idx, trackCode } = item;
     const isAct = (idx === deps.getActiveIndex());
-    const verdict = repo.verdict || 'not-fit';
-    const verdictLabel = repo.verdictLabel || (verdict === 'fit' ? 'OFFICIAL SELECTION' : (verdict === 'maybe' ? 'UNDER REVIEW' : 'ARCHIVED / PASS'));
-
-    let badgeIconSvg = '';
-    if (verdict === 'fit') {
-      badgeIconSvg = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z"/></svg>';
-    } else if (verdict === 'maybe') {
-      badgeIconSvg = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>';
-    } else {
-      badgeIconSvg = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
-    }
+    const { key: verdict, label: verdictLabel, icon: badgeIconSvg } = verdictPresentation(repo);
 
     const row = document.createElement('button');
     row.type = 'button';
@@ -380,14 +364,7 @@ export function initTracklist(config) {
       updateFilterPillsUI();
       renderTracklist();
       const visibleRows = document.querySelectorAll('.tracklist-row').length;
-      const filterLabels = {
-        all: 'ALL',
-        fit: 'SELECTS',
-        maybe: 'REVIEW',
-        'not-fit': 'PASS'
-      };
-      const label = filterLabels[filter] || filter.toUpperCase();
-      announceA11y(`Filtered by ${label}: ${visibleRows} track${visibleRows === 1 ? '' : 's'} visible.`);
+      announceA11y(`Filtered by ${filterName(filter)}: ${visibleRows} track${visibleRows === 1 ? '' : 's'} visible.`);
     });
   });
 

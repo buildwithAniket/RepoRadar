@@ -1,7 +1,7 @@
 // Docket: owns rendering of the detail panel (Verdict laurel, title, stats, critic quote,
 // Director's Notes use-cases, specs grid, links) and its empty-Edition state.
 // Callers pass what to show and an optional callback run once the Docket has updated.
-import { isoFromStars, gaugeFromLanguage, exposureFromConfidence } from './specs.js';
+import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, verdictPresentation } from './specs.js';
 
 const SWITCH_DELAY_MS = 200;
 
@@ -24,8 +24,9 @@ export function renderRepo(repo, { index, total, date }, onRendered) {
     setText('docket-tag', `ARCHIVE ENTRY · ${String(index + 1).padStart(2, '0')} OF ${String(total).padStart(2, '0')}`);
 
     // Laurel & Badge
-    document.getElementById('docket-laurel').className = `verdict-laurel-badge ${repo.verdict || 'not-fit'}`;
-    setText('docket-verdict-text', repo.verdictLabel || 'VERDICT PENDING');
+    const verdict = verdictPresentation(repo);
+    document.getElementById('docket-laurel').className = `verdict-laurel-badge ${verdict.key}`;
+    setText('docket-verdict-text', verdict.label);
 
     // Title & Studio
     setText('docket-title', repo.name || 'Untitled');

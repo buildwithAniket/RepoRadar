@@ -7,6 +7,8 @@ import {
   repoCode,
   escapeHtml,
   filterRepos,
+  verdictPresentation,
+  filterName,
 } from '../js/specs.js';
 
 test('isoFromStars: thresholds are inclusive on the upper bound', () => {
@@ -101,4 +103,65 @@ test('filterRepos: whitespace-only search is empty; unmatched search and empty l
   assert.equal(filterRepos(repos, { verdict: 'all', search: '   ' }).length, 4);
   assert.deepEqual(filterRepos(repos, { verdict: 'all', search: 'zzz' }), []);
   assert.deepEqual(filterRepos([], { verdict: 'all', search: '' }), []);
+});
+
+test('verdictPresentation: each Verdict key maps to its canonical label, filter name, glyph and icon', () => {
+  const fit = verdictPresentation({ verdict: 'fit' });
+  const maybe = verdictPresentation({ verdict: 'maybe' });
+  const notFit = verdictPresentation({ verdict: 'not-fit' });
+  assert.deepEqual([fit.key, fit.label, fit.filterName, fit.glyph], ['fit', 'OFFICIAL SELECTION', 'SELECTS', '★']);
+  assert.deepEqual([maybe.key, maybe.label, maybe.filterName, maybe.glyph], ['maybe', 'UNDER REVIEW', 'REVIEW', '◐']);
+  assert.deepEqual([notFit.key, notFit.label, notFit.filterName, notFit.glyph], ['not-fit', 'ARCHIVED / PASS', 'PASS', '✕']);
+  for (const p of [fit, maybe, notFit]) assert.match(p.icon, /^<svg /);
+  assert.equal(new Set([fit.icon, maybe.icon, notFit.icon]).size, 3);
+});
+
+test('verdictPresentation: a Repo\'s own verdictLabel overrides the canonical label only', () => {
+  const p = verdictPresentation({ verdict: 'fit', verdictLabel: 'CRITICS PICK' });
+  assert.equal(p.label, 'CRITICS PICK');
+  assert.equal(p.key, 'fit');
+  assert.equal(p.filterName, 'SELECTS');
+  assert.equal(p.glyph, '★');
+});
+
+test('verdictPresentation: an empty, blank or non-string verdictLabel falls back to the canonical label', () => {
+  assert.equal(verdictPresentation({ verdict: 'maybe', verdictLabel: '' }).label, 'UNDER REVIEW');
+  assert.equal(verdictPresentation({ verdict: 'maybe', verdictLabel: null }).label, 'UNDER REVIEW');
+  assert.equal(verdictPresentation({ verdict: 'maybe', verdictLabel: 7 }).label, 'UNDER REVIEW');
+  assert.equal(verdictPresentation({ verdict: 'maybe', verdictLabel: '   ' }).label, 'UNDER REVIEW');
+});
+
+test('verdictPresentation: missing or unknown Verdicts are not fit', () => {
+  const notFit = verdictPresentation({ verdict: 'not-fit' });
+  assert.deepEqual(verdictPresentation({}), notFit);
+  assert.deepEqual(verdictPresentation({ verdict: 'bogus' }), notFit);
+  assert.deepEqual(verdictPresentation({ verdict: 'toString' }), notFit);
+  assert.deepEqual(verdictPresentation({ verdict: 'all' }), notFit);
+  assert.deepEqual(verdictPresentation(null), notFit);
+  assert.deepEqual(verdictPresentation(undefined), notFit);
+});
+
+test('verdictPresentation: an unknown Verdict still honours the Repo\'s own label', () => {
+  const p = verdictPresentation({ verdict: 'bogus', verdictLabel: 'VERDICT PENDING' });
+  assert.equal(p.key, 'not-fit');
+  assert.equal(p.label, 'VERDICT PENDING');
+});
+
+test('filterName: one name per Tracklist filter value, "all" reads ALL', () => {
+  assert.equal(filterName('all'), 'ALL');
+  assert.equal(filterName('fit'), 'SELECTS');
+  assert.equal(filterName('maybe'), 'REVIEW');
+  assert.equal(filterName('not-fit'), 'PASS');
+});
+
+test('filterName: unrecognised values fall back to ALL', () => {
+  assert.equal(filterName('bogus'), 'ALL');
+  assert.equal(filterName(), 'ALL');
+  assert.equal(filterName('toString'), 'ALL');
+});
+
+test('filterRepos: Repos with a missing or unknown Verdict match the not-fit filter', () => {
+  const odd = [{ name: 'a' }, { name: 'b', verdict: 'bogus' }, { name: 'c', verdict: 'fit' }];
+  assert.deepEqual(filterRepos(odd, { verdict: 'not-fit' }).map(i => i.idx), [0, 1]);
+  assert.deepEqual(filterRepos(odd, { verdict: 'fit' }).map(i => i.idx), [2]);
 });

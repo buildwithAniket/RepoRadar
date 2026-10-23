@@ -1,3 +1,5 @@
+import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, escapeHtml, filterRepos } from './specs.js';
+
 
   // ─── Fallback Sample Data (If window.REPORADAR_DIGESTS is absent) ───
   const fallbackRepos = [
@@ -106,37 +108,6 @@
       url: 'https://github.com/sngyai/Sequoia-X'
     }
   ];
-
-  // Cinematic mappings
-  const ISO_MAP = (stars = 0) => {
-    if (stars <= 50) return 'ISO 25 · MICRO NICHE';
-    if (stars <= 500) return 'ISO 50 · FINE GRAIN';
-    if (stars <= 2000) return 'ISO 100 · BALANCED';
-    if (stars <= 10000) return 'ISO 400 · HIGH SPEED';
-    if (stars <= 50000) return 'ISO 800 · PUSH PROCESS';
-    return 'ISO 1600 · ULTRA FAST';
-  };
-
-  const GAUGE_MAP = (lang = 'Unknown') => {
-    const map = {
-      'Python': 'Python · 16mm Reversal',
-      'TypeScript': 'TypeScript · 35mm Color Neg',
-      'JavaScript': 'JavaScript · Super 8mm',
-      'C': 'C · 70mm Direct Optical',
-      'C++': 'C++ · 65mm IMAX',
-      'Go': 'Go · 35mm VistaVision',
-      'Rust': 'Rust · Digital RAW 8K',
-      'Markdown': 'Markdown · Contact Sheet',
-      'Unknown': 'Unknown · 35mm Format'
-    };
-    return map[lang] || `${lang} · 35mm Format`;
-  };
-
-  const EXPOSURE_MAP = (conf = 'low') => {
-    if (conf === 'high') return '+1 EV · HIGH CERTAINTY';
-    if (conf === 'medium') return '±0 EV · BALANCED READ';
-    return '-1 EV · LOW CONFIDENCE';
-  };
 
   // ─── Accessibility & Media Preferences ───
   let a11yTimer = null;
@@ -854,9 +825,9 @@
       renderUseCases(repo);
 
       // Spec Grid
-      document.getElementById('docket-iso').textContent = ISO_MAP(repo.stars || 0);
-      document.getElementById('docket-gauge').textContent = GAUGE_MAP(repo.language || 'Unknown');
-      document.getElementById('docket-exposure').textContent = EXPOSURE_MAP(repo.confidence || 'low');
+      document.getElementById('docket-iso').textContent = isoFromStars(repo.stars || 0);
+      document.getElementById('docket-gauge').textContent = gaugeFromLanguage(repo.language || 'Unknown');
+      document.getElementById('docket-exposure').textContent = exposureFromConfidence(repo.confidence || 'low');
       document.getElementById('docket-date').textContent = repo.pushedAt || activeDate || 'Unknown';
 
       // Links
@@ -996,26 +967,6 @@
 
   // ─── Gatefold Liner Tracklist Component ───
 
-  function getTrackCode(index, totalCount) {
-    if (!totalCount || totalCount <= 0) return 'A1';
-    const half = Math.ceil(totalCount / 2);
-    if (index < half) {
-      return 'A' + (index + 1);
-    } else {
-      return 'B' + (index - half + 1);
-    }
-  }
-
-  function escapeHtml(str) {
-    if (str === null || str === undefined) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#039;');
-  }
-
   function openTracklist() {
     if (isTracklistOpen) return;
     isTracklistOpen = true;
@@ -1119,27 +1070,13 @@
     const query = currentTracklistSearch.toLowerCase().trim();
     const half = Math.ceil(total / 2);
 
-    const mapped = repos.map((repo, idx) => ({
-      repo,
-      idx,
-      trackCode: getTrackCode(idx, total),
-      side: idx < half ? 'A' : 'B'
-    }));
-
-    const filtered = mapped.filter(item => {
-      if (currentTracklistFilter !== 'all' && item.repo.verdict !== currentTracklistFilter) {
-        return false;
-      }
-      if (query) {
-        const name = (item.repo.name || '').toLowerCase();
-        const studio = (item.repo.owner || '').toLowerCase();
-        const lang = (item.repo.language || '').toLowerCase();
-        if (!name.includes(query) && !studio.includes(query) && !lang.includes(query)) {
-          return false;
-        }
-      }
-      return true;
-    });
+    const filtered = filterRepos(repos, { verdict: currentTracklistFilter, search: currentTracklistSearch })
+      .map(({ repo, idx }) => ({
+        repo,
+        idx,
+        trackCode: repoCode(idx, total),
+        side: idx < half ? 'A' : 'B'
+      }));
 
     if (filtered.length === 0) {
       const filterNames = {
@@ -1261,7 +1198,7 @@
   function cueTrack(index) {
     if (!repos || repos.length === 0 || index < 0 || index >= repos.length) return;
     const repo = repos[index];
-    const trackCode = getTrackCode(index, repos.length);
+    const trackCode = repoCode(index, repos.length);
     if (index !== currentIndex) {
       navigateTo(index);
     }

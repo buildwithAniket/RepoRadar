@@ -7,6 +7,7 @@ import { initTracklist, renderTracklist, updateTracklistActive, openTracklist, c
 import { announce as announceA11y } from './a11y.js';
 import { initTheme } from './theme.js';
 import { initInput } from './input.js';
+import { copyText } from './clipboard.js';
 import { verdictPresentation } from './specs.js';
 
 
@@ -191,37 +192,14 @@ import { verdictPresentation } from './specs.js';
         if (!repo) return;
         const cloneUri = `git clone ${repo.url}.git`;
 
-        const notifySuccess = () => {
-          copyBtn.textContent = 'COPIED TO CLIPBOARD ✓';
-          announceA11y('Repository clone URI copied to clipboard');
-          setTimeout(() => { copyBtn.textContent = 'COPY CLONE URI'; }, 2000);
-        };
-
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(cloneUri)
-            .then(notifySuccess)
-            .catch(() => fallbackCopy(cloneUri, notifySuccess));
-        } else {
-          fallbackCopy(cloneUri, notifySuccess);
-        }
+        copyText(cloneUri)
+          .then(() => {
+            copyBtn.textContent = 'COPIED TO CLIPBOARD ✓';
+            announceA11y('Repository clone URI copied to clipboard');
+            setTimeout(() => { copyBtn.textContent = 'COPY CLONE URI'; }, 2000);
+          })
+          .catch((e) => console.error('Failed to copy', e));
       });
-    }
-
-    function fallbackCopy(text, cb) {
-      try {
-        const temp = document.createElement('textarea');
-        temp.value = text;
-        temp.style.position = 'fixed';
-        temp.style.opacity = '0';
-        document.body.appendChild(temp);
-        temp.focus();
-        temp.select();
-        document.execCommand('copy');
-        document.body.removeChild(temp);
-        cb();
-      } catch (e) {
-        console.error('Failed to copy', e);
-      }
     }
 
     initTheme({ announce: announceA11y });

@@ -108,6 +108,19 @@ import { verdictPresentation } from './specs.js';
     updateTracklistActive(currentIndex);
   }
 
+  // ─── Edition Mount ───
+
+  // Builds everything that shows the active Edition.
+  function mountEdition() {
+    buildDiscs(repos, getActiveDate());
+    initScrubber();
+    updateDocket(currentIndex);
+    updateHeaderStats();
+    updateRadarBridge();
+    renderTracklist();
+    updateTracklistActive(currentIndex);
+  }
+
   // ─── 3D Turntable Dataset Swapping Choreography ───
 
   function switchEdition(newDate) {
@@ -125,13 +138,7 @@ import { verdictPresentation } from './specs.js';
       // Reset tracklist search and filters so new edition is cleanly displayed
       resetTracklist();
 
-      updateHeaderStats();
-      buildDiscs(repos, getActiveDate());
-      initScrubber();
-      updateDocket(0);
-      updateRadarBridge();
-      renderTracklist();
-      updateTracklistActive(0);
+      mountEdition();
 
       refocusIfOpen();
 
@@ -162,20 +169,14 @@ import { verdictPresentation } from './specs.js';
 
   function init() {
     initScene(container);
-    buildDiscs(repos, getActiveDate());
-    initScrubber();
     renderFilmstrip(switchEdition);
-    updateDocket(currentIndex);
-    updateHeaderStats();
-    updateRadarBridge();
     initTracklist({
       getActiveIndex: () => currentIndex,
       navigateTo,
       announce: announceA11y,
       onOpenChange: updateRadarBridge
     });
-    renderTracklist();
-    updateTracklistActive(currentIndex);
+    mountEdition();
 
     // Navigation Buttons
     document.getElementById('prev-disc-btn').addEventListener('click', () => navigateTo(currentIndex - 1));

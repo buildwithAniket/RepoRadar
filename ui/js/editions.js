@@ -1,5 +1,6 @@
 // Editions: owns Digest access, the available Edition dates, the active Edition and switching.
 // State is module-private; other modules use the functions below.
+import { countVerdicts } from './specs.js';
 
 const FALLBACK_DATE = '2026-09-02';
 
@@ -42,6 +43,23 @@ export function getActiveRepos() {
 // The Digest entry for an Edition date, or null/undefined when there is none (fallback data).
 export function getDigest(date) {
   return digests ? digests[date] : null;
+}
+
+// An Edition's Repo count and Verdict stats: { count, stats: { fit, maybe, notFit, total } }.
+// Prefers the Digest's precomputed evaluated count and stats, and counts the Repos for
+// whatever it lacks (including the fallback Repos when there is no Digest).
+export function editionSummary(date) {
+  const digest = getDigest(date);
+  const repos = digest ? reposOf(digest) : activeRepos;
+  const counted = countVerdicts(repos);
+  const stats = digest && digest.stats ? {
+    fit: digest.stats.fit ?? 0,
+    maybe: digest.stats.maybe ?? 0,
+    notFit: digest.stats.notFit ?? 0,
+    total: digest.stats.total ?? repos.length
+  } : counted;
+  const count = digest && digest.evaluatedCount !== undefined ? digest.evaluatedCount : repos.length;
+  return { count, stats };
 }
 
 export function canSwitchTo(date) {

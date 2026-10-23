@@ -14,6 +14,14 @@ let repoCount = 0;
 let focusIndex = 0;
 let isDragging = false;
 
+// Discs further than this many places from the focused Disc are hidden.
+const VISIBLE_NEIGHBOURS = 5;
+
+// A Disc transition's duration in seconds, or an effectively instant one under reduced motion.
+function motionDuration(seconds) {
+  return prefersReducedMotion.matches ? 0.001 : seconds;
+}
+
 // ─── Public interface ───
 
 export function initScene(containerEl) {
@@ -227,7 +235,7 @@ export function releaseBrokenDisc(dragDelta) {
 
 // Animates the current Discs (or broken Disc) out, then calls onComplete. Calls it immediately if nothing is on stage.
 export function exitEdition(onComplete) {
-  const exitDur = prefersReducedMotion.matches ? 0.001 : 0.24;
+  const exitDur = motionDuration(0.24);
   if (discs.length > 0) {
     const exitTl = gsap.timeline({ onComplete });
     discs.forEach(disc => {
@@ -246,11 +254,11 @@ export function exitEdition(onComplete) {
 // Animates freshly built Discs rising into place, focused on the first.
 export function enterEdition() {
   if (discs.length > 0) {
-    const transDur = prefersReducedMotion.matches ? 0.001 : 0.5;
+    const transDur = motionDuration(0.5);
     discs.forEach((disc, i) => {
       const rel = i - focusIndex;
       const absRel = Math.abs(rel);
-      disc.visible = (absRel <= 5);
+      disc.visible = (absRel <= VISIBLE_NEIGHBOURS);
       if (!disc.visible) return;
 
       const target = getStageLayout(i, 0);
@@ -314,7 +322,7 @@ function updateDiscPositions(animate = true) {
     const rel = i - focusIndex;
     const absRel = Math.abs(rel);
     const wasVisible = disc.visible;
-    disc.visible = (absRel <= 5);
+    disc.visible = (absRel <= VISIBLE_NEIGHBOURS);
 
     if (!disc.visible) {
       return;
@@ -327,7 +335,7 @@ function updateDiscPositions(animate = true) {
         disc.position.set(layout.x, layout.y, layout.z);
         disc.scale.set(0.1, 0.1, 0.1);
       }
-      const animDuration = prefersReducedMotion.matches ? 0.001 : 0.7;
+      const animDuration = motionDuration(0.7);
       gsap.to(disc.position, {
         x: layout.x,
         y: layout.y,

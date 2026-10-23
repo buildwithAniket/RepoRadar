@@ -1,5 +1,6 @@
 // Disc groove and label texture drawing. Reads only its arguments and the
 // window.* vinyl image blobs; no access to application state.
+import { verdictPresentation } from './specs.js';
 
 // ─── Pre-load Photographic Vinyl Textures ───
 // Data URIs decode from memory near-instantly; preload at parse time
@@ -41,6 +42,14 @@ export function createConcentricGroovesTexture() {
   return tex;
 }
 
+// Disc label colours per Verdict. The canvas can't read CSS tokens, so primary and border
+// mirror --laurel-fit / --laurel-maybe / --laurel-not-fit in css/tokens.css; keep them in step.
+const VERDICT_COLORS = {
+  'fit': { primary: '#1b5e20', border: 'rgba(27, 94, 32, 0.7)', bg: '#f5f3eb', accent: '#2e7d32', glyph: '#4ade80' },
+  'maybe': { primary: '#b45309', border: 'rgba(180, 83, 9, 0.7)', bg: '#f6f3ea', accent: '#d97706', glyph: '#fbbf24' },
+  'not-fit': { primary: '#52525b', border: 'rgba(82, 82, 91, 0.7)', bg: '#f3f1ec', accent: '#71717a', glyph: '#d4d4d8' }
+};
+
 export function createLabelTexture(repo, activeDate) {
   const size = 1024;
   const canvas = document.createElement('canvas');
@@ -48,13 +57,8 @@ export function createLabelTexture(repo, activeDate) {
   const ctx = canvas.getContext('2d');
   const cx = size / 2, cy = size / 2;
 
-  const verdict = repo.verdict || 'not-fit';
-  const verdictColors = {
-    fit: { primary: '#1b5e20', border: 'rgba(27, 94, 32, 0.7)', bg: '#f5f3eb', accent: '#2e7d32' },
-    maybe: { primary: '#b45309', border: 'rgba(180, 83, 9, 0.7)', bg: '#f6f3ea', accent: '#d97706' },
-    'not-fit': { primary: '#52525b', border: 'rgba(82, 82, 91, 0.7)', bg: '#f3f1ec', accent: '#71717a' }
-  };
-  const vColor = verdictColors[verdict] || verdictColors['not-fit'];
+  const verdict = verdictPresentation(repo);
+  const vColor = VERDICT_COLORS[verdict.key];
 
   // ─── LAYER 1: Photographic label from reference image ───
   // Use the FULL vinyl image and clip to label area — this gives us
@@ -205,12 +209,11 @@ export function createLabelTexture(repo, activeDate) {
   ctx.stroke();
 
   ctx.font = '700 20px "JetBrains Mono", monospace';
-  ctx.fillStyle = verdict === 'fit' ? '#4ade80' : (verdict === 'maybe' ? '#fbbf24' : '#d4d4d8');
-  const icon = verdict === 'fit' ? '★' : (verdict === 'maybe' ? '◐' : '✕');
-  ctx.fillText(icon, cx, my + 1);
+  ctx.fillStyle = vColor.glyph;
+  ctx.fillText(verdict.glyph, cx, my + 1);
 
   // BOTTOM EDITORIAL STRIP
-  const verdictLabel = (repo.verdictLabel || (verdict === 'fit' ? 'OFFICIAL SELECTION' : (verdict === 'maybe' ? 'UNDER REVIEW' : 'ARCHIVED / PASS'))).toUpperCase();
+  const verdictLabel = verdict.label.toUpperCase();
   ctx.font = '700 18px "Inter", -apple-system, sans-serif';
   ctx.fillStyle = vColor.primary;
   ctx.fillText(`[ ${verdictLabel} ]`, cx, cy + 225);

@@ -46,14 +46,13 @@ export function initInput({ container, getRepoCount, getActiveIndex, navigateTo,
     if (getRepoCount() === 0 && !isBrokenDiscVisible()) return;
     isDragging = true;
     setDragging(true);
-    startX = e.clientX || (e.touches && e.touches[0].clientX);
+    startX = e.clientX;
     dragDelta = 0;
   }
 
   function onPointerMove(e) {
     if (!isDragging) return;
-    const curX = e.clientX || (e.touches && e.touches[0].clientX);
-    dragDelta = curX - startX;
+    dragDelta = e.clientX - startX;
 
     dragFeedback(dragDelta);
   }
@@ -67,15 +66,10 @@ export function initInput({ container, getRepoCount, getActiveIndex, navigateTo,
 
     // Click detection (small drag threshold)
     if (Math.abs(dragDelta) < 10 && getRepoCount() > 0) {
-      const clientX = e.clientX !== undefined ? e.clientX : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : null);
-      const clientY = e.clientY !== undefined ? e.clientY : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientY : null);
-
-      if (clientX !== null && clientY !== null) {
-        const hitIndex = pickDiscIndex(clientX, clientY);
-        if (hitIndex !== null) {
-          navigateTo(hitIndex);
-          return;
-        }
+      const hitIndex = pickDiscIndex(e.clientX, e.clientY);
+      if (hitIndex !== null) {
+        navigateTo(hitIndex);
+        return;
       }
     }
 

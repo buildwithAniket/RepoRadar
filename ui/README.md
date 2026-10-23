@@ -61,7 +61,7 @@ ui/
     docket.js       Docket rendering
     filmstrip.js    Filmstrip (Edition timeline)
     tracklist.js    Tracklist drawer, search and filters
-    input.js, theme.js, a11y.js
+    input.js, theme.js, a11y.js, clipboard.js
     specs.js, fallback-repos.js
   lib/              vendored Three.js and GSAP
   data/digests.js   generated Digest (see src/build_ui_data.py)

@@ -6,7 +6,7 @@
 //   announce(msg)     -> screen-reader announcement
 //   onOpenChange()    -> called after the drawer opens or closes
 import { getActiveDate, getActiveRepos } from './editions.js';
-import { repoCode, escapeHtml, filterRepos } from './specs.js';
+import { repoPosition, escapeHtml, filterRepos, verdictPresentation, filterName } from './specs.js';
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -127,24 +127,15 @@ export function renderTracklist() {
   }
 
   const query = search.toLowerCase().trim();
-  const half = Math.ceil(total / 2);
 
   const filtered = filterRepos(repos, { verdict: filter, search: search })
-    .map(({ repo, idx }) => ({
-      repo,
-      idx,
-      trackCode: repoCode(idx, total),
-      side: idx < half ? 'A' : 'B'
-    }));
+    .map(({ repo, idx }) => {
+      const { code, side } = repoPosition(idx, total);
+      return { repo, idx, trackCode: code, side };
+    });
 
   if (filtered.length === 0) {
-    const filterNames = {
-      all: 'ARCHIVE',
-      fit: 'SELECTS',
-      maybe: 'REVIEW',
-      'not-fit': 'PASS'
-    };
-    const activeName = filterNames[filter] || 'ALL';
+    const activeName = filterName(filter);
     body.innerHTML = `
       <div class="tracklist-empty-slate">
         <div class="empty-slate-icon" aria-hidden="true">
@@ -162,21 +153,8 @@ export function renderTracklist() {
     const resetBtn = document.getElementById('tracklist-reset-btn');
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
-        search = '';
-        filter = 'all';
-        if (searchAnnounceTimer) {
-          clearTimeout(searchAnnounceTimer);
-          searchAnnounceTimer = null;
-        }
-        lastAnnouncedQuery = '';
-        const searchInput = document.getElementById('tracklist-search-input');
-        if (searchInput) {
-          searchInput.value = '';
-          searchInput.focus();
-        }
-        const clearBtn = document.getElementById('tracklist-clear-search');
-        if (clearBtn) clearBtn.style.display = 'none';
-        updateFilterPillsUI();
+        clearSearchState({ resetFilter: true });
+        document.getElementById('tracklist-search-input')?.focus();
         renderTracklist();
         announceA11y('Filters reset. Showing all tracks.');
       });
@@ -198,17 +176,7 @@ export function renderTracklist() {
 
     const { repo, idx, trackCode } = item;
     const isAct = (idx === deps.getActiveIndex());
-    const verdict = repo.verdict || 'not-fit';
-    const verdictLabel = repo.verdictLabel || (verdict === 'fit' ? 'OFFICIAL SELECTION' : (verdict === 'maybe' ? 'UNDER REVIEW' : 'ARCHIVED / PASS'));
-
-    let badgeIconSvg = '';
-    if (verdict === 'fit') {
-      badgeIconSvg = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z"/></svg>';
-    } else if (verdict === 'maybe') {
-      badgeIconSvg = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>';
-    } else {
-      badgeIconSvg = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
-    }
+    const { key: verdict, label: verdictLabel, icon: badgeIconSvg } = verdictPresentation(repo);
 
     const row = document.createElement('button');
     row.type = 'button';
@@ -258,7 +226,7 @@ function cueTrack(index) {
   const repos = getActiveRepos();
   if (!repos || repos.length === 0 || index < 0 || index >= repos.length) return;
   const repo = repos[index];
-  const trackCode = repoCode(index, repos.length);
+  const trackCode = repoPosition(index, repos.length).code;
   if (index !== deps.getActiveIndex()) {
     deps.navigateTo(index);
   }
@@ -313,6 +281,38 @@ function scrollActiveTrackIntoView() {
   }
 }
 
+// Clears the search text, its input and clear button, and any pending or remembered search
+// announcement, so none fires afterwards. With resetFilter, the Verdict filter returns to all.
+function clearSearchState({ resetFilter = false } = {}) {
+  search = '';
+  if (searchAnnounceTimer) {
+    clearTimeout(searchAnnounceTimer);
+    searchAnnounceTimer = null;
+  }
+  lastAnnouncedQuery = '';
+  const searchInput = document.getElementById('tracklist-search-input');
+  if (searchInput) searchInput.value = '';
+  const clearBtn = document.getElementById('tracklist-clear-search');
+  if (clearBtn) clearBtn.style.display = 'none';
+  if (resetFilter) {
+    filter = 'all';
+    updateFilterPillsUI();
+  }
+}
+
+// Focuses the filter bar: the active filter pill, else the first pill, else the search box.
+function focusFilterBar() {
+  const pill = document.querySelector('.tracklist-filter-pill.active') || document.querySelector('.tracklist-filter-pill');
+  if (pill) pill.focus();
+  else document.getElementById('tracklist-search-input')?.focus();
+}
+
+// The start of the list: the first row, else the reset button of the empty slate.
+function focusListStart() {
+  const target = document.querySelector('.tracklist-row') || document.getElementById('tracklist-reset-btn');
+  if (target) target.focus();
+}
+
 export function initTracklist(config) {
   deps = config;
 
@@ -359,15 +359,8 @@ export function initTracklist(config) {
 
   if (clearSearchBtn) {
     clearSearchBtn.addEventListener('click', () => {
-      if (searchInput) {
-        searchInput.value = '';
-        searchInput.focus();
-      }
-      search = '';
-      clearTimeout(searchAnnounceTimer);
-      searchAnnounceTimer = null;
-      lastAnnouncedQuery = '';
-      clearSearchBtn.style.display = 'none';
+      clearSearchState();
+      if (searchInput) searchInput.focus();
       renderTracklist();
       announceA11y('Search cleared. Showing all tracks.');
     });
@@ -380,14 +373,7 @@ export function initTracklist(config) {
       updateFilterPillsUI();
       renderTracklist();
       const visibleRows = document.querySelectorAll('.tracklist-row').length;
-      const filterLabels = {
-        all: 'ALL',
-        fit: 'SELECTS',
-        maybe: 'REVIEW',
-        'not-fit': 'PASS'
-      };
-      const label = filterLabels[filter] || filter.toUpperCase();
-      announceA11y(`Filtered by ${label}: ${visibleRows} track${visibleRows === 1 ? '' : 's'} visible.`);
+      announceA11y(`Filtered by ${filterName(filter)}: ${visibleRows} track${visibleRows === 1 ? '' : 's'} visible.`);
     });
   });
 
@@ -395,18 +381,7 @@ export function initTracklist(config) {
 
 // Clears search and filter, as when a new Edition is mounted.
 export function resetTracklist() {
-  search = '';
-  filter = 'all';
-  if (searchAnnounceTimer) {
-    clearTimeout(searchAnnounceTimer);
-    searchAnnounceTimer = null;
-  }
-  lastAnnouncedQuery = '';
-  const searchInput = document.getElementById('tracklist-search-input');
-  if (searchInput) searchInput.value = '';
-  const clearBtn = document.getElementById('tracklist-clear-search');
-  if (clearBtn) clearBtn.style.display = 'none';
-  updateFilterPillsUI();
+  clearSearchState({ resetFilter: true });
 }
 
 // After an Edition switch with the drawer open, move focus into the list if it was lost.
@@ -468,8 +443,7 @@ export function handleTracklistKeyDown(e) {
     }
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      const target = document.querySelector('.tracklist-row') || document.getElementById('tracklist-reset-btn');
-      if (target) target.focus();
+      focusListStart();
       return true;
     }
     if (e.key === 'Enter') {
@@ -485,8 +459,7 @@ export function handleTracklistKeyDown(e) {
   if (e.target && e.target.id === 'tracklist-clear-search') {
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      const activePill = document.querySelector('.tracklist-filter-pill.active') || document.querySelector('.tracklist-filter-pill');
-      if (activePill) activePill.focus();
+      focusFilterBar();
       return true;
     }
     if (e.key === 'ArrowLeft') {
@@ -510,9 +483,7 @@ export function handleTracklistKeyDown(e) {
   if (e.target && e.target.id === 'tracklist-reset-btn') {
     if (e.key === 'ArrowUp') {
       e.preventDefault();
-      const activePill = document.querySelector('.tracklist-filter-pill.active') || document.querySelector('.tracklist-filter-pill');
-      if (activePill) activePill.focus();
-      else document.getElementById('tracklist-search-input')?.focus();
+      focusFilterBar();
       return true;
     }
   }
@@ -558,8 +529,7 @@ export function handleTracklistKeyDown(e) {
     }
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      const target = document.querySelector('.tracklist-row') || document.getElementById('tracklist-reset-btn');
-      if (target) target.focus();
+      focusListStart();
       return true;
     }
     if (e.key === 'ArrowUp') {
@@ -586,9 +556,7 @@ export function handleTracklistKeyDown(e) {
           if (focusedIdx > 0) {
             rows[focusedIdx - 1].focus();
           } else {
-            const activePill = document.querySelector('.tracklist-filter-pill.active') || document.querySelector('.tracklist-filter-pill');
-            if (activePill) activePill.focus();
-            else document.getElementById('tracklist-search-input')?.focus();
+            focusFilterBar();
           }
           return true;
         }

@@ -1,12 +1,14 @@
 import { initScene, getDiscs, buildDiscs, disposeDiscs, focusDisc, exitEdition, enterEdition } from './scene.js';
 import { getBrokenDisc } from './broken-disc.js';
-import { initEditions, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition } from './editions.js';
+import { initEditions, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition, editionSummary } from './editions.js';
 import { renderRepo, renderEmptyEdition } from './docket.js';
 import { renderFilmstrip, setActiveFrame } from './filmstrip.js';
 import { initTracklist, renderTracklist, updateTracklistActive, openTracklist, closeTracklist, toggleTracklist, isTracklistOpen, resetTracklist, refocusIfOpen } from './tracklist.js';
 import { announce as announceA11y } from './a11y.js';
 import { initTheme } from './theme.js';
 import { initInput } from './input.js';
+import { copyText } from './clipboard.js';
+import { verdictPresentation } from './specs.js';
 
 
   // ─── Data Ingestion & State ───
@@ -20,30 +22,25 @@ import { initInput } from './input.js';
   const scrubberContainer = document.getElementById('scrubber-container');
 
   // ─── Header Statistics Dynamic Binding ───
-  function updateHeaderStats(digest) {
-    const stats = digest?.stats || (repos.length > 0 ? {
-      fit: repos.filter(r => r.verdict === 'fit').length,
-      maybe: repos.filter(r => r.verdict === 'maybe').length,
-      notFit: repos.filter(r => r.verdict === 'not-fit').length,
-      total: repos.length
-    } : { fit: 0, maybe: 0, notFit: 0, total: 0 });
+  function updateHeaderStats() {
+    const { stats } = editionSummary(getActiveDate());
 
     const fitEl = document.getElementById('stat-fit-count');
     const maybeEl = document.getElementById('stat-maybe-count');
     const notFitEl = document.getElementById('stat-not-fit-count');
-    if (fitEl) fitEl.textContent = stats.fit ?? 0;
-    if (maybeEl) maybeEl.textContent = stats.maybe ?? 0;
-    if (notFitEl) notFitEl.textContent = stats.notFit ?? 0;
+    if (fitEl) fitEl.textContent = stats.fit;
+    if (maybeEl) maybeEl.textContent = stats.maybe;
+    if (notFitEl) notFitEl.textContent = stats.notFit;
 
     // Synchronize Tracklist Filter Pill counts
     const pillAll = document.getElementById('pill-count-all');
     const pillFit = document.getElementById('pill-count-fit');
     const pillMaybe = document.getElementById('pill-count-maybe');
     const pillNotFit = document.getElementById('pill-count-not-fit');
-    if (pillAll) pillAll.textContent = stats.total ?? repos.length;
-    if (pillFit) pillFit.textContent = stats.fit ?? 0;
-    if (pillMaybe) pillMaybe.textContent = stats.maybe ?? 0;
-    if (pillNotFit) pillNotFit.textContent = stats.notFit ?? 0;
+    if (pillAll) pillAll.textContent = stats.total;
+    if (pillFit) pillFit.textContent = stats.fit;
+    if (pillMaybe) pillMaybe.textContent = stats.maybe;
+    if (pillNotFit) pillNotFit.textContent = stats.notFit;
   }
 
   // ─── Update Docket & Telemetry (Empty State Resilient) ───
@@ -63,7 +60,7 @@ import { initInput } from './input.js';
 
     renderRepo(repo, { index, total: repos.length, date: getActiveDate() }, () => {
       updateScrubber(index);
-      announceA11y(`Showing repository ${index + 1} of ${repos.length}: ${repo.name} by ${repo.owner}. Verdict: ${repo.verdictLabel || repo.verdict}`);
+      announceA11y(`Showing repository ${index + 1} of ${repos.length}: ${repo.name} by ${repo.owner}. Verdict: ${verdictPresentation(repo).label}`);
     });
   }
 
@@ -112,6 +109,19 @@ import { initInput } from './input.js';
     updateTracklistActive(currentIndex);
   }
 
+  // ─── Edition Mount ───
+
+  // Builds everything that shows the active Edition.
+  function mountEdition() {
+    buildDiscs(repos, getActiveDate());
+    initScrubber();
+    updateDocket(currentIndex);
+    updateHeaderStats();
+    updateRadarBridge();
+    renderTracklist();
+    updateTracklistActive(currentIndex);
+  }
+
   // ─── 3D Turntable Dataset Swapping Choreography ───
 
   function switchEdition(newDate) {
@@ -122,20 +132,14 @@ import { initInput } from './input.js';
 
     const performMount = () => {
       disposeDiscs();
-      const digest = setActiveEdition(newDate);
+      setActiveEdition(newDate);
       repos = getActiveRepos();
       currentIndex = 0;
 
       // Reset tracklist search and filters so new edition is cleanly displayed
       resetTracklist();
 
-      updateHeaderStats(digest);
-      buildDiscs(repos, getActiveDate());
-      initScrubber();
-      updateDocket(0);
-      updateRadarBridge();
-      renderTracklist();
-      updateTracklistActive(0);
+      mountEdition();
 
       refocusIfOpen();
 
@@ -166,20 +170,14 @@ import { initInput } from './input.js';
 
   function init() {
     initScene(container);
-    buildDiscs(repos, getActiveDate());
-    initScrubber();
     renderFilmstrip(switchEdition);
-    updateDocket(currentIndex);
-    updateHeaderStats(getDigest(getActiveDate()));
-    updateRadarBridge();
     initTracklist({
       getActiveIndex: () => currentIndex,
       navigateTo,
       announce: announceA11y,
       onOpenChange: updateRadarBridge
     });
-    renderTracklist();
-    updateTracklistActive(currentIndex);
+    mountEdition();
 
     // Navigation Buttons
     document.getElementById('prev-disc-btn').addEventListener('click', () => navigateTo(currentIndex - 1));
@@ -194,37 +192,14 @@ import { initInput } from './input.js';
         if (!repo) return;
         const cloneUri = `git clone ${repo.url}.git`;
 
-        const notifySuccess = () => {
-          copyBtn.textContent = 'COPIED TO CLIPBOARD ✓';
-          announceA11y('Repository clone URI copied to clipboard');
-          setTimeout(() => { copyBtn.textContent = 'COPY CLONE URI'; }, 2000);
-        };
-
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(cloneUri)
-            .then(notifySuccess)
-            .catch(() => fallbackCopy(cloneUri, notifySuccess));
-        } else {
-          fallbackCopy(cloneUri, notifySuccess);
-        }
+        copyText(cloneUri)
+          .then(() => {
+            copyBtn.textContent = 'COPIED TO CLIPBOARD ✓';
+            announceA11y('Repository clone URI copied to clipboard');
+            setTimeout(() => { copyBtn.textContent = 'COPY CLONE URI'; }, 2000);
+          })
+          .catch((e) => console.error('Failed to copy', e));
       });
-    }
-
-    function fallbackCopy(text, cb) {
-      try {
-        const temp = document.createElement('textarea');
-        temp.value = text;
-        temp.style.position = 'fixed';
-        temp.style.opacity = '0';
-        document.body.appendChild(temp);
-        temp.focus();
-        temp.select();
-        document.execCommand('copy');
-        document.body.removeChild(temp);
-        cb();
-      } catch (e) {
-        console.error('Failed to copy', e);
-      }
     }
 
     initTheme({ announce: announceA11y });

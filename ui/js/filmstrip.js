@@ -1,7 +1,7 @@
 // Filmstrip: owns rendering of the Edition timeline (one frame per Edition), its drag and
 // scroll interactions, and the active-frame highlight. Clicking a frame calls onSelect(date);
 // the caller decides how to switch Editions.
-import { getAvailableDates, getActiveDate, getActiveRepos, getDigest } from './editions.js';
+import { getAvailableDates, getActiveDate, editionSummary } from './editions.js';
 
 let interactionsBound = false;
 
@@ -11,10 +11,7 @@ export function renderFilmstrip(onSelect) {
   track.innerHTML = '';
 
   getAvailableDates().forEach(dateStr => {
-    const digest = getDigest(dateStr);
-    const count = digest ? (digest.evaluatedCount !== undefined ? digest.evaluatedCount : (digest.repos ? digest.repos.length : 0)) : getActiveRepos().length;
-    const hasFit = digest ? (digest.stats && digest.stats.fit > 0) : true;
-    const hasMaybe = digest ? (digest.stats && digest.stats.maybe > 0) : true;
+    const { count, stats } = editionSummary(dateStr);
 
     const frame = document.createElement('button');
     frame.type = 'button';
@@ -23,8 +20,8 @@ export function renderFilmstrip(onSelect) {
     frame.setAttribute('aria-label', `Edition ${dateStr}, ${count} candidates`);
 
     let dotClass = 'empty';
-    if (hasFit) dotClass = 'fit';
-    else if (hasMaybe) dotClass = 'maybe';
+    if (stats.fit > 0) dotClass = 'fit';
+    else if (stats.maybe > 0) dotClass = 'maybe';
 
     frame.innerHTML = `
         <span class="film-frame-date">${dateStr}</span>

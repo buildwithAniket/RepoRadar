@@ -74,6 +74,19 @@ export function verdictPresentation(repo) {
   };
 }
 
+// Verdict counts for a list of Repos: { fit, maybe, notFit, total }. Counts by the same
+// rule as verdictPresentation, so a missing or unrecognised Verdict is not fit.
+export function countVerdicts(repos) {
+  const counts = { fit: 0, maybe: 0, notFit: 0, total: repos.length };
+  for (const repo of repos) {
+    const key = verdictPresentation(repo).key;
+    if (key === 'fit') counts.fit++;
+    else if (key === 'maybe') counts.maybe++;
+    else counts.notFit++;
+  }
+  return counts;
+}
+
 // Side A holds the first half (rounded up) of the Edition, side B the rest.
 export function repoCode(index, totalCount) {
   if (!totalCount || totalCount <= 0) return 'A1';

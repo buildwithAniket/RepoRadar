@@ -9,6 +9,7 @@ import {
   filterRepos,
   verdictPresentation,
   filterName,
+  countVerdicts,
 } from '../js/specs.js';
 
 test('isoFromStars: thresholds are inclusive on the upper bound', () => {
@@ -164,4 +165,22 @@ test('filterRepos: Repos with a missing or unknown Verdict match the not-fit fil
   const odd = [{ name: 'a' }, { name: 'b', verdict: 'bogus' }, { name: 'c', verdict: 'fit' }];
   assert.deepEqual(filterRepos(odd, { verdict: 'not-fit' }).map(i => i.idx), [0, 1]);
   assert.deepEqual(filterRepos(odd, { verdict: 'fit' }).map(i => i.idx), [2]);
+});
+
+test('countVerdicts: an empty list counts zero of everything', () => {
+  assert.deepEqual(countVerdicts([]), { fit: 0, maybe: 0, notFit: 0, total: 0 });
+});
+
+test('countVerdicts: a mixed list counts each Verdict and the total', () => {
+  const repos = [
+    { verdict: 'fit' }, { verdict: 'maybe' }, { verdict: 'fit' },
+    { verdict: 'not-fit' }, { verdict: 'maybe' }, { verdict: 'fit' },
+  ];
+  assert.deepEqual(countVerdicts(repos), { fit: 3, maybe: 2, notFit: 1, total: 6 });
+});
+
+test('countVerdicts: missing or unknown Verdicts count as not fit, matching the not-fit filter', () => {
+  const repos = [{ name: 'a' }, { verdict: 'bogus' }, { verdict: 'fit' }];
+  assert.deepEqual(countVerdicts(repos), { fit: 1, maybe: 0, notFit: 2, total: 3 });
+  assert.equal(countVerdicts(repos).notFit, filterRepos(repos, { verdict: 'not-fit' }).length);
 });

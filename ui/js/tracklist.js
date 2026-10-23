@@ -153,21 +153,8 @@ export function renderTracklist() {
     const resetBtn = document.getElementById('tracklist-reset-btn');
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
-        search = '';
-        filter = 'all';
-        if (searchAnnounceTimer) {
-          clearTimeout(searchAnnounceTimer);
-          searchAnnounceTimer = null;
-        }
-        lastAnnouncedQuery = '';
-        const searchInput = document.getElementById('tracklist-search-input');
-        if (searchInput) {
-          searchInput.value = '';
-          searchInput.focus();
-        }
-        const clearBtn = document.getElementById('tracklist-clear-search');
-        if (clearBtn) clearBtn.style.display = 'none';
-        updateFilterPillsUI();
+        clearSearchState({ resetFilter: true });
+        document.getElementById('tracklist-search-input')?.focus();
         renderTracklist();
         announceA11y('Filters reset. Showing all tracks.');
       });
@@ -294,6 +281,38 @@ function scrollActiveTrackIntoView() {
   }
 }
 
+// Clears the search text, its input and clear button, and any pending or remembered search
+// announcement, so none fires afterwards. With resetFilter, the Verdict filter returns to all.
+function clearSearchState({ resetFilter = false } = {}) {
+  search = '';
+  if (searchAnnounceTimer) {
+    clearTimeout(searchAnnounceTimer);
+    searchAnnounceTimer = null;
+  }
+  lastAnnouncedQuery = '';
+  const searchInput = document.getElementById('tracklist-search-input');
+  if (searchInput) searchInput.value = '';
+  const clearBtn = document.getElementById('tracklist-clear-search');
+  if (clearBtn) clearBtn.style.display = 'none';
+  if (resetFilter) {
+    filter = 'all';
+    updateFilterPillsUI();
+  }
+}
+
+// Focuses the filter bar: the active filter pill, else the first pill, else the search box.
+function focusFilterBar() {
+  const pill = document.querySelector('.tracklist-filter-pill.active') || document.querySelector('.tracklist-filter-pill');
+  if (pill) pill.focus();
+  else document.getElementById('tracklist-search-input')?.focus();
+}
+
+// The start of the list: the first row, else the reset button of the empty slate.
+function focusListStart() {
+  const target = document.querySelector('.tracklist-row') || document.getElementById('tracklist-reset-btn');
+  if (target) target.focus();
+}
+
 export function initTracklist(config) {
   deps = config;
 
@@ -340,15 +359,8 @@ export function initTracklist(config) {
 
   if (clearSearchBtn) {
     clearSearchBtn.addEventListener('click', () => {
-      if (searchInput) {
-        searchInput.value = '';
-        searchInput.focus();
-      }
-      search = '';
-      clearTimeout(searchAnnounceTimer);
-      searchAnnounceTimer = null;
-      lastAnnouncedQuery = '';
-      clearSearchBtn.style.display = 'none';
+      clearSearchState();
+      if (searchInput) searchInput.focus();
       renderTracklist();
       announceA11y('Search cleared. Showing all tracks.');
     });
@@ -369,18 +381,7 @@ export function initTracklist(config) {
 
 // Clears search and filter, as when a new Edition is mounted.
 export function resetTracklist() {
-  search = '';
-  filter = 'all';
-  if (searchAnnounceTimer) {
-    clearTimeout(searchAnnounceTimer);
-    searchAnnounceTimer = null;
-  }
-  lastAnnouncedQuery = '';
-  const searchInput = document.getElementById('tracklist-search-input');
-  if (searchInput) searchInput.value = '';
-  const clearBtn = document.getElementById('tracklist-clear-search');
-  if (clearBtn) clearBtn.style.display = 'none';
-  updateFilterPillsUI();
+  clearSearchState({ resetFilter: true });
 }
 
 // After an Edition switch with the drawer open, move focus into the list if it was lost.
@@ -442,8 +443,7 @@ export function handleTracklistKeyDown(e) {
     }
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      const target = document.querySelector('.tracklist-row') || document.getElementById('tracklist-reset-btn');
-      if (target) target.focus();
+      focusListStart();
       return true;
     }
     if (e.key === 'Enter') {
@@ -459,8 +459,7 @@ export function handleTracklistKeyDown(e) {
   if (e.target && e.target.id === 'tracklist-clear-search') {
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      const activePill = document.querySelector('.tracklist-filter-pill.active') || document.querySelector('.tracklist-filter-pill');
-      if (activePill) activePill.focus();
+      focusFilterBar();
       return true;
     }
     if (e.key === 'ArrowLeft') {
@@ -484,9 +483,7 @@ export function handleTracklistKeyDown(e) {
   if (e.target && e.target.id === 'tracklist-reset-btn') {
     if (e.key === 'ArrowUp') {
       e.preventDefault();
-      const activePill = document.querySelector('.tracklist-filter-pill.active') || document.querySelector('.tracklist-filter-pill');
-      if (activePill) activePill.focus();
-      else document.getElementById('tracklist-search-input')?.focus();
+      focusFilterBar();
       return true;
     }
   }
@@ -532,8 +529,7 @@ export function handleTracklistKeyDown(e) {
     }
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      const target = document.querySelector('.tracklist-row') || document.getElementById('tracklist-reset-btn');
-      if (target) target.focus();
+      focusListStart();
       return true;
     }
     if (e.key === 'ArrowUp') {
@@ -560,9 +556,7 @@ export function handleTracklistKeyDown(e) {
           if (focusedIdx > 0) {
             rows[focusedIdx - 1].focus();
           } else {
-            const activePill = document.querySelector('.tracklist-filter-pill.active') || document.querySelector('.tracklist-filter-pill');
-            if (activePill) activePill.focus();
-            else document.getElementById('tracklist-search-input')?.focus();
+            focusFilterBar();
           }
           return true;
         }

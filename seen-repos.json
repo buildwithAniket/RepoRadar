@@ -269,6 +269,15 @@
     "stars_at_check": 48821,
     "verdict": "fit"
   },
+  "Meloong-Git/PCL": {
+    "first_seen": "2026-10-23",
+    "last_checked": "2026-10-23",
+    "latest_release_at_check": "2026-10-20T07:01:34Z",
+    "profile_checked_against": "2026-10-23",
+    "reason": "This repository is a Minecraft game launcher, which has no technical overlap with the profile's interest areas in AI agent orchestration, developer productivity utilities, fintech, or workflow automation.",
+    "stars_at_check": 8792,
+    "verdict": "not-fit"
+  },
   "NVIDIA/Model-Optimizer": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -863,6 +872,15 @@
     "stars_at_check": 6179,
     "verdict": "maybe"
   },
+  "fastapi/fastapi": {
+    "first_seen": "2026-10-23",
+    "last_checked": "2026-10-23",
+    "latest_release_at_check": "2026-10-22T22:21:50Z",
+    "profile_checked_against": "2026-10-23",
+    "reason": "FastAPI strongly aligns with the profile's interest in high-performance Python systems and developer productivity, serving as a primary backbone for modern AI backends and services. However, as an ubiquitous, general-purpose web framework rather than a specialized agent orchestration or workflow automation tool, its relevance is foundational rather than domain-specific.",
+    "stars_at_check": 103925,
+    "verdict": "maybe"
+  },
   "firebase/firebase-ios-sdk": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -1105,6 +1123,15 @@
     "reason": "While a useful utility, it is a standalone file-transfer tool that does not contribute to your specific goals in AI orchestration, career automation, or financial tech.",
     "stars_at_check": 91525,
     "verdict": "not-fit"
+  },
+  "luongnv89/claude-howto": {
+    "first_seen": "2026-10-23",
+    "last_checked": "2026-10-23",
+    "latest_release_at_check": "2026-06-02T06:38:08Z",
+    "profile_checked_against": "2026-10-23",
+    "reason": "This repository directly targets the profile's core focus on AI agents and coding agent orchestration, specifically covering Claude Code from foundational concepts to advanced agent workflows and practical templates.",
+    "stars_at_check": 43517,
+    "verdict": "fit"
   },
   "lyogavin/airllm": {
     "first_seen": "2026-10-12",
@@ -1365,6 +1392,15 @@
     "profile_checked_against": "2026-09-15",
     "reason": "A hardware-focused productivity utility that does not involve the software engineering or AI automation workflows you are prioritizing.",
     "stars_at_check": 3763,
+    "verdict": "not-fit"
+  },
+  "php/php-src": {
+    "first_seen": "2026-10-23",
+    "last_checked": "2026-10-23",
+    "latest_release_at_check": "2026-10-21T14:06:46Z",
+    "profile_checked_against": "2026-10-23",
+    "reason": "While php-src is the core C implementation of the PHP interpreter, it falls outside the profile's primary focus areas centered on AI agents, Python-based developer tooling, career workflow automation, and financial technology.",
+    "stars_at_check": 41325,
     "verdict": "not-fit"
   },
   "pingdotgg/t3code": {

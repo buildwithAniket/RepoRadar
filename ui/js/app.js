@@ -1,6 +1,7 @@
 import { createConcentricGroovesTexture, createLabelTexture } from './disc-textures.js';
 import { initEditions, getAvailableDates, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition, adjacentDate } from './editions.js';
-import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, escapeHtml, filterRepos } from './specs.js';
+import { repoCode, escapeHtml, filterRepos } from './specs.js';
+import { renderRepo, renderEmptyEdition } from './docket.js';
 
 
   // ─── Accessibility & Media Preferences ───
@@ -43,7 +44,6 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
 
   const container = document.getElementById('three-canvas-container');
   const scrubberContainer = document.getElementById('scrubber-container');
-  const docketWrap = document.getElementById('docket-wrap');
   const raycaster = new THREE.Raycaster();
   const mouse = new THREE.Vector2();
 
@@ -432,127 +432,21 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
 
   function updateDocket(index) {
     if (!repos || repos.length === 0) {
-      const skipped = getDigest(getActiveDate()) ? getDigest(getActiveDate()).skippedCount : 0;
-      updateDocketEmptyState(getActiveDate(), skipped);
+      const dateStr = getActiveDate();
+      const skipped = getDigest(dateStr) ? getDigest(dateStr).skippedCount : 0;
+      renderEmptyEdition(dateStr, skipped, () => {
+        updateScrubber(0);
+        announceA11y(`Archive edition ${dateStr}. 0 candidates for pressing.`);
+      });
       return;
     }
     const repo = repos[index];
     if (!repo) return;
 
-    docketWrap.classList.add('switching');
-
-    setTimeout(() => {
-      // Update tags
-      document.getElementById('docket-tag').textContent = `ARCHIVE ENTRY · ${String(index + 1).padStart(2, '0')} OF ${String(repos.length).padStart(2, '0')}`;
-      
-      // Laurel & Badge
-      const laurel = document.getElementById('docket-laurel');
-      laurel.className = `verdict-laurel-badge ${repo.verdict || 'not-fit'}`;
-      document.getElementById('docket-verdict-text').textContent = repo.verdictLabel || 'VERDICT PENDING';
-
-      // Title & Studio
-      document.getElementById('docket-title').textContent = repo.name || 'Untitled';
-      document.getElementById('docket-author').textContent = repo.owner || 'Unknown';
-      document.getElementById('docket-stars').textContent = `${(repo.stars || 0).toLocaleString()} ★ STARS`;
-
-      // LLM Quote
-      document.getElementById('docket-quote').textContent = `“${repo.reason || 'No evaluation notes recorded.'}”`;
-      renderUseCases(repo);
-
-      // Spec Grid
-      document.getElementById('docket-iso').textContent = isoFromStars(repo.stars || 0);
-      document.getElementById('docket-gauge').textContent = gaugeFromLanguage(repo.language || 'Unknown');
-      document.getElementById('docket-exposure').textContent = exposureFromConfidence(repo.confidence || 'low');
-      document.getElementById('docket-date').textContent = repo.pushedAt || getActiveDate() || 'Unknown';
-
-      // Links
-      document.getElementById('docket-github-link').href = repo.url || `https://github.com/${repo.id || ''}`;
-
-      // Scrubber update
+    renderRepo(repo, { index, total: repos.length, date: getActiveDate() }, () => {
       updateScrubber(index);
-
-      docketWrap.classList.remove('switching');
-
-      // Announce to screen reader
       announceA11y(`Showing repository ${index + 1} of ${repos.length}: ${repo.name} by ${repo.owner}. Verdict: ${repo.verdictLabel || repo.verdict}`);
-    }, 200);
-  }
-
-  const USE_CASE_EFFORT = { hour: '~1 HOUR', weekend: 'WEEKEND', project: 'PROJECT' };
-
-  function renderUseCases(repo) {
-    const section = document.getElementById('docket-use-cases');
-    const list = document.getElementById('docket-use-case-list');
-    if (!section || !list) return;
-    list.textContent = '';
-    const cases = Array.isArray(repo && repo.useCases) ? repo.useCases.slice(0, 2) : [];
-    const note = (repo && typeof repo.useCaseNote === 'string') ? repo.useCaseNote.trim() : '';
-    const el = (tag, cls, text) => {
-      const n = document.createElement(tag);
-      if (cls) n.className = cls;
-      if (text != null) n.textContent = text;
-      return n;
-    };
-    if (cases.length === 0) {
-      if (!note) { section.hidden = true; return; }
-      list.appendChild(el('p', 'use-case-none', 'No strong use case — ' + note));
-      section.hidden = false;
-      return;
-    }
-    cases.forEach(uc => {
-      const card = el('article', 'use-case-card');
-      card.appendChild(el('h4', 'use-case-title', uc.title || 'Untitled'));
-      const pills = el('div', 'use-case-pills');
-      pills.appendChild(el('span', 'use-case-pill kind', String(uc.kind || '').toUpperCase()));
-      pills.appendChild(el('span', 'use-case-pill effort', USE_CASE_EFFORT[uc.effort] || String(uc.effort || '').toUpperCase()));
-      if (uc.focus) pills.appendChild(el('span', 'use-case-focus', uc.focus));
-      card.appendChild(pills);
-      card.appendChild(el('p', 'use-case-pitch', uc.pitch || ''));
-      const det = el('details', 'use-case-step');
-      const sum = el('summary');
-      sum.innerHTML = '<svg aria-hidden="true" width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 1l6 4-6 4z"/></svg>';
-      sum.appendChild(document.createTextNode('FIRST STEP'));
-      det.appendChild(sum);
-      const body = el('p', 'use-case-step-body');
-      String(uc.firstStep || '').split(/(`[^`]+`)/).forEach(part => {
-        if (!part) return;
-        if (part.length > 2 && part[0] === '`' && part[part.length - 1] === '`') {
-          body.appendChild(el('code', null, part.slice(1, -1)));
-        } else {
-          body.appendChild(document.createTextNode(part));
-        }
-      });
-      det.appendChild(body);
-      card.appendChild(det);
-      list.appendChild(card);
     });
-    section.hidden = false;
-  }
-
-  function updateDocketEmptyState(dateStr, skippedCount) {
-    docketWrap.classList.add('switching');
-    setTimeout(() => {
-      document.getElementById('docket-tag').textContent = `ARCHIVE EDITION · ${dateStr}`;
-      const laurel = document.getElementById('docket-laurel');
-      laurel.className = 'verdict-laurel-badge not-fit';
-      document.getElementById('docket-verdict-text').textContent = 'ARCHIVE REST · 0 CANDIDATES';
-      document.getElementById('docket-title').textContent = 'All Repositories Filtered';
-      document.getElementById('docket-author').textContent = 'RepoRadar Engine';
-      document.getElementById('docket-stars').textContent = `${skippedCount || 0} SKIPPED / UNCHANGED`;
-      document.getElementById('docket-quote').textContent =
-        `“On ${dateStr}, all scanned trending repositories were either previously evaluated or filtered by domain criteria. No new candidate records met the threshold for pressing.”`;
-      const ucSection = document.getElementById('docket-use-cases');
-      if (ucSection) ucSection.hidden = true;
-      document.getElementById('docket-iso').textContent = 'ISO 25 · REST SLATE';
-      document.getElementById('docket-gauge').textContent = 'Contact Sheet · Standby';
-      document.getElementById('docket-exposure').textContent = '±0 EV · BALANCED READ';
-      document.getElementById('docket-date').textContent = dateStr;
-      document.getElementById('docket-github-link').href = 'https://github.com/trending';
-      updateScrubber(0);
-      docketWrap.classList.remove('switching');
-
-      announceA11y(`Archive edition ${dateStr}. 0 candidates for pressing.`);
-    }, 200);
   }
 
   function initScrubber() {

@@ -6,7 +6,7 @@
 //   announce(msg)     -> screen-reader announcement
 //   onOpenChange()    -> called after the drawer opens or closes
 import { getActiveDate, getActiveRepos } from './editions.js';
-import { repoCode, escapeHtml, filterRepos, verdictPresentation, filterName } from './specs.js';
+import { repoPosition, escapeHtml, filterRepos, verdictPresentation, filterName } from './specs.js';
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -127,15 +127,12 @@ export function renderTracklist() {
   }
 
   const query = search.toLowerCase().trim();
-  const half = Math.ceil(total / 2);
 
   const filtered = filterRepos(repos, { verdict: filter, search: search })
-    .map(({ repo, idx }) => ({
-      repo,
-      idx,
-      trackCode: repoCode(idx, total),
-      side: idx < half ? 'A' : 'B'
-    }));
+    .map(({ repo, idx }) => {
+      const { code, side } = repoPosition(idx, total);
+      return { repo, idx, trackCode: code, side };
+    });
 
   if (filtered.length === 0) {
     const activeName = filterName(filter);
@@ -242,7 +239,7 @@ function cueTrack(index) {
   const repos = getActiveRepos();
   if (!repos || repos.length === 0 || index < 0 || index >= repos.length) return;
   const repo = repos[index];
-  const trackCode = repoCode(index, repos.length);
+  const trackCode = repoPosition(index, repos.length).code;
   if (index !== deps.getActiveIndex()) {
     deps.navigateTo(index);
   }

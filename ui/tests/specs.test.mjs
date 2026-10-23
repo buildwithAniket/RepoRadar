@@ -4,7 +4,7 @@ import {
   isoFromStars,
   gaugeFromLanguage,
   exposureFromConfidence,
-  repoCode,
+  repoPosition,
   escapeHtml,
   filterRepos,
   verdictPresentation,
@@ -51,15 +51,36 @@ test('exposureFromConfidence: levels, missing and unrecognised values', () => {
   assert.equal(exposureFromConfidence('bogus'), '-1 EV · LOW CONFIDENCE');
 });
 
-test('repoCode: side A then side B, with the odd Repo on side A', () => {
-  assert.deepEqual([0, 1, 2, 3].map(i => repoCode(i, 4)), ['A1', 'A2', 'B1', 'B2']);
-  assert.deepEqual([0, 1, 2].map(i => repoCode(i, 3)), ['A1', 'A2', 'B1']);
-  assert.equal(repoCode(0, 1), 'A1');
+test('repoPosition: an even total splits evenly between side A and side B', () => {
+  assert.deepEqual([0, 1, 2, 3].map(i => repoPosition(i, 4)), [
+    { code: 'A1', side: 'A' }, { code: 'A2', side: 'A' },
+    { code: 'B1', side: 'B' }, { code: 'B2', side: 'B' },
+  ]);
 });
 
-test('repoCode: empty or missing totals give A1', () => {
-  assert.equal(repoCode(0, 0), 'A1');
-  assert.equal(repoCode(5), 'A1');
+test('repoPosition: an odd total puts the extra Repo on side A', () => {
+  assert.deepEqual([0, 1, 2].map(i => repoPosition(i, 3)), [
+    { code: 'A1', side: 'A' }, { code: 'A2', side: 'A' }, { code: 'B1', side: 'B' },
+  ]);
+  assert.deepEqual([2, 3].map(i => repoPosition(i, 5)), [
+    { code: 'A3', side: 'A' }, { code: 'B1', side: 'B' },
+  ]);
+});
+
+test('repoPosition: the first B track is the first index past the half-way point', () => {
+  assert.deepEqual(repoPosition(4, 10), { code: 'A5', side: 'A' });
+  assert.deepEqual(repoPosition(5, 10), { code: 'B1', side: 'B' });
+  assert.deepEqual(repoPosition(5, 11), { code: 'A6', side: 'A' });
+  assert.deepEqual(repoPosition(6, 11), { code: 'B1', side: 'B' });
+});
+
+test('repoPosition: a single Repo is A1 on side A', () => {
+  assert.deepEqual(repoPosition(0, 1), { code: 'A1', side: 'A' });
+});
+
+test('repoPosition: empty or missing totals give A1 on side A', () => {
+  assert.deepEqual(repoPosition(0, 0), { code: 'A1', side: 'A' });
+  assert.deepEqual(repoPosition(5), { code: 'A1', side: 'A' });
 });
 
 test('escapeHtml: escapes the five special characters', () => {

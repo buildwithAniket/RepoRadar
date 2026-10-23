@@ -87,11 +87,14 @@ export function countVerdicts(repos) {
   return counts;
 }
 
+// A Repo's track code and Side from its index in an Edition of totalCount Repos: { code, side }.
 // Side A holds the first half (rounded up) of the Edition, side B the rest.
-export function repoCode(index, totalCount) {
-  if (!totalCount || totalCount <= 0) return 'A1';
+export function repoPosition(index, totalCount) {
+  if (!totalCount || totalCount <= 0) return { code: 'A1', side: 'A' };
   const half = Math.ceil(totalCount / 2);
-  return index < half ? 'A' + (index + 1) : 'B' + (index - half + 1);
+  return index < half
+    ? { code: 'A' + (index + 1), side: 'A' }
+    : { code: 'B' + (index - half + 1), side: 'B' };
 }
 
 export function escapeHtml(str) {

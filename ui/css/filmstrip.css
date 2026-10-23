@@ -1,0 +1,132 @@
+/* ─── Vintage Celluloid Filmstrip Timeline Scrubber ─── */
+.filmstrip-timeline {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 84px;
+  background: var(--film-bg);
+  border-top: 1px solid var(--film-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 40;
+  user-select: none;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.filmstrip-sprockets {
+  height: 10px;
+  width: 100%;
+  pointer-events: none;
+  background-color: var(--sprocket-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='10' viewBox='0 0 22 10'%3E%3Crect x='5' y='1.5' width='12' height='7' rx='2' ry='2' fill='black'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='10' viewBox='0 0 22 10'%3E%3Crect x='5' y='1.5' width='12' height='7' rx='2' ry='2' fill='black'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.filmstrip-track-container {
+  position: relative;
+  height: 64px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.filmstrip-track-container::-webkit-scrollbar { display: none; }
+.filmstrip-track-container:active { cursor: grabbing; }
+
+.filmstrip-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.film-frame {
+  position: relative;
+  min-width: 96px;
+  height: 52px;
+  background: var(--film-frame-bg);
+  border: 1px solid var(--film-frame-border);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-cinematic);
+  color: var(--film-text);
+  box-sizing: border-box;
+  outline: none;
+  flex-shrink: 0;
+}
+.film-frame:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.24);
+  transform: translateY(-1px);
+}
+.film-frame.active {
+  background: rgba(137, 26, 32, 0.32);
+  border-color: var(--accent);
+  box-shadow: 0 0 14px rgba(137, 26, 32, 0.45);
+}
+.film-frame.active::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--accent);
+}
+
+.film-frame-date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.film-frame-meta {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--film-text-muted);
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+.film-frame-dot {
+  width: 4px; height: 4px; border-radius: 50%;
+}
+.film-frame-dot.fit { background: var(--laurel-fit); }
+.film-frame-dot.maybe { background: var(--laurel-maybe); }
+.film-frame-dot.empty { background: var(--laurel-not-fit); }
+
+.filmstrip-edge-meta {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: var(--film-text-muted);
+  opacity: 0.45;
+  white-space: nowrap;
+  pointer-events: none;
+  padding: 0 8px;
+  flex-shrink: 0;
+}
+

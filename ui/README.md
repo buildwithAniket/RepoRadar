@@ -37,15 +37,43 @@ Instead of a generic SaaS dashboard, each trending repository is rendered as a *
 
 ## 🚀 How to View
 
-The experience is completely self-contained with zero external build steps:
+The UI is native ES modules with no build step ([ADR 0001](../docs/adr/0001-ui-native-es-modules-no-build.md)). Browsers block module imports on `file://`, so **double-clicking `ui/index.html` no longer works** — serve the folder over HTTP:
 
-1. Open `ui/index.html` directly in your browser:
-   ```bash
-   open ui/index.html
-   ```
-2. Or serve locally with any static web server:
-   ```bash
-   npx serve ui
-   # or
-   python3 -m http.server 8000 --directory ui
-   ```
+```bash
+python3 -m http.server 8000 --directory ui
+# or
+npx serve ui
+```
+
+Then open <http://localhost:8000>. All asset paths are relative, so the folder can be served from any subpath (GitHub Pages serves it at `/RepoRadar/`).
+
+## 🗂 Layout
+
+```
+ui/
+  index.html        markup and script/style tags only
+  css/              tokens, base, header, stage, filmstrip, docket, tracklist
+  js/
+    app.js          wiring: owns app state and connects the modules
+    editions.js     Digest loading and the active Edition
+    scene.js        Three.js turntable scene (Discs)
+    disc-textures.js, broken-disc.js
+    docket.js       Docket rendering
+    filmstrip.js    Filmstrip (Edition timeline)
+    tracklist.js    Tracklist drawer, search and filters
+    input.js, theme.js, a11y.js
+    specs.js, fallback-repos.js
+  lib/              vendored Three.js and GSAP
+  data/digests.js   generated Digest (see src/build_ui_data.py)
+  tests/            Node unit tests
+```
+
+## 🧪 Tests
+
+```bash
+node --test 'ui/tests/*.test.mjs'                      # unit tests (pure seams)
+cd e2e && npm ci && npx playwright install chromium    # first time only
+npx playwright test                                    # Playwright baseline
+```
+
+Playwright serves `ui/` itself on port 8123 (reusing one if already running).

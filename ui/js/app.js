@@ -1,114 +1,7 @@
 import { createConcentricGroovesTexture, createLabelTexture } from './disc-textures.js';
+import { initEditions, getAvailableDates, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition, adjacentDate } from './editions.js';
 import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, escapeHtml, filterRepos } from './specs.js';
 
-
-  // ─── Fallback Sample Data (If window.REPORADAR_DIGESTS is absent) ───
-  const fallbackRepos = [
-    {
-      id: 'NousResearch/hermes-agent',
-      owner: 'NousResearch',
-      name: 'hermes-agent',
-      stars: 240294,
-      language: 'Python',
-      pushedAt: '2026-09-02',
-      confidence: 'high',
-      verdict: 'fit',
-      verdictLabel: 'OFFICIAL SELECTION',
-      reason: 'As a core interest area, this repository represents a significant advancement in autonomous agent systems that you should monitor for integration into your coding workflows.',
-      url: 'https://github.com/NousResearch/hermes-agent'
-    },
-    {
-      id: 'agent-substrate/substrate',
-      owner: 'agent-substrate',
-      name: 'substrate',
-      stars: 2675,
-      language: 'TypeScript',
-      pushedAt: '2026-09-10',
-      confidence: 'high',
-      verdict: 'fit',
-      verdictLabel: 'OFFICIAL SELECTION',
-      reason: 'A high-signal architectural primitive for autonomous agent orchestration. As a core system, it provides the deterministic workflow primitives needed for complex multi-agent execution.',
-      url: 'https://github.com/agent-substrate/substrate'
-    },
-    {
-      id: 'JustVugg/colibri',
-      owner: 'JustVugg',
-      name: 'colibri',
-      stars: 32714,
-      language: 'C',
-      pushedAt: '2026-09-13',
-      confidence: 'high',
-      verdict: 'fit',
-      verdictLabel: 'OFFICIAL SELECTION',
-      reason: 'Highly relevant for high-performance local AI orchestration. The zero-dependency C engine for streaming MoE models provides extreme architectural efficiency for running on edge hardware.',
-      url: 'https://github.com/JustVugg/colibri'
-    },
-    {
-      id: 'superlinked/sie',
-      owner: 'superlinked',
-      name: 'sie',
-      stars: 3126,
-      language: 'Python',
-      pushedAt: '2026-09-01',
-      confidence: 'high',
-      verdict: 'fit',
-      verdictLabel: 'OFFICIAL SELECTION',
-      reason: 'Provides essential infrastructure for production-grade agent memory and vector orchestration, critical for scaling local/cloud agent runners.',
-      url: 'https://github.com/superlinked/sie'
-    },
-    {
-      id: 'google-research/timesfm',
-      owner: 'google-research',
-      name: 'timesfm',
-      stars: 30187,
-      language: 'Python',
-      pushedAt: '2026-08-30',
-      confidence: 'medium',
-      verdict: 'maybe',
-      verdictLabel: 'UNDER REVIEW',
-      reason: 'Relevant if building custom financial portfolio tracking or predictive wealth management tools, but lacks immediate application to core agent coding automation.',
-      url: 'https://github.com/google-research/timesfm'
-    },
-    {
-      id: 'anthropics/financial-services',
-      owner: 'anthropics',
-      name: 'financial-services',
-      stars: 36020,
-      language: 'TypeScript',
-      pushedAt: '2026-09-22',
-      confidence: 'medium',
-      verdict: 'maybe',
-      verdictLabel: 'UNDER REVIEW',
-      reason: 'Repository name suggests financial services and wealth compliance utilities. Remains a candidate until verification of financial engineering integration.',
-      url: 'https://github.com/anthropics/financial-services'
-    },
-    {
-      id: 'fmtlib/fmt',
-      owner: 'fmtlib',
-      name: 'fmt',
-      stars: 24472,
-      language: 'C++',
-      pushedAt: '2026-08-27',
-      confidence: 'low',
-      verdict: 'not-fit',
-      verdictLabel: 'ARCHIVED / PASS',
-      reason: 'A foundational, high-quality formatting library, but a low-level C++ utility that does not align with high-level AI agent orchestration or career automation.',
-      url: 'https://github.com/fmtlib/fmt'
-    },
-    {
-      id: 'sngyai/Sequoia-X',
-      owner: 'sngyai',
-      name: 'Sequoia-X',
-      stars: 6276,
-      language: 'Python',
-      pushedAt: '2026-09-01',
-      confidence: 'low',
-      verdict: 'not-fit',
-      verdictLabel: 'ARCHIVED / PASS',
-      reason: 'A region-specific stock screening tool for the Chinese domestic market, failing alignment with global career-ops or cross-border FinTech systems.',
-      url: 'https://github.com/sngyai/Sequoia-X'
-    }
-  ];
 
   // ─── Accessibility & Media Preferences ───
   let a11yTimer = null;
@@ -128,10 +21,6 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
   const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
   // ─── Data Ingestion & State ───
-  const digestsData = (typeof window !== 'undefined' && window.REPORADAR_DIGESTS) ? window.REPORADAR_DIGESTS : null;
-  let availableDates = [];
-  let activeDate = null;
-  let repos = [];
   let currentIndex = 0;
   let discs = [];
   let brokenDiscGroup = null;
@@ -149,17 +38,8 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
   let searchAnnounceTimer = null;
   let lastAnnouncedQuery = '';
 
-  if (digestsData && Object.keys(digestsData).length > 0) {
-    availableDates = Object.keys(digestsData).sort();
-    // Requirement 8: Automatically load the latest available report date (e.g. 2026-09-23) by default!
-    activeDate = availableDates[availableDates.length - 1];
-    const initialDigest = digestsData[activeDate];
-    repos = (initialDigest && initialDigest.repos) ? initialDigest.repos : [];
-  } else {
-    activeDate = '2026-09-02';
-    availableDates = [activeDate];
-    repos = fallbackRepos;
-  }
+  await initEditions();
+  let repos = getActiveRepos();
 
   const container = document.getElementById('three-canvas-container');
   const scrubberContainer = document.getElementById('scrubber-container');
@@ -430,7 +310,7 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
       discGroup.add(groovesMesh);
 
       // 3. Center Paper Label Face
-      const labelTex = createLabelTexture(repo, activeDate);
+      const labelTex = createLabelTexture(repo, getActiveDate());
       const labelGeo = new THREE.RingGeometry(INNER_HOLE, LABEL_RADIUS, 64);
       const labelMat = new THREE.MeshBasicMaterial({
         map: labelTex,
@@ -552,8 +432,8 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
 
   function updateDocket(index) {
     if (!repos || repos.length === 0) {
-      const skipped = (digestsData && digestsData[activeDate]) ? digestsData[activeDate].skippedCount : 0;
-      updateDocketEmptyState(activeDate, skipped);
+      const skipped = getDigest(getActiveDate()) ? getDigest(getActiveDate()).skippedCount : 0;
+      updateDocketEmptyState(getActiveDate(), skipped);
       return;
     }
     const repo = repos[index];
@@ -583,7 +463,7 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
       document.getElementById('docket-iso').textContent = isoFromStars(repo.stars || 0);
       document.getElementById('docket-gauge').textContent = gaugeFromLanguage(repo.language || 'Unknown');
       document.getElementById('docket-exposure').textContent = exposureFromConfidence(repo.confidence || 'low');
-      document.getElementById('docket-date').textContent = repo.pushedAt || activeDate || 'Unknown';
+      document.getElementById('docket-date').textContent = repo.pushedAt || getActiveDate() || 'Unknown';
 
       // Links
       document.getElementById('docket-github-link').href = repo.url || `https://github.com/${repo.id || ''}`;
@@ -791,7 +671,7 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
     const total = repos.length;
     const footerEd = document.getElementById('tracklist-footer-edition');
     const footerStats = document.getElementById('tracklist-footer-stats');
-    if (footerEd) footerEd.textContent = `EDITION: ${activeDate || 'UNKNOWN'}`;
+    if (footerEd) footerEd.textContent = `EDITION: ${getActiveDate() || 'UNKNOWN'}`;
     if (footerStats) {
       if (total === 0) {
         footerStats.textContent = '0 TRACKS (REST SLATE)';
@@ -816,7 +696,7 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
           </div>
           <h3 class="empty-slate-title">CINEMATIC REST SLATE</h3>
           <p class="empty-slate-text">All candidates in this cycle were filtered or archived during pre-screening. No active discs pressed for this edition.</p>
-          <span class="empty-slate-meta">ARCHIVE CYCLE ${escapeHtml(activeDate)} • 0 CANDIDATES</span>
+          <span class="empty-slate-meta">ARCHIVE CYCLE ${escapeHtml(getActiveDate())} • 0 CANDIDATES</span>
         </div>
       `;
       return;
@@ -1015,15 +895,15 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
     if (!track) return;
     track.innerHTML = '';
 
-    availableDates.forEach(dateStr => {
-      const digest = digestsData ? digestsData[dateStr] : null;
+    getAvailableDates().forEach(dateStr => {
+      const digest = getDigest(dateStr);
       const count = digest ? (digest.evaluatedCount !== undefined ? digest.evaluatedCount : (digest.repos ? digest.repos.length : 0)) : repos.length;
       const hasFit = digest ? (digest.stats && digest.stats.fit > 0) : true;
       const hasMaybe = digest ? (digest.stats && digest.stats.maybe > 0) : true;
 
       const frame = document.createElement('button');
       frame.type = 'button';
-      frame.className = `film-frame ${dateStr === activeDate ? 'active' : ''}`;
+      frame.className = `film-frame ${dateStr === getActiveDate() ? 'active' : ''}`;
       frame.dataset.date = dateStr;
       frame.setAttribute('aria-label', `Edition ${dateStr}, ${count} candidates`);
 
@@ -1113,17 +993,15 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
   // ─── 3D Turntable Dataset Swapping Choreography ───
 
   function switchEdition(newDate) {
-    if (newDate === activeDate || isSwitchingDate) return;
-    if (!availableDates.includes(newDate)) return;
+    if (isSwitchingDate || !canSwitchTo(newDate)) return;
     isSwitchingDate = true;
 
     updateFilmstripActive(newDate);
 
     const performMount = () => {
       disposeDiscs();
-      activeDate = newDate;
-      const digest = digestsData ? digestsData[activeDate] : null;
-      repos = (digest && digest.repos) ? digest.repos : [];
+      const digest = setActiveEdition(newDate);
+      repos = getActiveRepos();
       currentIndex = 0;
 
       // Reset tracklist search and filters so new edition is cleanly displayed
@@ -1218,7 +1096,7 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
       discs: discs,
       brokenDisc: brokenDiscGroup,
       activeIndex: currentIndex,
-      activeDate: activeDate,
+      activeDate: getActiveDate(),
       switchDate: switchEdition,
       openTracklist: openTracklist,
       closeTracklist: closeTracklist,
@@ -1407,16 +1285,12 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
 
     if (e.key === '[' || e.key === '{') {
       // Navigate previous edition
-      const curDateIdx = availableDates.indexOf(activeDate);
-      if (curDateIdx > 0) {
-        switchEdition(availableDates[curDateIdx - 1]);
-      }
+      const prevDate = adjacentDate(-1);
+      if (prevDate) switchEdition(prevDate);
     } else if (e.key === ']' || e.key === '}') {
       // Navigate next edition
-      const curDateIdx = availableDates.indexOf(activeDate);
-      if (curDateIdx >= 0 && curDateIdx < availableDates.length - 1) {
-        switchEdition(availableDates[curDateIdx + 1]);
-      }
+      const nextDate = adjacentDate(1);
+      if (nextDate) switchEdition(nextDate);
     } else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {
       navigateTo(currentIndex + 1);
     } else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {
@@ -1551,7 +1425,7 @@ import { isoFromStars, gaugeFromLanguage, exposureFromConfidence, repoCode, esca
     initScrubber();
     renderFilmstrip();
     updateDocket(currentIndex);
-    updateHeaderStats(digestsData ? digestsData[activeDate] : null);
+    updateHeaderStats(getDigest(getActiveDate()));
     updateRadarBridge();
     renderTracklist();
     updateTracklistActive(currentIndex);

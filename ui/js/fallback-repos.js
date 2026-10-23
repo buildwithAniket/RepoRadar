@@ -1,0 +1,107 @@
+// Hardcoded sample Repos, imported only when the Digest (window.REPORADAR_DIGESTS) is absent.
+export const fallbackRepos = [
+  {
+    id: 'NousResearch/hermes-agent',
+    owner: 'NousResearch',
+    name: 'hermes-agent',
+    stars: 240294,
+    language: 'Python',
+    pushedAt: '2026-09-02',
+    confidence: 'high',
+    verdict: 'fit',
+    verdictLabel: 'OFFICIAL SELECTION',
+    reason: 'As a core interest area, this repository represents a significant advancement in autonomous agent systems that you should monitor for integration into your coding workflows.',
+    url: 'https://github.com/NousResearch/hermes-agent'
+  },
+  {
+    id: 'agent-substrate/substrate',
+    owner: 'agent-substrate',
+    name: 'substrate',
+    stars: 2675,
+    language: 'TypeScript',
+    pushedAt: '2026-09-10',
+    confidence: 'high',
+    verdict: 'fit',
+    verdictLabel: 'OFFICIAL SELECTION',
+    reason: 'A high-signal architectural primitive for autonomous agent orchestration. As a core system, it provides the deterministic workflow primitives needed for complex multi-agent execution.',
+    url: 'https://github.com/agent-substrate/substrate'
+  },
+  {
+    id: 'JustVugg/colibri',
+    owner: 'JustVugg',
+    name: 'colibri',
+    stars: 32714,
+    language: 'C',
+    pushedAt: '2026-09-13',
+    confidence: 'high',
+    verdict: 'fit',
+    verdictLabel: 'OFFICIAL SELECTION',
+    reason: 'Highly relevant for high-performance local AI orchestration. The zero-dependency C engine for streaming MoE models provides extreme architectural efficiency for running on edge hardware.',
+    url: 'https://github.com/JustVugg/colibri'
+  },
+  {
+    id: 'superlinked/sie',
+    owner: 'superlinked',
+    name: 'sie',
+    stars: 3126,
+    language: 'Python',
+    pushedAt: '2026-09-01',
+    confidence: 'high',
+    verdict: 'fit',
+    verdictLabel: 'OFFICIAL SELECTION',
+    reason: 'Provides essential infrastructure for production-grade agent memory and vector orchestration, critical for scaling local/cloud agent runners.',
+    url: 'https://github.com/superlinked/sie'
+  },
+  {
+    id: 'google-research/timesfm',
+    owner: 'google-research',
+    name: 'timesfm',
+    stars: 30187,
+    language: 'Python',
+    pushedAt: '2026-08-30',
+    confidence: 'medium',
+    verdict: 'maybe',
+    verdictLabel: 'UNDER REVIEW',
+    reason: 'Relevant if building custom financial portfolio tracking or predictive wealth management tools, but lacks immediate application to core agent coding automation.',
+    url: 'https://github.com/google-research/timesfm'
+  },
+  {
+    id: 'anthropics/financial-services',
+    owner: 'anthropics',
+    name: 'financial-services',
+    stars: 36020,
+    language: 'TypeScript',
+    pushedAt: '2026-09-22',
+    confidence: 'medium',
+    verdict: 'maybe',
+    verdictLabel: 'UNDER REVIEW',
+    reason: 'Repository name suggests financial services and wealth compliance utilities. Remains a candidate until verification of financial engineering integration.',
+    url: 'https://github.com/anthropics/financial-services'
+  },
+  {
+    id: 'fmtlib/fmt',
+    owner: 'fmtlib',
+    name: 'fmt',
+    stars: 24472,
+    language: 'C++',
+    pushedAt: '2026-08-27',
+    confidence: 'low',
+    verdict: 'not-fit',
+    verdictLabel: 'ARCHIVED / PASS',
+    reason: 'A foundational, high-quality formatting library, but a low-level C++ utility that does not align with high-level AI agent orchestration or career automation.',
+    url: 'https://github.com/fmtlib/fmt'
+  },
+  {
+    id: 'sngyai/Sequoia-X',
+    owner: 'sngyai',
+    name: 'Sequoia-X',
+    stars: 6276,
+    language: 'Python',
+    pushedAt: '2026-09-01',
+    confidence: 'low',
+    verdict: 'not-fit',
+    verdictLabel: 'ARCHIVED / PASS',
+    reason: 'A region-specific stock screening tool for the Chinese domestic market, failing alignment with global career-ops or cross-border FinTech systems.',
+    url: 'https://github.com/sngyai/Sequoia-X'
+  }
+];

@@ -1,4 +1,5 @@
-import { initScene, getDiscs, getBrokenDisc, isBrokenDiscVisible, buildDiscs, disposeDiscs, focusDisc, settleDiscs, pickDiscIndex, setDragging, dragFeedback, releaseBrokenDisc, exitEdition, enterEdition } from './scene.js';
+import { initScene, getDiscs, buildDiscs, disposeDiscs, focusDisc, settleDiscs, pickDiscIndex, setDragging, dragFeedback, releaseBrokenDisc, exitEdition, enterEdition } from './scene.js';
+import { getBrokenDisc, isBrokenDiscVisible } from './broken-disc.js';
 import { initEditions, getActiveDate, getActiveRepos, getDigest, canSwitchTo, setActiveEdition, adjacentDate } from './editions.js';
 import { renderRepo, renderEmptyEdition } from './docket.js';
 import { renderFilmstrip, setActiveFrame } from './filmstrip.js';

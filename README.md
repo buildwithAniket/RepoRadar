@@ -84,7 +84,9 @@ flowchart LR
 ```bash
 git clone https://github.com/buildwithAniket/RepoRadar.git && cd RepoRadar
 python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
-pytest                                   # 90 tests
+pytest                                   # Python suite
+node --test 'ui/tests/*.test.mjs'        # UI unit tests
+(cd e2e && npm ci && npx playwright install chromium && npx playwright test)  # UI e2e
 ```
 
 **View the archive locally**
@@ -93,6 +95,8 @@ pytest                                   # 90 tests
 python src/build_ui_data.py              # regenerate ui/data/digests.js from reports/
 python -m http.server 8000 --directory ui  # then open http://localhost:8000
 ```
+
+The UI uses native ES modules, so it must be served over HTTP; opening `ui/index.html` from `file://` will not load.
 
 **Run the pipeline**
 
@@ -118,7 +122,9 @@ The daily workflow is inert until you set the repository variable `RADAR_ENABLED
 ```
 src/        pipeline: scraper, diff engine, state, judge, report, mailer, UI bundle builder
 tests/      pytest suite (unit, adversarial, and finalize integration tests)
-ui/         static WebGL archive (index.html, vendored Three.js + GSAP, generated data/)
+ui/         static WebGL archive: index.html, css/ and js/ per-feature modules (no build step),
+            vendored Three.js + GSAP in lib/, generated data/, Node unit tests in tests/
+e2e/        Playwright suite for the UI (serves ui/ over HTTP)
 reports/    one markdown digest per run
 docs/       architecture diagram and product definition
 ```

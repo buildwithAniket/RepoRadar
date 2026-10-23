@@ -1,0 +1,170 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f3f2ee;
+  --bg-surface: #ffffff;
+  --bg-dark: #111313;
+  --text: #121314;
+  --text-secondary: #57534e;
+  --text-muted: #8c857b;
+  --border: rgba(18, 19, 20, 0.08);
+  --border-strong: rgba(18, 19, 20, 0.16);
+  
+  --accent: #891a20; /* Authentic A24 burgundy */
+  --accent-hover: #6e1318;
+  --accent-tint: rgba(137, 26, 32, 0.08);
+  
+  /* Film Laurel / Verdict Colors */
+  --laurel-fit: #1b5e20;
+  --laurel-fit-bg: rgba(27, 94, 32, 0.09);
+  --laurel-maybe: #b45309;
+  --laurel-maybe-bg: rgba(180, 83, 9, 0.09);
+  --laurel-not-fit: #52525b;
+  --laurel-not-fit-bg: rgba(82, 82, 91, 0.09);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Vintage Celluloid Filmstrip Tokens */
+  --film-bg: #161719;
+  --film-border: rgba(18, 19, 20, 0.2);
+  --sprocket-color: #f3f2ee; /* Backlight shining through holes in light mode */
+  --film-frame-bg: rgba(255, 255, 255, 0.05);
+  --film-frame-border: rgba(255, 255, 255, 0.12);
+  --film-text: #eae8e3;
+  --film-text-muted: #8c857b;
+
+  /* Gatefold Liner Tracklist Tokens */
+  --tracklist-bg: rgba(243, 242, 238, 0.94);
+  --tracklist-header-bg: rgba(243, 242, 238, 0.96);
+  --tracklist-border: rgba(18, 19, 20, 0.1);
+  --tracklist-row-hover: rgba(18, 19, 20, 0.04);
+  --tracklist-row-active: rgba(137, 26, 32, 0.08);
+  --tracklist-input-bg: #ffffff;
+  --tracklist-input-border: rgba(18, 19, 20, 0.16);
+  --tracklist-pill-bg: rgba(18, 19, 20, 0.05);
+  --tracklist-pill-hover: rgba(18, 19, 20, 0.09);
+  --tracklist-pill-active: #121314;
+  --tracklist-pill-active-text: #f3f2ee;
+  --usecase-accent: #891a20;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111313;
+    --bg-surface: #181b1b;
+    --text: #f4f3ef;
+    --text-secondary: #a8a29e;
+    --text-muted: #6b7280;
+    --border: rgba(244, 243, 239, 0.08);
+    --border-strong: rgba(244, 243, 239, 0.16);
+    --accent-tint: rgba(137, 26, 32, 0.2);
+    --laurel-fit: #4ade80;
+    --laurel-fit-bg: rgba(74, 222, 128, 0.12);
+    --laurel-maybe: #fbbf24;
+    --laurel-maybe-bg: rgba(251, 191, 36, 0.12);
+    --laurel-not-fit: #9ca3af;
+    --laurel-not-fit-bg: rgba(156, 163, 175, 0.12);
+
+    --film-bg: #0d0f11;
+    --film-border: rgba(244, 243, 239, 0.12);
+    --sprocket-color: #060708; /* Obsidian negative holes in dark mode */
+    --film-frame-bg: rgba(255, 255, 255, 0.03);
+    --film-frame-border: rgba(255, 255, 255, 0.08);
+    --film-text: #f4f3ef;
+    --film-text-muted: #6b7280;
+
+    --tracklist-bg: rgba(18, 20, 21, 0.94);
+    --tracklist-header-bg: rgba(18, 20, 21, 0.97);
+    --tracklist-border: rgba(244, 243, 239, 0.1);
+    --tracklist-row-hover: rgba(255, 255, 255, 0.05);
+    --tracklist-row-active: rgba(137, 26, 32, 0.28);
+    --tracklist-input-bg: #111313;
+    --tracklist-input-border: rgba(244, 243, 239, 0.18);
+    --tracklist-pill-bg: rgba(255, 255, 255, 0.06);
+    --tracklist-pill-hover: rgba(255, 255, 255, 0.12);
+    --tracklist-pill-active: #f4f3ef;
+    --tracklist-pill-active-text: #111313;
+    --usecase-accent: #f0a3a8;
+  }
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111313;
+  --bg-surface: #181b1b;
+  --text: #f4f3ef;
+  --text-secondary: #a8a29e;
+  --text-muted: #6b7280;
+  --border: rgba(244, 243, 239, 0.08);
+  --border-strong: rgba(244, 243, 239, 0.16);
+  --accent-tint: rgba(137, 26, 32, 0.2);
+  --laurel-fit: #4ade80;
+  --laurel-fit-bg: rgba(74, 222, 128, 0.12);
+  --laurel-maybe: #fbbf24;
+  --laurel-maybe-bg: rgba(251, 191, 36, 0.12);
+  --laurel-not-fit: #9ca3af;
+  --laurel-not-fit-bg: rgba(156, 163, 175, 0.12);
+
+    --film-bg: #0d0f11;
+    --film-border: rgba(244, 243, 239, 0.12);
+    --sprocket-color: #060708;
+    --film-frame-bg: rgba(255, 255, 255, 0.03);
+    --film-frame-border: rgba(255, 255, 255, 0.08);
+    --film-text: #f4f3ef;
+    --film-text-muted: #6b7280;
+
+    --tracklist-bg: rgba(18, 20, 21, 0.94);
+    --tracklist-header-bg: rgba(18, 20, 21, 0.97);
+    --tracklist-border: rgba(244, 243, 239, 0.1);
+    --tracklist-row-hover: rgba(255, 255, 255, 0.05);
+    --tracklist-row-active: rgba(137, 26, 32, 0.28);
+    --tracklist-input-bg: #111313;
+    --tracklist-input-border: rgba(244, 243, 239, 0.18);
+    --tracklist-pill-bg: rgba(255, 255, 255, 0.06);
+    --tracklist-pill-hover: rgba(255, 255, 255, 0.12);
+    --tracklist-pill-active: #f4f3ef;
+    --tracklist-pill-active-text: #111313;
+    --usecase-accent: #f0a3a8;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f3f2ee;
+  --bg-surface: #ffffff;
+  --text: #121314;
+  --text-secondary: #57534e;
+  --text-muted: #8c857b;
+  --border: rgba(18, 19, 20, 0.08);
+  --border-strong: rgba(18, 19, 20, 0.16);
+  --accent-tint: rgba(137, 26, 32, 0.08);
+  --laurel-fit: #1b5e20;
+  --laurel-fit-bg: rgba(27, 94, 32, 0.09);
+  --laurel-maybe: #b45309;
+  --laurel-maybe-bg: rgba(180, 83, 9, 0.09);
+  --laurel-not-fit: #52525b;
+  --laurel-not-fit-bg: rgba(82, 82, 91, 0.09);
+
+  --film-bg: #161719;
+  --film-border: rgba(18, 19, 20, 0.2);
+  --sprocket-color: #f3f2ee;
+  --film-frame-bg: rgba(255, 255, 255, 0.05);
+  --film-frame-border: rgba(255, 255, 255, 0.12);
+  --film-text: #eae8e3;
+  --film-text-muted: #8c857b;
+
+  --tracklist-bg: rgba(243, 242, 238, 0.94);
+  --tracklist-header-bg: rgba(243, 242, 238, 0.96);
+  --tracklist-border: rgba(18, 19, 20, 0.1);
+  --tracklist-row-hover: rgba(18, 19, 20, 0.04);
+  --tracklist-row-active: rgba(137, 26, 32, 0.08);
+  --tracklist-input-bg: #ffffff;
+  --tracklist-input-border: rgba(18, 19, 20, 0.16);
+  --tracklist-pill-bg: rgba(18, 19, 20, 0.05);
+  --tracklist-pill-hover: rgba(18, 19, 20, 0.09);
+  --tracklist-pill-active: #121314;
+  --tracklist-pill-active-text: #f3f2ee;
+  --usecase-accent: #891a20;
+}

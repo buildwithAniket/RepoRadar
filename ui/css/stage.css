@@ -1,0 +1,96 @@
+/* ─── Main Two-Zone Cinema Stage ─── */
+.cinema-viewport {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 68px;
+}
+
+/* ─── Left Zone: 3D Turntable Stage ─── */
+.stage-column {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+}
+#three-canvas-container {
+  position: absolute;
+  inset: 0;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+}
+#three-canvas-container:active {
+  cursor: grabbing;
+}
+
+/* Ground Reflection / Shadow Plinth */
+.turntable-shadow {
+  position: absolute;
+  bottom: 170px;
+  width: 440px; height: 48px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.06) 55%, transparent 75%);
+  filter: blur(16px);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Navigation Bar / Scrubber (Bottom of Left Stage) */
+.stage-controls {
+  position: absolute; bottom: 96px; left: 0; right: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  z-index: 30; pointer-events: auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.disc-track-nav {
+  display: flex; align-items: center; gap: 20px;
+}
+.nav-arrow-btn {
+  background: transparent; border: 1px solid var(--border-strong);
+  color: var(--text); width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.25s var(--ease-cinematic);
+}
+.nav-arrow-btn:hover {
+  background: var(--accent); color: #fff; border-color: var(--accent);
+  transform: scale(1.08);
+}
+.scrubber-dots {
+  display: flex; align-items: center; gap: 8px;
+}
+.scrubber-dot {
+  width: 24px; height: 4px; border-radius: 2px;
+  background: var(--border-strong);
+  border: none; padding: 0; cursor: pointer;
+  transition: all 0.3s var(--ease-cinematic);
+}
+.scrubber-dot.active {
+  width: 44px;
+  background: var(--accent);
+}
+.scrubber-dot:hover:not(.active) {
+  background: var(--text-secondary);
+}
+.scrubber-empty-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.stage-keyboard-hint {
+  font-family: var(--font-mono); font-size: 10px; color: var(--text-muted);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.stage-keyboard-hint kbd {
+  background: var(--bg-surface); border: 1px solid var(--border-strong);
+  border-radius: 3px; padding: 1px 5px; font-size: 9px;
+}
+

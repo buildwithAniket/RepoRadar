@@ -822,7 +822,7 @@ window.REPORADAR_DIGESTS = {
         "id": "OpenBMB/VoxCPM",
         "owner": "OpenBMB",
         "name": "VoxCPM",
-        "stars": 37497,
+        "stars": 40381,
         "language": "Python",
         "pushedAt": "2026-05-11",
         "confidence": "low",
@@ -4689,26 +4689,107 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-24": {
+    "date": "2026-10-24",
+    "evaluatedCount": 3,
+    "skippedCount": 5,
+    "stats": {
+      "fit": 0,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 5,
+      "fit": 0,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "OpenBMB/VoxCPM",
+        "owner": "OpenBMB",
+        "name": "VoxCPM",
+        "stars": 40381,
+        "language": "Python",
+        "pushedAt": "2026-05-11",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "VoxCPM is a tokenizer-free TTS foundation model designed for multilingual speech generation and voice cloning. While high-fidelity audio synthesis can serve as the voice interface layer for autonomous conversational agents, the repository focuses purely on speech generation research rather than LLM orchestration, structured generation, or developer productivity tools.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/OpenBMB/VoxCPM",
+        "useCases": [
+          {
+            "title": "Add Voice Synthesis to Agent Runners",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Equip local autonomous agent runners with low-latency spoken responses using open weights and standardized streaming inference. This allows autonomous agents to deliver audio feedback directly without reliance on external proprietary TTS APIs.",
+            "firstStep": "Set up a test script importing `from voxcpm import VoxCPM` and load the checkpoint via `VoxCPM.from_pretrained(\"openbmb/VoxCPM2\", load_denoiser=False)` to benchmark generation latency."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Renhuai123/ziwei-doushu",
+        "owner": "Renhuai123",
+        "name": "ziwei-doushu",
+        "stars": 7048,
+        "language": "Unknown",
+        "pushedAt": "2026-10-15",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a traditional Chinese astrology (Ziwei Doushu) calculation and chart arrangement engine. It does not align with any of the profile's core focus areas, such as AI agents, LLM orchestration, workflow automation, FinTech, or developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Renhuai123/ziwei-doushu",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "nodejs/node",
+        "owner": "nodejs",
+        "name": "node",
+        "stars": 122972,
+        "language": "Python",
+        "pushedAt": "2026-10-21",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "As the foundational JavaScript runtime, Node.js is ubiquitous infrastructure, but it is far too broad and generic for this profile. The profile specifically targets domain-focused AI agent frameworks, Python-based developer utilities, FinTech platforms, and career automation pipelines rather than ubiquitous language runtimes.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/nodejs/node",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-23",
+  value: "2026-10-24",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-23",
+  value: "2026-10-24",
   enumerable: false,
   configurable: true,
   writable: true

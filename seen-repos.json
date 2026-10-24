@@ -325,12 +325,12 @@
   },
   "OpenBMB/VoxCPM": {
     "first_seen": "2026-09-15",
-    "last_checked": "2026-09-15",
+    "last_checked": "2026-10-24",
     "latest_release_at_check": "2026-05-11T11:59:20Z",
-    "profile_checked_against": "2026-09-15",
-    "reason": "Advanced speech generation is impressive, but it does not align with your current focus on coding agents, career automation, or financial technology.",
-    "stars_at_check": 37497,
-    "verdict": "not-fit"
+    "profile_checked_against": "2026-10-24",
+    "reason": "VoxCPM is a tokenizer-free TTS foundation model designed for multilingual speech generation and voice cloning. While high-fidelity audio synthesis can serve as the voice interface layer for autonomous conversational agents, the repository focuses purely on speech generation research rather than LLM orchestration, structured generation, or developer productivity tools.",
+    "stars_at_check": 40381,
+    "verdict": "maybe"
   },
   "OpenCut-app/OpenCut": {
     "first_seen": "2026-08-28",
@@ -349,6 +349,15 @@
     "reason": "An essential utility for your AI agent stack. Providing agents with zero-fee, CLI-based access to real-time web data (Twitter, GitHub, etc.) is a force multiplier for automating job-search research and market monitoring.",
     "stars_at_check": 81687,
     "verdict": "fit"
+  },
+  "Renhuai123/ziwei-doushu": {
+    "first_seen": "2026-10-24",
+    "last_checked": "2026-10-24",
+    "latest_release_at_check": "2026-10-15T15:24:32Z",
+    "profile_checked_against": "2026-10-24",
+    "reason": "This repository is a traditional Chinese astrology (Ziwei Doushu) calculation and chart arrangement engine. It does not align with any of the profile's core focus areas, such as AI agents, LLM orchestration, workflow automation, FinTech, or developer tooling.",
+    "stars_at_check": 7048,
+    "verdict": "not-fit"
   },
   "Robbyant/lingbot-map": {
     "first_seen": "2026-10-10",
@@ -1285,6 +1294,15 @@
     "reason": "n8n is a high-utility platform for your career-ops and wealth-building goals. Its ability to integrate disparate APIs makes it ideal for building automated pipelines for job tracking, interview scheduling, and cross-border financial monitoring without needing to write custom boilerplate for every integration.",
     "stars_at_check": 204969,
     "verdict": "fit"
+  },
+  "nodejs/node": {
+    "first_seen": "2026-10-24",
+    "last_checked": "2026-10-24",
+    "latest_release_at_check": "2026-10-21T10:38:29Z",
+    "profile_checked_against": "2026-10-24",
+    "reason": "As the foundational JavaScript runtime, Node.js is ubiquitous infrastructure, but it is far too broad and generic for this profile. The profile specifically targets domain-focused AI agent frameworks, Python-based developer utilities, FinTech platforms, and career automation pipelines rather than ubiquitous language runtimes.",
+    "stars_at_check": 122972,
+    "verdict": "not-fit"
   },
   "ntdevlabs/tiny11builder": {
     "first_seen": "2026-10-15",

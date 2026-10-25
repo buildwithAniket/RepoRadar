@@ -323,6 +323,15 @@
     "stars_at_check": 240294,
     "verdict": "fit"
   },
+  "Nutlope/hallmark": {
+    "first_seen": "2026-10-25",
+    "last_checked": "2026-10-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-25",
+    "reason": "This repository targets coding agents specifically highlighted in the profile, such as Claude Code and Codex. By supplying custom design skills and quality guidelines to improve output quality for AI coding tools, it directly serves the profile's interests in developer productivity and AI coding agent enhancement.",
+    "stars_at_check": 32507,
+    "verdict": "fit"
+  },
   "OpenBMB/VoxCPM": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-10-24",
@@ -628,6 +637,15 @@
     "reason": "A self-hosted media downloader utility does not intersect with any of the core focus areas or exclusion filters specified in the profile.",
     "stars_at_check": 9959,
     "verdict": "not-fit"
+  },
+  "aws/agent-toolkit-for-aws": {
+    "first_seen": "2026-10-25",
+    "last_checked": "2026-10-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-25",
+    "reason": "This repository aligns directly with the profile's focus on AI agents and developer productivity tooling. By providing official Model Context Protocol (MCP) servers, skills, and plugins that enable AI agents to build on and interact with AWS cloud infrastructure, it serves as an essential component for cloud-native agent orchestration.",
+    "stars_at_check": 3214,
+    "verdict": "fit"
   },
   "ayghri/i-have-adhd": {
     "first_seen": "2026-10-07",
@@ -953,6 +971,15 @@
     "stars_at_check": 45076,
     "verdict": "not-fit"
   },
+  "google-gemini/gemini-cli": {
+    "first_seen": "2026-10-25",
+    "last_checked": "2026-10-25",
+    "latest_release_at_check": "2026-10-20T21:17:57Z",
+    "profile_checked_against": "2026-10-25",
+    "reason": "This project fits the profile's core interest in developer CLI utilities and AI agent runners. Bringing Gemini agent capabilities directly into the terminal environment offers high utility for developer workflows and serves as a strong example of CLI-based LLM integration.",
+    "stars_at_check": 108244,
+    "verdict": "fit"
+  },
   "google-research/timesfm": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -1070,6 +1097,15 @@
     "stars_at_check": 9455,
     "verdict": "maybe"
   },
+  "jbiaojerry/ebook-treasure-chest": {
+    "first_seen": "2026-10-25",
+    "last_checked": "2026-10-25",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-25",
+    "reason": "This repository is a static link aggregation list for ebook downloads with no source code or technical backend system. It triggers the exclusion criteria for static resource lists lacking architectural innovation or software utility, and holds no relevance to the profile's focus areas.",
+    "stars_at_check": 22869,
+    "verdict": "not-fit"
+  },
   "julyx10/lap": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -1149,6 +1185,15 @@
     "profile_checked_against": "2026-10-12",
     "reason": "AirLLM directly aligns with the profile's interest in LLM orchestration, local runners, and high-performance Python systems by enabling 70B model inference on single 4GB GPUs. Its layered loading and memory-efficient execution techniques provide clear value for local AI developer workflows.",
     "stars_at_check": 36840,
+    "verdict": "fit"
+  },
+  "makecindy/cindy": {
+    "first_seen": "2026-10-25",
+    "last_checked": "2026-10-25",
+    "latest_release_at_check": "2026-10-23T02:46:16Z",
+    "profile_checked_against": "2026-10-25",
+    "reason": "This repository directly addresses the profile's primary focus on autonomous multi-agent systems and agent runners. As an open-source, out-of-the-box AI agent framework for task execution, it provides valuable architecture and practical patterns for LLM orchestration.",
+    "stars_at_check": 4278,
     "verdict": "fit"
   },
   "manaflow-ai/cmux": {
@@ -1428,6 +1473,15 @@
     "profile_checked_against": "2026-10-04",
     "reason": "This repository lacks a description and appears to be a web-based coding platform or tutorial repository associated with the T3 stack. It does not align with the profile's core focus areas of AI agents, career-ops, fintech, or high-performance developer productivity tooling.",
     "stars_at_check": 24833,
+    "verdict": "not-fit"
+  },
+  "pollen-robotics/microduck": {
+    "first_seen": "2026-10-25",
+    "last_checked": "2026-10-25",
+    "latest_release_at_check": "2026-10-19T14:24:43Z",
+    "profile_checked_against": "2026-10-25",
+    "reason": "This project is a hardware robotics repository for building a tiny bipedal duck robot. While technically novel, hardware robotics falls completely outside the profile's focus areas of software-driven LLM orchestration, workflow automation, FinTech, and developer productivity tooling.",
+    "stars_at_check": 11156,
     "verdict": "not-fit"
   },
   "protocolbuffers/protobuf": {

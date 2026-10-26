@@ -17,6 +17,15 @@
     "stars_at_check": 0,
     "verdict": "fit"
   },
+  "AgriciDaniel/claude-seo": {
+    "first_seen": "2026-10-26",
+    "last_checked": "2026-10-26",
+    "latest_release_at_check": "2026-10-22T16:20:38Z",
+    "profile_checked_against": "2026-10-26",
+    "reason": "AgriciDaniel/claude-seo is a strong fit for the profile's AI Agents & LLM Orchestration focus area, specifically enhancing coding agent capabilities like Claude Code. With 19 specialized sub-agents and integration of agentic web standards such as WebMCP and llms.txt, it offers concrete architectural value in multi-agent orchestration.",
+    "stars_at_check": 21357,
+    "verdict": "fit"
+  },
   "Alishahryar1/free-claude-code": {
     "first_seen": "2026-10-13",
     "last_checked": "2026-10-13",
@@ -195,6 +204,15 @@
     "profile_checked_against": "2026-08-28",
     "reason": "Directly supports your interest in AI coding agents by providing the necessary context and standards to improve the quality of AI-generated code in Go.",
     "stars_at_check": 0,
+    "verdict": "fit"
+  },
+  "JetBrains/thinkrail": {
+    "first_seen": "2026-10-26",
+    "last_checked": "2026-10-26",
+    "latest_release_at_check": "2026-10-18T20:52:19Z",
+    "profile_checked_against": "2026-10-26",
+    "reason": "JetBrains/thinkrail directly aligns with the profile's focus areas of Developer Productivity & Tooling and AI Agents. By integrating lightweight AI-assisted coding workflows and customizable IDE environments for coding agents, it represents an innovative approach to developer productivity and intelligent workflow orchestration.",
+    "stars_at_check": 2100,
     "verdict": "fit"
   },
   "JuliusBrussee/caveman": {
@@ -790,6 +808,15 @@
     "reason": "This project directly aligns with the profile's focus on coding agents (such as Claude Code, Codex, and Hermes Agent) and developer productivity by providing a local, pre-indexed code knowledge graph that reduces token usage and tool call overhead.",
     "stars_at_check": 72692,
     "verdict": "fit"
+  },
+  "coollabsio/coolify": {
+    "first_seen": "2026-10-26",
+    "last_checked": "2026-10-26",
+    "latest_release_at_check": "2026-10-23T10:41:38Z",
+    "profile_checked_against": "2026-10-26",
+    "reason": "While coollabsio/coolify is an exceptional self-hosted PaaS tool that enhances developer deployment workflows, it focuses broadly on cloud infrastructure management rather than the profile's primary focus areas of AI agents, candidate tracking, or fintech engineering.",
+    "stars_at_check": 64696,
+    "verdict": "maybe"
   },
   "coreyhaines31/marketingskills": {
     "first_seen": "2026-10-03",

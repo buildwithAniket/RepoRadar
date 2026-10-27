@@ -5068,26 +5068,149 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-27": {
+    "date": "2026-10-27",
+    "evaluatedCount": 4,
+    "skippedCount": 10,
+    "stats": {
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 10,
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "NVIDIA/SkillSpector",
+        "owner": "NVIDIA",
+        "name": "SkillSpector",
+        "stars": 22471,
+        "language": "Markdown",
+        "pushedAt": "2026-10-23",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Aligning directly with the profile's focus on AI Agents & LLM Orchestration as well as Developer Productivity, NVIDIA/SkillSpector provides a dedicated security scanner for AI agent skills used in environments like Claude Code, Codex, and MCP. It offers essential defensive tooling against prompt injection, data exfiltration, and supply-chain vulnerabilities, making it an architectural asset for secure agent deployment.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/NVIDIA/SkillSpector",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "nightly-labs/openbot",
+        "owner": "nightly-labs",
+        "name": "openbot",
+        "stars": 1701,
+        "language": "Unknown",
+        "pushedAt": "2026-10-26",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Fitting squarely into the AI Agents & LLM Orchestration focus area, nightly-labs/openbot provides a local-first desktop environment for running persistent AI teammates. With features such as agent-to-agent collaboration, task queues, browser control, and native integration for runners like Codex and Claude, it strongly matches the profile's interest in local agent runners and developer workflow enhancements.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/nightly-labs/openbot",
+        "useCases": [
+          {
+            "title": "Deploy headless multi-agent orchestration via Docker",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Deploy a persistent, headless OpenBot server in Docker to manage continuous task queues and inter-agent delegation across Codex and Claude CLI sessions. This gives the profile structured agent-to-agent collaboration and crash-safe queue handling on always-on infrastructure.",
+            "firstStep": "Download `docker/seccomp.json` and start the server container using `docker run -d --name openbot --restart unless-stopped --security-opt seccomp=seccomp.json --security-opt no-new-privileges:true --shm-size 1g --stop-timeout 60 -v openbot-data:/data ghcr.io/nightly-labs/openbot:latest`."
+          },
+          {
+            "title": "Integrate local Ollama endpoints for offline agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Connect local model servers directly to OpenBot's desktop workspace to enable zero-cloud-latency agent execution alongside cloud CLI runners. This gives the profile local model execution with embedded browser control and managed file transfers.",
+            "firstStep": "Configure local Ollama model detection inside OpenBot or pass a path via the `OPENBOT_*_PATH` environment variable override."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "alchaincyf/huashu-design",
+        "owner": "alchaincyf",
+        "name": "huashu-design",
+        "stars": 27303,
+        "language": "Unknown",
+        "pushedAt": "2026-10-17",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Directly relevant to the AI Agents & LLM Orchestration and Developer Productivity focus areas, alchaincyf/huashu-design offers an HTML-native design skill tailored for coding agents like Claude Code, Codex, and Cursor. It enables agents to generate structured web prototypes, PPTX files, and design assets, serving as a valuable tool for extending coding agent capabilities.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/alchaincyf/huashu-design",
+        "useCases": [
+          {
+            "title": "Equip coding agents with design artifact skills",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate huashu-design into autonomous LLM agent setups like Claude Code or Codex to enable agents to create web prototypes, slide decks, and animated assets directly from text prompts. This expands multi-agent capability beyond code generation to producing structured design deliverables.",
+            "firstStep": "Run `npx skills add alchaincyf/huashu-design` in your CLI to attach the skill to your agent configuration."
+          },
+          {
+            "title": "Automate HTML slide deck export to editable PPTX",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Automate presentation generation by leveraging the repository's DOM-to-PowerPoint bridge to turn browser-rendered HTML decks into natively editable PPTX slides. This eliminates manual design re-keying in presentation software during developer updates or project pitches.",
+            "firstStep": "Prompt an active agent with `做一份 AI 心理学的演讲 PPT，推荐 3 个风格方向让我选` to render an HTML presentation and trigger `html2pptx.js` for editable output."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "gitroomhq/postiz-app",
+        "owner": "gitroomhq",
+        "name": "postiz-app",
+        "stars": 38685,
+        "language": "Unknown",
+        "pushedAt": "2026-10-24",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While postiz-app leverages agentic features for automated social media scheduling, its application domain centers on content marketing and social platform distribution. As a result, it falls outside the profile's core technical priorities, which focus on agent orchestration, developer productivity, career automation, and financial technology.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/gitroomhq/postiz-app",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-26",
+  value: "2026-10-27",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-26",
+  value: "2026-10-27",
   enumerable: false,
   configurable: true,
   writable: true

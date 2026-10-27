@@ -314,6 +314,15 @@
     "stars_at_check": 10369,
     "verdict": "fit"
   },
+  "NVIDIA/SkillSpector": {
+    "first_seen": "2026-10-27",
+    "last_checked": "2026-10-27",
+    "latest_release_at_check": "2026-10-23T09:40:35Z",
+    "profile_checked_against": "2026-10-27",
+    "reason": "Aligning directly with the profile's focus on AI Agents & LLM Orchestration as well as Developer Productivity, NVIDIA/SkillSpector provides a dedicated security scanner for AI agent skills used in environments like Claude Code, Codex, and MCP. It offers essential defensive tooling against prompt injection, data exfiltration, and supply-chain vulnerabilities, making it an architectural asset for secure agent deployment.",
+    "stars_at_check": 22471,
+    "verdict": "fit"
+  },
   "NationalSecurityAgency/ghidra": {
     "first_seen": "2026-08-29",
     "last_checked": "2026-10-15",
@@ -528,6 +537,15 @@
     "profile_checked_against": "2026-10-18",
     "reason": "This repository aligns directly with the profile's primary focus on AI Agents & LLM Orchestration and developer productivity tooling. By addressing long-term memory and cross-vendor handoffs specifically for coding agent CLIs, it targets a critical infrastructure challenge in agentic workflows with meaningful utility beyond simple prompt wrappers.",
     "stars_at_check": 10074,
+    "verdict": "fit"
+  },
+  "alchaincyf/huashu-design": {
+    "first_seen": "2026-10-27",
+    "last_checked": "2026-10-27",
+    "latest_release_at_check": "2026-10-17T11:40:41Z",
+    "profile_checked_against": "2026-10-27",
+    "reason": "Directly relevant to the AI Agents & LLM Orchestration and Developer Productivity focus areas, alchaincyf/huashu-design offers an HTML-native design skill tailored for coding agents like Claude Code, Codex, and Cursor. It enables agents to generate structured web prototypes, PPTX files, and design assets, serving as a valuable tool for extending coding agent capabilities.",
+    "stars_at_check": 27303,
     "verdict": "fit"
   },
   "alibaba/open-code-review": {
@@ -998,6 +1016,15 @@
     "stars_at_check": 45076,
     "verdict": "not-fit"
   },
+  "gitroomhq/postiz-app": {
+    "first_seen": "2026-10-27",
+    "last_checked": "2026-10-27",
+    "latest_release_at_check": "2026-10-24T14:16:43Z",
+    "profile_checked_against": "2026-10-27",
+    "reason": "While postiz-app leverages agentic features for automated social media scheduling, its application domain centers on content marketing and social platform distribution. As a result, it falls outside the profile's core technical priorities, which focus on agent orchestration, developer productivity, career automation, and financial technology.",
+    "stars_at_check": 38685,
+    "verdict": "not-fit"
+  },
   "google-gemini/gemini-cli": {
     "first_seen": "2026-10-25",
     "last_checked": "2026-10-25",
@@ -1365,6 +1392,15 @@
     "profile_checked_against": "2026-09-18",
     "reason": "n8n is a high-utility platform for your career-ops and wealth-building goals. Its ability to integrate disparate APIs makes it ideal for building automated pipelines for job tracking, interview scheduling, and cross-border financial monitoring without needing to write custom boilerplate for every integration.",
     "stars_at_check": 204969,
+    "verdict": "fit"
+  },
+  "nightly-labs/openbot": {
+    "first_seen": "2026-10-27",
+    "last_checked": "2026-10-27",
+    "latest_release_at_check": "2026-10-26T16:26:20Z",
+    "profile_checked_against": "2026-10-27",
+    "reason": "Fitting squarely into the AI Agents & LLM Orchestration focus area, nightly-labs/openbot provides a local-first desktop environment for running persistent AI teammates. With features such as agent-to-agent collaboration, task queues, browser control, and native integration for runners like Codex and Claude, it strongly matches the profile's interest in local agent runners and developer workflow enhancements.",
+    "stars_at_check": 1701,
     "verdict": "fit"
   },
   "nodejs/node": {

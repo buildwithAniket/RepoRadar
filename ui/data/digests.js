@@ -4977,7 +4977,7 @@ window.REPORADAR_DIGESTS = {
         "id": "JetBrains/thinkrail",
         "owner": "JetBrains",
         "name": "thinkrail",
-        "stars": 2100,
+        "stars": 4382,
         "language": "Unknown",
         "pushedAt": "2026-10-18",
         "confidence": "high",
@@ -5191,26 +5191,141 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-28": {
+    "date": "2026-10-28",
+    "evaluatedCount": 4,
+    "skippedCount": 7,
+    "stats": {
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 7,
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "JetBrains/thinkrail",
+        "owner": "JetBrains",
+        "name": "thinkrail",
+        "stars": 4382,
+        "language": "Unknown",
+        "pushedAt": "2026-10-18",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository focuses on enhancing developer productivity by integrating AI coding assistance directly into a lightweight IDE workflow. It directly matches the profile's core interests in developer productivity tooling and autonomous coding agents.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/JetBrains/thinkrail",
+        "useCases": [
+          {
+            "title": "Enhance terminal agents with ThinkRail packages",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Upgrade local CLI agent interactions by installing ThinkRail's standalone package extensions for structured user questioning and visual diagram rendering. This brings interactive GUI capabilities directly into existing command-line agent runs.",
+            "firstStep": "Run `pi install npm:@thinkrail/pi-ask-user-question` and `pi install npm:@thinkrail/pi-visualize` to enable structured prompts and diagrams in terminal sessions."
+          },
+          {
+            "title": "Maintain living project specifications across sessions",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Establish persistent project intent across LLM coding sessions by structuring architectural specs into a graph that agents autonomously maintain. This prevents context drift during multi-step development across isolated worktree workspaces.",
+            "firstStep": "Create a `SPEC.md` file in your repository and open the workspace using the `thinkrail` CLI to let the agent query and update specifications via `spec_*` tools."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "HKUDS/DeepTutor",
+        "owner": "HKUDS",
+        "name": "DeepTutor",
+        "stars": 46716,
+        "language": "Unknown",
+        "pushedAt": "2026-10-18",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "DeepTutor explores personalized AI tutoring and interactive instruction frameworks, which leverages LLM orchestration and adaptive learning workflows. Although its primary domain is general education rather than developer tooling or career-ops, its multi-agent orchestration architecture makes it a potential reference point for automated interview preparation systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/HKUDS/DeepTutor",
+        "useCases": [
+          {
+            "title": "Build adaptive technical interview paths using DeepTutor",
+            "kind": "build",
+            "effort": "project",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Repurpose DeepTutor's tool-gated mastery paths and code execution to construct automated technical interview preparation workflows that track candidate readiness.",
+            "firstStep": "Review `README.md` and experiment with the `exec` tool to structure execution-based technical assessment prompts for candidate practice."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "elayadesign/ai-design-skills",
+        "owner": "elayadesign",
+        "name": "ai-design-skills",
+        "stars": 10106,
+        "language": "Markdown",
+        "pushedAt": "2026-10-28",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository appears to be a collection of design assets or prompts rather than a functional software application or SDK. It lacks back-end engineering, LLM agent orchestration logic, or developer tools, placing it outside the profile's technical scope.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/elayadesign/ai-design-skills",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "togg53192-cmd/jailbreaks",
+        "owner": "togg53192-cmd",
+        "name": "jailbreaks",
+        "stars": 6051,
+        "language": "Markdown",
+        "pushedAt": "2026-10-28",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is simply a curated text list of LLM prompt jailbreaks without any software architecture, programmatic tooling, or backend implementation. It lacks engineering depth and does not align with any of the profile's core focus areas.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/togg53192-cmd/jailbreaks",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-27",
+  value: "2026-10-28",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-27",
+  value: "2026-10-28",
   enumerable: false,
   configurable: true,
   writable: true

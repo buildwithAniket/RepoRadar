@@ -170,6 +170,15 @@
     "stars_at_check": 50401,
     "verdict": "fit"
   },
+  "HKUDS/DeepTutor": {
+    "first_seen": "2026-10-28",
+    "last_checked": "2026-10-28",
+    "latest_release_at_check": "2026-10-18T20:13:23Z",
+    "profile_checked_against": "2026-10-28",
+    "reason": "DeepTutor explores personalized AI tutoring and interactive instruction frameworks, which leverages LLM orchestration and adaptive learning workflows. Although its primary domain is general education rather than developer tooling or career-ops, its multi-agent orchestration architecture makes it a potential reference point for automated interview preparation systems.",
+    "stars_at_check": 46716,
+    "verdict": "maybe"
+  },
   "HunxByts/GhostTrack": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -208,11 +217,11 @@
   },
   "JetBrains/thinkrail": {
     "first_seen": "2026-10-26",
-    "last_checked": "2026-10-26",
+    "last_checked": "2026-10-28",
     "latest_release_at_check": "2026-10-18T20:52:19Z",
-    "profile_checked_against": "2026-10-26",
-    "reason": "JetBrains/thinkrail directly aligns with the profile's focus areas of Developer Productivity & Tooling and AI Agents. By integrating lightweight AI-assisted coding workflows and customizable IDE environments for coding agents, it represents an innovative approach to developer productivity and intelligent workflow orchestration.",
-    "stars_at_check": 2100,
+    "profile_checked_against": "2026-10-28",
+    "reason": "This repository focuses on enhancing developer productivity by integrating AI coding assistance directly into a lightweight IDE workflow. It directly matches the profile's core interests in developer productivity tooling and autonomous coding agents.",
+    "stars_at_check": 4382,
     "verdict": "fit"
   },
   "JuliusBrussee/caveman": {
@@ -934,6 +943,15 @@
     "reason": "This repository provides CAD capabilities for AI agents, allowing them to generate and manipulate 3D models. It is a strong fit for the profile's focus on AI agents, LLM orchestration, and equipping autonomous agents with specialized tools and skills.",
     "stars_at_check": 17018,
     "verdict": "fit"
+  },
+  "elayadesign/ai-design-skills": {
+    "first_seen": "2026-10-28",
+    "last_checked": "2026-10-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-28",
+    "reason": "This repository appears to be a collection of design assets or prompts rather than a functional software application or SDK. It lacks back-end engineering, LLM agent orchestration logic, or developer tools, placing it outside the profile's technical scope.",
+    "stars_at_check": 10106,
+    "verdict": "not-fit"
   },
   "ever-co/ever-gauzy": {
     "first_seen": "2026-09-15",
@@ -1825,6 +1843,15 @@
     "reason": "While tilelang targets high-performance systems and developer tooling by simplifying GPU/accelerator kernel development, it focuses on low-level hardware compilation rather than the profile's core application layers of AI agents, fintech, or workflow automation.",
     "stars_at_check": 8086,
     "verdict": "maybe"
+  },
+  "togg53192-cmd/jailbreaks": {
+    "first_seen": "2026-10-28",
+    "last_checked": "2026-10-28",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-28",
+    "reason": "This repository is simply a curated text list of LLM prompt jailbreaks without any software architecture, programmatic tooling, or backend implementation. It lacks engineering depth and does not align with any of the profile's core focus areas.",
+    "stars_at_check": 6051,
+    "verdict": "not-fit"
   },
   "trycua/cua": {
     "first_seen": "2026-10-08",

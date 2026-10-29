@@ -962,6 +962,15 @@
     "stars_at_check": 6179,
     "verdict": "maybe"
   },
+  "expo/skills": {
+    "first_seen": "2026-10-29",
+    "last_checked": "2026-10-29",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-29",
+    "reason": "Expo Skills aligns with the profile's focus on developer productivity and AI agent tools by equipping LLM coding agents with specialized capabilities to interact with Expo and Expo Application Services projects.",
+    "stars_at_check": 3688,
+    "verdict": "fit"
+  },
   "fastapi/fastapi": {
     "first_seen": "2026-10-23",
     "last_checked": "2026-10-23",
@@ -1259,6 +1268,15 @@
     "stars_at_check": 36840,
     "verdict": "fit"
   },
+  "macro-inc/macro": {
+    "first_seen": "2026-10-29",
+    "last_checked": "2026-10-29",
+    "latest_release_at_check": "2026-10-29T03:24:10Z",
+    "profile_checked_against": "2026-10-29",
+    "reason": "Macro fits the profile's focus on AI Agents & LLM Orchestration and workflow automation by delivering a unified workspace built around shared AI memory, multi-agent collaboration, and integrated task tools.",
+    "stars_at_check": 5580,
+    "verdict": "fit"
+  },
   "makecindy/cindy": {
     "first_seen": "2026-10-25",
     "last_checked": "2026-10-25",
@@ -1414,11 +1432,11 @@
   },
   "nightly-labs/openbot": {
     "first_seen": "2026-10-27",
-    "last_checked": "2026-10-27",
-    "latest_release_at_check": "2026-10-26T16:26:20Z",
-    "profile_checked_against": "2026-10-27",
-    "reason": "Fitting squarely into the AI Agents & LLM Orchestration focus area, nightly-labs/openbot provides a local-first desktop environment for running persistent AI teammates. With features such as agent-to-agent collaboration, task queues, browser control, and native integration for runners like Codex and Claude, it strongly matches the profile's interest in local agent runners and developer workflow enhancements.",
-    "stars_at_check": 1701,
+    "last_checked": "2026-10-29",
+    "latest_release_at_check": "2026-10-28T22:38:31Z",
+    "profile_checked_against": "2026-10-29",
+    "reason": "OpenBot strongly aligns with the profile's interest in local agent runners and autonomous multi-agent orchestration, providing a local-first desktop workspace for persistent AI teammates with task queues, file sharing, and agent-to-agent collaboration.",
+    "stars_at_check": 3474,
     "verdict": "fit"
   },
   "nodejs/node": {
@@ -1639,11 +1657,11 @@
   },
   "ruvnet/RuView": {
     "first_seen": "2026-09-15",
-    "last_checked": "2026-09-15",
-    "latest_release_at_check": "2026-09-11T14:05:30Z",
-    "profile_checked_against": "2026-09-15",
-    "reason": "Innovative spatial intelligence, but lacks a clear application to your professional focus areas of software engineering, career-ops, or financial automation.",
-    "stars_at_check": 94010,
+    "last_checked": "2026-10-29",
+    "latest_release_at_check": "2026-10-12T17:02:30Z",
+    "profile_checked_against": "2026-10-29",
+    "reason": "RuView focuses on RF signal processing and spatial intelligence for presence detection using WiFi signals, which falls outside the profile's primary focus areas of AI agent orchestration, fintech, career automation, and developer tooling.",
+    "stars_at_check": 101322,
     "verdict": "not-fit"
   },
   "ruvnet/ruflo": {
@@ -1978,6 +1996,15 @@
     "reason": "This project fits the profile's interests in both AI agent memory/RAG systems and developer productivity tooling, providing a token-efficient indexing and search solution tailored for agentic workflows, documentation retrieval, and code search.",
     "stars_at_check": 5969,
     "verdict": "fit"
+  },
+  "xiaolai/the-craft-of-selfteaching": {
+    "first_seen": "2026-10-29",
+    "last_checked": "2026-10-29",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-10-29",
+    "reason": "This repository is a general self-teaching markdown guide rather than a software tool, system framework, or agent project, rendering it out of scope for the profile.",
+    "stars_at_check": 18729,
+    "verdict": "not-fit"
   },
   "xtool-org/xtool": {
     "first_seen": "2026-10-14",

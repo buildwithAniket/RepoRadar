@@ -805,9 +805,9 @@ window.REPORADAR_DIGESTS = {
         "id": "ruvnet/RuView",
         "owner": "ruvnet",
         "name": "RuView",
-        "stars": 94010,
+        "stars": 101322,
         "language": "Rust",
-        "pushedAt": "2026-09-11",
+        "pushedAt": "2026-10-12",
         "confidence": "low",
         "verdict": "not-fit",
         "verdictLabel": "ARCHIVED / PASS",
@@ -5109,9 +5109,9 @@ window.REPORADAR_DIGESTS = {
         "id": "nightly-labs/openbot",
         "owner": "nightly-labs",
         "name": "openbot",
-        "stars": 1701,
+        "stars": 3474,
         "language": "Unknown",
-        "pushedAt": "2026-10-26",
+        "pushedAt": "2026-10-28",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -5306,26 +5306,167 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-29": {
+    "date": "2026-10-29",
+    "evaluatedCount": 5,
+    "skippedCount": 9,
+    "stats": {
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 5
+    },
+    "summary": {
+      "evaluated": 5,
+      "skipped": 9,
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 5
+    },
+    "repos": [
+      {
+        "id": "macro-inc/macro",
+        "owner": "macro-inc",
+        "name": "macro",
+        "stars": 5580,
+        "language": "Unknown",
+        "pushedAt": "2026-10-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Macro fits the profile's focus on AI Agents & LLM Orchestration and workflow automation by delivering a unified workspace built around shared AI memory, multi-agent collaboration, and integrated task tools.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/macro-inc/macro",
+        "useCases": [
+          {
+            "title": "Automate candidate tracking using native CRM and mail",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Consolidate candidate discovery and interview pipelines inside Macro's unified CRM and inbox system. By indexing applicant correspondence by domain and contact, candidate tracking and email workflows remain synchronized across the entire hiring team.",
+            "firstStep": "Read `https://docs.macro.com/product/crm` and use `cmd+k` to set up applicant records and company domain aggregations for talent tracking."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "nightly-labs/openbot",
+        "owner": "nightly-labs",
+        "name": "openbot",
+        "stars": 3474,
+        "language": "Unknown",
+        "pushedAt": "2026-10-28",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "OpenBot strongly aligns with the profile's interest in local agent runners and autonomous multi-agent orchestration, providing a local-first desktop workspace for persistent AI teammates with task queues, file sharing, and agent-to-agent collaboration.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/nightly-labs/openbot",
+        "useCases": [
+          {
+            "title": "Deploy headless OpenBot multi-agent server",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Host a persistent OpenBot instance in Docker to run multi-agent workflows with Claude Code, Codex, and local models. This provides an always-on workspace where autonomous AI teammates handle task queues, file transfers, and agent-to-agent messaging without requiring an active desktop screen.",
+            "firstStep": "Download the Docker seccomp profile using `curl -fsSLO https://raw.githubusercontent.com/nightly-labs/openbot/main/docker/seccomp.json` and start the server container using `ghcr.io/nightly-labs/openbot:latest`."
+          },
+          {
+            "title": "Automate background developer workflows via Nix",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Launch OpenBot via Nix to manage persistent background agent queues for coding tasks connected to local LM Studio or Ollama endpoints. This decouples long-running code generation tasks from manual developer intervention while automatically managing context window limits.",
+            "firstStep": "Run `nix run github:nightly-labs/openbot` to start the desktop workspace and configure local model detection."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "expo/skills",
+        "owner": "expo",
+        "name": "skills",
+        "stars": 3688,
+        "language": "Markdown",
+        "pushedAt": "2026-10-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Expo Skills aligns with the profile's focus on developer productivity and AI agent tools by equipping LLM coding agents with specialized capabilities to interact with Expo and Expo Application Services projects.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/expo/skills",
+        "useCases": [
+          {
+            "title": "Equip coding agents with Expo capabilities",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Expand the capability matrix of autonomous coding runners by supplying structured domain knowledge and context rules for Expo and React Native projects. This allows agents to reliably generate valid router layouts, perform native module upgrades, and make schema-aware API calls without hallucinating platform constraints.",
+            "firstStep": "Run `npx skills@latest add expo/skills --skill '*'` from the root of a mobile project to provision the skills for available AI agents."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ruvnet/RuView",
+        "owner": "ruvnet",
+        "name": "RuView",
+        "stars": 101322,
+        "language": "Rust",
+        "pushedAt": "2026-10-12",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "RuView focuses on RF signal processing and spatial intelligence for presence detection using WiFi signals, which falls outside the profile's primary focus areas of AI agent orchestration, fintech, career automation, and developer tooling.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/ruvnet/RuView",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "xiaolai/the-craft-of-selfteaching",
+        "owner": "xiaolai",
+        "name": "the-craft-of-selfteaching",
+        "stars": 18729,
+        "language": "Markdown",
+        "pushedAt": "2026-10-29",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a general self-teaching markdown guide rather than a software tool, system framework, or agent project, rendering it out of scope for the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/xiaolai/the-craft-of-selfteaching",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-28",
+  value: "2026-10-29",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-28",
+  value: "2026-10-29",
   enumerable: false,
   configurable: true,
   writable: true

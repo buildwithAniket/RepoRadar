@@ -1232,6 +1232,15 @@
     "stars_at_check": 7291,
     "verdict": "maybe"
   },
+  "lightpanda-io/browser": {
+    "first_seen": "2026-10-31",
+    "last_checked": "2026-10-31",
+    "latest_release_at_check": "2026-10-23T09:01:02Z",
+    "profile_checked_against": "2026-10-31",
+    "reason": "lightpanda-io/browser aligns strongly with the profile's primary focus on AI Agents & LLM Orchestration as well as Developer Productivity & Tooling. As a headless browser engineered specifically for AI workloads and automated execution, it serves as high-performance infrastructure for web-capable AI agent runners and automated scraping pipelines, making it a highly relevant tool for agentic workflows.",
+    "stars_at_check": 38659,
+    "verdict": "fit"
+  },
   "lightseekorg/tokenspeed": {
     "first_seen": "2026-10-16",
     "last_checked": "2026-10-16",

@@ -5570,26 +5570,81 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-10-31": {
+    "date": "2026-10-31",
+    "evaluatedCount": 1,
+    "skippedCount": 14,
+    "stats": {
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 1
+    },
+    "summary": {
+      "evaluated": 1,
+      "skipped": 14,
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 1
+    },
+    "repos": [
+      {
+        "id": "lightpanda-io/browser",
+        "owner": "lightpanda-io",
+        "name": "browser",
+        "stars": 38659,
+        "language": "Unknown",
+        "pushedAt": "2026-10-23",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "lightpanda-io/browser aligns strongly with the profile's primary focus on AI Agents & LLM Orchestration as well as Developer Productivity & Tooling. As a headless browser engineered specifically for AI workloads and automated execution, it serves as high-performance infrastructure for web-capable AI agent runners and automated scraping pipelines, making it a highly relevant tool for agentic workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/lightpanda-io/browser",
+        "useCases": [
+          {
+            "title": "Build deterministic web agent steps with PandaScript",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Use interactive agent mode to prototype web actions using an LLM, then export the workflow using native commands. Replaying the output script drops runtime LLM reliance and token costs completely for fixed scraping or form-filling agent steps.",
+            "firstStep": "Run `./lightpanda agent` to interactively direct web browser navigation, export the workflow using `/save`, and execute the resulting script with `./lightpanda run <script>.js`."
+          },
+          {
+            "title": "Integrate ultra-fast headless CDP server into CI automation",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Replace resource-intensive headless Chrome containers in CI testing and automation pipelines with Lightpanda's lightweight CDP server. It drastically cuts memory footprints and accelerates execution time while remaining compatible with standard CDP clients like Puppeteer.",
+            "firstStep": "Start the container using `docker run -d --name lightpanda -p 127.0.0.1:9222:9222 lightpanda/browser:latest` and update Puppeteer scripts to connect to `ws://127.0.0.1:9222`."
+          }
+        ],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-30",
+  value: "2026-10-31",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-30",
+  value: "2026-10-31",
   enumerable: false,
   configurable: true,
   writable: true

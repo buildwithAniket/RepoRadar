@@ -404,6 +404,15 @@
     "stars_at_check": 91739,
     "verdict": "not-fit"
   },
+  "Orkas-AI/Orkas": {
+    "first_seen": "2026-11-01",
+    "last_checked": "2026-11-01",
+    "latest_release_at_check": "2026-10-27T15:37:15Z",
+    "profile_checked_against": "2026-11-01",
+    "reason": "This repository aligns directly with the profile's primary focus on AI Agents & LLM Orchestration. It provides a local-first desktop runner that orchestrates multi-agent workflows and integrates specialist agents alongside coding agents such as Hermes, Claude Code, and Codex for task automation.",
+    "stars_at_check": 7003,
+    "verdict": "fit"
+  },
   "Panniantong/Agent-Reach": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -448,6 +457,15 @@
     "reason": "This repository is a web-based media streaming client. It does not align with the profile's interest in AI agents, career workflow automation, fintech, or high-performance developer tooling.",
     "stars_at_check": 14374,
     "verdict": "not-fit"
+  },
+  "THU-MAIC/OpenMAIC": {
+    "first_seen": "2026-11-01",
+    "last_checked": "2026-11-01",
+    "latest_release_at_check": "2026-10-29T09:20:16Z",
+    "profile_checked_against": "2026-11-01",
+    "reason": "This repository strongly fits the profile's focus on AI Agents & LLM Orchestration. It provides an open multi-agent framework for interactive environments, showcasing scalable agent coordination patterns relevant to modern agentic systems.",
+    "stars_at_check": 42314,
+    "verdict": "fit"
   },
   "TauricResearch/TradingAgents": {
     "first_seen": "2026-08-28",
@@ -745,6 +763,15 @@
     "reason": "This tool focuses on porting PlayStation 5 console executables to Linux and Windows. It falls outside the core focus areas of AI agent orchestration, career operations, fintech systems, and Python-centric developer productivity.",
     "stars_at_check": 27716,
     "verdict": "not-fit"
+  },
+  "bregman-arie/devops-exercises": {
+    "first_seen": "2026-11-01",
+    "last_checked": "2026-11-01",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-01",
+    "reason": "This repository partially overlaps with the interview preparation aspect of the profile's Career-Ops focus area. However, it functions as a static collection of DevOps questions and reference materials rather than an automated tool, workflow pipeline, or software system.",
+    "stars_at_check": 86184,
+    "verdict": "maybe"
   },
   "browser-use/video-use": {
     "first_seen": "2026-09-22",
@@ -1987,6 +2014,15 @@
     "reason": "This repository aligns with the profile's focus on high-performance Python systems and infrastructure for local and cloud LLM execution. As the standard high-throughput, memory-efficient inference engine powering modern structured generation and agent backends, it represents critical foundational technology for LLM orchestration.",
     "stars_at_check": 94557,
     "verdict": "fit"
+  },
+  "vorssaint/vorssaint-utils": {
+    "first_seen": "2026-11-01",
+    "last_checked": "2026-11-01",
+    "latest_release_at_check": "2026-10-29T20:00:45Z",
+    "profile_checked_against": "2026-11-01",
+    "reason": "This repository is a general macOS menu bar utility toolkit, which falls outside the profile's core target areas of AI agent orchestration, Python developer tooling, career automation pipelines, and financial technology.",
+    "stars_at_check": 32110,
+    "verdict": "not-fit"
   },
   "vxcontrol/pentagi": {
     "first_seen": "2026-10-15",

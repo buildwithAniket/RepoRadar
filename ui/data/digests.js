@@ -5625,26 +5625,149 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-01": {
+    "date": "2026-11-01",
+    "evaluatedCount": 4,
+    "skippedCount": 10,
+    "stats": {
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 10,
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "Orkas-AI/Orkas",
+        "owner": "Orkas-AI",
+        "name": "Orkas",
+        "stars": 7003,
+        "language": "Unknown",
+        "pushedAt": "2026-10-27",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's primary focus on AI Agents & LLM Orchestration. It provides a local-first desktop runner that orchestrates multi-agent workflows and integrates specialist agents alongside coding agents such as Hermes, Claude Code, and Codex for task automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Orkas-AI/Orkas",
+        "useCases": [
+          {
+            "title": "Orchestrate coding agents with desktop Commander",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "The profile can harness Orkas as a local desktop runner to coordinate Hermes-Agent and Claude Code for multi-step software tasks. This bridges specialist research and UI agents with autonomous coding agents under unified project memory and to-do auto-advancement.",
+            "firstStep": "Set up a new project configured with an `OpenAI`-compatible endpoint and invoke Commander to delegate engineering tasks to `ProductDeveloper` alongside `Hermes-Agent`."
+          },
+          {
+            "title": "Automate equity screens and risk checks",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "FinTech & Global Wealth Systems",
+            "pitch": "The profile can set up scheduled background tasks to run algorithmic factor screens and equity backtests without manual prompting. This produces auditable, traceable risk dashboards directly within the local desktop environment.",
+            "firstStep": "Configure a scheduled automation in Orkas that runs `StockAnalyser` on a recurring basis and exports risk metrics via the Google `Sheets` connector."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "THU-MAIC/OpenMAIC",
+        "owner": "THU-MAIC",
+        "name": "OpenMAIC",
+        "stars": 42314,
+        "language": "Unknown",
+        "pushedAt": "2026-10-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository strongly fits the profile's focus on AI Agents & LLM Orchestration. It provides an open multi-agent framework for interactive environments, showcasing scalable agent coordination patterns relevant to modern agentic systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/THU-MAIC/OpenMAIC",
+        "useCases": [
+          {
+            "title": "Study server-first multi-agent orchestration patterns",
+            "kind": "learn",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Examine how OpenMAIC manages durable server-first agent sessions and unified web/API pipelines. Inspecting its orchestration design provides practical insights for architecting resilient multi-agent systems that survive client disconnects.",
+            "firstStep": "Review the server configuration options and model defaults defined in `openmaic.yml` to understand how generation runs persistently across sessions."
+          },
+          {
+            "title": "Automate engineering onboarding lesson creation",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Convert technical documentation into structured onboarding modules by utilizing OpenMAIC's document ingestion and knowledge base search. This automates knowledge transfer for candidate prep and engineering team onboarding workflows.",
+            "firstStep": "Install `@openmaic/generation` and configure material parsing sources to automatically structure internal training documents."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "bregman-arie/devops-exercises",
+        "owner": "bregman-arie",
+        "name": "devops-exercises",
+        "stars": 86184,
+        "language": "Unknown",
+        "pushedAt": "2026-11-01",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This repository partially overlaps with the interview preparation aspect of the profile's Career-Ops focus area. However, it functions as a static collection of DevOps questions and reference materials rather than an automated tool, workflow pipeline, or software system.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/bregman-arie/devops-exercises",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "vorssaint/vorssaint-utils",
+        "owner": "vorssaint",
+        "name": "vorssaint-utils",
+        "stars": 32110,
+        "language": "Python",
+        "pushedAt": "2026-10-29",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a general macOS menu bar utility toolkit, which falls outside the profile's core target areas of AI agent orchestration, Python developer tooling, career automation pipelines, and financial technology.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vorssaint/vorssaint-utils",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-10-31",
+  value: "2026-11-01",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-10-31",
+  value: "2026-11-01",
   enumerable: false,
   configurable: true,
   writable: true

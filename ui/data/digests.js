@@ -5292,9 +5292,9 @@ window.REPORADAR_DIGESTS = {
         "id": "togg53192-cmd/jailbreaks",
         "owner": "togg53192-cmd",
         "name": "jailbreaks",
-        "stars": 6051,
+        "stars": 13282,
         "language": "Markdown",
-        "pushedAt": "2026-10-28",
+        "pushedAt": "2026-11-02",
         "confidence": "low",
         "verdict": "not-fit",
         "verdictLabel": "ARCHIVED / PASS",
@@ -5748,26 +5748,234 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-02": {
+    "date": "2026-11-02",
+    "evaluatedCount": 9,
+    "skippedCount": 8,
+    "stats": {
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 6,
+      "total": 9
+    },
+    "summary": {
+      "evaluated": 9,
+      "skipped": 8,
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 6,
+      "total": 9
+    },
+    "repos": [
+      {
+        "id": "beenuar/AiSOC",
+        "owner": "beenuar",
+        "name": "AiSOC",
+        "stars": 6468,
+        "language": "Unknown",
+        "pushedAt": "2026-11-01",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly targets the profile's primary focus on autonomous AI agents and LLM orchestration. It implements multi-agent triage, a replayable step-by-step decision ledger, and an MCP server integration for developer environments like Claude and Cursor.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/beenuar/AiSOC",
+        "useCases": [
+          {
+            "title": "Study local LLM agent decision ledgers",
+            "kind": "learn",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Examine how local models execute autonomous triage while logging every prompt and tool invocation. This offers a reference architecture for auditable multi-agent orchestration without relying on external API keys.",
+            "firstStep": "Run `pip install aisoc-sandbox && aisoc-sandbox demo` in your local environment to execute an offline alert triage run and inspect the step-by-step decision ledger."
+          },
+          {
+            "title": "Connect event logs to automated agent triage",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Stream custom infrastructure logs and telemetry directly into the local ingest API to automate threat correlation and triage. This enhances operational developer tooling by turning low-level telemetry into structured agent investigations.",
+            "firstStep": "Obtain an authorization token using `make ingest-token` and push batch telemetry events to `http://localhost:8081/v1/ingest/batch` via `curl`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "FlashML-org/FreeToken",
+        "owner": "FlashML-org",
+        "name": "FreeToken",
+        "stars": 15651,
+        "language": "Unknown",
+        "pushedAt": "2026-10-26",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "FreeToken serves high-performance, large-scale models on local hardware, addressing a critical layer of local LLM orchestration and agent runners. Its focus on efficient inference infrastructure aligns strongly with the profile's developer tooling and local AI runtime interests.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/FlashML-org/FreeToken",
+        "useCases": [
+          {
+            "title": "Host local MoE backends for coding agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "FreeToken exposes OpenAI and Anthropic compatible APIs with semantic-aware caching optimized for agent tool calls. Integrating it into local agent runners enables fast context edits without redundant recomputation.",
+            "firstStep": "Run `uv pip install \"freetoken[accel]\"` to install the runtime and configure your agent runner to target FreeToken's local API endpoint."
+          },
+          {
+            "title": "Study elastic memory and MoE execution policies",
+            "kind": "learn",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Explore FreeToken's implementation of dynamic VRAM re-allocation and expert caching policies to learn high-performance resource management patterns for modern LLM engines.",
+            "firstStep": "Run `git clone https://github.com/FlashML-org/FreeToken.git` to fetch the source repository and inspect the runtime memory management code."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "patchy631/ai-engineering-hub",
+        "owner": "patchy631",
+        "name": "ai-engineering-hub",
+        "stars": 40678,
+        "language": "Unknown",
+        "pushedAt": "2026-11-02",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This repository provides comprehensive code examples and tutorials exploring RAG and real-world AI agent architectures. While educational repositories are secondary to standalone engineering frameworks, its coverage of modern agent orchestration patterns makes it a relevant reference.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/patchy631/ai-engineering-hub",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "public-apis/public-apis",
+        "owner": "public-apis",
+        "name": "public-apis",
+        "stars": 495159,
+        "language": "Unknown",
+        "pushedAt": "2026-11-02",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a crowdsourced list and directory of public APIs rather than a functional software application or developer tool. It lacks architectural depth and does not align with the profile's core areas in AI agents, career automation, fintech, or developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/public-apis/public-apis",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "cjpais/Handy",
+        "owner": "cjpais",
+        "name": "Handy",
+        "stars": 36923,
+        "language": "Unknown",
+        "pushedAt": "2026-10-03",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While an offline speech-to-text tool can assist personal workflows, it focuses purely on audio transcription rather than LLM orchestration, autonomous agent design, career automation, or fintech systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/cjpais/Handy",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "kornia/kornia",
+        "owner": "kornia",
+        "name": "kornia",
+        "stars": 11937,
+        "language": "Unknown",
+        "pushedAt": "2026-10-23",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Kornia is an established geometric computer vision library for PyTorch and Spatial AI. Despite being high-performance vision tooling, computer vision falls outside the profile's focal points of LLM orchestration, career-ops, and fintech.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/kornia/kornia",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "anomalyco/hex",
+        "owner": "anomalyco",
+        "name": "hex",
+        "stars": 3681,
+        "language": "Unknown",
+        "pushedAt": "2026-09-26",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Hex is an operating system utility for local voice dictation. Although relevant to input accessibility and desktop productivity, it does not offer programmatic developer tooling, agent orchestration pipelines, or fintech capabilities.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/anomalyco/hex",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "togg53192-cmd/jailbreaks",
+        "owner": "togg53192-cmd",
+        "name": "jailbreaks",
+        "stars": 13282,
+        "language": "Markdown",
+        "pushedAt": "2026-11-02",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is simply a markdown collection of prompt injection and jailbreak texts. It lacks any software architecture, programmatic framework, automated testing, or alignment with the profile's target domains.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/togg53192-cmd/jailbreaks",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "hyprwm/Hyprland",
+        "owner": "hyprwm",
+        "name": "Hyprland",
+        "stars": 39552,
+        "language": "Unknown",
+        "pushedAt": "2026-10-28",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Hyprland is a Wayland desktop tiling compositor. Despite its popularity in Linux developer workstation customization, system window management falls completely outside the profile's focus on AI agents, fintech, and developer workflow automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/hyprwm/Hyprland",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-01",
+  value: "2026-11-02",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-01",
+  value: "2026-11-02",
   enumerable: false,
   configurable: true,
   writable: true

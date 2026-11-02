@@ -143,6 +143,15 @@
     "stars_at_check": 7953,
     "verdict": "not-fit"
   },
+  "FlashML-org/FreeToken": {
+    "first_seen": "2026-11-02",
+    "last_checked": "2026-11-02",
+    "latest_release_at_check": "2026-10-26T03:24:21Z",
+    "profile_checked_against": "2026-11-02",
+    "reason": "FreeToken serves high-performance, large-scale models on local hardware, addressing a critical layer of local LLM orchestration and agent runners. Its focus on efficient inference infrastructure aligns strongly with the profile's developer tooling and local AI runtime interests.",
+    "stars_at_check": 15651,
+    "verdict": "fit"
+  },
   "Friedrich-M/UniMate": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -638,6 +647,15 @@
     "stars_at_check": 30960,
     "verdict": "maybe"
   },
+  "anomalyco/hex": {
+    "first_seen": "2026-11-02",
+    "last_checked": "2026-11-02",
+    "latest_release_at_check": "2026-09-26T01:37:29Z",
+    "profile_checked_against": "2026-11-02",
+    "reason": "Hex is an operating system utility for local voice dictation. Although relevant to input accessibility and desktop productivity, it does not offer programmatic developer tooling, agent orchestration pipelines, or fintech capabilities.",
+    "stars_at_check": 3681,
+    "verdict": "not-fit"
+  },
   "anomalyco/opencode": {
     "first_seen": "2026-10-18",
     "last_checked": "2026-10-18",
@@ -737,6 +755,15 @@
     "stars_at_check": 54591,
     "verdict": "fit"
   },
+  "beenuar/AiSOC": {
+    "first_seen": "2026-11-02",
+    "last_checked": "2026-11-02",
+    "latest_release_at_check": "2026-11-01T05:05:15Z",
+    "profile_checked_against": "2026-11-02",
+    "reason": "This repository directly targets the profile's primary focus on autonomous AI agents and LLM orchestration. It implements multi-agent triage, a replayable step-by-step decision ledger, and an MCP server integration for developer environments like Claude and Cursor.",
+    "stars_at_check": 6468,
+    "verdict": "fit"
+  },
   "bilawalsidhu/gods-eye-view": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-10-12",
@@ -834,6 +861,15 @@
     "profile_checked_against": "2026-09-18",
     "reason": "While technically impressive, Cilium is a deep infrastructure project focused on eBPF-based networking and security. It lacks direct utility for your current focus on AI orchestration, job-search automation, or personal finance management, and falls outside your immediate scope of developer productivity tooling.",
     "stars_at_check": 25260,
+    "verdict": "not-fit"
+  },
+  "cjpais/Handy": {
+    "first_seen": "2026-11-02",
+    "last_checked": "2026-11-02",
+    "latest_release_at_check": "2026-10-03T02:42:15Z",
+    "profile_checked_against": "2026-11-02",
+    "reason": "While an offline speech-to-text tool can assist personal workflows, it focuses purely on audio transcription rather than LLM orchestration, autonomous agent design, career automation, or fintech systems.",
+    "stars_at_check": 36923,
     "verdict": "not-fit"
   },
   "cline/cline": {
@@ -1196,6 +1232,15 @@
     "stars_at_check": 59844,
     "verdict": "maybe"
   },
+  "hyprwm/Hyprland": {
+    "first_seen": "2026-11-02",
+    "last_checked": "2026-11-02",
+    "latest_release_at_check": "2026-10-28T10:42:35Z",
+    "profile_checked_against": "2026-11-02",
+    "reason": "Hyprland is a Wayland desktop tiling compositor. Despite its popularity in Linux developer workstation customization, system window management falls completely outside the profile's focus on AI agents, fintech, and developer workflow automation.",
+    "stars_at_check": 39552,
+    "verdict": "not-fit"
+  },
   "ifixai-ai/iFixAi": {
     "first_seen": "2026-10-15",
     "last_checked": "2026-10-15",
@@ -1249,6 +1294,15 @@
     "reason": "While an elite resource for systems engineering and deep infrastructure knowledge, it serves as an educational guide rather than a functional tool, framework, or utility matching Aniket's primary core tracks.",
     "stars_at_check": 50163,
     "verdict": "maybe"
+  },
+  "kornia/kornia": {
+    "first_seen": "2026-11-02",
+    "last_checked": "2026-11-02",
+    "latest_release_at_check": "2026-10-23T18:26:01Z",
+    "profile_checked_against": "2026-11-02",
+    "reason": "Kornia is an established geometric computer vision library for PyTorch and Spatial AI. Despite being high-performance vision tooling, computer vision falls outside the profile's focal points of LLM orchestration, career-ops, and fintech.",
+    "stars_at_check": 11937,
+    "verdict": "not-fit"
   },
   "leejet/stable-diffusion.cpp": {
     "first_seen": "2026-09-25",
@@ -1601,6 +1655,15 @@
     "stars_at_check": 84685,
     "verdict": "fit"
   },
+  "patchy631/ai-engineering-hub": {
+    "first_seen": "2026-11-02",
+    "last_checked": "2026-11-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-02",
+    "reason": "This repository provides comprehensive code examples and tutorials exploring RAG and real-world AI agent architectures. While educational repositories are secondary to standalone engineering frameworks, its coverage of modern agent orchestration patterns makes it a relevant reference.",
+    "stars_at_check": 40678,
+    "verdict": "maybe"
+  },
   "pbakaus/impeccable": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-10-01",
@@ -1653,6 +1716,15 @@
     "profile_checked_against": "2026-09-03",
     "reason": "A foundational data interchange format; while useful for general engineering, it does not provide the specific agent-based or career-automation utility you are seeking.",
     "stars_at_check": 71965,
+    "verdict": "not-fit"
+  },
+  "public-apis/public-apis": {
+    "first_seen": "2026-11-02",
+    "last_checked": "2026-11-02",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-02",
+    "reason": "This repository is a crowdsourced list and directory of public APIs rather than a functional software application or developer tool. It lacks architectural depth and does not align with the profile's core areas in AI agents, career automation, fintech, or developer tooling.",
+    "stars_at_check": 495159,
     "verdict": "not-fit"
   },
   "pytorch/pytorch": {
@@ -1927,11 +1999,11 @@
   },
   "togg53192-cmd/jailbreaks": {
     "first_seen": "2026-10-28",
-    "last_checked": "2026-10-28",
+    "last_checked": "2026-11-02",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-10-28",
-    "reason": "This repository is simply a curated text list of LLM prompt jailbreaks without any software architecture, programmatic tooling, or backend implementation. It lacks engineering depth and does not align with any of the profile's core focus areas.",
-    "stars_at_check": 6051,
+    "profile_checked_against": "2026-11-02",
+    "reason": "This repository is simply a markdown collection of prompt injection and jailbreak texts. It lacks any software architecture, programmatic framework, automated testing, or alignment with the profile's target domains.",
+    "stars_at_check": 13282,
     "verdict": "not-fit"
   },
   "trycua/cua": {

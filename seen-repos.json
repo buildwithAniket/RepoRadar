@@ -98,6 +98,15 @@
     "stars_at_check": 37050,
     "verdict": "maybe"
   },
+  "D4Vinci/Scrapling": {
+    "first_seen": "2026-11-03",
+    "last_checked": "2026-11-03",
+    "latest_release_at_check": "2026-10-17T21:43:59Z",
+    "profile_checked_against": "2026-11-03",
+    "reason": "Aligns strongly with the profile's interest in Developer Productivity & Tooling and high-performance Python systems. As a feature-complete Python web scraping framework, it provides high-utility data extraction capabilities directly applicable to automated data pipeline tools.",
+    "stars_at_check": 93537,
+    "verdict": "fit"
+  },
   "DietrichGebert/ponytail": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-09-03",
@@ -1286,6 +1295,15 @@
     "stars_at_check": 2945,
     "verdict": "not-fit"
   },
+  "karpathy/nanochat": {
+    "first_seen": "2026-11-03",
+    "last_checked": "2026-11-03",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-03",
+    "reason": "Highly relevant to the profile's focus on AI Agents & LLM Orchestration and minimalist developer tooling. It offers an efficient, clean full-stack chat framework that provides architectural clarity for custom local LLM deployment and orchestration.",
+    "stars_at_check": 60091,
+    "verdict": "fit"
+  },
   "kelseyhightower/kubernetes-the-hard-way": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-26",
@@ -1419,6 +1437,15 @@
     "profile_checked_against": "2026-09-03",
     "reason": "Provides practical, real-world agent skills that can be directly integrated into your existing agent runners to improve your daily coding productivity.",
     "stars_at_check": 245566,
+    "verdict": "fit"
+  },
+  "max-sixty/worktrunk": {
+    "first_seen": "2026-11-03",
+    "last_checked": "2026-11-03",
+    "latest_release_at_check": "2026-10-20T21:28:34Z",
+    "profile_checked_against": "2026-11-03",
+    "reason": "Fits the profile's dual interests in Developer Productivity & Tooling and AI Agents & LLM Orchestration. By providing Git worktree management optimized for parallel AI agent execution, it directly addresses developer workflow bottlenecks in multi-agent software engineering environments.",
+    "stars_at_check": 10187,
     "verdict": "fit"
   },
   "meituan-longcat/LongCat-Video": {
@@ -1626,6 +1653,15 @@
     "profile_checked_against": "2026-10-01",
     "reason": "This project aligns with the profile's interest in autonomous multi-agent systems and agent execution platforms, providing cross-platform computer-use and OS-level agent automation capabilities.",
     "stars_at_check": 391075,
+    "verdict": "fit"
+  },
+  "p-e-w/heretic": {
+    "first_seen": "2026-11-03",
+    "last_checked": "2026-11-03",
+    "latest_release_at_check": "2026-11-01T13:03:19Z",
+    "profile_checked_against": "2026-11-03",
+    "reason": "Matches the profile's focus on AI Agents & LLM Orchestration through innovative inference-time model steering. Its training-free methodology to suppress slop, reduce sycophancy, and modify language model dynamics provides novel utility for structured generation frameworks.",
+    "stars_at_check": 38349,
     "verdict": "fit"
   },
   "pablostanley/yoinks": {
@@ -2049,6 +2085,15 @@
     "profile_checked_against": "2026-09-25",
     "reason": "This aligns perfectly with your interest in AI Agents & LLM Orchestration. Memory management is a critical bottleneck for autonomous agents; a framework that enables agents to 'learn' from history provides the exact type of architectural innovation you are looking for.",
     "stars_at_check": 28172,
+    "verdict": "fit"
+  },
+  "vercel-labs/agent-desktop": {
+    "first_seen": "2026-11-03",
+    "last_checked": "2026-11-03",
+    "latest_release_at_check": "2026-11-03T04:13:45Z",
+    "profile_checked_against": "2026-11-03",
+    "reason": "Directly aligns with the profile's core focus on AI Agents & LLM Orchestration and Developer Productivity. Providing a computer use CLI specifically tailored for AI agents offers practical tooling for local and cloud agent execution and desktop automation workflows.",
+    "stars_at_check": 11148,
     "verdict": "fit"
   },
   "vercel-labs/portless": {

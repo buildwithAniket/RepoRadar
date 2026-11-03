@@ -5956,26 +5956,167 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-03": {
+    "date": "2026-11-03",
+    "evaluatedCount": 5,
+    "skippedCount": 10,
+    "stats": {
+      "fit": 5,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 5
+    },
+    "summary": {
+      "evaluated": 5,
+      "skipped": 10,
+      "fit": 5,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 5
+    },
+    "repos": [
+      {
+        "id": "vercel-labs/agent-desktop",
+        "owner": "vercel-labs",
+        "name": "agent-desktop",
+        "stars": 11148,
+        "language": "Unknown",
+        "pushedAt": "2026-11-03",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Directly aligns with the profile's core focus on AI Agents & LLM Orchestration and Developer Productivity. Providing a computer use CLI specifically tailored for AI agents offers practical tooling for local and cloud agent execution and desktop automation workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vercel-labs/agent-desktop",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "D4Vinci/Scrapling",
+        "owner": "D4Vinci",
+        "name": "Scrapling",
+        "stars": 93537,
+        "language": "Python",
+        "pushedAt": "2026-10-17",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Aligns strongly with the profile's interest in Developer Productivity & Tooling and high-performance Python systems. As a feature-complete Python web scraping framework, it provides high-utility data extraction capabilities directly applicable to automated data pipeline tools.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/D4Vinci/Scrapling",
+        "useCases": [
+          {
+            "title": "Upgrade RepoRadar fetching pipeline with Scrapling",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "RepoRadar",
+            "pitch": "Replace RepoRadar's requests and beautifulsoup4 ingestion scripts with Scrapling's Fetcher to enable robust parsing and direct clean Markdown output for LLM judging.",
+            "firstStep": "Import `scrapling.fetchers` into the data pipeline scripts and replace standard request calls with `Fetcher.get('https://...')`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "max-sixty/worktrunk",
+        "owner": "max-sixty",
+        "name": "worktrunk",
+        "stars": 10187,
+        "language": "Unknown",
+        "pushedAt": "2026-10-20",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Fits the profile's dual interests in Developer Productivity & Tooling and AI Agents & LLM Orchestration. By providing Git worktree management optimized for parallel AI agent execution, it directly addresses developer workflow bottlenecks in multi-agent software engineering environments.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/max-sixty/worktrunk",
+        "useCases": [
+          {
+            "title": "Isolate concurrent AI agent tasks across parallel worktrees",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Run multiple autonomous coding agents simultaneously in isolated git environments without manual worktree setup or branch collisions. This simplifies scaling parallel agent workflows across complex repositories.",
+            "firstStep": "Run `wt switch -c -x claude feat` to automatically create a new worktree for branch `feat` and spawn the Claude agent session."
+          },
+          {
+            "title": "Share build caches across parallel development worktrees",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Eliminate redundant build steps and reduce disk overhead when context-switching across multiple feature branches. Copy-on-write storage integration automatically reuses build artifacts without duplicating files.",
+            "firstStep": "Execute `wt config shell install` during installation to enable shell integrations for seamlessly navigating worktrees."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "karpathy/nanochat",
+        "owner": "karpathy",
+        "name": "nanochat",
+        "stars": 60091,
+        "language": "Unknown",
+        "pushedAt": "2026-11-03",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Highly relevant to the profile's focus on AI Agents & LLM Orchestration and minimalist developer tooling. It offers an efficient, clean full-stack chat framework that provides architectural clarity for custom local LLM deployment and orchestration.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/karpathy/nanochat",
+        "useCases": [
+          {
+            "title": "Train a budget-constrained local LLM for agent workflows",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Train a custom, low-cost baseline LLM directly on local GPU hardware using a single depth dial to power localized agent reasoning experiments. By controlling all LLM training stages locally, the profile can prototype local agent runners without relying on third-party cloud LLM APIs.",
+            "firstStep": "Run `uv sync --extra gpu` to set up environment dependencies and execute `bash runs/speedrun.sh` to run the complete end-to-end training pipeline."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "p-e-w/heretic",
+        "owner": "p-e-w",
+        "name": "heretic",
+        "stars": 38349,
+        "language": "Unknown",
+        "pushedAt": "2026-11-01",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Matches the profile's focus on AI Agents & LLM Orchestration through innovative inference-time model steering. Its training-free methodology to suppress slop, reduce sycophancy, and modify language model dynamics provides novel utility for structured generation frameworks.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/p-e-w/heretic",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-02",
+  value: "2026-11-03",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-02",
+  value: "2026-11-03",
   enumerable: false,
   configurable: true,
   writable: true

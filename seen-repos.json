@@ -521,6 +521,15 @@
     "stars_at_check": 3421,
     "verdict": "fit"
   },
+  "Usagi-org/ai-goofish-monitor": {
+    "first_seen": "2026-11-04",
+    "last_checked": "2026-11-04",
+    "latest_release_at_check": "2026-10-09T07:17:15Z",
+    "profile_checked_against": "2026-11-04",
+    "reason": "This repository provides a specialized web scraping and monitoring tool for tracking secondhand marketplace listings on Xianyu using Playwright and LLM analysis. While it combines automation with AI filtering, it targets consumer e-commerce monitoring rather than aligning with the profile's core focus areas of LLM agent orchestration, career workflow automation, fintech systems, or developer productivity.",
+    "stars_at_check": 16895,
+    "verdict": "not-fit"
+  },
   "VectifyAI/PageIndex": {
     "first_seen": "2026-09-29",
     "last_checked": "2026-09-29",
@@ -1087,6 +1096,15 @@
     "reason": "Useful for building robust RAG pipelines or document processing agents, which could be applied to your wealth management or career-ops document analysis tasks.",
     "stars_at_check": 18623,
     "verdict": "maybe"
+  },
+  "floci-io/floci": {
+    "first_seen": "2026-11-04",
+    "last_checked": "2026-11-04",
+    "latest_release_at_check": "2026-10-31T22:10:55Z",
+    "profile_checked_against": "2026-11-04",
+    "reason": "This project is a lightweight, open-source AWS local emulator designed to streamline local cloud integration testing and development workflows. It strongly aligns with the profile's Developer Productivity & Tooling focus area by improving local developer feedback loops and simplifying local backend system testing without cloud overhead.",
+    "stars_at_check": 29103,
+    "verdict": "fit"
   },
   "flutter/flutter": {
     "first_seen": "2026-10-11",
@@ -1879,6 +1897,15 @@
     "reason": "This is a region-specific stock screening tool for the Chinese domestic market, which does not align with your focus on global career-ops automation or cross-border FinTech systems.",
     "stars_at_check": 6276,
     "verdict": "not-fit"
+  },
+  "spotify/portal-ai-plugins": {
+    "first_seen": "2026-11-04",
+    "last_checked": "2026-11-04",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-04",
+    "reason": "While this repository appears to house AI plugins for developer portal platforms, the lack of repository description in the metadata makes full architectural evaluation difficult. It potentially aligns with the profile's focus areas of Developer Productivity & Tooling and AI Agents & LLM Orchestration if it provides reusable plugins or integration patterns for developer workflows.",
+    "stars_at_check": 3109,
+    "verdict": "maybe"
   },
   "stablyai/orca": {
     "first_seen": "2026-10-18",

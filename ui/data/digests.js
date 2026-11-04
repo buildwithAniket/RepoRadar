@@ -6097,26 +6097,124 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": "No suggestion passed quality checks"
       }
     ]
+  },
+  "2026-11-04": {
+    "date": "2026-11-04",
+    "evaluatedCount": 3,
+    "skippedCount": 10,
+    "stats": {
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 10,
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 1,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "floci-io/floci",
+        "owner": "floci-io",
+        "name": "floci",
+        "stars": 29103,
+        "language": "Unknown",
+        "pushedAt": "2026-10-31",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project is a lightweight, open-source AWS local emulator designed to streamline local cloud integration testing and development workflows. It strongly aligns with the profile's Developer Productivity & Tooling focus area by improving local developer feedback loops and simplifying local backend system testing without cloud overhead.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/floci-io/floci",
+        "useCases": [
+          {
+            "title": "Test cloud integrations locally without AWS accounts",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Integrate the local AWS emulator into development pipelines using Docker Compose to test backend infrastructure without incurring cloud costs or requiring active credentials.",
+            "firstStep": "Run `docker compose up` using a configuration containing the floci service image."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "spotify/portal-ai-plugins",
+        "owner": "spotify",
+        "name": "portal-ai-plugins",
+        "stars": 3109,
+        "language": "Unknown",
+        "pushedAt": "2026-11-04",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While this repository appears to house AI plugins for developer portal platforms, the lack of repository description in the metadata makes full architectural evaluation difficult. It potentially aligns with the profile's focus areas of Developer Productivity & Tooling and AI Agents & LLM Orchestration if it provides reusable plugins or integration patterns for developer workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/spotify/portal-ai-plugins",
+        "useCases": [
+          {
+            "title": "Route heavy IO agent subtasks to cheaper models",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Connect Claude Code with the Shunt plugin to delegate boilerplate generation and bulk file reads to cheaper worker models via the Portal CLI actions registry. This cuts token cost during complex coding agent sessions without changing primary model orchestration logic.",
+            "firstStep": "Run `claude plugin install shunt@portal` and inspect `plugins/shunt/README.md` to configure task routing."
+          },
+          {
+            "title": "Automate multi-service code shifts using Fleetshift",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Execute, monitor, and troubleshoot large-scale catalog changes directly within interactive coding agents using Fleetshift workflows. Developer workflows can draft target shifts, verify progress, and open pull requests automatically.",
+            "firstStep": "Run `/portal:setup` to confirm CLI authentication and initiate a dry run using `fleetshift-create-shift`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Usagi-org/ai-goofish-monitor",
+        "owner": "Usagi-org",
+        "name": "ai-goofish-monitor",
+        "stars": 16895,
+        "language": "Unknown",
+        "pushedAt": "2026-10-09",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository provides a specialized web scraping and monitoring tool for tracking secondhand marketplace listings on Xianyu using Playwright and LLM analysis. While it combines automation with AI filtering, it targets consumer e-commerce monitoring rather than aligning with the profile's core focus areas of LLM agent orchestration, career workflow automation, fintech systems, or developer productivity.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-03",
+  value: "2026-11-04",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-03",
+  value: "2026-11-04",
   enumerable: false,
   configurable: true,
   writable: true

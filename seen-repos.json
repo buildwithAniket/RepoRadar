@@ -152,6 +152,15 @@
     "stars_at_check": 7953,
     "verdict": "not-fit"
   },
+  "FareedKhan-dev/kimi-k3-in-c": {
+    "first_seen": "2026-11-05",
+    "last_checked": "2026-11-05",
+    "latest_release_at_check": "2026-10-02T03:35:37Z",
+    "profile_checked_against": "2026-11-05",
+    "reason": "This repository aligns with the profile's emphasis on high-performance execution systems and local LLM runners within the AI Agents & LLM Orchestration domain. Implementing CPU-bound inference for a massive model in portable C99 demonstrates impressive low-level engineering and zero-framework execution design.",
+    "stars_at_check": 10576,
+    "verdict": "fit"
+  },
   "FlashML-org/FreeToken": {
     "first_seen": "2026-11-02",
     "last_checked": "2026-11-02",
@@ -260,6 +269,15 @@
     "stars_at_check": 4382,
     "verdict": "fit"
   },
+  "JiaFeiMiao-K-Cat/DiscImageStudio": {
+    "first_seen": "2026-11-05",
+    "last_checked": "2026-11-05",
+    "latest_release_at_check": "2026-11-05T06:04:39Z",
+    "profile_checked_against": "2026-11-05",
+    "reason": "This repository lacks documentation and focuses on disc image manipulation, which does not intersect with any of the profile's primary focus areas in AI agents, workflow automation, FinTech, or modern developer productivity tooling.",
+    "stars_at_check": 6878,
+    "verdict": "not-fit"
+  },
   "JuliusBrussee/caveman": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -341,6 +359,15 @@
     "stars_at_check": 8792,
     "verdict": "not-fit"
   },
+  "MichaelCade/90DaysOfDevOps": {
+    "first_seen": "2026-11-05",
+    "last_checked": "2026-11-05",
+    "latest_release_at_check": "2022-01-11T22:24:56Z",
+    "profile_checked_against": "2026-11-05",
+    "reason": "While covering DevOps topics, this repository is a structured educational curriculum and learning roadmap rather than a programmatic framework, CLI utility, or agent system. It falls outside the profile's focus on actionable software architectures and automated developer tooling.",
+    "stars_at_check": 30674,
+    "verdict": "not-fit"
+  },
   "NVIDIA/Model-Optimizer": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-25",
@@ -366,6 +393,15 @@
     "profile_checked_against": "2026-10-27",
     "reason": "Aligning directly with the profile's focus on AI Agents & LLM Orchestration as well as Developer Productivity, NVIDIA/SkillSpector provides a dedicated security scanner for AI agent skills used in environments like Claude Code, Codex, and MCP. It offers essential defensive tooling against prompt injection, data exfiltration, and supply-chain vulnerabilities, making it an architectural asset for secure agent deployment.",
     "stars_at_check": 22471,
+    "verdict": "fit"
+  },
+  "NVIDIA/auto-ontology": {
+    "first_seen": "2026-11-05",
+    "last_checked": "2026-11-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-05",
+    "reason": "This framework aligns directly with the profile's core interest in AI Agents & LLM Orchestration. By providing a graph-based semantic reasoning layer for deterministic query generation and enhanced context retrieval, it directly addresses key architectural challenges in building explainable agent workflows and structured LLM retrieval systems.",
+    "stars_at_check": 6010,
     "verdict": "fit"
   },
   "NationalSecurityAgency/ghidra": {
@@ -519,6 +555,24 @@
     "profile_checked_against": "2026-09-18",
     "reason": "As a self-hosted multi-agent framework, this is highly relevant to your interest in AI orchestration. It offers a robust backend for building custom agents that could be tailored to automate your job search pipelines or manage cross-border financial data, fitting your requirement for architectural depth.",
     "stars_at_check": 3421,
+    "verdict": "fit"
+  },
+  "The-PR-Agent/pr-agent": {
+    "first_seen": "2026-11-05",
+    "last_checked": "2026-11-05",
+    "latest_release_at_check": "2026-10-25T11:14:28Z",
+    "profile_checked_against": "2026-11-05",
+    "reason": "This project matches the profile's core interests in both AI Agents & LLM Orchestration and Developer Productivity & Tooling. By deploying AI agents to automate pull request reviews, code analysis, and feedback generation, it serves as a high-impact developer workflow enhancer.",
+    "stars_at_check": 14949,
+    "verdict": "fit"
+  },
+  "Thysrael/Horizon": {
+    "first_seen": "2026-11-05",
+    "last_checked": "2026-11-05",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-05",
+    "reason": "This project aligns well with the profile's focus areas in AI Agents & LLM Orchestration and Developer Productivity & Tooling. It operates as an automated news scouting and briefing pipeline powered by AI, demonstrating architectural relevance to daily digest automation systems.",
+    "stars_at_check": 12757,
     "verdict": "fit"
   },
   "Usagi-org/ai-goofish-monitor": {
@@ -1150,6 +1204,15 @@
     "reason": "Although Sentry is a foundational Python-based developer platform, it is a massive, established enterprise observability and error-monitoring suite rather than a focused developer workflow utility, autonomous agent framework, or fintech system highlighted in the profile.",
     "stars_at_check": 45076,
     "verdict": "not-fit"
+  },
+  "github/spec-kit": {
+    "first_seen": "2026-11-05",
+    "last_checked": "2026-11-05",
+    "latest_release_at_check": "2026-11-03T18:25:42Z",
+    "profile_checked_against": "2026-11-05",
+    "reason": "This repository supports the profile's focus on Developer Productivity & Tooling. As a toolkit designed to facilitate Specification-Driven Development (SDD), it enhances software design workflows, standardizes project planning processes, and boosts developer velocity.",
+    "stars_at_check": 147553,
+    "verdict": "fit"
   },
   "gitroomhq/postiz-app": {
     "first_seen": "2026-10-27",
@@ -1860,6 +1923,15 @@
     "profile_checked_against": "2026-10-16",
     "reason": "This repository directly aligns with the profile's primary focus on AI Agents & LLM Orchestration, offering a multi-agent harness for coordinating autonomous workflows, adaptive memory, and native integrations with coding agents like Claude Code, Codex, and Hermes.",
     "stars_at_check": 75283,
+    "verdict": "fit"
+  },
+  "scenario-labs/skills": {
+    "first_seen": "2026-11-05",
+    "last_checked": "2026-11-05",
+    "latest_release_at_check": "2026-10-29T15:25:46Z",
+    "profile_checked_against": "2026-11-05",
+    "reason": "This repository aligns directly with the profile's focus on AI Agents & LLM Orchestration, specifically regarding Model Context Protocol (MCP) integrations and agent skill expansion. It enables autonomous agents to dynamically price, select, and invoke multi-modal generation tools.",
+    "stars_at_check": 2660,
     "verdict": "fit"
   },
   "shiyu-coder/Kronos": {

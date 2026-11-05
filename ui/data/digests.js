@@ -6195,26 +6195,244 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-05": {
+    "date": "2026-11-05",
+    "evaluatedCount": 8,
+    "skippedCount": 8,
+    "stats": {
+      "fit": 6,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 8
+    },
+    "summary": {
+      "evaluated": 8,
+      "skipped": 8,
+      "fit": 6,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 8
+    },
+    "repos": [
+      {
+        "id": "NVIDIA/auto-ontology",
+        "owner": "NVIDIA",
+        "name": "auto-ontology",
+        "stars": 6010,
+        "language": "Unknown",
+        "pushedAt": "2026-11-05",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This framework aligns directly with the profile's core interest in AI Agents & LLM Orchestration. By providing a graph-based semantic reasoning layer for deterministic query generation and enhanced context retrieval, it directly addresses key architectural challenges in building explainable agent workflows and structured LLM retrieval systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/NVIDIA/auto-ontology",
+        "useCases": [
+          {
+            "title": "Expose enterprise semantic graphs to LLMs via MCP",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Connect Auto Ontology's graph-based context layer to autonomous agent harnesses via Model Context Protocol (MCP). This enables agents to perform grounded schema resolution and execute verified queries with provenance instead of guessing database structures.",
+            "firstStep": "Set up the local environment by executing `cp .env.example .env` and configuring `DEFAULT_MODELS_API_KEY` before launching the stack using `docker compose up -d --build`."
+          },
+          {
+            "title": "Ground financial analytics queries with deterministic SQL execution",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "FinTech & Global Wealth Systems",
+            "pitch": "Build a deterministic financial reporting layer over relational databases to reconcile conflicting metric definitions across enterprise systems. This ensures revenue, yield, and transactional queries return audit-ready provenance alongside the execution results.",
+            "firstStep": "Seed the sample relational schema by running `uv run python scripts/seed/seed_wwi.py --database-name wideworldimporters --drop` inside the evaluation environment."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "github/spec-kit",
+        "owner": "github",
+        "name": "spec-kit",
+        "stars": 147553,
+        "language": "Unknown",
+        "pushedAt": "2026-11-03",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository supports the profile's focus on Developer Productivity & Tooling. As a toolkit designed to facilitate Specification-Driven Development (SDD), it enhances software design workflows, standardizes project planning processes, and boosts developer velocity.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/github/spec-kit",
+        "useCases": [
+          {
+            "title": "Standardize coding agent workflows with spec-driven development",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Enforce structured development processes, quality gates, and project constitutions across AI coding agent workflows. This replaces ad-hoc prompts with repeatable spec-driven planning, implementation, and convergence cycles.",
+            "firstStep": "Run `specify init my-project --integration copilot` in your terminal to create a project configured for an AI coding agent."
+          },
+          {
+            "title": "Integrate structured bug fixing extensions into agent workflows",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Equip AI coding agents with modular extensions to diagnose root causes, scope targeted repairs, and record verification outcomes. This brings formal diagnostic rigor to agent-assisted troubleshooting pipelines.",
+            "firstStep": "Run `specify extension add bug` from your project directory to install the bug-fixing extension."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "The-PR-Agent/pr-agent",
+        "owner": "The-PR-Agent",
+        "name": "pr-agent",
+        "stars": 14949,
+        "language": "Unknown",
+        "pushedAt": "2026-10-25",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project matches the profile's core interests in both AI Agents & LLM Orchestration and Developer Productivity & Tooling. By deploying AI agents to automate pull request reviews, code analysis, and feedback generation, it serves as a high-impact developer workflow enhancer.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/The-PR-Agent/pr-agent",
+        "useCases": [
+          {
+            "title": "Automate RepoRadar pull request reviews",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "RepoRadar",
+            "pitch": "Integrate PR-Agent into the RepoRadar CI workflow to automatically summarize and review pull requests alongside pytest and ruff checks. Leveraging the existing Gemini API configuration via LiteLLM ensures high review quality with minimal operational cost.",
+            "firstStep": "Add `.github/workflows/pr-agent.yml` to the repository with `uses: the-pr-agent/pr-agent@main` configured to use the existing Gemini API keys."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "FareedKhan-dev/kimi-k3-in-c",
+        "owner": "FareedKhan-dev",
+        "name": "kimi-k3-in-c",
+        "stars": 10576,
+        "language": "Unknown",
+        "pushedAt": "2026-10-02",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns with the profile's emphasis on high-performance execution systems and local LLM runners within the AI Agents & LLM Orchestration domain. Implementing CPU-bound inference for a massive model in portable C99 demonstrates impressive low-level engineering and zero-framework execution design.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "Thysrael/Horizon",
+        "owner": "Thysrael",
+        "name": "Horizon",
+        "stars": 12757,
+        "language": "Unknown",
+        "pushedAt": "2026-11-05",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project aligns well with the profile's focus areas in AI Agents & LLM Orchestration and Developer Productivity & Tooling. It operates as an automated news scouting and briefing pipeline powered by AI, demonstrating architectural relevance to daily digest automation systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Thysrael/Horizon",
+        "useCases": [
+          {
+            "title": "Expand LLM fallback providers in RepoRadar",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "RepoRadar",
+            "pitch": "Incorporate Horizon's multi-model provider architecture—supporting providers like DeepSeek, Claude, and Ollama—into RepoRadar to strengthen LLM resilience beyond Gemini API fallbacks.",
+            "firstStep": "Test execution of multi-provider orchestration using `uv` to evaluate latency and cost trade-offs across model endpoints."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "scenario-labs/skills",
+        "owner": "scenario-labs",
+        "name": "skills",
+        "stars": 2660,
+        "language": "Markdown",
+        "pushedAt": "2026-10-29",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's focus on AI Agents & LLM Orchestration, specifically regarding Model Context Protocol (MCP) integrations and agent skill expansion. It enables autonomous agents to dynamically price, select, and invoke multi-modal generation tools.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/scenario-labs/skills",
+        "useCases": [
+          {
+            "title": "Integrate Scenario MCP skills into agent runners",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Equip coding agents like Claude Code or Cursor with standardized skills to generate production-ready images, videos, audio, and 3D assets via Scenario MCP. This allows LLM agent workflows to handle creative asset generation while inspecting pricing and managing consistency programmatically.",
+            "firstStep": "Connect the MCP server by running `claude mcp add --transport http scenario https://mcp.scenario.com/mcp` and install the initial skill set with `npx skills add scenario-labs/skills --skill scenario`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "JiaFeiMiao-K-Cat/DiscImageStudio",
+        "owner": "JiaFeiMiao-K-Cat",
+        "name": "DiscImageStudio",
+        "stars": 6878,
+        "language": "Unknown",
+        "pushedAt": "2026-11-05",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository lacks documentation and focuses on disc image manipulation, which does not intersect with any of the profile's primary focus areas in AI agents, workflow automation, FinTech, or modern developer productivity tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "MichaelCade/90DaysOfDevOps",
+        "owner": "MichaelCade",
+        "name": "90DaysOfDevOps",
+        "stars": 30674,
+        "language": "Unknown",
+        "pushedAt": "2022-01-11",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While covering DevOps topics, this repository is a structured educational curriculum and learning roadmap rather than a programmatic framework, CLI utility, or agent system. It falls outside the profile's focus on actionable software architectures and automated developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/MichaelCade/90DaysOfDevOps",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-04",
+  value: "2026-11-05",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-04",
+  value: "2026-11-05",
   enumerable: false,
   configurable: true,
   writable: true

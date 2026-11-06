@@ -6413,26 +6413,149 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-06": {
+    "date": "2026-11-06",
+    "evaluatedCount": 4,
+    "skippedCount": 11,
+    "stats": {
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 11,
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "vercel-labs/agent-browser",
+        "owner": "vercel-labs",
+        "name": "agent-browser",
+        "stars": 46150,
+        "language": "Unknown",
+        "pushedAt": "2026-11-03",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's focus on AI Agents & LLM Orchestration as well as Developer Productivity & Tooling. Providing a dedicated browser automation CLI tailored for AI agents, it delivers critical tool-use infrastructure for autonomous web navigation and agentic execution pipelines.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/vercel-labs/agent-browser",
+        "useCases": [
+          {
+            "title": "Integrate browser capabilities into local agent runners",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Provide autonomous multi-agent pipelines and local LLM runners with deterministic web automation tools via MCP. Using lightweight accessibility snapshots instead of raw HTML lowers context token costs while enabling structured browser interactions.",
+            "firstStep": "Run `agent-browser mcp` over stdio to register browser manipulation capabilities as tool definitions inside the local agent runner."
+          },
+          {
+            "title": "Automate candidate tracking workflows across dynamic web portals",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Build headless CLI scripts to log into candidate sourcing portals, extract recruitment pipeline statuses, and submit dynamic web forms. Persistent browser sessions eliminate repeated authentication steps during routine workflow execution.",
+            "firstStep": "Execute `agent-browser open example.com` followed by `agent-browser snapshot -i` to target and inspect interactive form element refs for automated script execution."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ConardLi/garden-skills",
+        "owner": "ConardLi",
+        "name": "garden-skills",
+        "stars": 14379,
+        "language": "Markdown",
+        "pushedAt": "2026-10-11",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository matches the profile's core interest in AI Agents & LLM Orchestration by supplying a structured collection of modular skills for intelligent agents. It offers reusable capabilities across knowledge retrieval and automated execution that enhance agent runners and autonomous workflow systems.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/ConardLi/garden-skills",
+        "useCases": [
+          {
+            "title": "Equip coding agents with modular skill specifications",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate structured skill definitions into coding agents like Claude Code or Cursor to standardise autonomous task execution. Extending local agent runners with modular skills enables predictable, repeatable tool use across agent workflows.",
+            "firstStep": "Import skills into your local agent setup by copying `./skills/motion-showreel` into your workspace and configuring its `SKILL.md` file."
+          },
+          {
+            "title": "Automate video digest generation for RepoRadar repositories",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "RepoRadar",
+            "pitch": "Enhance RepoRadar's output by transforming daily Markdown reports into animated video showreels for social sharing. Using code-rendered timeline skills allows automated creation of short MP4 clips alongside static HTML reports.",
+            "firstStep": "Feed daily RepoRadar Markdown summaries to an agent executing `./skills/motion-showreel` to initiate the `render(t)` frame capture pipeline."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "microsoft/VibeVoice",
+        "owner": "microsoft",
+        "name": "VibeVoice",
+        "stars": 56287,
+        "language": "Unknown",
+        "pushedAt": "2026-11-06",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns with the profile's focus on AI Agents & LLM Orchestration by providing frontier open-source voice AI technology. Speech capabilities serve as a vital component for multimodal AI agents, enabling real-time interactive runners and conversational system integrations.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/microsoft/VibeVoice",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "lz4/lz4",
+        "owner": "lz4",
+        "name": "lz4",
+        "stars": 12491,
+        "language": "Python",
+        "pushedAt": "2026-11-04",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While LZ4 is an industry-standard, high-performance compression algorithm, it falls outside the core focus areas of the profile. The profile prioritizes AI agent orchestration, Python-based developer tooling, workflow automation, and financial technology systems rather than low-level general C compression utilities.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/lz4/lz4",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-05",
+  value: "2026-11-06",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-05",
+  value: "2026-11-06",
   enumerable: false,
   configurable: true,
   writable: true

@@ -73,12 +73,12 @@
   },
   "ConardLi/garden-skills": {
     "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "A useful collection of agent skills that could serve as a template for building your own custom automation tools for job-search or financial tracking.",
-    "stars_at_check": 0,
-    "verdict": "maybe"
+    "last_checked": "2026-11-06",
+    "latest_release_at_check": "2026-10-11T02:28:11Z",
+    "profile_checked_against": "2026-11-06",
+    "reason": "This repository matches the profile's core interest in AI Agents & LLM Orchestration by supplying a structured collection of modular skills for intelligent agents. It offers reusable capabilities across knowledge retrieval and automated execution that enhance agent runners and autonomous workflow systems.",
+    "stars_at_check": 14379,
+    "verdict": "fit"
   },
   "CopilotKit/OpenBot": {
     "first_seen": "2026-10-30",
@@ -1475,6 +1475,15 @@
     "stars_at_check": 36840,
     "verdict": "fit"
   },
+  "lz4/lz4": {
+    "first_seen": "2026-11-06",
+    "last_checked": "2026-11-06",
+    "latest_release_at_check": "2026-11-04T15:55:56Z",
+    "profile_checked_against": "2026-11-06",
+    "reason": "While LZ4 is an industry-standard, high-performance compression algorithm, it falls outside the core focus areas of the profile. The profile prioritizes AI agent orchestration, Python-based developer tooling, workflow automation, and financial technology systems rather than low-level general C compression utilities.",
+    "stars_at_check": 12491,
+    "verdict": "not-fit"
+  },
   "macro-inc/macro": {
     "first_seen": "2026-10-29",
     "last_checked": "2026-10-29",
@@ -1555,6 +1564,15 @@
     "reason": "This repository provides low-level inference frameworks for 1-bit LLMs, which touches upon high-performance systems and local LLM execution. However, it lacks direct alignment with agent orchestration or developer workflow automation unless integrated into a local agent runner stack.",
     "stars_at_check": 41050,
     "verdict": "maybe"
+  },
+  "microsoft/VibeVoice": {
+    "first_seen": "2026-11-06",
+    "last_checked": "2026-11-06",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-06",
+    "reason": "This repository aligns with the profile's focus on AI Agents & LLM Orchestration by providing frontier open-source voice AI technology. Speech capabilities serve as a vital component for multimodal AI agents, enabling real-time interactive runners and conversational system integrations.",
+    "stars_at_check": 56287,
+    "verdict": "fit"
   },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
@@ -2184,6 +2202,15 @@
     "profile_checked_against": "2026-09-25",
     "reason": "This aligns perfectly with your interest in AI Agents & LLM Orchestration. Memory management is a critical bottleneck for autonomous agents; a framework that enables agents to 'learn' from history provides the exact type of architectural innovation you are looking for.",
     "stars_at_check": 28172,
+    "verdict": "fit"
+  },
+  "vercel-labs/agent-browser": {
+    "first_seen": "2026-11-06",
+    "last_checked": "2026-11-06",
+    "latest_release_at_check": "2026-11-03T23:46:27Z",
+    "profile_checked_against": "2026-11-06",
+    "reason": "This repository aligns directly with the profile's focus on AI Agents & LLM Orchestration as well as Developer Productivity & Tooling. Providing a dedicated browser automation CLI tailored for AI agents, it delivers critical tool-use infrastructure for autonomous web navigation and agentic execution pipelines.",
+    "stars_at_check": 46150,
     "verdict": "fit"
   },
   "vercel-labs/agent-desktop": {

@@ -710,6 +710,15 @@
     "stars_at_check": 440,
     "verdict": "fit"
   },
+  "angular/angular": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-11-06T19:37:09Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "Angular is a full-featured web application framework, but generic web application frameworks do not align with the specific focus areas of AI orchestration, FinTech tooling, or high-performance Python/CLI developer utilities.",
+    "stars_at_check": 101438,
+    "verdict": "not-fit"
+  },
   "ankitects/anki": {
     "first_seen": "2026-09-17",
     "last_checked": "2026-09-17",
@@ -798,6 +807,15 @@
     "profile_checked_against": "2026-09-15",
     "reason": "High value for your interest in LLM orchestration. Accessing the system prompts of frontier models like Claude Code and Cursor is critical for reverse-engineering their behavior and building better custom agent workflows.",
     "stars_at_check": 67020,
+    "verdict": "fit"
+  },
+  "astral-sh/ruff": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-11-05T18:53:24Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "Ruff is a direct match for the Developer Productivity & Tooling focus area and is already a core component of the active technical stack. Its high-performance Rust architecture brings extreme speed to Python linting and formatting pipelines.",
+    "stars_at_check": 50770,
     "verdict": "fit"
   },
   "averygan/reclip": {
@@ -964,11 +982,11 @@
   },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-09-17",
-    "last_checked": "2026-10-08",
+    "last_checked": "2026-11-07",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-10-08",
-    "reason": "This repository is a strong fit for the profile, aligning with both AI Agents (specifically coding agents) and Developer Productivity. It provides a structured, machine-readable security auditing skill for coding agents, directly supporting automated testing and agent orchestration workflows.",
-    "stars_at_check": 26300,
+    "profile_checked_against": "2026-11-07",
+    "reason": "This repository strongly aligns with the AI Agents & LLM Orchestration focus area. It provides a structured skill for coding agents to execute multi-phase security audits with machine-readable, verifiable outputs.",
+    "stars_at_check": 64523,
     "verdict": "fit"
   },
   "coder/coder": {
@@ -1104,6 +1122,15 @@
     "profile_checked_against": "2026-10-28",
     "reason": "This repository appears to be a collection of design assets or prompts rather than a functional software application or SDK. It lacks back-end engineering, LLM agent orchestration logic, or developer tools, placing it outside the profile's technical scope.",
     "stars_at_check": 10106,
+    "verdict": "not-fit"
+  },
+  "etcd-io/etcd": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-10-22T23:12:51Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "etcd is a distributed key-value store used primarily for cloud infrastructure orchestration like Kubernetes. It does not align with the profile's focus areas of AI agents, candidate tracking, FinTech, or Python developer productivity.",
+    "stars_at_check": 52654,
     "verdict": "not-fit"
   },
   "ever-co/ever-gauzy": {
@@ -1574,6 +1601,15 @@
     "stars_at_check": 56287,
     "verdict": "fit"
   },
+  "microsoft/vscode": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-11-06T10:21:07Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "Visual Studio Code is relevant to the Developer Productivity & Tooling focus area as a dominant extensible editor with rich ecosystem support, though its broad generalized scope makes it less focused than specialized developer CLI tools or agent systems.",
+    "stars_at_check": 195092,
+    "verdict": "maybe"
+  },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
     "last_checked": "2026-10-30",
@@ -1618,6 +1654,15 @@
     "reason": "This repository aligns directly with the focus area of autonomous multi-agent systems and coding agents by applying agents to reverse engineering tasks. The significant scale and sophisticated orchestration match the technical depth required by the profile.",
     "stars_at_check": 179109,
     "verdict": "fit"
+  },
+  "mpv-player/mpv": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-11-05T00:56:42Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "Although mpv is a versatile command-line media player, it operates in the multimedia utility domain and does not align with the profile's interests in developer productivity systems, AI orchestration, or financial software.",
+    "stars_at_check": 37947,
+    "verdict": "not-fit"
   },
   "msitarzewski/agency-agents": {
     "first_seen": "2026-10-06",
@@ -1700,6 +1745,15 @@
     "stars_at_check": 20367,
     "verdict": "not-fit"
   },
+  "nushell/nushell": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-10-04T15:26:13Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "Nushell directly targets the Developer Productivity & Tooling focus area by providing a modern, structured data-oriented shell that reimagines CLI terminal workflows and command execution.",
+    "stars_at_check": 41033,
+    "verdict": "fit"
+  },
   "nvm-sh/nvm": {
     "first_seen": "2026-10-15",
     "last_checked": "2026-10-15",
@@ -1753,6 +1807,15 @@
     "reason": "This project aligns with the profile's interest in autonomous multi-agent systems and agent execution platforms, providing cross-platform computer-use and OS-level agent automation capabilities.",
     "stars_at_check": 391075,
     "verdict": "fit"
+  },
+  "openssl/openssl": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-10-23T12:23:31Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "OpenSSL provides core cryptographic operations and TLS protocol implementations. As low-level infrastructure software, it does not match the active focus areas surrounding LLM agents, developer workflow automation, or FinTech applications.",
+    "stars_at_check": 31342,
+    "verdict": "not-fit"
   },
   "p-e-w/heretic": {
     "first_seen": "2026-11-03",
@@ -1844,6 +1907,15 @@
     "stars_at_check": 11156,
     "verdict": "not-fit"
   },
+  "prometheus/prometheus": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-11-05T16:06:52Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "Prometheus is a time-series database and infrastructure monitoring engine. While essential for modern DevOps, general cloud infrastructure instrumentation sits outside the profile's immediate focus areas of developer tooling, AI agents, and FinTech systems.",
+    "stars_at_check": 67257,
+    "verdict": "not-fit"
+  },
   "protocolbuffers/protobuf": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -1871,6 +1943,15 @@
     "stars_at_check": 104220,
     "verdict": "not-fit"
   },
+  "rails/rails": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-11-04T02:46:00Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "While Ruby on Rails is a cornerstone web development framework, it falls outside the core focus areas of the profile, which emphasize Python-centric developer tooling, AI agents, FinTech systems, and career workflow automation.",
+    "stars_at_check": 59064,
+    "verdict": "not-fit"
+  },
   "rakyll/hey": {
     "first_seen": "2026-09-29",
     "last_checked": "2026-09-29",
@@ -1879,6 +1960,15 @@
     "reason": "As a lightweight CLI HTTP load generator, it aligns loosely with the developer productivity and high-performance system tooling categories, though it lacks direct AI or automation depth.",
     "stars_at_check": 20431,
     "verdict": "maybe"
+  },
+  "react/react": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-10-14T17:06:15Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "React is a foundational web frontend library, but general frontend UI frameworks fall outside the profile's focus areas, which target AI agent architectures, backend developer tooling, and workflow automation.",
+    "stars_at_check": 252320,
+    "verdict": "not-fit"
   },
   "reconurge/flowsint": {
     "first_seen": "2026-09-15",
@@ -2067,6 +2157,15 @@
     "profile_checked_against": "2026-08-29",
     "reason": "Compiling PHP to native binaries is an interesting performance play, but it does not align with your core focus areas of AI agents, career-ops, or financial tooling. It lacks the ecosystem relevance to your current stack.",
     "stars_at_check": 845,
+    "verdict": "not-fit"
+  },
+  "symfony/symfony": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-11-04T12:41:17Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "Symfony is a PHP web framework and component suite. It lacks relevance to the profile's core interests in AI agents, high-performance developer tooling, and automated workflow pipelines.",
+    "stars_at_check": 31495,
     "verdict": "not-fit"
   },
   "t8y2/dbx": {
@@ -2329,6 +2428,15 @@
     "reason": "This repository provides a cross-platform Xcode replacement aimed at developer productivity and multi-platform build systems. Although it falls outside the AI agent and FinTech domains, it intersects with developer productivity and high-performance tooling interests by streamlining cross-platform compilation workflows.",
     "stars_at_check": 9788,
     "verdict": "maybe"
+  },
+  "zed-industries/zed": {
+    "first_seen": "2026-11-07",
+    "last_checked": "2026-11-07",
+    "latest_release_at_check": "2026-11-04T17:04:23Z",
+    "profile_checked_against": "2026-11-07",
+    "reason": "This repository aligns well with the profile's Developer Productivity & Tooling focus area. Zed is a high-performance, Rust-native code editor designed with multiplayer capabilities and built-in AI assistant workflows, matching interest in high-efficiency dev tools and coding agent integration.",
+    "stars_at_check": 93900,
+    "verdict": "fit"
   },
   "zedeus/nitter": {
     "first_seen": "2026-08-28",

@@ -5471,9 +5471,9 @@ window.REPORADAR_DIGESTS = {
         "id": "milind-soni/OpenMausBot",
         "owner": "milind-soni",
         "name": "OpenMausBot",
-        "stars": 7758,
+        "stars": 17422,
         "language": "Unknown",
-        "pushedAt": "2026-10-30",
+        "pushedAt": "2026-11-07",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -6822,26 +6822,218 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-08": {
+    "date": "2026-11-08",
+    "evaluatedCount": 7,
+    "skippedCount": 8,
+    "stats": {
+      "fit": 3,
+      "maybe": 2,
+      "notFit": 2,
+      "total": 7
+    },
+    "summary": {
+      "evaluated": 7,
+      "skipped": 8,
+      "fit": 3,
+      "maybe": 2,
+      "notFit": 2,
+      "total": 7
+    },
+    "repos": [
+      {
+        "id": "milind-soni/OpenMausBot",
+        "owner": "milind-soni",
+        "name": "OpenMausBot",
+        "stars": 17422,
+        "language": "Unknown",
+        "pushedAt": "2026-11-07",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly targets the profile's core focus on AI agents and LLM orchestration by providing an open-source bot platform equipped with a virtual machine environment for secure agent code execution. Its rapid growth reflects strong community engagement in local and cloud autonomous agent runners.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/milind-soni/OpenMausBot",
+        "useCases": [
+          {
+            "title": "Deploy multi-engine CLI agents in isolated environments",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Orchestrate local LLM CLI tools (`claude`, `codex`, `grok`) using custom binaries managed by a local harness server. This provides dedicated multi-agent messaging and execution without routing prompts or credentials through cloud proxies.",
+            "firstStep": "Configure custom agent wrappers or local CLI binaries by navigating to `Settings → Engines`."
+          },
+          {
+            "title": "Automate developer workflows with sandboxed app execution",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Extend local desktop agents with external integration capabilities while maintaining control over system access. Agents can run tasks inside local VMs or cloud Linux desktops without risking unapproved changes to the host OS.",
+            "firstStep": "Set up an agent with execution privileges using an isolated Local VM and integrate external app tools via `Composio`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ranxianglei/billion-context",
+        "owner": "ranxianglei",
+        "name": "billion-context",
+        "stars": 4769,
+        "language": "Unknown",
+        "pushedAt": "2026-11-07",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's AI Agents & LLM Orchestration interest area by providing a context-compression plugin designed for long-running sessions and small context windows. Its focus on reducing token usage and managing massive context histories addresses a critical optimization challenge in agent runners and LLM workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ranxianglei/billion-context",
+        "useCases": [
+          {
+            "title": "Integrate context compression into local coding agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Wrap API calls between local agent runners and LLM endpoints to achieve 5x token savings and prevent context window exhaustion during long coding sessions.",
+            "firstStep": "Install the tool globally via `npm install -g billion-context --prefix=~/.local` and monitor prefix-cache health using `/acp`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "dsx-ai-factory/nvke",
+        "owner": "dsx-ai-factory",
+        "name": "nvke",
+        "stars": 636,
+        "language": "Unknown",
+        "pushedAt": "2026-11-03",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "NVIDIA Kubernetes Engine (NVKE) provides a GPU management plane for Kubernetes on bare metal, supporting high-performance AI infrastructure and model deployment. This connects strongly with the profile's interest in developer productivity, cloud agent runners, and high-performance infrastructure tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/dsx-ai-factory/nvke",
+        "useCases": [
+          {
+            "title": "Evaluate GPU cluster isolation for agent runners",
+            "kind": "learn",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Explore NVKE's bare-metal GPU management plane architecture on simulated hardware to design multi-tenant workload cluster isolation for local or cloud LLM agent runners.",
+            "firstStep": "Run `make build` to assemble binaries and follow `docs/get-started/quickstart-local.md` to evaluate cluster creation locally."
+          },
+          {
+            "title": "Build local management tooling with NVKE binaries",
+            "kind": "build",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Compile NVKE's management binaries locally to inspect internal Go workspace modules and customize local operator development workflows.",
+            "firstStep": "Execute `make build` to construct the workspace binaries and inspect `go.work` for workspace module configuration."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "meta/astryx",
+        "owner": "meta",
+        "name": "astryx",
+        "stars": 14837,
+        "language": "Unknown",
+        "pushedAt": "2026-11-07",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While this repository introduces a design system built to be agent-ready, it primarily focuses on frontend UI components rather than LLM orchestration backends or agent execution logic. It aligns loosely with developer UI tooling and agent interaction design, but lacks the deep backend architecture specified in the profile's core interests.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/meta/astryx",
+        "useCases": [
+          {
+            "title": "Equip coding agents with Astryx CLI",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Expose the Astryx CLI to local coding agents so they can discover components, retrieve documentation, and scaffold UI without hallucinating component APIs. This provides agent runners with deterministic design system conventions during automated React code generation.",
+            "firstStep": "Install the CLI globally with `npm i -g @astryxdesign/cli` and test component inspection by running `npm run astryx -- component --list`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "sherlock-project/sherlock",
+        "owner": "sherlock-project",
+        "name": "sherlock",
+        "stars": 101289,
+        "language": "Python",
+        "pushedAt": "2026-09-08",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "Sherlock is a widely used Python CLI tool for searching usernames across social media networks. While it demonstrates clean Python CLI engineering and can assist in OSINT or candidate talent discovery within the career-ops domain, it operates primarily as a cybersecurity reconnaissance utility rather than a dedicated career workflow automation or LLM orchestration system.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/sherlock-project/sherlock",
+        "useCases": [],
+        "useCaseNote": "README not found"
+      },
+      {
+        "id": "tailwindlabs/tailwindcss",
+        "owner": "tailwindlabs",
+        "name": "tailwindcss",
+        "stars": 98601,
+        "language": "Python",
+        "pushedAt": "2026-11-06",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Tailwind CSS is a general-purpose frontend styling framework. It falls outside the profile's core focus areas of AI agents, career automation, fintech, and Python/CLI developer productivity tools, offering no backend utility or LLM orchestration features.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/tailwindlabs/tailwindcss",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "mbillow/localthings",
+        "owner": "mbillow",
+        "name": "localthings",
+        "stars": 1113,
+        "language": "Unknown",
+        "pushedAt": "2026-11-08",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This project provides local Home Assistant integration for Samsung smart appliances over home networks. Because smart home hardware integration lies outside the profile's focus areas of AI agents, fintech systems, career workflows, and high-performance developer tooling, it is not a fit.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/mbillow/localthings",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-07",
+  value: "2026-11-08",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-07",
+  value: "2026-11-08",
   enumerable: false,
   configurable: true,
   writable: true

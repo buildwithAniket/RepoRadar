@@ -1097,6 +1097,15 @@
     "stars_at_check": 14885,
     "verdict": "fit"
   },
+  "dsx-ai-factory/nvke": {
+    "first_seen": "2026-11-08",
+    "last_checked": "2026-11-08",
+    "latest_release_at_check": "2026-11-03T23:54:25Z",
+    "profile_checked_against": "2026-11-08",
+    "reason": "NVIDIA Kubernetes Engine (NVKE) provides a GPU management plane for Kubernetes on bare metal, supporting high-performance AI infrastructure and model deployment. This connects strongly with the profile's interest in developer productivity, cloud agent runners, and high-performance infrastructure tooling.",
+    "stars_at_check": 636,
+    "verdict": "fit"
+  },
   "earendil-works/pi": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -1565,6 +1574,15 @@
     "stars_at_check": 10187,
     "verdict": "fit"
   },
+  "mbillow/localthings": {
+    "first_seen": "2026-11-08",
+    "last_checked": "2026-11-08",
+    "latest_release_at_check": "2026-11-08T05:27:37Z",
+    "profile_checked_against": "2026-11-08",
+    "reason": "This project provides local Home Assistant integration for Samsung smart appliances over home networks. Because smart home hardware integration lies outside the profile's focus areas of AI agents, fintech systems, career workflows, and high-performance developer tooling, it is not a fit.",
+    "stars_at_check": 1113,
+    "verdict": "not-fit"
+  },
   "meituan-longcat/LongCat-Video": {
     "first_seen": "2026-10-04",
     "last_checked": "2026-10-04",
@@ -1573,6 +1591,15 @@
     "reason": "This repository appears to be focused on video processing or generation models. It does not align with the profile's core focus areas of AI agents, career-ops, fintech, or developer productivity tooling.",
     "stars_at_check": 8848,
     "verdict": "not-fit"
+  },
+  "meta/astryx": {
+    "first_seen": "2026-11-08",
+    "last_checked": "2026-11-08",
+    "latest_release_at_check": "2026-11-07T15:00:47Z",
+    "profile_checked_against": "2026-11-08",
+    "reason": "While this repository introduces a design system built to be agent-ready, it primarily focuses on frontend UI components rather than LLM orchestration backends or agent execution logic. It aligns loosely with developer UI tooling and agent interaction design, but lacks the deep backend architecture specified in the profile's core interests.",
+    "stars_at_check": 14837,
+    "verdict": "maybe"
   },
   "michael-denyer/pstack-claude": {
     "first_seen": "2026-10-05",
@@ -1612,11 +1639,11 @@
   },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
-    "last_checked": "2026-10-30",
-    "latest_release_at_check": "2026-10-30T00:37:07Z",
-    "profile_checked_against": "2026-10-30",
-    "reason": "This repository aligns closely with the profile's core focus on AI Agents & LLM Orchestration. By providing an open-source bot execution runtime coupled with virtual machine sandboxing, it addresses practical infrastructure challenges for agent runners, autonomous tool execution, and local-or-cloud agent environments.",
-    "stars_at_check": 7758,
+    "last_checked": "2026-11-08",
+    "latest_release_at_check": "2026-11-07T21:50:56Z",
+    "profile_checked_against": "2026-11-08",
+    "reason": "This repository directly targets the profile's core focus on AI agents and LLM orchestration by providing an open-source bot platform equipped with a virtual machine environment for secure agent code execution. Its rapid growth reflects strong community engagement in local and cloud autonomous agent runners.",
+    "stars_at_check": 17422,
     "verdict": "fit"
   },
   "mksglu/context-mode": {
@@ -1961,6 +1988,15 @@
     "stars_at_check": 20431,
     "verdict": "maybe"
   },
+  "ranxianglei/billion-context": {
+    "first_seen": "2026-11-08",
+    "last_checked": "2026-11-08",
+    "latest_release_at_check": "2026-11-07T23:25:08Z",
+    "profile_checked_against": "2026-11-08",
+    "reason": "This repository aligns directly with the profile's AI Agents & LLM Orchestration interest area by providing a context-compression plugin designed for long-running sessions and small context windows. Its focus on reducing token usage and managing massive context histories addresses a critical optimization challenge in agent runners and LLM workflows.",
+    "stars_at_check": 4769,
+    "verdict": "fit"
+  },
   "react/react": {
     "first_seen": "2026-11-07",
     "last_checked": "2026-11-07",
@@ -2041,6 +2077,15 @@
     "reason": "This repository aligns directly with the profile's focus on AI Agents & LLM Orchestration, specifically regarding Model Context Protocol (MCP) integrations and agent skill expansion. It enables autonomous agents to dynamically price, select, and invoke multi-modal generation tools.",
     "stars_at_check": 2660,
     "verdict": "fit"
+  },
+  "sherlock-project/sherlock": {
+    "first_seen": "2026-11-08",
+    "last_checked": "2026-11-08",
+    "latest_release_at_check": "2026-09-08T20:54:15Z",
+    "profile_checked_against": "2026-11-08",
+    "reason": "Sherlock is a widely used Python CLI tool for searching usernames across social media networks. While it demonstrates clean Python CLI engineering and can assist in OSINT or candidate talent discovery within the career-ops domain, it operates primarily as a cybersecurity reconnaissance utility rather than a dedicated career workflow automation or LLM orchestration system.",
+    "stars_at_check": 101289,
+    "verdict": "maybe"
   },
   "shiyu-coder/Kronos": {
     "first_seen": "2026-10-20",
@@ -2185,6 +2230,15 @@
     "reason": "A high-performance networking utility that could be useful for your cross-border infrastructure or secure remote access needs. While not directly related to AI agents, its utility for developer productivity and secure connectivity makes it a strong candidate for your toolkit.",
     "stars_at_check": 2944,
     "verdict": "maybe"
+  },
+  "tailwindlabs/tailwindcss": {
+    "first_seen": "2026-11-08",
+    "last_checked": "2026-11-08",
+    "latest_release_at_check": "2026-11-06T15:05:05Z",
+    "profile_checked_against": "2026-11-08",
+    "reason": "Tailwind CSS is a general-purpose frontend styling framework. It falls outside the profile's core focus areas of AI agents, career automation, fintech, and Python/CLI developer productivity tools, offering no backend utility or LLM orchestration features.",
+    "stars_at_check": 98601,
+    "verdict": "not-fit"
   },
   "tashfeenahmed/freellmapi": {
     "first_seen": "2026-08-29",

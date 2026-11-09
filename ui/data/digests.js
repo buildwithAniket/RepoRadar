@@ -7014,26 +7014,90 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-09": {
+    "date": "2026-11-09",
+    "evaluatedCount": 2,
+    "skippedCount": 7,
+    "stats": {
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 2
+    },
+    "summary": {
+      "evaluated": 2,
+      "skipped": 7,
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 2
+    },
+    "repos": [
+      {
+        "id": "anthropics/claude-quickstarts",
+        "owner": "anthropics",
+        "name": "claude-quickstarts",
+        "stars": 19648,
+        "language": "Unknown",
+        "pushedAt": "2026-11-09",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns well with the profile's focus on AI Agents & LLM Orchestration by providing official starter kits and reference architectures for building deployable applications with the Claude API. It offers practical patterns for agentic workflows, function calling, and structured LLM outputs, serving as a useful resource for engineering scalable AI systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/anthropics/claude-quickstarts",
+        "useCases": [
+          {
+            "title": "Integrate resilient scheduled digests into RepoRadar",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "RepoRadar",
+            "pitch": "Adapt the memory store and ledger patterns from the Daily Brief starter into RepoRadar's daily scheduled execution pipeline. This prevents repeated repo reporting across daily digests and ensures unreadable sources fail gracefully during unattended GitHub Actions runs.",
+            "firstStep": "Inspect the architecture files in `./managed-agents/daily-brief` to see how `ant apply` configures the state stores and execution steps."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "google-deepmind/mujoco",
+        "owner": "google-deepmind",
+        "name": "mujoco",
+        "stars": 16649,
+        "language": "Unknown",
+        "pushedAt": "2026-11-06",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While MuJoCo is an industry-leading physics engine for robotics and reinforcement learning research, it falls outside the profile's core focus areas of LLM orchestration, workflow automation, FinTech, and developer productivity. As a domain-specific physics simulator, it lacks direct relevance to the profile's active project stack and interests.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/google-deepmind/mujoco",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-08",
+  value: "2026-11-09",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-08",
+  value: "2026-11-09",
   enumerable: false,
   configurable: true,
   writable: true

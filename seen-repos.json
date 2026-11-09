@@ -764,6 +764,15 @@
     "stars_at_check": 36885,
     "verdict": "fit"
   },
+  "anthropics/claude-quickstarts": {
+    "first_seen": "2026-11-09",
+    "last_checked": "2026-11-09",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-09",
+    "reason": "This repository aligns well with the profile's focus on AI Agents & LLM Orchestration by providing official starter kits and reference architectures for building deployable applications with the Claude API. It offers practical patterns for agentic workflows, function calling, and structured LLM outputs, serving as a useful resource for engineering scalable AI systems.",
+    "stars_at_check": 19648,
+    "verdict": "fit"
+  },
   "anthropics/financial-services": {
     "first_seen": "2026-09-22",
     "last_checked": "2026-09-22",
@@ -1257,6 +1266,15 @@
     "profile_checked_against": "2026-10-27",
     "reason": "While postiz-app leverages agentic features for automated social media scheduling, its application domain centers on content marketing and social platform distribution. As a result, it falls outside the profile's core technical priorities, which focus on agent orchestration, developer productivity, career automation, and financial technology.",
     "stars_at_check": 38685,
+    "verdict": "not-fit"
+  },
+  "google-deepmind/mujoco": {
+    "first_seen": "2026-11-09",
+    "last_checked": "2026-11-09",
+    "latest_release_at_check": "2026-11-06T15:39:53Z",
+    "profile_checked_against": "2026-11-09",
+    "reason": "While MuJoCo is an industry-leading physics engine for robotics and reinforcement learning research, it falls outside the profile's core focus areas of LLM orchestration, workflow automation, FinTech, and developer productivity. As a domain-specific physics simulator, it lacks direct relevance to the profile's active project stack and interests.",
+    "stars_at_check": 16649,
     "verdict": "not-fit"
   },
   "google-gemini/gemini-cli": {

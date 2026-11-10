@@ -7078,26 +7078,124 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-10": {
+    "date": "2026-11-10",
+    "evaluatedCount": 3,
+    "skippedCount": 8,
+    "stats": {
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 0,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 8,
+      "fit": 2,
+      "maybe": 1,
+      "notFit": 0,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "garrytan/gbrain",
+        "owner": "garrytan",
+        "name": "gbrain",
+        "stars": 32356,
+        "language": "Unknown",
+        "pushedAt": "2026-11-10",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Directly aligns with the AI Agents & LLM Orchestration focus area by showcasing an agent execution brain designed around OpenClaw and Hermes agents. It provides concrete infrastructure and workflows for agent runners and autonomous execution environments, making it a strong fit for the profile's core technical interests.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/garrytan/gbrain",
+        "useCases": [
+          {
+            "title": "Persist agent context using local MCP server",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Connect local coding agents like Claude Code or Codex to a single shared memory store that persists facts, decisions, and documentation across sessions. This allows autonomous agents to maintain persistent state and draw from historical project context without re-reading raw files.",
+            "firstStep": "Run `gbrain mcp expose` to publish the server on Tailscale and refer to `CLAUDE.md` to connect local coding agents."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ZhuLinsen/daily_stock_analysis",
+        "owner": "ZhuLinsen",
+        "name": "daily_stock_analysis",
+        "stars": 69357,
+        "language": "Unknown",
+        "pushedAt": "2026-11-09",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Intersects the profile's FinTech & Global Wealth Systems and AI Agents & LLM Orchestration focus areas. The repository implements an automated, LLM-powered multi-market stock analysis system featuring multi-source market data processing, real-time news analysis, decision dashboards, and automated scheduled reporting pipelines.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+        "useCases": [
+          {
+            "title": "Schedule multi-market portfolio analysis workflows",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "FinTech & Global Wealth Systems",
+            "pitch": "Automate daily AI decision dashboard generation for cross-border stocks across US, HK, and A-share markets without maintaining server infrastructure. This enhances global portfolio tracking by synthesizing multi-source market data, technical indicators, and real-time news search into unified push reports.",
+            "firstStep": "Copy `.env.example` to `.env`, set `STOCK_LIST` with your target equity tickers, and execute `python main.py --dry-run` to test pipeline execution locally."
+          },
+          {
+            "title": "Deploy local financial strategy agent service",
+            "kind": "build",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Expose an API service that evaluates financial tickers across built-in strategies (such as trend, wave theory, and catalysts) using structured LLM orchestration. This provides a multi-turn conversational agent layer compatible with both local Ollama models and cloud provider APIs.",
+            "firstStep": "Start the backend API service by running `python main.py --serve-only` after configuring your API credentials in `.env`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "homeassistant-ai/ha-mcp",
+        "owner": "homeassistant-ai",
+        "name": "ha-mcp",
+        "stars": 6246,
+        "language": "Unknown",
+        "pushedAt": "2026-11-08",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "Represents a conditional match under the AI Agents & LLM Orchestration focus area as a Model Context Protocol (MCP) server implementation for agent tooling. While the MCP protocol patterns and LLM integration fall under relevant orchestration topics, the end-user domain of smart home automation lies outside the primary focus areas of the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/homeassistant-ai/ha-mcp",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-09",
+  value: "2026-11-10",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-09",
+  value: "2026-11-10",
   enumerable: false,
   configurable: true,
   writable: true

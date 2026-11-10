@@ -593,6 +593,15 @@
     "stars_at_check": 37137,
     "verdict": "fit"
   },
+  "ZhuLinsen/daily_stock_analysis": {
+    "first_seen": "2026-11-10",
+    "last_checked": "2026-11-10",
+    "latest_release_at_check": "2026-11-09T12:39:03Z",
+    "profile_checked_against": "2026-11-10",
+    "reason": "Intersects the profile's FinTech & Global Wealth Systems and AI Agents & LLM Orchestration focus areas. The repository implements an automated, LLM-powered multi-market stock analysis system featuring multi-source market data processing, real-time news analysis, decision dashboards, and automated scheduled reporting pipelines.",
+    "stars_at_check": 69357,
+    "verdict": "fit"
+  },
   "abhigyanpatwari/GitNexus": {
     "first_seen": "2026-08-29",
     "last_checked": "2026-08-29",
@@ -1232,6 +1241,15 @@
     "stars_at_check": 0,
     "verdict": "not-fit"
   },
+  "garrytan/gbrain": {
+    "first_seen": "2026-11-10",
+    "last_checked": "2026-11-10",
+    "latest_release_at_check": "2026-11-10T08:53:37Z",
+    "profile_checked_against": "2026-11-10",
+    "reason": "Directly aligns with the AI Agents & LLM Orchestration focus area by showcasing an agent execution brain designed around OpenClaw and Hermes agents. It provides concrete infrastructure and workflows for agent runners and autonomous execution environments, making it a strong fit for the profile's core technical interests.",
+    "stars_at_check": 32356,
+    "verdict": "fit"
+  },
   "garrytan/gstack": {
     "first_seen": "2026-10-05",
     "last_checked": "2026-10-05",
@@ -1357,6 +1375,15 @@
     "reason": "This repository is a JavaScript-based direct download link extraction utility for various cloud storage providers. It falls outside the profile's focus areas of autonomous AI agents, Python developer productivity tools, FinTech platforms, and career automation workflows.",
     "stars_at_check": 23987,
     "verdict": "not-fit"
+  },
+  "homeassistant-ai/ha-mcp": {
+    "first_seen": "2026-11-10",
+    "last_checked": "2026-11-10",
+    "latest_release_at_check": "2026-11-08T15:45:35Z",
+    "profile_checked_against": "2026-11-10",
+    "reason": "Represents a conditional match under the AI Agents & LLM Orchestration focus area as a Model Context Protocol (MCP) server implementation for agent tooling. While the MCP protocol patterns and LLM integration fall under relevant orchestration topics, the end-user domain of smart home automation lies outside the primary focus areas of the profile.",
+    "stars_at_check": 6246,
+    "verdict": "maybe"
   },
   "huggingface/transformers": {
     "first_seen": "2026-09-15",

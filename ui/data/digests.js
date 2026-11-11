@@ -7176,26 +7176,107 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": "No suggestion passed quality checks"
       }
     ]
+  },
+  "2026-11-11": {
+    "date": "2026-11-11",
+    "evaluatedCount": 2,
+    "skippedCount": 10,
+    "stats": {
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 0,
+      "total": 2
+    },
+    "summary": {
+      "evaluated": 2,
+      "skipped": 10,
+      "fit": 1,
+      "maybe": 1,
+      "notFit": 0,
+      "total": 2
+    },
+    "repos": [
+      {
+        "id": "we-promise/sure",
+        "owner": "we-promise",
+        "name": "sure",
+        "stars": 12334,
+        "language": "Unknown",
+        "pushedAt": "2026-10-31",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "we-promise/sure aligns directly with the profile's focus area on FinTech & Global Wealth Systems. As an open-source personal finance application with significant community traction, it offers practical implementation patterns for financial tracking, multi-account management, and self-hosted wealth tooling, avoiding the exclusion criteria for superficial frontend toys.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/we-promise/sure",
+        "useCases": [
+          {
+            "title": "Host a private personal finance engine",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "FinTech & Global Wealth Systems",
+            "pitch": "Deploy Sure as a self-hosted financial platform to securely track spending, net worth, and multi-account cashflows without relying on third-party SaaS providers. This gives the profile full control over private wealth telemetry while providing backend financial tooling.",
+            "firstStep": "Run `cp .env.local.example .env.local` and execute `bin/setup` to initialize the local PostgreSQL database and application stack."
+          },
+          {
+            "title": "Connect LLM agents to personal financial APIs",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Interface autonomous LLM agents with Sure's API endpoints to query cashflow metrics and perform automated portfolio analysis. This enables local or cloud agents to answer financial questions directly against real wealth data.",
+            "firstStep": "Run `rake demo_data:default` to populate the environment with sample accounts and evaluate the API responses for LLM agent integration."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "tokio-rs/topcoat",
+        "owner": "tokio-rs",
+        "name": "topcoat",
+        "stars": 7001,
+        "language": "Python",
+        "pushedAt": "2026-11-10",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "tokio-rs/topcoat touches upon Developer Productivity & Tooling by offering a batteries-included framework for building high-performance web applications within the Tokio/Rust ecosystem. While it serves as a strong developer workflow enhancer for backend systems, its general-purpose web framework nature places it slightly outside the profile's core priorities of AI orchestration, Python-based tooling, and automated workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/tokio-rs/topcoat",
+        "useCases": [
+          {
+            "title": "Build zero-build-step web dashboards with server-driven Rust interactivity",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Eliminate frontend JS build pipelines and WASM binary bloat when building internal operational tools in Rust. Topcoat allows writing reactive server-rendered interfaces with automatic Rust-to-JS signal translation, eliminating the need to maintain a separate REST API layer.",
+            "firstStep": "Scaffold a new project using `topcoat new`, then create interactive server-side views using `#[component]` and `#[shard]` macros alongside `signal(cx, || ...)`."
+          }
+        ],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-10",
+  value: "2026-11-11",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-10",
+  value: "2026-11-11",
   enumerable: false,
   configurable: true,
   writable: true

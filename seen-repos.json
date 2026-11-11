@@ -2357,6 +2357,15 @@
     "stars_at_check": 13282,
     "verdict": "not-fit"
   },
+  "tokio-rs/topcoat": {
+    "first_seen": "2026-11-11",
+    "last_checked": "2026-11-11",
+    "latest_release_at_check": "2026-11-10T18:34:42Z",
+    "profile_checked_against": "2026-11-11",
+    "reason": "tokio-rs/topcoat touches upon Developer Productivity & Tooling by offering a batteries-included framework for building high-performance web applications within the Tokio/Rust ecosystem. While it serves as a strong developer workflow enhancer for backend systems, its general-purpose web framework nature places it slightly outside the profile's core priorities of AI orchestration, Python-based tooling, and automated workflows.",
+    "stars_at_check": 7001,
+    "verdict": "maybe"
+  },
   "trycua/cua": {
     "first_seen": "2026-10-08",
     "last_checked": "2026-10-08",
@@ -2472,6 +2481,15 @@
     "profile_checked_against": "2026-10-15",
     "reason": "This project fits the profile's interest in autonomous multi-agent systems by providing a specialized framework for executing complex, multi-step workflows in specialized domains through collaborative AI agents.",
     "stars_at_check": 29927,
+    "verdict": "fit"
+  },
+  "we-promise/sure": {
+    "first_seen": "2026-11-11",
+    "last_checked": "2026-11-11",
+    "latest_release_at_check": "2026-10-31T03:37:06Z",
+    "profile_checked_against": "2026-11-11",
+    "reason": "we-promise/sure aligns directly with the profile's focus area on FinTech & Global Wealth Systems. As an open-source personal finance application with significant community traction, it offers practical implementation patterns for financial tracking, multi-account management, and self-hosted wealth tooling, avoiding the exclusion criteria for superficial frontend toys.",
+    "stars_at_check": 12334,
     "verdict": "fit"
   },
   "willfaust/Madeira": {

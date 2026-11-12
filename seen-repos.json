@@ -197,6 +197,15 @@
     "stars_at_check": 32083,
     "verdict": "fit"
   },
+  "GoogleChrome/modern-web-guidance-src": {
+    "first_seen": "2026-11-12",
+    "last_checked": "2026-11-12",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-12",
+    "reason": "This repository appears to be source material for modern web development guidance from Google Chrome, focusing on general frontend web standards. It lacks alignment with the profile's core focus areas in AI agents, LLM orchestration, developer productivity tooling, or financial technology systems.",
+    "stars_at_check": 2079,
+    "verdict": "not-fit"
+  },
   "Graphify-Labs/graphify": {
     "first_seen": "2026-10-21",
     "last_checked": "2026-10-21",
@@ -565,6 +574,15 @@
     "reason": "This project matches the profile's core interests in both AI Agents & LLM Orchestration and Developer Productivity & Tooling. By deploying AI agents to automate pull request reviews, code analysis, and feedback generation, it serves as a high-impact developer workflow enhancer.",
     "stars_at_check": 14949,
     "verdict": "fit"
+  },
+  "TheAlgorithms/Java": {
+    "first_seen": "2026-11-12",
+    "last_checked": "2026-11-12",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-12",
+    "reason": "This repository is a general educational archive of standard computer science algorithms implemented in Java. It does not offer specialized functionality or novel architectures related to the profile's interest in AI agents, workflow automation, developer tooling, or financial technology.",
+    "stars_at_check": 67178,
+    "verdict": "not-fit"
   },
   "Thysrael/Horizon": {
     "first_seen": "2026-11-05",
@@ -1862,6 +1880,15 @@
     "stars_at_check": 155420,
     "verdict": "not-fit"
   },
+  "openai/codex-security": {
+    "first_seen": "2026-11-12",
+    "last_checked": "2026-11-12",
+    "latest_release_at_check": "2026-11-12T02:18:52Z",
+    "profile_checked_against": "2026-11-12",
+    "reason": "This repository fits strongly into the profile's focus areas of AI agents and developer productivity tooling. As a CLI and SDK for automated vulnerability identification, validation, and resolution via Codex, it represents a practical implementation of specialized coding agents integrated into developer workflows.",
+    "stars_at_check": 11979,
+    "verdict": "fit"
+  },
   "openbao/openbao": {
     "first_seen": "2026-09-25",
     "last_checked": "2026-09-26",
@@ -2121,6 +2148,15 @@
     "profile_checked_against": "2026-11-05",
     "reason": "This repository aligns directly with the profile's focus on AI Agents & LLM Orchestration, specifically regarding Model Context Protocol (MCP) integrations and agent skill expansion. It enables autonomous agents to dynamically price, select, and invoke multi-modal generation tools.",
     "stars_at_check": 2660,
+    "verdict": "fit"
+  },
+  "shadcn/improve": {
+    "first_seen": "2026-11-12",
+    "last_checked": "2026-11-12",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-12",
+    "reason": "This project directly aligns with the profile's core focus on AI agents, LLM orchestration, and developer productivity. By utilizing a high-capability model to audit codebases and design plans for lower-cost models to execute, it provides an innovative workflow automation strategy for AI-assisted software engineering.",
+    "stars_at_check": 11240,
     "verdict": "fit"
   },
   "sherlock-project/sherlock": {

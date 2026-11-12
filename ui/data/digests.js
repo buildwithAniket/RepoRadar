@@ -7257,26 +7257,149 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-12": {
+    "date": "2026-11-12",
+    "evaluatedCount": 4,
+    "skippedCount": 6,
+    "stats": {
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 6,
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 2,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "shadcn/improve",
+        "owner": "shadcn",
+        "name": "improve",
+        "stars": 11240,
+        "language": "Unknown",
+        "pushedAt": "2026-11-12",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project directly aligns with the profile's core focus on AI agents, LLM orchestration, and developer productivity. By utilizing a high-capability model to audit codebases and design plans for lower-cost models to execute, it provides an innovative workflow automation strategy for AI-assisted software engineering.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/shadcn/improve",
+        "useCases": [
+          {
+            "title": "Audit RepoRadar codebase to generate cost-effective plans",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "RepoRadar",
+            "pitch": "Use a high-tier reasoning model to audit RepoRadar's Python pipeline, judge fallback handling, and write strict specs into `plans/` for budget agents to execute. This ensures structural improvements to scraping and LLM fallback scripts without wasting expensive API tokens on routine code changes.",
+            "firstStep": "Run `npx skills add shadcn/improve` inside the RepoRadar project and execute `/improve quick` to perform an initial pass across the Python scripts."
+          },
+          {
+            "title": "Automate branch audits for GitHub pull requests",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Integrate branch-scoped codebase auditing into repository CI to check pull request changes for security vulnerabilities, tech debt, and performance issues before code lands. Dispatched subagents will draft self-contained specs and publish them directly to GitHub issues for execution.",
+            "firstStep": "Set up a GitHub Actions workflow step that invokes `/improve branch` alongside the `--issues` flag on pull request events."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "openai/codex-security",
+        "owner": "openai",
+        "name": "codex-security",
+        "stars": 11979,
+        "language": "Unknown",
+        "pushedAt": "2026-11-12",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository fits strongly into the profile's focus areas of AI agents and developer productivity tooling. As a CLI and SDK for automated vulnerability identification, validation, and resolution via Codex, it represents a practical implementation of specialized coding agents integrated into developer workflows.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/openai/codex-security",
+        "useCases": [
+          {
+            "title": "Automate weekly vulnerability scans in CI",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Automate repository scanning and vulnerability tracking directly within CI pipelines to catch security issues before release. This reduces manual review overhead while ensuring consistent security policies across projects.",
+            "firstStep": "Copy `github-action/examples/repository.yml` to `.github/workflows/codex-security.yml` and set the `CODEX_SECURITY_API_KEY` repository secret."
+          },
+          {
+            "title": "Embed security auditing into TypeScript agent workflows",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate automated security analysis and patch validation into custom AI developer tools using the TypeScript SDK. This enables custom autonomous agents to inspect local repositories and apply verified security fixes programmatically.",
+            "firstStep": "Install `@openai/codex-security` via npm and invoke `new CodexSecurity().run(\"/path/to/repository\")` from your orchestration script."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "GoogleChrome/modern-web-guidance-src",
+        "owner": "GoogleChrome",
+        "name": "modern-web-guidance-src",
+        "stars": 2079,
+        "language": "Unknown",
+        "pushedAt": "2026-11-12",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository appears to be source material for modern web development guidance from Google Chrome, focusing on general frontend web standards. It lacks alignment with the profile's core focus areas in AI agents, LLM orchestration, developer productivity tooling, or financial technology systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "TheAlgorithms/Java",
+        "owner": "TheAlgorithms",
+        "name": "Java",
+        "stars": 67178,
+        "language": "Java",
+        "pushedAt": "2026-11-12",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a general educational archive of standard computer science algorithms implemented in Java. It does not offer specialized functionality or novel architectures related to the profile's interest in AI agents, workflow automation, developer tooling, or financial technology.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/TheAlgorithms/Java",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-11",
+  value: "2026-11-12",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-11",
+  value: "2026-11-12",
   enumerable: false,
   configurable: true,
   writable: true

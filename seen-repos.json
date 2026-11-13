@@ -485,6 +485,15 @@
     "stars_at_check": 81687,
     "verdict": "fit"
   },
+  "QwenLM/qwen-code": {
+    "first_seen": "2026-11-13",
+    "last_checked": "2026-11-13",
+    "latest_release_at_check": "2026-11-13T01:14:28Z",
+    "profile_checked_against": "2026-11-13",
+    "reason": "This repository directly aligns with the profile's core focus on AI agents and developer productivity tools by providing an open-source, terminal-based AI coding assistant. Its emphasis on agentic coding workflows in the CLI fits squarely within the specified interests.",
+    "stars_at_check": 30036,
+    "verdict": "fit"
+  },
   "Renhuai123/ziwei-doushu": {
     "first_seen": "2026-10-24",
     "last_checked": "2026-10-24",
@@ -843,6 +852,15 @@
     "profile_checked_against": "2026-09-15",
     "reason": "High value for your interest in LLM orchestration. Accessing the system prompts of frontier models like Claude Code and Cursor is critical for reverse-engineering their behavior and building better custom agent workflows.",
     "stars_at_check": 67020,
+    "verdict": "fit"
+  },
+  "ashhart/TensorFold": {
+    "first_seen": "2026-11-13",
+    "last_checked": "2026-11-13",
+    "latest_release_at_check": "2026-11-11T17:18:05Z",
+    "profile_checked_against": "2026-11-13",
+    "reason": "This repository aligns well with the profile's interest in local LLM execution infrastructure and high-performance computing. Providing a cross-platform inference engine supporting Metal, CUDA, and Vulkan fits the target for local runner infrastructure and low-level developer tooling.",
+    "stars_at_check": 2031,
     "verdict": "fit"
   },
   "astral-sh/ruff": {
@@ -1285,6 +1303,15 @@
     "reason": "Although Sentry is a foundational Python-based developer platform, it is a massive, established enterprise observability and error-monitoring suite rather than a focused developer workflow utility, autonomous agent framework, or fintech system highlighted in the profile.",
     "stars_at_check": 45076,
     "verdict": "not-fit"
+  },
+  "ggml-org/llama.cpp": {
+    "first_seen": "2026-11-13",
+    "last_checked": "2026-11-13",
+    "latest_release_at_check": "2026-11-04T13:08:06Z",
+    "profile_checked_against": "2026-11-13",
+    "reason": "As a core foundation for local C/C++ LLM execution, this repository strongly aligns with the profile's focus on local agent runners and high-performance developer tooling. It serves as essential low-level infrastructure for local AI orchestration.",
+    "stars_at_check": 134766,
+    "verdict": "fit"
   },
   "github/spec-kit": {
     "first_seen": "2026-11-05",
@@ -2004,6 +2031,15 @@
     "profile_checked_against": "2026-10-25",
     "reason": "This project is a hardware robotics repository for building a tiny bipedal duck robot. While technically novel, hardware robotics falls completely outside the profile's focus areas of software-driven LLM orchestration, workflow automation, FinTech, and developer productivity tooling.",
     "stars_at_check": 11156,
+    "verdict": "not-fit"
+  },
+  "pookjw/HermesEnabler": {
+    "first_seen": "2026-11-13",
+    "last_checked": "2026-11-13",
+    "latest_release_at_check": "2026-11-13T04:21:43Z",
+    "profile_checked_against": "2026-11-13",
+    "reason": "This repository focuses on modifying Apple Watch system configurations to enable proprietary watch faces. It does not align with any of the profile's core focus areas such as AI agents, developer productivity tooling, fintech, or workflow automation.",
+    "stars_at_check": 1669,
     "verdict": "not-fit"
   },
   "prometheus/prometheus": {

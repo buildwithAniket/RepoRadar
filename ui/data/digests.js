@@ -7380,26 +7380,166 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-13": {
+    "date": "2026-11-13",
+    "evaluatedCount": 4,
+    "skippedCount": 9,
+    "stats": {
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 9,
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "QwenLM/qwen-code",
+        "owner": "QwenLM",
+        "name": "qwen-code",
+        "stars": 30036,
+        "language": "Unknown",
+        "pushedAt": "2026-11-13",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly aligns with the profile's core focus on AI agents and developer productivity tools by providing an open-source, terminal-based AI coding assistant. Its emphasis on agentic coding workflows in the CLI fits squarely within the specified interests.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/QwenLM/qwen-code",
+        "useCases": [
+          {
+            "title": "Execute CLI agent sessions using flexible LLM backends",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Run terminal-based coding assistance across repositories while switching seamlessly between cloud providers like Gemini and local Ollama models. This gives the profile full runtime flexibility without vendor lock-in.",
+            "firstStep": "Run `qwen` in a project terminal and execute `/auth` to select and configure the model provider."
+          },
+          {
+            "title": "Automate code review tasks using autonomous agent workflows",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Deploy qwen-code's agent harness features to automate local repository maintenance, PR triage, and test execution. This expands the profile's autonomous agent tooling for software engineering workflows.",
+            "firstStep": "Start `qwen` in any active codebase to initiate automated code analysis and testing workflows."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ashhart/TensorFold",
+        "owner": "ashhart",
+        "name": "TensorFold",
+        "stars": 2031,
+        "language": "Unknown",
+        "pushedAt": "2026-11-11",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns well with the profile's interest in local LLM execution infrastructure and high-performance computing. Providing a cross-platform inference engine supporting Metal, CUDA, and Vulkan fits the target for local runner infrastructure and low-level developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ashhart/TensorFold",
+        "useCases": [
+          {
+            "title": "Serve local models for agent orchestration",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate TensorFold as a zero-dependency local engine to power autonomous coding and local LLM agents via its OpenAI and Anthropic API compatible endpoints. This removes Python and MLX runtime dependencies while delivering hardware-accelerated local inference on Metal and CUDA.",
+            "firstStep": "Run `tensorfold serve mlx-community/Qwen3.5-2B-MLX-4bit --name local-model --context 8192 --no-thinking` and route agent requests to `http://127.0.0.1:8080/v1/chat/completions`."
+          },
+          {
+            "title": "Coordinate coding agents with Agent Traffic Control",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Implement TensorFold's Agent Traffic Control protocol to prevent code collisions and duplicate labor when using multi-agent workflows across repositories. This enables agents to claim issues, pulse active status, and detect file overlap before submitting PRs.",
+            "firstStep": "Install the CLI tool using `npm install -g github:ashhart/ATC` and check issue availability with `atc check ISSUE --json`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ggml-org/llama.cpp",
+        "owner": "ggml-org",
+        "name": "llama.cpp",
+        "stars": 134766,
+        "language": "C++",
+        "pushedAt": "2026-11-04",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "As a core foundation for local C/C++ LLM execution, this repository strongly aligns with the profile's focus on local agent runners and high-performance developer tooling. It serves as essential low-level infrastructure for local AI orchestration.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ggml-org/llama.cpp",
+        "useCases": [
+          {
+            "title": "Host local OpenAI-compatible fallback server for agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Serve lightweight local models to act as a fast, zero-cost backend or fallback for local agent frameworks. This eliminates external API costs and network latency for routine agent routing and tool execution.",
+            "firstStep": "Run `llama serve -hf ggml-org/Qwen3.5-0.8B-GGUF` to start an OpenAI-compatible endpoint for local agent runners."
+          },
+          {
+            "title": "Enforce deterministic agent tool calls with grammars",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Use formal syntax constraints during inference to ensure local models strictly conform to JSON schemas required by autonomous tool runners. This prevents parsing failures when agents invoke local actions.",
+            "firstStep": "Explore syntax definition guidelines in `grammars/README.md` and pass a GBNF grammar file to `llama cli` to enforce structured outputs."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "pookjw/HermesEnabler",
+        "owner": "pookjw",
+        "name": "HermesEnabler",
+        "stars": 1669,
+        "language": "Unknown",
+        "pushedAt": "2026-11-13",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository focuses on modifying Apple Watch system configurations to enable proprietary watch faces. It does not align with any of the profile's core focus areas such as AI agents, developer productivity tooling, fintech, or workflow automation.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/pookjw/HermesEnabler",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-12",
+  value: "2026-11-13",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-12",
+  value: "2026-11-13",
   enumerable: false,
   configurable: true,
   writable: true

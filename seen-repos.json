@@ -199,12 +199,12 @@
   },
   "GoogleChrome/modern-web-guidance-src": {
     "first_seen": "2026-11-12",
-    "last_checked": "2026-11-12",
+    "last_checked": "2026-11-14",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-11-12",
-    "reason": "This repository appears to be source material for modern web development guidance from Google Chrome, focusing on general frontend web standards. It lacks alignment with the profile's core focus areas in AI agents, LLM orchestration, developer productivity tooling, or financial technology systems.",
-    "stars_at_check": 2079,
-    "verdict": "not-fit"
+    "profile_checked_against": "2026-11-14",
+    "reason": "This repository aligns directly with the profile's focus on AI agents and developer productivity. It provides structured guidance and modern web best practices specifically formatted for coding agents, enhancing LLM context and code generation quality.",
+    "stars_at_check": 5147,
+    "verdict": "fit"
   },
   "Graphify-Labs/graphify": {
     "first_seen": "2026-10-21",
@@ -339,6 +339,15 @@
     "profile_checked_against": "2026-10-16",
     "reason": "This repository is a self-hosted media streaming web application, which falls entirely outside the profile's focus areas of AI agent orchestration, career operations, FinTech, and developer tooling.",
     "stars_at_check": 18312,
+    "verdict": "not-fit"
+  },
+  "Likely7/Veyra-NRVideo": {
+    "first_seen": "2026-11-14",
+    "last_checked": "2026-11-14",
+    "latest_release_at_check": "2026-11-14T05:50:21Z",
+    "profile_checked_against": "2026-11-14",
+    "reason": "This repository focuses on GPU-based real-time video capture, DLSS upscaling, and frame generation for media playback and gaming. It lacks alignment with the profile's focus areas in LLM agents, FinTech, career automation, or software engineering productivity.",
+    "stars_at_check": 1746,
     "verdict": "not-fit"
   },
   "M-Abozaid/esp32-c3-adblock": {
@@ -899,6 +908,15 @@
     "stars_at_check": 54591,
     "verdict": "fit"
   },
+  "backnotprop/plannotator": {
+    "first_seen": "2026-11-14",
+    "last_checked": "2026-11-14",
+    "latest_release_at_check": "2026-11-13T17:24:36Z",
+    "profile_checked_against": "2026-11-14",
+    "reason": "This project strongly targets the profile's interest in AI Agents & LLM Orchestration. It provides a dedicated workspace for human-in-the-loop interaction with coding agents, allowing users to shape, annotate, review code, and send structured feedback directly to autonomous runners.",
+    "stars_at_check": 10596,
+    "verdict": "fit"
+  },
   "beenuar/AiSOC": {
     "first_seen": "2026-11-02",
     "last_checked": "2026-11-02",
@@ -924,6 +942,15 @@
     "profile_checked_against": "2026-09-03",
     "reason": "Potentially useful for refining AI-generated content in your career-ops workflows (e.g., cover letters or outreach), but may be considered a 'wrapper' depending on its implementation.",
     "stars_at_check": 40699,
+    "verdict": "maybe"
+  },
+  "block/buzz": {
+    "first_seen": "2026-11-14",
+    "last_checked": "2026-11-14",
+    "latest_release_at_check": "2026-11-14T00:31:43Z",
+    "profile_checked_against": "2026-11-14",
+    "reason": "This repository presents an intriguing communications platform built around hive-mind structures, relevant to multi-agent communication and developer orchestration. However, it requires further evaluation to determine whether its main utility targets autonomous agent workflows or general team chat.",
+    "stars_at_check": 37375,
     "verdict": "maybe"
   },
   "boykopovar/AnyPS5": {
@@ -1581,6 +1608,15 @@
     "profile_checked_against": "2026-09-15",
     "reason": "While a useful utility, it is a standalone file-transfer tool that does not contribute to your specific goals in AI orchestration, career automation, or financial tech.",
     "stars_at_check": 91525,
+    "verdict": "not-fit"
+  },
+  "louislam/uptime-kuma": {
+    "first_seen": "2026-11-14",
+    "last_checked": "2026-11-14",
+    "latest_release_at_check": "2026-11-12T09:20:06Z",
+    "profile_checked_against": "2026-11-14",
+    "reason": "While Uptime Kuma is a widely popular self-hosted monitoring application, it falls outside the core focus areas of the profile, which prioritizes AI agent orchestration, FinTech systems, career automation, and developer productivity tooling.",
+    "stars_at_check": 93977,
     "verdict": "not-fit"
   },
   "luongnv89/claude-howto": {
@@ -2341,12 +2377,12 @@
   },
   "tailscale/tailcat": {
     "first_seen": "2026-08-29",
-    "last_checked": "2026-08-29",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-29",
-    "reason": "A high-performance networking utility that could be useful for your cross-border infrastructure or secure remote access needs. While not directly related to AI agents, its utility for developer productivity and secure connectivity makes it a strong candidate for your toolkit.",
-    "stars_at_check": 2944,
-    "verdict": "maybe"
+    "last_checked": "2026-11-14",
+    "latest_release_at_check": "2026-09-20T00:37:32Z",
+    "profile_checked_against": "2026-11-14",
+    "reason": "This utility aligns with the developer productivity and tooling focus area of the profile. It offers a clean CLI tool that operates like netcat directly over Tailscale's data plane without relying on the control plane, offering high utility for low-level developer networking.",
+    "stars_at_check": 9602,
+    "verdict": "fit"
   },
   "tailwindlabs/tailwindcss": {
     "first_seen": "2026-11-08",
@@ -2437,6 +2473,15 @@
     "reason": "tokio-rs/topcoat touches upon Developer Productivity & Tooling by offering a batteries-included framework for building high-performance web applications within the Tokio/Rust ecosystem. While it serves as a strong developer workflow enhancer for backend systems, its general-purpose web framework nature places it slightly outside the profile's core priorities of AI orchestration, Python-based tooling, and automated workflows.",
     "stars_at_check": 7001,
     "verdict": "maybe"
+  },
+  "tradermonty/claude-trading-skills": {
+    "first_seen": "2026-11-14",
+    "last_checked": "2026-11-14",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-14",
+    "reason": "This repository sits directly at the intersection of AI Agents and FinTech, two core focus areas of the profile. It offers Claude Code skills designed for equity analysis, market screening, technical charting, and algorithmic strategy execution.",
+    "stars_at_check": 4341,
+    "verdict": "fit"
   },
   "trycua/cua": {
     "first_seen": "2026-10-08",

@@ -134,9 +134,9 @@ window.REPORADAR_DIGESTS = {
         "id": "tailscale/tailcat",
         "owner": "tailscale",
         "name": "tailcat",
-        "stars": 2944,
+        "stars": 9602,
         "language": "Go",
-        "pushedAt": "2026-08-29",
+        "pushedAt": "2026-09-20",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
@@ -7349,9 +7349,9 @@ window.REPORADAR_DIGESTS = {
         "id": "GoogleChrome/modern-web-guidance-src",
         "owner": "GoogleChrome",
         "name": "modern-web-guidance-src",
-        "stars": 2079,
+        "stars": 5147,
         "language": "Unknown",
-        "pushedAt": "2026-11-12",
+        "pushedAt": "2026-11-14",
         "confidence": "low",
         "verdict": "not-fit",
         "verdictLabel": "ARCHIVED / PASS",
@@ -7520,26 +7520,251 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-14": {
+    "date": "2026-11-14",
+    "evaluatedCount": 7,
+    "skippedCount": 5,
+    "stats": {
+      "fit": 4,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 7
+    },
+    "summary": {
+      "evaluated": 7,
+      "skipped": 5,
+      "fit": 4,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 7
+    },
+    "repos": [
+      {
+        "id": "GoogleChrome/modern-web-guidance-src",
+        "owner": "GoogleChrome",
+        "name": "modern-web-guidance-src",
+        "stars": 5147,
+        "language": "Unknown",
+        "pushedAt": "2026-11-14",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's focus on AI agents and developer productivity. It provides structured guidance and modern web best practices specifically formatted for coding agents, enhancing LLM context and code generation quality.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+        "useCases": [
+          {
+            "title": "Scan RepoRadar UI codebase for legacy web patterns",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "RepoRadar",
+            "pitch": "Run legacy pattern scanning on RepoRadar's static HTML/JS frontend to identify legacy polyfills or outdated CSS and replace them with native browser features. This keeps the dashboard lightweight and aligned with modern web standards.",
+            "firstStep": "Run `npx modern-web-guidance@latest legacy-scan .` against the RepoRadar static HTML UI directory."
+          },
+          {
+            "title": "Inject token-efficient modern web context into coding agents",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Equip coding agents and local runner workflows with modern web feature guidelines prior to code generation. This prevents models from defaulting to outdated polyfills or legacy JavaScript patterns for tasks with native web platform solutions.",
+            "firstStep": "Add `npx modern-web-guidance@latest search \"animate a dialog modal backdrop\"` into your agent's context retrieval function."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "backnotprop/plannotator",
+        "owner": "backnotprop",
+        "name": "plannotator",
+        "stars": 10596,
+        "language": "Unknown",
+        "pushedAt": "2026-11-13",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project strongly targets the profile's interest in AI Agents & LLM Orchestration. It provides a dedicated workspace for human-in-the-loop interaction with coding agents, allowing users to shape, annotate, review code, and send structured feedback directly to autonomous runners.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/backnotprop/plannotator",
+        "useCases": [
+          {
+            "title": "Route agent queries through Plannotator Inbox",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Connect autonomous agent runners and assistants to a local human-in-the-loop review surface using MCP. This enables asynchronous plan approvals, question answering, and structured feedback loops without holding terminal sessions open.",
+            "firstStep": "Run `plannotator inbox mcp` to start the Model Context Protocol endpoint for local agent integration."
+          },
+          {
+            "title": "Review uncommitted code diffs interactively",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Streamline local developer workflows by launching browser-based side-by-side diff reviews before committing changes. This allows marking up code diffs and sending feedback directly back to local CLI agents.",
+            "firstStep": "Run `/plannotator-review` inside a local repository to open uncommitted changes in the browser review interface."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "tradermonty/claude-trading-skills",
+        "owner": "tradermonty",
+        "name": "claude-trading-skills",
+        "stars": 4341,
+        "language": "Markdown",
+        "pushedAt": "2026-11-14",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository sits directly at the intersection of AI Agents and FinTech, two core focus areas of the profile. It offers Claude Code skills designed for equity analysis, market screening, technical charting, and algorithmic strategy execution.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/tradermonty/claude-trading-skills",
+        "useCases": [
+          {
+            "title": "Run local zero-API market regime checks",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "FinTech & Global Wealth Systems",
+            "pitch": "Execute automated daily equity market breadth and risk assessments without relying on paid financial data subscriptions. This provides structured risk control and exposure posture limits for individual portfolios.",
+            "firstStep": "Review `workflows/market-regime-daily.yaml` and run the starter skills defined in `skills-index.yaml`."
+          },
+          {
+            "title": "Embed structured trade journaling into agent workflows",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate Claude Code domain skills and memory systems into custom autonomous runners to track trade reasoning and conduct signal postmortems. This establishes a feedback loop for persistent LLM decision-making.",
+            "firstStep": "Inspect `workflows/trade-memory-loop.yaml` to see how `trader-memory-core` and `signal-postmortem` structure decision memory and feedback loops."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "tailscale/tailcat",
+        "owner": "tailscale",
+        "name": "tailcat",
+        "stars": 9602,
+        "language": "Go",
+        "pushedAt": "2026-09-20",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This utility aligns with the developer productivity and tooling focus area of the profile. It offers a clean CLI tool that operates like netcat directly over Tailscale's data plane without relying on the control plane, offering high utility for low-level developer networking.",
+        "classification": "profile-changed",
+        "topics": [],
+        "url": "https://github.com/tailscale/tailcat",
+        "useCases": [
+          {
+            "title": "Expose internal development ports without account setup",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Forward local TCP ports like web services or databases directly across machine boundaries without requiring root access, firewall modifications, or control plane accounts. This enables secure, ad-hoc remote debugging and peer-to-peer port sharing over encrypted WireGuard tunnels.",
+            "firstStep": "Run `tailcat serve 8080,3306` on the remote server and connect locally using `tailcat forward tcXXXXXXXXX 18080:8080 3306`."
+          },
+          {
+            "title": "Learn userspace WireGuard tunneling and NAT traversal",
+            "kind": "learn",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Study how Tailscale packages `magicsock` and DERP relaying into a standalone Go package for userspace P2P networking without system-level VPN adapters. This provides a blueprint for embedding encrypted p2p networking into custom developer CLI tools.",
+            "firstStep": "Examine the CLI implementation in `cmd/tailcat` and review how `github.com/tailscale/tailcat` bootstraps ephemeral connections over DERP."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "block/buzz",
+        "owner": "block",
+        "name": "buzz",
+        "stars": 37375,
+        "language": "Unknown",
+        "pushedAt": "2026-11-14",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "This repository presents an intriguing communications platform built around hive-mind structures, relevant to multi-agent communication and developer orchestration. However, it requires further evaluation to determine whether its main utility targets autonomous agent workflows or general team chat.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/block/buzz",
+        "useCases": [
+          {
+            "title": "Deploy signed multi-agent workspaces with ACP harnesses",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate autonomous coding agents into a self-hosted Nostr workspace using Buzz to execute multi-agent workflows where every agent action and review is cryptographically signed and stored in a unified event log.",
+            "firstStep": "Spin up the local relay from `crates/buzz-relay/` using Docker and invoke agent actions via `buzz-cli`."
+          },
+          {
+            "title": "Automate event-driven git reviews and CI reporting",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Set up automated branch channels where NIP-34 git patches, CI test status, and automated LLM code reviews live together in a single searchable audit trail.",
+            "firstStep": "Define YAML workflows in `crates/buzz-relay/` to listen for NIP-34 git patch events and trigger automated review responses via `buzz-cli`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "louislam/uptime-kuma",
+        "owner": "louislam",
+        "name": "uptime-kuma",
+        "stars": 93977,
+        "language": "Unknown",
+        "pushedAt": "2026-11-12",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While Uptime Kuma is a widely popular self-hosted monitoring application, it falls outside the core focus areas of the profile, which prioritizes AI agent orchestration, FinTech systems, career automation, and developer productivity tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/louislam/uptime-kuma",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Likely7/Veyra-NRVideo",
+        "owner": "Likely7",
+        "name": "Veyra-NRVideo",
+        "stars": 1746,
+        "language": "Unknown",
+        "pushedAt": "2026-11-14",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository focuses on GPU-based real-time video capture, DLSS upscaling, and frame generation for media playback and gaming. It lacks alignment with the profile's focus areas in LLM agents, FinTech, career automation, or software engineering productivity.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Likely7/Veyra-NRVideo",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-13",
+  value: "2026-11-14",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-13",
+  value: "2026-11-14",
   enumerable: false,
   configurable: true,
   writable: true

@@ -566,6 +566,15 @@
     "stars_at_check": 4100,
     "verdict": "fit"
   },
+  "Tencent/LoopForge": {
+    "first_seen": "2026-11-15",
+    "last_checked": "2026-11-15",
+    "latest_release_at_check": "2026-11-12T13:05:58Z",
+    "profile_checked_against": "2026-11-15",
+    "reason": "This repository directly targets the profile's interest in AI Agents & LLM Orchestration as well as Developer Productivity. By offering self-hosted workflows that orchestrate coding agents such as Codex and Claude Code alongside human approval gates and local scripts, it delivers high-value workflow automation for software delivery.",
+    "stars_at_check": 1048,
+    "verdict": "fit"
+  },
   "Tencent/WeKnora": {
     "first_seen": "2026-09-17",
     "last_checked": "2026-09-17",
@@ -690,6 +699,15 @@
     "profile_checked_against": "2026-09-03",
     "reason": "A comprehensive agent harness that touches on memory, security, and research-first development, perfectly matching your interest in high-performance AI orchestration.",
     "stars_at_check": 246513,
+    "verdict": "fit"
+  },
+  "ag-ui-protocol/ag-ui": {
+    "first_seen": "2026-11-15",
+    "last_checked": "2026-11-15",
+    "latest_release_at_check": "2026-11-13T21:01:20Z",
+    "profile_checked_against": "2026-11-15",
+    "reason": "This repository aligns strongly with the profile's focus on AI Agents & LLM Orchestration. It provides a standardized agent-user interaction protocol designed to seamlessly integrate autonomous agents into frontend interfaces, facilitating structured UI orchestration and rich interaction patterns for agentic applications.",
+    "stars_at_check": 17487,
     "verdict": "fit"
   },
   "agent-substrate/substrate": {
@@ -1681,6 +1699,15 @@
     "reason": "Relevant if you intend to move beyond using agents into the R&D of foundation models, though it may be too low-level for your current focus on orchestration.",
     "stars_at_check": 0,
     "verdict": "maybe"
+  },
+  "martin-olivier/airgorah": {
+    "first_seen": "2026-11-15",
+    "last_checked": "2026-11-15",
+    "latest_release_at_check": "2026-09-26T21:33:43Z",
+    "profile_checked_against": "2026-11-15",
+    "reason": "While popular, this repository focuses specifically on WiFi security auditing and network analysis tools. It falls outside the profile's core interest areas of AI agent orchestration, developer workflow tooling, financial technology, and career operations.",
+    "stars_at_check": 6062,
+    "verdict": "not-fit"
   },
   "mattpocock/skills": {
     "first_seen": "2026-09-03",

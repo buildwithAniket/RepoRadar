@@ -7745,26 +7745,124 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-15": {
+    "date": "2026-11-15",
+    "evaluatedCount": 3,
+    "skippedCount": 12,
+    "stats": {
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 12,
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "ag-ui-protocol/ag-ui",
+        "owner": "ag-ui-protocol",
+        "name": "ag-ui",
+        "stars": 17487,
+        "language": "Unknown",
+        "pushedAt": "2026-11-13",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns strongly with the profile's focus on AI Agents & LLM Orchestration. It provides a standardized agent-user interaction protocol designed to seamlessly integrate autonomous agents into frontend interfaces, facilitating structured UI orchestration and rich interaction patterns for agentic applications.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ag-ui-protocol/ag-ui",
+        "useCases": [
+          {
+            "title": "Stream agent state to frontend interfaces",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Connect autonomous backend agents built with frameworks like Pydantic AI or LangChain directly to interactive user interfaces using AG-UI's event protocol. This enables bi-directional state synchronization, human-in-the-loop controls, and generative UI streaming across agentic workflows.",
+            "firstStep": "Run `npx create-ag-ui-app my-agent-app` to scaffold an application and test bi-directional event communication with an agent backend."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Tencent/LoopForge",
+        "owner": "Tencent",
+        "name": "LoopForge",
+        "stars": 1048,
+        "language": "Unknown",
+        "pushedAt": "2026-11-12",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly targets the profile's interest in AI Agents & LLM Orchestration as well as Developer Productivity. By offering self-hosted workflows that orchestrate coding agents such as Codex and Claude Code alongside human approval gates and local scripts, it delivers high-value workflow automation for software delivery.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Tencent/LoopForge",
+        "useCases": [
+          {
+            "title": "Orchestrate Multi-Role Coding Agents with Sandboxes",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Deploy LoopForge to coordinate distinct agent roles across isolated Docker workspaces while enforcing human review gates before shipping code. This replaces brittle single-prompt sessions with observable, staged SOPs incorporating model switching and tool integration.",
+            "firstStep": "Run `./start.sh` to launch the platform container services and open the setup interface at `0.0.0.0:8090`."
+          },
+          {
+            "title": "Automate Development Workflows with Predefined SOPs",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Automate routine bug fixes and maintenance tasks by enforcing distinct planning, implementation, review, and verification phases. This prevents coding agents from skipping tests or silently terminating halfway through complex changes.",
+            "firstStep": "Inspect `compose.yaml` and run `./start.sh` to initialize the environment with the built-in starter SOPs."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "martin-olivier/airgorah",
+        "owner": "martin-olivier",
+        "name": "airgorah",
+        "stars": 6062,
+        "language": "Unknown",
+        "pushedAt": "2026-09-26",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While popular, this repository focuses specifically on WiFi security auditing and network analysis tools. It falls outside the profile's core interest areas of AI agent orchestration, developer workflow tooling, financial technology, and career operations.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/martin-olivier/airgorah",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-14",
+  value: "2026-11-15",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-14",
+  value: "2026-11-15",
   enumerable: false,
   configurable: true,
   writable: true

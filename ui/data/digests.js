@@ -7843,26 +7843,142 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-16": {
+    "date": "2026-11-16",
+    "evaluatedCount": 4,
+    "skippedCount": 8,
+    "stats": {
+      "fit": 3,
+      "maybe": 1,
+      "notFit": 0,
+      "total": 4
+    },
+    "summary": {
+      "evaluated": 4,
+      "skipped": 8,
+      "fit": 3,
+      "maybe": 1,
+      "notFit": 0,
+      "total": 4
+    },
+    "repos": [
+      {
+        "id": "google-labs-code/stitch-skills",
+        "owner": "google-labs-code",
+        "name": "stitch-skills",
+        "stars": 9508,
+        "language": "Markdown",
+        "pushedAt": "2026-05-18",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly aligns with the profile's core interest in AI Agents & LLM Orchestration, specifically ecosystem tooling and agent skills for coding agents like Claude Code and Gemini CLI. Providing open-standard Agent Skills for MCP servers enhances developer productivity and agent capabilities, making it a strong fit for the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/google-labs-code/stitch-skills",
+        "useCases": [
+          {
+            "title": "Enhance Coding Agents with Design Skills",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "By installing Stitch Agent Skills into coding agents like Claude Code or Cursor, autonomous agents gain open-standard capabilities to convert frontend code, manage design systems, and generate React component trees.",
+            "firstStep": "Run `npx plugins add google-labs-code/stitch-skills --scope project --target claude-code` to install the plugin suite into a local project workspace."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "elementalsouls/Claude-BugHunter",
+        "owner": "elementalsouls",
+        "name": "Claude-BugHunter",
+        "stars": 6863,
+        "language": "Unknown",
+        "pushedAt": "2026-06-05",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository directly matches the profile's focus on AI Agents & LLM Orchestration and Developer Productivity. By providing a comprehensive skill bundle and slash commands specifically built for Claude Code to perform security bug hunting, it directly expands coding agent capabilities and automated workflow tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/elementalsouls/Claude-BugHunter",
+        "useCases": [
+          {
+            "title": "Automate security vulnerability scanning via CLI",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Incorporate the standalone security CLI into developer terminal workflows to execute scope-aware reconnaissance and vulnerability pattern checks during dev cycles.",
+            "firstStep": "Install the runner globally by running `pipx install git+https://github.com/elementalsouls/Claude-BugHunter` in your terminal."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "NVIDIA/SkillEvaluator",
+        "owner": "NVIDIA",
+        "name": "SkillEvaluator",
+        "stars": 2065,
+        "language": "Markdown",
+        "pushedAt": "2026-11-13",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository strongly aligns with the profile's core focus on AI Agents & LLM Orchestration and Developer Productivity. It provides a structured evaluation framework for testing, validating, and measuring AI agent skills and behavior, addressing crucial automated testing pipeline requirements in agentic systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/NVIDIA/SkillEvaluator",
+        "useCases": [
+          {
+            "title": "Automate skill quality checks in GitHub PRs",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Enforce quality gates and security scans on custom agent skills during code reviews. Running automated checks prevents broken or unsafe agent instructions from merging into primary repository branches.",
+            "firstStep": "Run `skillevaluator ci init` to generate a setup pull request for repository CI integration."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "ggml-org/ggml",
+        "owner": "ggml-org",
+        "name": "ggml",
+        "stars": 16024,
+        "language": "Unknown",
+        "pushedAt": "2026-11-13",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While this repository is a foundational machine learning tensor library that underpins local LLM execution, it operates at a lower systems-programming level rather than the higher-level LLM orchestration, agent frameworks, or developer workflows emphasized in the profile. It remains relevant as core infrastructure for local AI runners, warranting a tentative fit.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/ggml-org/ggml",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-15",
+  value: "2026-11-16",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-15",
+  value: "2026-11-16",
   enumerable: false,
   configurable: true,
   writable: true

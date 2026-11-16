@@ -404,6 +404,15 @@
     "stars_at_check": 10369,
     "verdict": "fit"
   },
+  "NVIDIA/SkillEvaluator": {
+    "first_seen": "2026-11-16",
+    "last_checked": "2026-11-16",
+    "latest_release_at_check": "2026-11-13T11:03:05Z",
+    "profile_checked_against": "2026-11-16",
+    "reason": "This repository strongly aligns with the profile's core focus on AI Agents & LLM Orchestration and Developer Productivity. It provides a structured evaluation framework for testing, validating, and measuring AI agent skills and behavior, addressing crucial automated testing pipeline requirements in agentic systems.",
+    "stars_at_check": 2065,
+    "verdict": "fit"
+  },
   "NVIDIA/SkillSpector": {
     "first_seen": "2026-10-27",
     "last_checked": "2026-10-27",
@@ -1232,6 +1241,15 @@
     "stars_at_check": 10106,
     "verdict": "not-fit"
   },
+  "elementalsouls/Claude-BugHunter": {
+    "first_seen": "2026-11-16",
+    "last_checked": "2026-11-16",
+    "latest_release_at_check": "2026-06-05T16:15:13Z",
+    "profile_checked_against": "2026-11-16",
+    "reason": "This repository directly matches the profile's focus on AI Agents & LLM Orchestration and Developer Productivity. By providing a comprehensive skill bundle and slash commands specifically built for Claude Code to perform security bug hunting, it directly expands coding agent capabilities and automated workflow tooling.",
+    "stars_at_check": 6863,
+    "verdict": "fit"
+  },
   "etcd-io/etcd": {
     "first_seen": "2026-11-07",
     "last_checked": "2026-11-07",
@@ -1349,6 +1367,15 @@
     "stars_at_check": 45076,
     "verdict": "not-fit"
   },
+  "ggml-org/ggml": {
+    "first_seen": "2026-11-16",
+    "last_checked": "2026-11-16",
+    "latest_release_at_check": "2026-11-13T08:34:21Z",
+    "profile_checked_against": "2026-11-16",
+    "reason": "While this repository is a foundational machine learning tensor library that underpins local LLM execution, it operates at a lower systems-programming level rather than the higher-level LLM orchestration, agent frameworks, or developer workflows emphasized in the profile. It remains relevant as core infrastructure for local AI runners, warranting a tentative fit.",
+    "stars_at_check": 16024,
+    "verdict": "maybe"
+  },
   "ggml-org/llama.cpp": {
     "first_seen": "2026-11-13",
     "last_checked": "2026-11-13",
@@ -1392,6 +1419,15 @@
     "profile_checked_against": "2026-10-25",
     "reason": "This project fits the profile's core interest in developer CLI utilities and AI agent runners. Bringing Gemini agent capabilities directly into the terminal environment offers high utility for developer workflows and serves as a strong example of CLI-based LLM integration.",
     "stars_at_check": 108244,
+    "verdict": "fit"
+  },
+  "google-labs-code/stitch-skills": {
+    "first_seen": "2026-11-16",
+    "last_checked": "2026-11-16",
+    "latest_release_at_check": "2026-05-18T18:02:32Z",
+    "profile_checked_against": "2026-11-16",
+    "reason": "This repository directly aligns with the profile's core interest in AI Agents & LLM Orchestration, specifically ecosystem tooling and agent skills for coding agents like Claude Code and Gemini CLI. Providing open-standard Agent Skills for MCP servers enhances developer productivity and agent capabilities, making it a strong fit for the profile.",
+    "stars_at_check": 9508,
     "verdict": "fit"
   },
   "google-research/timesfm": {

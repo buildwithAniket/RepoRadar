@@ -7959,26 +7959,200 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": "No suggestion passed quality checks"
       }
     ]
+  },
+  "2026-11-17": {
+    "date": "2026-11-17",
+    "evaluatedCount": 6,
+    "skippedCount": 9,
+    "stats": {
+      "fit": 3,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 6
+    },
+    "summary": {
+      "evaluated": 6,
+      "skipped": 9,
+      "fit": 3,
+      "maybe": 1,
+      "notFit": 2,
+      "total": 6
+    },
+    "repos": [
+      {
+        "id": "mvanhorn/last30days-skill",
+        "owner": "mvanhorn",
+        "name": "last30days-skill",
+        "stars": 68470,
+        "language": "Unknown",
+        "pushedAt": "2026-11-16",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository implements an autonomous research skill for AI agents that queries and synthesizes real-time data across Reddit, X, YouTube, and the broader web. It matches the profile's direct interest in AI agent tooling, autonomous multi-source retrieval, and LLM orchestration.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/mvanhorn/last30days-skill",
+        "useCases": [
+          {
+            "title": "Integrate multi-platform research into coding agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Equip CLI-based coding agents like Claude Code or Codex with grounded multi-platform search across Reddit, GitHub, and Hacker News. This allows agents to research newly breaking bugs and community workarounds in real time without leaving the development terminal.",
+            "firstStep": "Run `/plugin marketplace add mvanhorn/last30days-skill` followed by `/plugin install last30days` in Claude Code to register the skill."
+          },
+          {
+            "title": "Automate company diligence for career pipelines",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Generate comprehensive pre-interview intelligence reports on target employers by analyzing their recent patent filings, careers page updates, and developer discussions. This replaces ad-hoc manual company research with an automated summary before technical interview loops.",
+            "firstStep": "Install the tool globally using `npx skills add mvanhorn/last30days-skill -g` and inspect `skills/last30days/SKILL.md` to configure `/last30days` runs against target hiring organizations."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "google-research/paper-orchestra",
+        "owner": "google-research",
+        "name": "paper-orchestra",
+        "stars": 2008,
+        "language": "Unknown",
+        "pushedAt": "2026-11-17",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "PaperOrchestra is a multi-agent framework built for end-to-end automated research paper authoring. It represents a direct fit for the profile's core interest in autonomous multi-agent systems, collaborative LLM workflows, and structured generation frameworks.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/google-research/paper-orchestra",
+        "useCases": [
+          {
+            "title": "Automate Technical Manuscript Drafting from Logs",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Transform raw experimental logs and project notes into structured, submission-ready LaTeX manuscripts with literature synthesis and visual plots. This enables hands-free authoring of comprehensive research reports using coordinated agent workflows.",
+            "firstStep": "Add `GEMINI_API_KEY` to `.env` and trigger paper synthesis using `python paper_writing_cli.py --raw_materials_dir /path_to_your_raw_materials/ --latex_template_dir templates/cvpr2025 --output_dir output/ --use_plotting true`."
+          },
+          {
+            "title": "Study Multi-Agent Reflection and Evaluation Loops",
+            "kind": "learn",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Analyze how specialized writing agents coordinate with dedicated reflection models and automated evaluation scripts to iteratively refine long-form outputs. These design patterns can be adapted to improve verification stages in other structured LLM orchestration pipelines.",
+            "firstStep": "Inspect the multi-agent orchestration implementation under `methods/` and the evaluation scripts in `autoraters/` to understand how `--writer_model_name` and `--reflection_model_name` are prompted and coordinated."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "kajisho5/ffmpeg-skill",
+        "owner": "kajisho5",
+        "name": "ffmpeg-skill",
+        "stars": 7393,
+        "language": "Unknown",
+        "pushedAt": "2026-11-15",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository provides an MCP server and machine-readable FFmpeg tool suite designed to empower coding agents like Claude Code, Cursor, and Codex with local multimedia capabilities. It aligns exceptionally well with the profile's focus on coding agents, MCP integrations, and developer productivity tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/kajisho5/ffmpeg-skill",
+        "useCases": [
+          {
+            "title": "Integrate local multimedia tools into agent workflows",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Empower coding agents with local video editing capabilities via MCP servers and machine-readable contracts, allowing zero-cloud processing of multimedia assets.",
+            "firstStep": "Run `npx ffmpeg-skill` to initialize the MCP server for local execution."
+          },
+          {
+            "title": "Automate local video editing pipelines with Python",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Leverage a comprehensive suite of local FFmpeg wrapper tools driven by a robust Python standard library for developer-focused multimedia processing.",
+            "firstStep": "Execute `python3 demos/build.py` to rebuild every frame of the demo assets locally."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "getarcaneapp/arcane",
+        "owner": "getarcaneapp",
+        "name": "arcane",
+        "stars": 9000,
+        "language": "Python",
+        "pushedAt": "2026-11-15",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "Arcane offers modern Docker container management designed to streamline developer workflows and local infrastructure administration. While it intersects with developer productivity, it leans primarily toward container dashboard operations rather than the profile's key focus areas of clean CLI utilities, high-performance Python architectures, or autonomous AI systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/getarcaneapp/arcane",
+        "useCases": [],
+        "useCaseNote": "While Arcane provides modern Docker management, it leans toward container dashboard operations rather than developer productivity tooling or high-performance Python systems specified in the profile."
+      },
+      {
+        "id": "DeanChensj/jiangshan-map",
+        "owner": "DeanChensj",
+        "name": "jiangshan-map",
+        "stars": 7514,
+        "language": "Unknown",
+        "pushedAt": "2026-11-13",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This repository is a specialized historical mapping and timeline visualization project focused on Chinese history and classical geography. It does not align with any of the profile's core pillars in AI agent orchestration, career operations, FinTech, or developer productivity tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/DeanChensj/jiangshan-map",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "sveltejs/svelte",
+        "owner": "sveltejs",
+        "name": "svelte",
+        "stars": 89167,
+        "language": "Unknown",
+        "pushedAt": "2026-10-26",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Svelte is a well-known frontend web framework and compiler. While significant to modern web development, general frontend UI frameworks fall outside the profile's focus on AI agents, workflow automation, FinTech, and CLI/backend developer tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/sveltejs/svelte",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-16",
+  value: "2026-11-17",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-16",
+  value: "2026-11-17",
   enumerable: false,
   configurable: true,
   writable: true

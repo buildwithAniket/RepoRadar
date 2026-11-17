@@ -107,6 +107,15 @@
     "stars_at_check": 93537,
     "verdict": "fit"
   },
+  "DeanChensj/jiangshan-map": {
+    "first_seen": "2026-11-17",
+    "last_checked": "2026-11-17",
+    "latest_release_at_check": "2026-11-13T02:57:43Z",
+    "profile_checked_against": "2026-11-17",
+    "reason": "This repository is a specialized historical mapping and timeline visualization project focused on Chinese history and classical geography. It does not align with any of the profile's core pillars in AI agent orchestration, career operations, FinTech, or developer productivity tooling.",
+    "stars_at_check": 7514,
+    "verdict": "not-fit"
+  },
   "DietrichGebert/ponytail": {
     "first_seen": "2026-08-28",
     "last_checked": "2026-09-03",
@@ -1358,6 +1367,15 @@
     "stars_at_check": 135247,
     "verdict": "fit"
   },
+  "getarcaneapp/arcane": {
+    "first_seen": "2026-11-17",
+    "last_checked": "2026-11-17",
+    "latest_release_at_check": "2026-11-15T17:05:31Z",
+    "profile_checked_against": "2026-11-17",
+    "reason": "Arcane offers modern Docker container management designed to streamline developer workflows and local infrastructure administration. While it intersects with developer productivity, it leans primarily toward container dashboard operations rather than the profile's key focus areas of clean CLI utilities, high-performance Python architectures, or autonomous AI systems.",
+    "stars_at_check": 9000,
+    "verdict": "maybe"
+  },
   "getsentry/sentry": {
     "first_seen": "2026-10-03",
     "last_checked": "2026-10-03",
@@ -1428,6 +1446,15 @@
     "profile_checked_against": "2026-11-16",
     "reason": "This repository directly aligns with the profile's core interest in AI Agents & LLM Orchestration, specifically ecosystem tooling and agent skills for coding agents like Claude Code and Gemini CLI. Providing open-standard Agent Skills for MCP servers enhances developer productivity and agent capabilities, making it a strong fit for the profile.",
     "stars_at_check": 9508,
+    "verdict": "fit"
+  },
+  "google-research/paper-orchestra": {
+    "first_seen": "2026-11-17",
+    "last_checked": "2026-11-17",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-17",
+    "reason": "PaperOrchestra is a multi-agent framework built for end-to-end automated research paper authoring. It represents a direct fit for the profile's core interest in autonomous multi-agent systems, collaborative LLM workflows, and structured generation frameworks.",
+    "stars_at_check": 2008,
     "verdict": "fit"
   },
   "google-research/timesfm": {
@@ -1582,6 +1609,15 @@
     "reason": "While an offline-first photo manager is a useful tool, it does not intersect with your core interests in AI engineering, career-ops, or financial technology. It lacks the backend complexity or agentic utility you prioritize.",
     "stars_at_check": 2945,
     "verdict": "not-fit"
+  },
+  "kajisho5/ffmpeg-skill": {
+    "first_seen": "2026-11-17",
+    "last_checked": "2026-11-17",
+    "latest_release_at_check": "2026-11-15T23:32:49Z",
+    "profile_checked_against": "2026-11-17",
+    "reason": "This repository provides an MCP server and machine-readable FFmpeg tool suite designed to empower coding agents like Claude Code, Cursor, and Codex with local multimedia capabilities. It aligns exceptionally well with the profile's focus on coding agents, MCP integrations, and developer productivity tooling.",
+    "stars_at_check": 7393,
+    "verdict": "fit"
   },
   "karpathy/nanochat": {
     "first_seen": "2026-11-03",
@@ -1906,6 +1942,15 @@
     "reason": "While technically impressive, this focuses on music generation, which falls outside your core interests in coding agents, financial tech, and career automation.",
     "stars_at_check": 8699,
     "verdict": "not-fit"
+  },
+  "mvanhorn/last30days-skill": {
+    "first_seen": "2026-11-17",
+    "last_checked": "2026-11-17",
+    "latest_release_at_check": "2026-11-16T23:57:17Z",
+    "profile_checked_against": "2026-11-17",
+    "reason": "This repository implements an autonomous research skill for AI agents that queries and synthesizes real-time data across Reddit, X, YouTube, and the broader web. It matches the profile's direct interest in AI agent tooling, autonomous multi-source retrieval, and LLM orchestration.",
+    "stars_at_check": 68470,
+    "verdict": "fit"
   },
   "mvschwarz/openrig": {
     "first_seen": "2026-09-27",
@@ -2410,6 +2455,15 @@
     "reason": "Provides the necessary infrastructure for production-grade agent orchestration, which is essential for scaling your local/cloud agent runners.",
     "stars_at_check": 3126,
     "verdict": "fit"
+  },
+  "sveltejs/svelte": {
+    "first_seen": "2026-11-17",
+    "last_checked": "2026-11-17",
+    "latest_release_at_check": "2026-10-26T18:15:06Z",
+    "profile_checked_against": "2026-11-17",
+    "reason": "Svelte is a well-known frontend web framework and compiler. While significant to modern web development, general frontend UI frameworks fall outside the profile's focus on AI agents, workflow automation, FinTech, and CLI/backend developer tooling.",
+    "stars_at_check": 89167,
+    "verdict": "not-fit"
   },
   "swoole/typephp": {
     "first_seen": "2026-08-29",

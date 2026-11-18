@@ -567,9 +567,9 @@ window.REPORADAR_DIGESTS = {
         "id": "alibaba/open-code-review",
         "owner": "alibaba",
         "name": "open-code-review",
-        "stars": 26649,
+        "stars": 54039,
         "language": "Python",
-        "pushedAt": "2026-09-14",
+        "pushedAt": "2026-11-18",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -7795,9 +7795,9 @@ window.REPORADAR_DIGESTS = {
         "id": "Tencent/LoopForge",
         "owner": "Tencent",
         "name": "LoopForge",
-        "stars": 1048,
+        "stars": 3661,
         "language": "Unknown",
-        "pushedAt": "2026-11-12",
+        "pushedAt": "2026-11-17",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -8133,26 +8133,124 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-18": {
+    "date": "2026-11-18",
+    "evaluatedCount": 3,
+    "skippedCount": 12,
+    "stats": {
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 3
+    },
+    "summary": {
+      "evaluated": 3,
+      "skipped": 12,
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 1,
+      "total": 3
+    },
+    "repos": [
+      {
+        "id": "alibaba/open-code-review",
+        "owner": "alibaba",
+        "name": "open-code-review",
+        "stars": 54039,
+        "language": "Python",
+        "pushedAt": "2026-11-18",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's focus on AI agents and LLM orchestration, specifically through its hybrid architecture that combines deterministic code pipelines with an LLM agent for precise line-level security and quality reviews.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/alibaba/open-code-review",
+        "useCases": [
+          {
+            "title": "Audit unfamiliar codebases with full-file scans",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Automate comprehensive line-level security and quality audits across entire project directories where standard Git diffs are unavailable. This enhances developer productivity by pinpointing exact code defects before manual code reviews begin.",
+            "firstStep": "Run `ocr scan` on a local target directory to execute full-file security rule checks and LLM-driven issue positioning."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Tencent/LoopForge",
+        "owner": "Tencent",
+        "name": "LoopForge",
+        "stars": 3661,
+        "language": "Unknown",
+        "pushedAt": "2026-11-17",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project fits the profile's core interest in coding agents and local or cloud agent runners by providing self-hosted workflow orchestration for popular coding assistants like Claude Code and Codex, complete with human approval gates.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/Tencent/LoopForge",
+        "useCases": [
+          {
+            "title": "Orchestrate multi-stage coding agent SOPs",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Automate software delivery tasks by running structured multi-stage SOPs using Claude Code, Codex, or other coding CLIs inside Docker sandboxes. It adds human approval gates and full execution observability to prevent unvetted agent code from merging.",
+            "firstStep": "Clone the repository and run `./start.sh` to initialize the platform along with starter SOPs and Docker sandboxes."
+          },
+          {
+            "title": "Enforce multi-role verification on coding agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Establish separate specialized roles for planning, implementing, reviewing, and testing code fixes to improve developer pipeline reliability. This standardizes local and cloud agent interactions into repeatable checkpoints before opening PRs.",
+            "firstStep": "Launch the platform via `./start.sh` and access the dashboard at `0.0.0.0:8090` to configure GitHub authorization and model API keys."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "jingyaogong/minimind",
+        "owner": "jingyaogong",
+        "name": "minimind",
+        "stars": 66358,
+        "language": "Unknown",
+        "pushedAt": "2025-10-21",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While technically impressive, this repository focuses on training a small language model from scratch rather than the agent orchestration, workflow automation, or developer productivity tooling emphasized in the profile.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/jingyaogong/minimind",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-17",
+  value: "2026-11-18",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-17",
+  value: "2026-11-18",
   enumerable: false,
   configurable: true,
   writable: true

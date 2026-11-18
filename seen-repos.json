@@ -586,11 +586,11 @@
   },
   "Tencent/LoopForge": {
     "first_seen": "2026-11-15",
-    "last_checked": "2026-11-15",
-    "latest_release_at_check": "2026-11-12T13:05:58Z",
-    "profile_checked_against": "2026-11-15",
-    "reason": "This repository directly targets the profile's interest in AI Agents & LLM Orchestration as well as Developer Productivity. By offering self-hosted workflows that orchestrate coding agents such as Codex and Claude Code alongside human approval gates and local scripts, it delivers high-value workflow automation for software delivery.",
-    "stars_at_check": 1048,
+    "last_checked": "2026-11-18",
+    "latest_release_at_check": "2026-11-17T14:30:43Z",
+    "profile_checked_against": "2026-11-18",
+    "reason": "This project fits the profile's core interest in coding agents and local or cloud agent runners by providing self-hosted workflow orchestration for popular coding assistants like Claude Code and Codex, complete with human approval gates.",
+    "stars_at_check": 3661,
     "verdict": "fit"
   },
   "Tencent/WeKnora": {
@@ -757,11 +757,11 @@
   },
   "alibaba/open-code-review": {
     "first_seen": "2026-09-15",
-    "last_checked": "2026-09-15",
-    "latest_release_at_check": "2026-09-14T11:23:26Z",
-    "profile_checked_against": "2026-09-15",
-    "reason": "Directly aligns with your focus on coding agents and developer productivity. The hybrid architecture combining deterministic rules with LLM agents offers a robust, production-grade solution for automating code quality, which is essential for your career-ops workflows.",
-    "stars_at_check": 26649,
+    "last_checked": "2026-11-18",
+    "latest_release_at_check": "2026-11-18T03:33:12Z",
+    "profile_checked_against": "2026-11-18",
+    "reason": "This repository aligns directly with the profile's focus on AI agents and LLM orchestration, specifically through its hybrid architecture that combines deterministic code pipelines with an LLM agent for precise line-level security and quality reviews.",
+    "stars_at_check": 54039,
     "verdict": "fit"
   },
   "alphaXiv/OpenResearch": {
@@ -1599,6 +1599,15 @@
     "profile_checked_against": "2026-10-25",
     "reason": "This repository is a static link aggregation list for ebook downloads with no source code or technical backend system. It triggers the exclusion criteria for static resource lists lacking architectural innovation or software utility, and holds no relevance to the profile's focus areas.",
     "stars_at_check": 22869,
+    "verdict": "not-fit"
+  },
+  "jingyaogong/minimind": {
+    "first_seen": "2026-11-18",
+    "last_checked": "2026-11-18",
+    "latest_release_at_check": "2025-10-21T14:37:05Z",
+    "profile_checked_against": "2026-11-18",
+    "reason": "While technically impressive, this repository focuses on training a small language model from scratch rather than the agent orchestration, workflow automation, or developer productivity tooling emphasized in the profile.",
+    "stars_at_check": 66358,
     "verdict": "not-fit"
   },
   "julyx10/lap": {

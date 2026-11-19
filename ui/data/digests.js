@@ -8017,9 +8017,9 @@ window.REPORADAR_DIGESTS = {
         "id": "google-research/paper-orchestra",
         "owner": "google-research",
         "name": "paper-orchestra",
-        "stars": 2008,
+        "stars": 4699,
         "language": "Unknown",
-        "pushedAt": "2026-11-17",
+        "pushedAt": "2026-11-19",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -8231,26 +8231,218 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-19": {
+    "date": "2026-11-19",
+    "evaluatedCount": 7,
+    "skippedCount": 12,
+    "stats": {
+      "fit": 3,
+      "maybe": 2,
+      "notFit": 2,
+      "total": 7
+    },
+    "summary": {
+      "evaluated": 7,
+      "skipped": 12,
+      "fit": 3,
+      "maybe": 2,
+      "notFit": 2,
+      "total": 7
+    },
+    "repos": [
+      {
+        "id": "astral-sh/uv",
+        "owner": "astral-sh",
+        "name": "uv",
+        "stars": 92362,
+        "language": "Python",
+        "pushedAt": "2026-11-19",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's emphasis on developer productivity and high-performance Python systems, offering an exceptionally fast package and project manager written in Rust that enhances modern workflow automation and tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/astral-sh/uv",
+        "useCases": [
+          {
+            "title": "Accelerate RepoRadar CI pipeline execution",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "RepoRadar",
+            "pitch": "Integrate uv into the RepoRadar daily GitHub Actions workflow to dramatically reduce Python environment setup and package installation times. This optimizes daily pipeline performance when preparing and building repository reports.",
+            "firstStep": "Update the RepoRadar GitHub Actions workflow setup step to install packages using `uv pip sync requirements.txt`."
+          },
+          {
+            "title": "Automate standalone CLI tools with script metadata",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Package developer tools and local workflow scripts with embedded dependency metadata to execute them seamlessly in ephemeral environments without manual virtual environment management.",
+            "firstStep": "Run `uv add --script example.py requests` to add inline dependency metadata directly to a standalone utility script."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "google-research/paper-orchestra",
+        "owner": "google-research",
+        "name": "paper-orchestra",
+        "stars": 4699,
+        "language": "Unknown",
+        "pushedAt": "2026-11-19",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This project fits the profile's core focus on AI agents and LLM orchestration by providing a multi-agent framework designed for automated research paper writing and structured generation workflows.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/google-research/paper-orchestra",
+        "useCases": [
+          {
+            "title": "Automate paper manuscript generation from raw experiment logs",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Transform unconstrained research ideas and experiment logs into formatted LaTeX paper drafts using PaperOrchestra's multi-agent pipeline. This enables automated literature synthesis, section writing, and reflection powered by Gemini via `GEMINI_API_KEY`.",
+            "firstStep": "Configure `GEMINI_API_KEY` in `.env` and run `python paper_writing_cli.py` with `--raw_materials_dir` set to a directory of experiment notes and `--latex_template_dir` set to a subfolder inside `templates/`."
+          },
+          {
+            "title": "Extend multi-agent pipeline with custom LaTeX templates",
+            "kind": "build",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Add custom output styles to generate standardized technical reports and whitepapers directly from raw project notes. This adapts the multi-agent paper generation workflow into a automated technical documentation generator.",
+            "firstStep": "Create a custom template subfolder inside `templates/` and test generation by supplying its path to `--latex_template_dir` when executing `paper_writing_cli.py`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "punkpeye/awesome-mcp-servers",
+        "owner": "punkpeye",
+        "name": "awesome-mcp-servers",
+        "stars": 98185,
+        "language": "Unknown",
+        "pushedAt": "2026-11-19",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This curated collection directly serves the profile's core interest in AI agents and LLM orchestration by providing extensive resources and servers implementing the Model Context Protocol.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "useCases": [
+          {
+            "title": "Compress agent tool outputs using terse proxy",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Wrap MCP servers with a transparent proxy to shrink tool output payloads and emit deltas for repeated calls. This significantly decreases prompt token context overhead in multi-agent LLM workflows without losing output precision.",
+            "firstStep": "Execute `uv tool install terse-mcp` to install the proxy tool before starting target servers with `terse proxy -- <server>`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "appwrite/appwrite",
+        "owner": "appwrite",
+        "name": "appwrite",
+        "stars": 58362,
+        "language": "Unknown",
+        "pushedAt": "2026-11-19",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "While positioning itself as a cloud for agents and developers with backend utility, this general-purpose backend-as-a-service lacks direct alignment with the profile's specific interest in specialized AI agent runners or FinTech architectures.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/appwrite/appwrite",
+        "useCases": [],
+        "useCaseNote": "No suggestion passed quality checks"
+      },
+      {
+        "id": "openvinotoolkit/openvino",
+        "owner": "openvinotoolkit",
+        "name": "openvino",
+        "stars": 11430,
+        "language": "Unknown",
+        "pushedAt": "2026-11-19",
+        "confidence": "medium",
+        "verdict": "maybe",
+        "verdictLabel": "UNDER REVIEW",
+        "reason": "Although this toolkit offers deep utility for optimizing and deploying AI inference—which intersects with high-performance systems—it leans more toward hardware-level optimization than the profile's core focus on autonomous agents, LLM orchestration, or developer productivity.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/openvinotoolkit/openvino",
+        "useCases": [
+          {
+            "title": "Accelerate local LLM agent execution",
+            "kind": "integrate",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Integrate OpenVINO's execution core to compile and run local LLM agent backends directly on CPU and integrated GPU hardware. This lowers inference latency during multi-step autonomous agent loops without requiring discrete GPU infrastructure.",
+            "firstStep": "Install the package via `pip install -U openvino` and compile converted PyTorch model instances using `ov.Core().compile_model(ov_model, 'CPU')`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "jquery/jquery",
+        "owner": "jquery",
+        "name": "jquery",
+        "stars": 60088,
+        "language": "Python",
+        "pushedAt": "2026-11-19",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This legacy library falls outside the profile's primary focus areas, lacking relevance to modern AI agents, workflow automation, FinTech systems, or high-performance Python tooling.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/jquery/jquery",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "solidjs/solid",
+        "owner": "solidjs",
+        "name": "solid",
+        "stars": 36723,
+        "language": "Unknown",
+        "pushedAt": "2026-11-19",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "This frontend UI library conflicts with the profile's exclusion criteria regarding frontend-only toy or UI applications that lack backend utility, developer workflow, or API depth.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/solidjs/solid",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-18",
+  value: "2026-11-19",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-18",
+  value: "2026-11-19",
   enumerable: false,
   configurable: true,
   writable: true

@@ -890,6 +890,15 @@
     "stars_at_check": 23505,
     "verdict": "fit"
   },
+  "appwrite/appwrite": {
+    "first_seen": "2026-11-19",
+    "last_checked": "2026-11-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-19",
+    "reason": "While positioning itself as a cloud for agents and developers with backend utility, this general-purpose backend-as-a-service lacks direct alignment with the profile's specific interest in specialized AI agent runners or FinTech architectures.",
+    "stars_at_check": 58362,
+    "verdict": "maybe"
+  },
   "asgeirtj/system_prompts_leaks": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -915,6 +924,15 @@
     "profile_checked_against": "2026-11-07",
     "reason": "Ruff is a direct match for the Developer Productivity & Tooling focus area and is already a core component of the active technical stack. Its high-performance Rust architecture brings extreme speed to Python linting and formatting pipelines.",
     "stars_at_check": 50770,
+    "verdict": "fit"
+  },
+  "astral-sh/uv": {
+    "first_seen": "2026-11-19",
+    "last_checked": "2026-11-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-19",
+    "reason": "This repository aligns directly with the profile's emphasis on developer productivity and high-performance Python systems, offering an exceptionally fast package and project manager written in Rust that enhances modern workflow automation and tooling.",
+    "stars_at_check": 92362,
     "verdict": "fit"
   },
   "averygan/reclip": {
@@ -1450,11 +1468,11 @@
   },
   "google-research/paper-orchestra": {
     "first_seen": "2026-11-17",
-    "last_checked": "2026-11-17",
+    "last_checked": "2026-11-19",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-11-17",
-    "reason": "PaperOrchestra is a multi-agent framework built for end-to-end automated research paper authoring. It represents a direct fit for the profile's core interest in autonomous multi-agent systems, collaborative LLM workflows, and structured generation frameworks.",
-    "stars_at_check": 2008,
+    "profile_checked_against": "2026-11-19",
+    "reason": "This project fits the profile's core focus on AI agents and LLM orchestration by providing a multi-agent framework designed for automated research paper writing and structured generation workflows.",
+    "stars_at_check": 4699,
     "verdict": "fit"
   },
   "google-research/timesfm": {
@@ -1608,6 +1626,15 @@
     "profile_checked_against": "2026-11-18",
     "reason": "While technically impressive, this repository focuses on training a small language model from scratch rather than the agent orchestration, workflow automation, or developer productivity tooling emphasized in the profile.",
     "stars_at_check": 66358,
+    "verdict": "not-fit"
+  },
+  "jquery/jquery": {
+    "first_seen": "2026-11-19",
+    "last_checked": "2026-11-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-19",
+    "reason": "This legacy library falls outside the profile's primary focus areas, lacking relevance to modern AI agents, workflow automation, FinTech systems, or high-performance Python tooling.",
+    "stars_at_check": 60088,
     "verdict": "not-fit"
   },
   "julyx10/lap": {
@@ -2096,6 +2123,15 @@
     "stars_at_check": 31342,
     "verdict": "not-fit"
   },
+  "openvinotoolkit/openvino": {
+    "first_seen": "2026-11-19",
+    "last_checked": "2026-11-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-19",
+    "reason": "Although this toolkit offers deep utility for optimizing and deploying AI inference\u2014which intersects with high-performance systems\u2014it leans more toward hardware-level optimization than the profile's core focus on autonomous agents, LLM orchestration, or developer productivity.",
+    "stars_at_check": 11430,
+    "verdict": "maybe"
+  },
   "p-e-w/heretic": {
     "first_seen": "2026-11-03",
     "last_checked": "2026-11-03",
@@ -2221,6 +2257,15 @@
     "reason": "This repository is a crowdsourced list and directory of public APIs rather than a functional software application or developer tool. It lacks architectural depth and does not align with the profile's core areas in AI agents, career automation, fintech, or developer tooling.",
     "stars_at_check": 495159,
     "verdict": "not-fit"
+  },
+  "punkpeye/awesome-mcp-servers": {
+    "first_seen": "2026-11-19",
+    "last_checked": "2026-11-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-19",
+    "reason": "This curated collection directly serves the profile's core interest in AI agents and LLM orchestration by providing extensive resources and servers implementing the Model Context Protocol.",
+    "stars_at_check": 98185,
+    "verdict": "fit"
   },
   "pytorch/pytorch": {
     "first_seen": "2026-10-11",
@@ -2391,6 +2436,15 @@
     "profile_checked_against": "2026-09-03",
     "reason": "This is a region-specific stock screening tool for the Chinese domestic market, which does not align with your focus on global career-ops automation or cross-border FinTech systems.",
     "stars_at_check": 6276,
+    "verdict": "not-fit"
+  },
+  "solidjs/solid": {
+    "first_seen": "2026-11-19",
+    "last_checked": "2026-11-19",
+    "latest_release_at_check": null,
+    "profile_checked_against": "2026-11-19",
+    "reason": "This frontend UI library conflicts with the profile's exclusion criteria regarding frontend-only toy or UI applications that lack backend utility, developer workflow, or API depth.",
+    "stars_at_check": 36723,
     "verdict": "not-fit"
   },
   "spotify/portal-ai-plugins": {

@@ -8423,26 +8423,209 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-20": {
+    "date": "2026-11-20",
+    "evaluatedCount": 7,
+    "skippedCount": 9,
+    "stats": {
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 4,
+      "total": 7
+    },
+    "summary": {
+      "evaluated": 7,
+      "skipped": 9,
+      "fit": 3,
+      "maybe": 0,
+      "notFit": 4,
+      "total": 7
+    },
+    "repos": [
+      {
+        "id": "firecrawl/firecrawl",
+        "owner": "firecrawl",
+        "name": "firecrawl",
+        "stars": 204650,
+        "language": "Unknown",
+        "pushedAt": "2026-06-19",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Aligns directly with the profile's focus on AI Agents & LLM Orchestration by providing web scraping and data retrieval infrastructure specifically designed to supply context and structured data to AI agents.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/firecrawl/firecrawl",
+        "useCases": [
+          {
+            "title": "Connect local coding agents to web context via MCP",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Enable local coding tools to autonomously search, scrape, and crawl web documentation directly into their context windows using standard Model Context Protocol integrations.",
+            "firstStep": "Run `firecrawl-local init` in your terminal to automatically attach the local Firecrawl server to detected coding agents."
+          },
+          {
+            "title": "Automate clean context extraction for RepoRadar pipelines",
+            "kind": "automate",
+            "effort": "weekend",
+            "focus": "RepoRadar",
+            "pitch": "Replace custom BeautifulSoup web scraping logic in RepoRadar with a local Firecrawl API instance to yield clean Markdown for Gemini prompts without maintaining custom HTML parsers.",
+            "firstStep": "Launch `firecrawl-local serve` and update RepoRadar's Python pipeline to instantiate `Firecrawl(api_url=\"http://localhost:3002\")`."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "mjmirza/app-store-compliance",
+        "owner": "mjmirza",
+        "name": "app-store-compliance",
+        "stars": 2265,
+        "language": "Unknown",
+        "pushedAt": "2026-11-15",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Aligns with the profile's interest in compliance tooling and AI coding agents by providing pre-submission guards, regulatory tracking (such as the EU AI Act), and an actionable skill designed for integration into AI coding agents.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/mjmirza/app-store-compliance",
+        "useCases": [
+          {
+            "title": "Integrate Pre-Submission Compliance Guards Into AI Coding Agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Enables AI coding agents like Claude Code or Codex to run automated store policy checks before executing final submission commands, aligning with the profile's interest in autonomous agent workflows.",
+            "firstStep": "Run `bash ~/repositories/app-store-compliance/scripts/install.sh --tool all` to install hooks and skills across supported developer tools."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "Tracer-Cloud/opensre",
+        "owner": "Tracer-Cloud",
+        "name": "opensre",
+        "stars": 13310,
+        "language": "Unknown",
+        "pushedAt": "2026-11-20",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Matches the profile's core focus on AI Agents & LLM Orchestration as well as Developer Productivity & Tooling, offering an autonomous agent tailored for CI/CD reliability and automated workflow operations.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/Tracer-Cloud/opensre",
+        "useCases": [
+          {
+            "title": "Automate CI failure investigation and code fixes",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Deploy an autonomous CLI agent that inspects red CI builds, reads error logs, and pushes verified code fixes directly to your pull requests.",
+            "firstStep": "Run `opensre` in your repository terminal to start the interactive session."
+          },
+          {
+            "title": "Embed SRE agent loops into Python workflows",
+            "kind": "build",
+            "effort": "weekend",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Integrate the project's embedded Python session API into custom internal tooling to programmatically diagnose infrastructure and test failures.",
+            "firstStep": "Import the session runner from `surfaces.embedded` in your codebase."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "nginx/nginx",
+        "owner": "nginx",
+        "name": "nginx",
+        "stars": 32438,
+        "language": "Unknown",
+        "pushedAt": "2026-11-18",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "While a fundamental web server, NGINX is broad infrastructure software that falls outside the profile's specific focus areas such as AI agent orchestration, specialized developer tooling, career-ops, or fintech systems.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/nginx/nginx",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "toeverything/AFFiNE",
+        "owner": "toeverything",
+        "name": "AFFiNE",
+        "stars": 75394,
+        "language": "Unknown",
+        "pushedAt": "2026-08-18",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Falls outside the profile's target domain, as it is a broad productivity workspace and document editor rather than a developer utility, LLM orchestration framework, or fintech system.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/toeverything/AFFiNE",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "XiaoYouChR/Ghost-Downloader-3",
+        "owner": "XiaoYouChR",
+        "name": "Ghost-Downloader-3",
+        "stars": 13230,
+        "language": "Unknown",
+        "pushedAt": "2026-11-20",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Does not align with the profile's focus areas, being a general consumer media downloader utility rather than a developer tool, AI agent framework, or financial technology project.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+        "useCases": [],
+        "useCaseNote": ""
+      },
+      {
+        "id": "zhouxiaoka/autoclip",
+        "owner": "zhouxiaoka",
+        "name": "autoclip",
+        "stars": 11750,
+        "language": "Unknown",
+        "pushedAt": "2026-11-02",
+        "confidence": "low",
+        "verdict": "not-fit",
+        "verdictLabel": "ARCHIVED / PASS",
+        "reason": "Focuses on automated video editing and content creation for social platforms, which lies outside the profile's core interests in LLM orchestration, developer workflow tooling, career-ops, and fintech.",
+        "classification": "new",
+        "topics": [],
+        "url": "https://github.com/zhouxiaoka/autoclip",
+        "useCases": [],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-19",
+  value: "2026-11-20",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-19",
+  value: "2026-11-20",
   enumerable: false,
   configurable: true,
   writable: true

@@ -638,6 +638,15 @@
     "stars_at_check": 12757,
     "verdict": "fit"
   },
+  "Tracer-Cloud/opensre": {
+    "first_seen": "2026-11-20",
+    "last_checked": "2026-11-20",
+    "latest_release_at_check": "2026-11-20T00:57:26Z",
+    "profile_checked_against": "2026-11-20",
+    "reason": "Matches the profile's core focus on AI Agents & LLM Orchestration as well as Developer Productivity & Tooling, offering an autonomous agent tailored for CI/CD reliability and automated workflow operations.",
+    "stars_at_check": 13310,
+    "verdict": "fit"
+  },
   "Usagi-org/ai-goofish-monitor": {
     "first_seen": "2026-11-04",
     "last_checked": "2026-11-04",
@@ -655,6 +664,15 @@
     "reason": "This repository fits the profile's interest in advanced LLM infrastructure and structured retrieval/generation frameworks by introducing a vectorless, reasoning-based RAG document index.",
     "stars_at_check": 37137,
     "verdict": "fit"
+  },
+  "XiaoYouChR/Ghost-Downloader-3": {
+    "first_seen": "2026-11-20",
+    "last_checked": "2026-11-20",
+    "latest_release_at_check": "2026-11-20T06:52:27Z",
+    "profile_checked_against": "2026-11-20",
+    "reason": "Does not align with the profile's focus areas, being a general consumer media downloader utility rather than a developer tool, AI agent framework, or financial technology project.",
+    "stars_at_check": 13230,
+    "verdict": "not-fit"
   },
   "ZhuLinsen/daily_stock_analysis": {
     "first_seen": "2026-11-10",
@@ -1322,6 +1340,15 @@
     "stars_at_check": 6790,
     "verdict": "not-fit"
   },
+  "firecrawl/firecrawl": {
+    "first_seen": "2026-11-20",
+    "last_checked": "2026-11-20",
+    "latest_release_at_check": "2026-06-19T15:09:30Z",
+    "profile_checked_against": "2026-11-20",
+    "reason": "Aligns directly with the profile's focus on AI Agents & LLM Orchestration by providing web scraping and data retrieval infrastructure specifically designed to supply context and structured data to AI agents.",
+    "stars_at_check": 204650,
+    "verdict": "fit"
+  },
   "firecrawl/pdf-inspector": {
     "first_seen": "2026-09-03",
     "last_checked": "2026-09-03",
@@ -1907,6 +1934,15 @@
     "stars_at_check": 17422,
     "verdict": "fit"
   },
+  "mjmirza/app-store-compliance": {
+    "first_seen": "2026-11-20",
+    "last_checked": "2026-11-20",
+    "latest_release_at_check": "2026-11-15T20:08:42Z",
+    "profile_checked_against": "2026-11-20",
+    "reason": "Aligns with the profile's interest in compliance tooling and AI coding agents by providing pre-submission guards, regulatory tracking (such as the EU AI Act), and an actionable skill designed for integration into AI coding agents.",
+    "stars_at_check": 2265,
+    "verdict": "fit"
+  },
   "mksglu/context-mode": {
     "first_seen": "2026-10-01",
     "last_checked": "2026-10-01",
@@ -2014,6 +2050,15 @@
     "reason": "n8n is a high-utility platform for your career-ops and wealth-building goals. Its ability to integrate disparate APIs makes it ideal for building automated pipelines for job tracking, interview scheduling, and cross-border financial monitoring without needing to write custom boilerplate for every integration.",
     "stars_at_check": 204969,
     "verdict": "fit"
+  },
+  "nginx/nginx": {
+    "first_seen": "2026-11-20",
+    "last_checked": "2026-11-20",
+    "latest_release_at_check": "2026-11-18T15:54:06Z",
+    "profile_checked_against": "2026-11-20",
+    "reason": "While a fundamental web server, NGINX is broad infrastructure software that falls outside the profile's specific focus areas such as AI agent orchestration, specialized developer tooling, career-ops, or fintech systems.",
+    "stars_at_check": 32438,
+    "verdict": "not-fit"
   },
   "nightly-labs/openbot": {
     "first_seen": "2026-10-27",
@@ -2636,6 +2681,15 @@
     "stars_at_check": 8086,
     "verdict": "maybe"
   },
+  "toeverything/AFFiNE": {
+    "first_seen": "2026-11-20",
+    "last_checked": "2026-11-20",
+    "latest_release_at_check": "2026-08-18T16:51:39Z",
+    "profile_checked_against": "2026-11-20",
+    "reason": "Falls outside the profile's target domain, as it is a broad productivity workspace and document editor rather than a developer utility, LLM orchestration framework, or fintech system.",
+    "stars_at_check": 75394,
+    "verdict": "not-fit"
+  },
   "togg53192-cmd/jailbreaks": {
     "first_seen": "2026-10-28",
     "last_checked": "2026-11-02",
@@ -2859,6 +2913,15 @@
     "profile_checked_against": "2026-08-28",
     "reason": "This is a legacy project for a defunct Twitter frontend; it does not align with your focus on AI agents or career-ops automation.",
     "stars_at_check": 0,
+    "verdict": "not-fit"
+  },
+  "zhouxiaoka/autoclip": {
+    "first_seen": "2026-11-20",
+    "last_checked": "2026-11-20",
+    "latest_release_at_check": "2026-11-02T12:15:50Z",
+    "profile_checked_against": "2026-11-20",
+    "reason": "Focuses on automated video editing and content creation for social platforms, which lies outside the profile's core interests in LLM orchestration, developer workflow tooling, career-ops, and fintech.",
+    "stars_at_check": 11750,
     "verdict": "not-fit"
   },
   "zyronon/TypeWords": {

@@ -7893,7 +7893,7 @@ window.REPORADAR_DIGESTS = {
         "id": "elementalsouls/Claude-BugHunter",
         "owner": "elementalsouls",
         "name": "Claude-BugHunter",
-        "stars": 6863,
+        "stars": 14891,
         "language": "Unknown",
         "pushedAt": "2026-06-05",
         "confidence": "high",
@@ -8606,26 +8606,73 @@ window.REPORADAR_DIGESTS = {
         "useCaseNote": ""
       }
     ]
+  },
+  "2026-11-21": {
+    "date": "2026-11-21",
+    "evaluatedCount": 1,
+    "skippedCount": 15,
+    "stats": {
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 1
+    },
+    "summary": {
+      "evaluated": 1,
+      "skipped": 15,
+      "fit": 1,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 1
+    },
+    "repos": [
+      {
+        "id": "elementalsouls/Claude-BugHunter",
+        "owner": "elementalsouls",
+        "name": "Claude-BugHunter",
+        "stars": 14891,
+        "language": "Unknown",
+        "pushedAt": "2026-06-05",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "This repository aligns directly with the profile's interest in AI Agents and LLM Orchestration, specifically regarding advanced coding agents like Claude Code. By providing an extensive skill bundle, custom slash commands, and curated vulnerability patterns, it extends agentic utility into specialized engineering and security workflows, making it a strong architectural fit.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/elementalsouls/Claude-BugHunter",
+        "useCases": [
+          {
+            "title": "Deploy multi-harness security skills across developer agents",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "The profile can extend local coding agents like Hermes Agent or OpenAI Codex CLI with specialized security skills, turning general-purpose LLM runners into automated red-team operators.",
+            "firstStep": "Run `bash scripts/install.sh --all --burp-mcp` on macOS or Linux to deploy skills across detected harnesses."
+          }
+        ],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20", "2026-11-21"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-20",
+  value: "2026-11-21",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-20",
+  value: "2026-11-21",
   enumerable: false,
   configurable: true,
   writable: true

@@ -1288,11 +1288,11 @@
   },
   "elementalsouls/Claude-BugHunter": {
     "first_seen": "2026-11-16",
-    "last_checked": "2026-11-16",
+    "last_checked": "2026-11-21",
     "latest_release_at_check": "2026-06-05T16:15:13Z",
-    "profile_checked_against": "2026-11-16",
-    "reason": "This repository directly matches the profile's focus on AI Agents & LLM Orchestration and Developer Productivity. By providing a comprehensive skill bundle and slash commands specifically built for Claude Code to perform security bug hunting, it directly expands coding agent capabilities and automated workflow tooling.",
-    "stars_at_check": 6863,
+    "profile_checked_against": "2026-11-21",
+    "reason": "This repository aligns directly with the profile's interest in AI Agents and LLM Orchestration, specifically regarding advanced coding agents like Claude Code. By providing an extensive skill bundle, custom slash commands, and curated vulnerability patterns, it extends agentic utility into specialized engineering and security workflows, making it a strong architectural fit.",
+    "stars_at_check": 14891,
     "verdict": "fit"
   },
   "etcd-io/etcd": {

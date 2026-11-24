@@ -1189,11 +1189,11 @@
   },
   "cursor/plugins": {
     "first_seen": "2026-08-29",
-    "last_checked": "2026-10-01",
+    "last_checked": "2026-11-24",
     "latest_release_at_check": null,
-    "profile_checked_against": "2026-10-01",
-    "reason": "This repository provides specifications and official extensions for Cursor, directly intersecting with the profile's focus on coding agents, AI agent orchestration, and developer productivity tooling.",
-    "stars_at_check": 9314,
+    "profile_checked_against": "2026-11-24",
+    "reason": "Aligns strongly with the profile's core focus on AI agents, coding agents, and developer productivity tooling. As the official specification and repository for Cursor plugins, it offers key architectural patterns for extending AI-assisted coding environments and building agentic workflows directly into developer tools.",
+    "stars_at_check": 19003,
     "verdict": "fit"
   },
   "dani-garcia/vaultwarden": {
@@ -1936,11 +1936,11 @@
   },
   "mjmirza/app-store-compliance": {
     "first_seen": "2026-11-20",
-    "last_checked": "2026-11-20",
-    "latest_release_at_check": "2026-11-15T20:08:42Z",
-    "profile_checked_against": "2026-11-20",
-    "reason": "Aligns with the profile's interest in compliance tooling and AI coding agents by providing pre-submission guards, regulatory tracking (such as the EU AI Act), and an actionable skill designed for integration into AI coding agents.",
-    "stars_at_check": 2265,
+    "last_checked": "2026-11-24",
+    "latest_release_at_check": "2026-11-22T12:44:47Z",
+    "profile_checked_against": "2026-11-24",
+    "reason": "Connects directly to the profile's focus areas in developer productivity, compliance tooling, and AI agent integration. By offering pre-submission guard scripts, tracking regulatory compliance requirements like the EU AI Act, and providing a dedicated skill for AI coding agents, it effectively bridges workflow automation with developer tooling.",
+    "stars_at_check": 5370,
     "verdict": "fit"
   },
   "mksglu/context-mode": {

@@ -117,9 +117,9 @@ window.REPORADAR_DIGESTS = {
         "id": "cursor/plugins",
         "owner": "cursor",
         "name": "plugins",
-        "stars": 9314,
+        "stars": 19003,
         "language": "TypeScript",
-        "pushedAt": "2026-10-01",
+        "pushedAt": "2026-11-24",
         "confidence": "medium",
         "verdict": "maybe",
         "verdictLabel": "UNDER REVIEW",
@@ -1916,9 +1916,9 @@ window.REPORADAR_DIGESTS = {
         "id": "cursor/plugins",
         "owner": "cursor",
         "name": "plugins",
-        "stars": 9314,
+        "stars": 19003,
         "language": "TypeScript",
-        "pushedAt": "2026-10-01",
+        "pushedAt": "2026-11-24",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -8481,9 +8481,9 @@ window.REPORADAR_DIGESTS = {
         "id": "mjmirza/app-store-compliance",
         "owner": "mjmirza",
         "name": "app-store-compliance",
-        "stars": 2265,
+        "stars": 5370,
         "language": "Unknown",
-        "pushedAt": "2026-11-15",
+        "pushedAt": "2026-11-22",
         "confidence": "high",
         "verdict": "fit",
         "verdictLabel": "OFFICIAL SELECTION",
@@ -8693,26 +8693,115 @@ window.REPORADAR_DIGESTS = {
       "total": 0
     },
     "repos": []
+  },
+  "2026-11-24": {
+    "date": "2026-11-24",
+    "evaluatedCount": 2,
+    "skippedCount": 14,
+    "stats": {
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 2
+    },
+    "summary": {
+      "evaluated": 2,
+      "skipped": 14,
+      "fit": 2,
+      "maybe": 0,
+      "notFit": 0,
+      "total": 2
+    },
+    "repos": [
+      {
+        "id": "cursor/plugins",
+        "owner": "cursor",
+        "name": "plugins",
+        "stars": 19003,
+        "language": "TypeScript",
+        "pushedAt": "2026-11-24",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Aligns strongly with the profile's core focus on AI agents, coding agents, and developer productivity tooling. As the official specification and repository for Cursor plugins, it offers key architectural patterns for extending AI-assisted coding environments and building agentic workflows directly into developer tools.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/cursor/plugins",
+        "useCases": [
+          {
+            "title": "Integrate candidate tracking workflows via Ashby plugin patterns",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "Career-Ops & Workflow Automation",
+            "pitch": "Integrate candidate search and interview preparation tooling into agent workflows using the plugin structure defined in `third_party/ashby/`. This streamlines talent discovery and candidate management directly within developer tools.",
+            "firstStep": "Inspect the `.cursor-plugin/plugin.json` manifest inside `third_party/ashby/` to examine how candidate search and pipeline tasks are structured for agent execution."
+          },
+          {
+            "title": "Learn parallel multi-agent orchestration for complex tasks",
+            "kind": "learn",
+            "effort": "weekend",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Study the architectural patterns in `orchestrate/` to design multi-agent systems with explicit planner, worker, and verifier roles. This provides a blueprint for implementing structured handoffs and parallel execution in agent runners.",
+            "firstStep": "Analyze the plugin configuration in `orchestrate/` and its `.cursor-plugin/plugin.json` manifest to evaluate how structured handoffs between planners and verifiers are defined."
+          }
+        ],
+        "useCaseNote": ""
+      },
+      {
+        "id": "mjmirza/app-store-compliance",
+        "owner": "mjmirza",
+        "name": "app-store-compliance",
+        "stars": 5370,
+        "language": "Unknown",
+        "pushedAt": "2026-11-22",
+        "confidence": "high",
+        "verdict": "fit",
+        "verdictLabel": "OFFICIAL SELECTION",
+        "reason": "Connects directly to the profile's focus areas in developer productivity, compliance tooling, and AI agent integration. By offering pre-submission guard scripts, tracking regulatory compliance requirements like the EU AI Act, and providing a dedicated skill for AI coding agents, it effectively bridges workflow automation with developer tooling.",
+        "classification": "resurfaced",
+        "topics": [],
+        "url": "https://github.com/mjmirza/app-store-compliance",
+        "useCases": [
+          {
+            "title": "Integrate Store Compliance Guard into AI Coding Tools",
+            "kind": "integrate",
+            "effort": "hour",
+            "focus": "AI Agents & LLM Orchestration",
+            "pitch": "Install the repository's native compliance guard and skill into local AI agent runners like Claude Code or Codex. This allows autonomous agents to inspect app code and stop release commands whenever critical rejection risks or regulatory non-compliance exist.",
+            "firstStep": "Run `bash ~/repositories/app-store-compliance/scripts/install.sh --tool all` to register the compliance guard and `/app-store-audit` skill across installed coding agents."
+          },
+          {
+            "title": "Automate Mobile App Rejection Checks in CI",
+            "kind": "automate",
+            "effort": "hour",
+            "focus": "Developer Productivity & Tooling",
+            "pitch": "Execute the pre-submission guard script within developer pipelines to catch privacy manifest and store guideline issues prior to app store submissions. This eliminates multi-day submission rejection loops by surfacing issues deterministically at build time.",
+            "firstStep": "Run `bash ~/repositories/app-store-compliance/agent-os/hooks/app-store-compliance-guard.sh \"/path/to/your/app\"` against a target mobile application project folder."
+          }
+        ],
+        "useCaseNote": ""
+      }
+    ]
   }
 };
 
 // Non-enumerable metadata helpers for ergonomic access without polluting Object.keys()
 Object.defineProperty(window.REPORADAR_DIGESTS, 'dates', {
-  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20", "2026-11-21", "2026-11-22", "2026-11-23"],
+  value: ["2026-08-28", "2026-08-29", "2026-09-03", "2026-09-15", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05", "2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20", "2026-11-21", "2026-11-22", "2026-11-23", "2026-11-24"],
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestDate', {
-  value: "2026-11-23",
+  value: "2026-11-24",
   enumerable: false,
   configurable: true,
   writable: true
 });
 
 Object.defineProperty(window.REPORADAR_DIGESTS, 'latestActiveDate', {
-  value: "2026-11-21",
+  value: "2026-11-24",
   enumerable: false,
   configurable: true,
   writable: true

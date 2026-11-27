@@ -8,15 +8,6 @@
     "stars_at_check": 73464,
     "verdict": "maybe"
   },
-  "AgriciDaniel/claude-obsidian": {
-    "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "Strong fit for your developer productivity and knowledge management interests; it bridges the gap between AI agents and personal knowledge bases, which is vital for long-term career-ops.",
-    "stars_at_check": 0,
-    "verdict": "fit"
-  },
   "AgriciDaniel/claude-seo": {
     "first_seen": "2026-10-26",
     "last_checked": "2026-10-26",
@@ -268,15 +259,6 @@
     "reason": "This repository is an Android front-end client for streaming YouTube and other media services, falling entirely outside the profile's core interests in AI agents, developer productivity tooling, career-ops, and FinTech systems.",
     "stars_at_check": 6383,
     "verdict": "not-fit"
-  },
-  "JetBrains/go-modern-guidelines": {
-    "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "Directly supports your interest in AI coding agents by providing the necessary context and standards to improve the quality of AI-generated code in Go.",
-    "stars_at_check": 0,
-    "verdict": "fit"
   },
   "JetBrains/thinkrail": {
     "first_seen": "2026-10-26",
@@ -708,15 +690,6 @@
     "profile_checked_against": "2026-09-17",
     "reason": "While a useful utility, it is a frontend-focused macOS tool that lacks the backend complexity or AI-driven automation required for your core focus areas.",
     "stars_at_check": 5753,
-    "verdict": "not-fit"
-  },
-  "actions/checkout": {
-    "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "A standard GitHub Action; it is a foundational utility rather than an innovative tool for your specific AI or career-ops interests.",
-    "stars_at_check": 0,
     "verdict": "not-fit"
   },
   "addyosmani/agent-skills": {
@@ -1385,15 +1358,6 @@
     "stars_at_check": 24472,
     "verdict": "not-fit"
   },
-  "freestylefly/awesome-gpt-image-2": {
-    "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "This is a curated list of prompt engineering resources rather than a functional framework or tool for agentic orchestration.",
-    "stars_at_check": 0,
-    "verdict": "not-fit"
-  },
   "garrytan/gbrain": {
     "first_seen": "2026-11-10",
     "last_checked": "2026-11-10",
@@ -1519,15 +1483,6 @@
     "reason": "As an open agentic orchestration runtime from Google, this is a top-tier candidate for your AI Agents & LLM Orchestration focus. It provides the backend depth and architectural innovation required for building scalable agentic systems.",
     "stars_at_check": 6720,
     "verdict": "fit"
-  },
-  "google/googletest": {
-    "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "A standard testing library that does not provide the architectural innovation or agentic utility you are looking for.",
-    "stars_at_check": 0,
-    "verdict": "not-fit"
   },
   "google/skills": {
     "first_seen": "2026-10-03",
@@ -1825,15 +1780,6 @@
     "reason": "This repository is an excellent fit for the profile as it directly targets the intersection of AI Agents (Focus Area 1) and Developer Productivity (Focus Area 4). By providing a terminal environment optimized with notifications and organization for AI coding agents, it serves as a highly relevant developer workflow enhancer.",
     "stars_at_check": 27966,
     "verdict": "fit"
-  },
-  "marin-community/marin": {
-    "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "Relevant if you intend to move beyond using agents into the R&D of foundation models, though it may be too low-level for your current focus on orchestration.",
-    "stars_at_check": 0,
-    "verdict": "maybe"
   },
   "martin-olivier/airgorah": {
     "first_seen": "2026-11-15",
@@ -2726,15 +2672,6 @@
     "stars_at_check": 28917,
     "verdict": "fit"
   },
-  "tt-a1i/archify": {
-    "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "Highly relevant to your developer productivity focus; it provides a structured way to generate verifiable architecture diagrams, which is a high-value skill for AI-assisted software engineering workflows.",
-    "stars_at_check": 0,
-    "verdict": "fit"
-  },
   "twentyhq/twenty": {
     "first_seen": "2026-10-22",
     "last_checked": "2026-10-22",
@@ -2905,15 +2842,6 @@
     "reason": "This repository aligns well with the profile's Developer Productivity & Tooling focus area. Zed is a high-performance, Rust-native code editor designed with multiplayer capabilities and built-in AI assistant workflows, matching interest in high-efficiency dev tools and coding agent integration.",
     "stars_at_check": 93900,
     "verdict": "fit"
-  },
-  "zedeus/nitter": {
-    "first_seen": "2026-08-28",
-    "last_checked": "2026-08-28",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-28",
-    "reason": "This is a legacy project for a defunct Twitter frontend; it does not align with your focus on AI agents or career-ops automation.",
-    "stars_at_check": 0,
-    "verdict": "not-fit"
   },
   "zhouxiaoka/autoclip": {
     "first_seen": "2026-11-20",

@@ -35,15 +35,6 @@
     "stars_at_check": 60810,
     "verdict": "fit"
   },
-  "ChromeDevTools/chrome-devtools-mcp": {
-    "first_seen": "2026-08-29",
-    "last_checked": "2026-08-29",
-    "latest_release_at_check": "2026-08-25T11:35:48Z",
-    "profile_checked_against": "2026-08-29",
-    "reason": "Directly aligns with your interest in coding agents. Providing an MCP (Model Context Protocol) interface for Chrome DevTools allows agents to interact with the browser as a developer would, significantly enhancing the capabilities of autonomous coding agents.",
-    "stars_at_check": 50021,
-    "verdict": "fit"
-  },
   "Comfy-Org/ComfyUI": {
     "first_seen": "2026-10-19",
     "last_checked": "2026-10-19",
@@ -664,24 +655,6 @@
     "reason": "Intersects the profile's FinTech & Global Wealth Systems and AI Agents & LLM Orchestration focus areas. The repository implements an automated, LLM-powered multi-market stock analysis system featuring multi-source market data processing, real-time news analysis, decision dashboards, and automated scheduled reporting pipelines.",
     "stars_at_check": 69357,
     "verdict": "fit"
-  },
-  "abhigyanpatwari/GitNexus": {
-    "first_seen": "2026-08-29",
-    "last_checked": "2026-08-29",
-    "latest_release_at_check": "2026-08-27T22:49:55Z",
-    "profile_checked_against": "2026-08-29",
-    "reason": "Highly relevant to your interest in AI Agents and code intelligence. A client-side Graph RAG agent for codebases provides a unique architectural approach to local repository analysis, aligning perfectly with your focus on developer productivity and advanced LLM orchestration.",
-    "stars_at_check": 46218,
-    "verdict": "fit"
-  },
-  "abi/screenshot-to-code": {
-    "first_seen": "2026-08-29",
-    "last_checked": "2026-08-29",
-    "latest_release_at_check": null,
-    "profile_checked_against": "2026-08-29",
-    "reason": "This is a well-known, mature project that functions primarily as a frontend-to-code wrapper. It lacks the architectural depth and backend complexity required to meet your criteria for innovative AI engineering tools.",
-    "stars_at_check": 75675,
-    "verdict": "not-fit"
   },
   "abue-ammar/tinycast": {
     "first_seen": "2026-09-17",
@@ -1700,15 +1673,6 @@
     "stars_at_check": 25025,
     "verdict": "not-fit"
   },
-  "livekit/agents": {
-    "first_seen": "2026-08-29",
-    "last_checked": "2026-08-29",
-    "latest_release_at_check": "2026-08-27T03:42:44Z",
-    "profile_checked_against": "2026-08-29",
-    "reason": "A powerful framework for real-time voice AI agents. This fits your interest in advanced LLM orchestration and autonomous systems, offering a robust backend for building interactive agents that could be applied to interview prep or automated assistant workflows.",
-    "stars_at_check": 13403,
-    "verdict": "fit"
-  },
   "localsend/localsend": {
     "first_seen": "2026-09-15",
     "last_checked": "2026-09-15",
@@ -2519,15 +2483,6 @@
     "stars_at_check": 89167,
     "verdict": "not-fit"
   },
-  "swoole/typephp": {
-    "first_seen": "2026-08-29",
-    "last_checked": "2026-08-29",
-    "latest_release_at_check": "2026-08-27T09:36:53Z",
-    "profile_checked_against": "2026-08-29",
-    "reason": "Compiling PHP to native binaries is an interesting performance play, but it does not align with your core focus areas of AI agents, career-ops, or financial tooling. It lacks the ecosystem relevance to your current stack.",
-    "stars_at_check": 845,
-    "verdict": "not-fit"
-  },
   "symfony/symfony": {
     "first_seen": "2026-11-07",
     "last_checked": "2026-11-07",
@@ -2563,15 +2518,6 @@
     "reason": "Tailwind CSS is a general-purpose frontend styling framework. It falls outside the profile's core focus areas of AI agents, career automation, fintech, and Python/CLI developer productivity tools, offering no backend utility or LLM orchestration features.",
     "stars_at_check": 98601,
     "verdict": "not-fit"
-  },
-  "tashfeenahmed/freellmapi": {
-    "first_seen": "2026-08-29",
-    "last_checked": "2026-08-29",
-    "latest_release_at_check": "2026-08-26T09:06:42Z",
-    "profile_checked_against": "2026-08-29",
-    "reason": "This is a high-utility tool for your AI Agent research. By aggregating free LLM endpoints with smart routing and failover, it provides a cost-effective infrastructure layer for experimenting with multi-agent systems without the overhead of paid API keys.",
-    "stars_at_check": 21744,
-    "verdict": "fit"
   },
   "tech-leads-club/agent-skills": {
     "first_seen": "2026-09-15",
